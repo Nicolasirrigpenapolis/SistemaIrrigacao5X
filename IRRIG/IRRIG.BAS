@@ -3010,6 +3010,14 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
             Exit Function
          End If
          CalculaImposto = 0: Exit Function
+      Case "16" 'Valor IBS (Imposto sobre Bens e Serviços - UF/Municipal)
+         ' IBS = VrTotal * 0.1% (alíquota de transição 2026)
+         CalculaImposto = Round(VrTotal * 0.001, 2)
+         Exit Function
+      Case "17" 'Valor CBS (Contribuição sobre Bens e Serviços)
+         ' CBS = VrTotal * 0.9% (alíquota de transição 2026)
+         CalculaImposto = Round(VrTotal * 0.009, 2)
+         Exit Function
    End Select
    
 End Function

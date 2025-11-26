@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Begin VB.Form frmNotaFisc 
    ClientHeight    =   8175
-   ClientLeft      =   3435
+   ClientLeft      =   3405
    ClientTop       =   1500
    ClientWidth     =   14865
    ForeColor       =   &H80000008&
@@ -10,7 +10,7 @@ Begin VB.Form frmNotaFisc
    LinkTopic       =   "NotaFisc"
    LockControls    =   -1  'True
    MDIChild        =   -1  'True
-   ScaleHeight     =   8175
+      ScaleHeight     =   8175
    ScaleWidth      =   14865
    Begin IRRIG.GPainel Painel 
       Height          =   8145
@@ -25,12 +25,147 @@ Begin VB.Form frmNotaFisc
       BevelOuter      =   0
       Stretch         =   -1  'True
       Begin IRRIG.GBotao Botao 
-         Height          =   300
-         Index           =   14
-         Left            =   9705
-         TabIndex        =   94
+         Height          =   435
+         Index           =   0
+         Left            =   11430
+         TabIndex        =   85
          TabStop         =   0   'False
-         Top             =   375
+         Top             =   525
+         Width           =   1395
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Microsoft Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Caption         =   "DANFE"
+         CaptionAlign    =   4
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   435
+         Index           =   1
+         Left            =   10020
+         TabIndex        =   90
+         Top             =   75
+         Width           =   1395
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Microsoft Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Caption         =   "Imprimir"
+         CaptionAlign    =   4
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   435
+         Index           =   2
+         Left            =   11430
+         TabIndex        =   75
+         TabStop         =   0   'False
+         Top             =   75
+         Width           =   1395
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Microsoft Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Caption         =   "Cancelar"
+         CaptionAlign    =   4
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   300
+         Index           =   9
+         Left            =   9825
+         TabIndex        =   76
+         TabStop         =   0   'False
+         Top             =   1560
+         Width           =   240
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   30
+         Index           =   10
+         Left            =   15180
+         TabIndex        =   82
+         Top             =   60
+         Width           =   30
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   30
+         Index           =   11
+         Left            =   75
+         TabIndex        =   83
+         Top             =   8445
+         Width           =   30
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   300
+         Index           =   12
+         Left            =   14475
+         TabIndex        =   84
+         TabStop         =   0   'False
+         Top             =   1560
          Width           =   240
          _ExtentX        =   0
          _ExtentY        =   0
@@ -70,11 +205,11 @@ Begin VB.Form frmNotaFisc
       End
       Begin IRRIG.GBotao Botao 
          Height          =   300
-         Index           =   12
-         Left            =   14475
-         TabIndex        =   84
+         Index           =   14
+         Left            =   9705
+         TabIndex        =   94
          TabStop         =   0   'False
-         Top             =   1560
+         Top             =   375
          Width           =   240
          _ExtentX        =   0
          _ExtentY        =   0
@@ -88,141 +223,6 @@ Begin VB.Form frmNotaFisc
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   30
-         Index           =   11
-         Left            =   75
-         TabIndex        =   83
-         Top             =   8445
-         Width           =   30
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   30
-         Index           =   10
-         Left            =   15180
-         TabIndex        =   82
-         Top             =   60
-         Width           =   30
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   300
-         Index           =   9
-         Left            =   9825
-         TabIndex        =   76
-         TabStop         =   0   'False
-         Top             =   1560
-         Width           =   240
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   435
-         Index           =   2
-         Left            =   11430
-         TabIndex        =   75
-         TabStop         =   0   'False
-         Top             =   75
-         Width           =   1395
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Microsoft Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Caption         =   "Cancelar"
-         CaptionAlign    =   4
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   435
-         Index           =   1
-         Left            =   10020
-         TabIndex        =   90
-         Top             =   75
-         Width           =   1395
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Microsoft Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Caption         =   "Imprimir"
-         CaptionAlign    =   4
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   435
-         Index           =   0
-         Left            =   11430
-         TabIndex        =   85
-         TabStop         =   0   'False
-         Top             =   525
-         Width           =   1395
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Microsoft Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Caption         =   "DANFE"
-         CaptionAlign    =   4
          CaptionOffset   =   50
       End
       Begin TabDlg.SSTab Tabs 
@@ -237,6 +237,7 @@ Begin VB.Form frmNotaFisc
          _Version        =   393216
          Style           =   1
          Tabs            =   7
+         Tab             =   5
          TabsPerRow      =   7
          TabHeight       =   519
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -250,7 +251,7 @@ Begin VB.Form frmNotaFisc
          EndProperty
          TabCaption(0)   =   "&1 - Dados Principais"
          TabPicture(0)   =   "NOTAFISC.frx":0000
-         Tab(0).ControlEnabled=   -1  'True
+         Tab(0).ControlEnabled=   0   'False
          Tab(0).Control(0)=   "labFdo61"
          Tab(0).Control(0).Enabled=   0   'False
          Tab(0).Control(1)=   "Label(69)"
@@ -423,191 +424,308 @@ Begin VB.Form frmNotaFisc
          Tab(0).Control(84).Enabled=   0   'False
          Tab(0).Control(85)=   "txtCp(2)"
          Tab(0).Control(85).Enabled=   0   'False
-         Tab(0).Control(86)=   "Botao(3)"
+         Tab(0).Control(86)=   "Botao(8)"
          Tab(0).Control(86).Enabled=   0   'False
-         Tab(0).Control(87)=   "Botao(4)"
+         Tab(0).Control(87)=   "Botao(5)"
          Tab(0).Control(87).Enabled=   0   'False
-         Tab(0).Control(88)=   "Botao(5)"
+         Tab(0).Control(88)=   "Botao(4)"
          Tab(0).Control(88).Enabled=   0   'False
-         Tab(0).Control(89)=   "Botao(8)"
+         Tab(0).Control(89)=   "Botao(3)"
          Tab(0).Control(89).Enabled=   0   'False
          Tab(0).ControlCount=   90
          TabCaption(1)   =   "&2 - Produtos"
          TabPicture(1)   =   "NOTAFISC.frx":001C
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "Grid(0)"
-         Tab(1).Control(1)=   "Label(10)"
+         Tab(1).Control(0)=   "Label(10)"
+         Tab(1).Control(1)=   "Grid(0)"
          Tab(1).ControlCount=   2
          TabCaption(2)   =   "&3 - Serviços"
          TabPicture(2)   =   "NOTAFISC.frx":0038
          Tab(2).ControlEnabled=   0   'False
-         Tab(2).Control(0)=   "Grid(1)"
-         Tab(2).Control(1)=   "Label(13)"
+         Tab(2).Control(0)=   "Label(13)"
+         Tab(2).Control(1)=   "Grid(1)"
          Tab(2).ControlCount=   2
          TabCaption(3)   =   "&4 - Conjuntos"
          Tab(3).ControlEnabled=   0   'False
-         Tab(3).Control(0)=   "Grid(2)"
-         Tab(3).Control(1)=   "Label(11)"
-         Tab(3).Control(2)=   "Label(53)"
-         Tab(3).Control(3)=   "labFdo49"
-         Tab(3).Control(4)=   "bottxtCampo49(1)"
+         Tab(3).Control(0)=   "txtCp(58)"
+         Tab(3).Control(1)=   "ChkCp(4)"
+         Tab(3).Control(1).Enabled=   0   'False
+         Tab(3).Control(2)=   "Botao(7)"
+         Tab(3).Control(3)=   "txtCp(49)"
+         Tab(3).Control(4)=   "bottxtCampo49(2)"
          Tab(3).Control(4).Enabled=   0   'False
-         Tab(3).Control(5)=   "bottxtCampo49(2)"
+         Tab(3).Control(5)=   "bottxtCampo49(1)"
          Tab(3).Control(5).Enabled=   0   'False
-         Tab(3).Control(6)=   "txtCp(49)"
-         Tab(3).Control(7)=   "Botao(7)"
-         Tab(3).Control(8)=   "ChkCp(4)"
-         Tab(3).Control(8).Enabled=   0   'False
-         Tab(3).Control(9)=   "txtCp(58)"
+         Tab(3).Control(6)=   "labFdo49"
+         Tab(3).Control(7)=   "Label(53)"
+         Tab(3).Control(8)=   "Label(11)"
+         Tab(3).Control(9)=   "Grid(2)"
          Tab(3).ControlCount=   10
          TabCaption(4)   =   "&5 - Peças"
          Tab(4).ControlEnabled=   0   'False
-         Tab(4).Control(0)=   "Grid(3)"
-         Tab(4).Control(1)=   "Label(12)"
+         Tab(4).Control(0)=   "Label(12)"
+         Tab(4).Control(1)=   "Grid(3)"
          Tab(4).ControlCount=   2
          TabCaption(5)   =   "&6 - Financeiro"
          TabPicture(5)   =   "NOTAFISC.frx":0054
-         Tab(5).ControlEnabled=   0   'False
-         Tab(5).Control(0)=   "Botao(6)"
-         Tab(5).Control(1)=   "bottxtCampo0(0)"
+         Tab(5).ControlEnabled=   -1  'True
+         Tab(5).Control(0)=   "Label(66)"
+         Tab(5).Control(0).Enabled=   0   'False
+         Tab(5).Control(1)=   "Label(64)"
          Tab(5).Control(1).Enabled=   0   'False
-         Tab(5).Control(2)=   "txtCp(0)"
-         Tab(5).Control(3)=   "bottxtCampo1(0)"
+         Tab(5).Control(2)=   "Label(63)"
+         Tab(5).Control(2).Enabled=   0   'False
+         Tab(5).Control(3)=   "Formato(2)"
          Tab(5).Control(3).Enabled=   0   'False
-         Tab(5).Control(4)=   "txtCp(1)"
-         Tab(5).Control(5)=   "bottxtCampo18(0)"
+         Tab(5).Control(4)=   "Label(62)"
+         Tab(5).Control(4).Enabled=   0   'False
+         Tab(5).Control(5)=   "Formato(1)"
          Tab(5).Control(5).Enabled=   0   'False
-         Tab(5).Control(6)=   "txtCp(18)"
-         Tab(5).Control(7)=   "bottxtCampo27(0)"
+         Tab(5).Control(6)=   "Label(61)"
+         Tab(5).Control(6).Enabled=   0   'False
+         Tab(5).Control(7)=   "Formato(0)"
          Tab(5).Control(7).Enabled=   0   'False
-         Tab(5).Control(8)=   "txtCp(27)"
-         Tab(5).Control(9)=   "bottxtCampo28(2)"
+         Tab(5).Control(8)=   "Label(60)"
+         Tab(5).Control(8).Enabled=   0   'False
+         Tab(5).Control(9)=   "Label(57)"
          Tab(5).Control(9).Enabled=   0   'False
-         Tab(5).Control(10)=   "txtCp(28)"
-         Tab(5).Control(11)=   "bottxtCampo29(1)"
+         Tab(5).Control(10)=   "Label(56)"
+         Tab(5).Control(10).Enabled=   0   'False
+         Tab(5).Control(11)=   "Label(30)"
          Tab(5).Control(11).Enabled=   0   'False
-         Tab(5).Control(12)=   "bottxtCampo29(2)"
+         Tab(5).Control(12)=   "Label(29)"
          Tab(5).Control(12).Enabled=   0   'False
-         Tab(5).Control(13)=   "txtCp(29)"
-         Tab(5).Control(14)=   "ChkCp(0)"
+         Tab(5).Control(13)=   "Label(28)"
+         Tab(5).Control(13).Enabled=   0   'False
+         Tab(5).Control(14)=   "Label(27)"
          Tab(5).Control(14).Enabled=   0   'False
-         Tab(5).Control(15)=   "Grid(4)"
-         Tab(5).Control(16)=   "txtCp(36)"
+         Tab(5).Control(15)=   "Label(26)"
+         Tab(5).Control(15).Enabled=   0   'False
+         Tab(5).Control(16)=   "Label(25)"
          Tab(5).Control(16).Enabled=   0   'False
-         Tab(5).Control(17)=   "txtCp(37)"
+         Tab(5).Control(17)=   "Label(24)"
          Tab(5).Control(17).Enabled=   0   'False
-         Tab(5).Control(18)=   "txtCp(38)"
+         Tab(5).Control(18)=   "Label(23)"
          Tab(5).Control(18).Enabled=   0   'False
-         Tab(5).Control(19)=   "txtCp(39)"
+         Tab(5).Control(19)=   "Label(22)"
          Tab(5).Control(19).Enabled=   0   'False
-         Tab(5).Control(20)=   "txtCp(40)"
+         Tab(5).Control(20)=   "Label(21)"
          Tab(5).Control(20).Enabled=   0   'False
-         Tab(5).Control(21)=   "txtCp(41)"
+         Tab(5).Control(21)=   "Label(20)"
          Tab(5).Control(21).Enabled=   0   'False
-         Tab(5).Control(22)=   "txtCp(42)"
+         Tab(5).Control(22)=   "Label(19)"
          Tab(5).Control(22).Enabled=   0   'False
-         Tab(5).Control(23)=   "txtCp(43)"
+         Tab(5).Control(23)=   "Label(18)"
          Tab(5).Control(23).Enabled=   0   'False
-         Tab(5).Control(24)=   "txtCp(44)"
+         Tab(5).Control(24)=   "Label(17)"
          Tab(5).Control(24).Enabled=   0   'False
-         Tab(5).Control(25)=   "txtCp(45)"
+         Tab(5).Control(25)=   "Label(16)"
          Tab(5).Control(25).Enabled=   0   'False
-         Tab(5).Control(26)=   "txtCp(46)"
+         Tab(5).Control(26)=   "Linha(2)"
          Tab(5).Control(26).Enabled=   0   'False
-         Tab(5).Control(27)=   "txtCp(47)"
+         Tab(5).Control(27)=   "Label(15)"
          Tab(5).Control(27).Enabled=   0   'False
-         Tab(5).Control(28)=   "txtCp(48)"
+         Tab(5).Control(28)=   "Label(14)"
          Tab(5).Control(28).Enabled=   0   'False
-         Tab(5).Control(29)=   "Painel(2)"
-         Tab(5).Control(30)=   "txtCp(52)"
+         Tab(5).Control(29)=   "Label(9)"
+         Tab(5).Control(29).Enabled=   0   'False
+         Tab(5).Control(30)=   "labFdo29"
          Tab(5).Control(30).Enabled=   0   'False
-         Tab(5).Control(31)=   "txtCp(53)"
+         Tab(5).Control(31)=   "labFdo28"
          Tab(5).Control(31).Enabled=   0   'False
-         Tab(5).Control(32)=   "txtCp(57)"
+         Tab(5).Control(32)=   "labFdo27"
          Tab(5).Control(32).Enabled=   0   'False
-         Tab(5).Control(33)=   "labFdo0"
-         Tab(5).Control(34)=   "Label(0)"
+         Tab(5).Control(33)=   "labFdo18"
+         Tab(5).Control(33).Enabled=   0   'False
+         Tab(5).Control(34)=   "Label(4)"
+         Tab(5).Control(34).Enabled=   0   'False
          Tab(5).Control(35)=   "labFdo1"
-         Tab(5).Control(36)=   "Label(4)"
-         Tab(5).Control(37)=   "labFdo18"
-         Tab(5).Control(38)=   "labFdo27"
-         Tab(5).Control(39)=   "labFdo28"
-         Tab(5).Control(40)=   "labFdo29"
-         Tab(5).Control(41)=   "Label(9)"
-         Tab(5).Control(42)=   "Label(14)"
-         Tab(5).Control(43)=   "Label(15)"
-         Tab(5).Control(44)=   "Linha(2)"
-         Tab(5).Control(45)=   "Label(16)"
-         Tab(5).Control(46)=   "Label(17)"
-         Tab(5).Control(47)=   "Label(18)"
-         Tab(5).Control(48)=   "Label(19)"
-         Tab(5).Control(49)=   "Label(20)"
-         Tab(5).Control(50)=   "Label(21)"
-         Tab(5).Control(51)=   "Label(22)"
-         Tab(5).Control(52)=   "Label(23)"
-         Tab(5).Control(53)=   "Label(24)"
-         Tab(5).Control(54)=   "Label(25)"
-         Tab(5).Control(55)=   "Label(26)"
-         Tab(5).Control(56)=   "Label(27)"
-         Tab(5).Control(57)=   "Label(28)"
-         Tab(5).Control(58)=   "Label(29)"
-         Tab(5).Control(59)=   "Label(30)"
-         Tab(5).Control(60)=   "Label(56)"
-         Tab(5).Control(61)=   "Label(57)"
-         Tab(5).Control(62)=   "Label(60)"
-         Tab(5).Control(63)=   "Formato(0)"
-         Tab(5).Control(64)=   "Label(61)"
-         Tab(5).Control(65)=   "Formato(1)"
-         Tab(5).Control(66)=   "Label(62)"
-         Tab(5).Control(67)=   "Formato(2)"
-         Tab(5).Control(68)=   "Label(63)"
-         Tab(5).Control(69)=   "Label(64)"
-         Tab(5).Control(70)=   "Label(66)"
-         Tab(5).ControlCount=   71
+         Tab(5).Control(35).Enabled=   0   'False
+         Tab(5).Control(36)=   "Label(0)"
+         Tab(5).Control(36).Enabled=   0   'False
+         Tab(5).Control(37)=   "labFdo0"
+         Tab(5).Control(37).Enabled=   0   'False
+         Tab(5).Control(38)=   "txtCp(57)"
+         Tab(5).Control(38).Enabled=   0   'False
+         Tab(5).Control(39)=   "txtCp(53)"
+         Tab(5).Control(39).Enabled=   0   'False
+         Tab(5).Control(40)=   "txtCp(52)"
+         Tab(5).Control(40).Enabled=   0   'False
+         Tab(5).Control(41)=   "Painel(2)"
+         Tab(5).Control(41).Enabled=   0   'False
+         Tab(5).Control(42)=   "txtCp(119)"
+         Tab(5).Control(42).Enabled=   0   'False
+         Tab(5).Control(43)=   "txtCp(118)"
+         Tab(5).Control(43).Enabled=   0   'False
+         Tab(5).Control(44)=   "txtCp(48)"
+         Tab(5).Control(44).Enabled=   0   'False
+         Tab(5).Control(45)=   "txtCp(47)"
+         Tab(5).Control(45).Enabled=   0   'False
+         Tab(5).Control(46)=   "txtCp(46)"
+         Tab(5).Control(46).Enabled=   0   'False
+         Tab(5).Control(47)=   "txtCp(45)"
+         Tab(5).Control(47).Enabled=   0   'False
+         Tab(5).Control(48)=   "txtCp(44)"
+         Tab(5).Control(48).Enabled=   0   'False
+         Tab(5).Control(49)=   "txtCp(43)"
+         Tab(5).Control(49).Enabled=   0   'False
+         Tab(5).Control(50)=   "txtCp(42)"
+         Tab(5).Control(50).Enabled=   0   'False
+         Tab(5).Control(51)=   "txtCp(41)"
+         Tab(5).Control(51).Enabled=   0   'False
+         Tab(5).Control(52)=   "txtCp(40)"
+         Tab(5).Control(52).Enabled=   0   'False
+         Tab(5).Control(53)=   "txtCp(39)"
+         Tab(5).Control(53).Enabled=   0   'False
+         Tab(5).Control(54)=   "txtCp(38)"
+         Tab(5).Control(54).Enabled=   0   'False
+         Tab(5).Control(55)=   "txtCp(37)"
+         Tab(5).Control(55).Enabled=   0   'False
+         Tab(5).Control(56)=   "txtCp(36)"
+         Tab(5).Control(56).Enabled=   0   'False
+         Tab(5).Control(57)=   "Grid(4)"
+         Tab(5).Control(57).Enabled=   0   'False
+         Tab(5).Control(58)=   "ChkCp(0)"
+         Tab(5).Control(58).Enabled=   0   'False
+         Tab(5).Control(59)=   "txtCp(29)"
+         Tab(5).Control(59).Enabled=   0   'False
+         Tab(5).Control(60)=   "bottxtCampo29(2)"
+         Tab(5).Control(60).Enabled=   0   'False
+         Tab(5).Control(61)=   "bottxtCampo29(1)"
+         Tab(5).Control(61).Enabled=   0   'False
+         Tab(5).Control(62)=   "txtCp(28)"
+         Tab(5).Control(62).Enabled=   0   'False
+         Tab(5).Control(63)=   "bottxtCampo28(2)"
+         Tab(5).Control(63).Enabled=   0   'False
+         Tab(5).Control(64)=   "txtCp(27)"
+         Tab(5).Control(64).Enabled=   0   'False
+         Tab(5).Control(65)=   "bottxtCampo27(0)"
+         Tab(5).Control(65).Enabled=   0   'False
+         Tab(5).Control(66)=   "txtCp(18)"
+         Tab(5).Control(66).Enabled=   0   'False
+         Tab(5).Control(67)=   "bottxtCampo18(0)"
+         Tab(5).Control(67).Enabled=   0   'False
+         Tab(5).Control(68)=   "txtCp(1)"
+         Tab(5).Control(68).Enabled=   0   'False
+         Tab(5).Control(69)=   "bottxtCampo1(0)"
+         Tab(5).Control(69).Enabled=   0   'False
+         Tab(5).Control(70)=   "txtCp(0)"
+         Tab(5).Control(70).Enabled=   0   'False
+         Tab(5).Control(71)=   "bottxtCampo0(0)"
+         Tab(5).Control(71).Enabled=   0   'False
+         Tab(5).Control(72)=   "Botao(6)"
+         Tab(5).Control(72).Enabled=   0   'False
+         Tab(5).ControlCount=   73
          TabCaption(6)   =   "&7 - Dados NFe/NFSe"
          TabPicture(6)   =   "NOTAFISC.frx":0070
          Tab(6).ControlEnabled=   0   'False
-         Tab(6).Control(0)=   "ChkCp(1)"
-         Tab(6).Control(1)=   "bottxtCampo30(1)"
-         Tab(6).Control(1).Enabled=   0   'False
-         Tab(6).Control(2)=   "bottxtCampo30(2)"
-         Tab(6).Control(2).Enabled=   0   'False
-         Tab(6).Control(3)=   "txtCp(30)"
-         Tab(6).Control(4)=   "txtCp(31)"
-         Tab(6).Control(4).Enabled=   0   'False
-         Tab(6).Control(5)=   "txtCp(32)"
-         Tab(6).Control(5).Enabled=   0   'False
-         Tab(6).Control(6)=   "txtCp(33)"
-         Tab(6).Control(6).Enabled=   0   'False
-         Tab(6).Control(7)=   "txtCp(34)"
-         Tab(6).Control(7).Enabled=   0   'False
-         Tab(6).Control(8)=   "txtCp(35)"
-         Tab(6).Control(8).Enabled=   0   'False
-         Tab(6).Control(9)=   "txtCp(55)"
-         Tab(6).Control(9).Enabled=   0   'False
-         Tab(6).Control(10)=   "ChkCp(6)"
-         Tab(6).Control(11)=   "txtCp(60)"
+         Tab(6).Control(0)=   "Label(71)"
+         Tab(6).Control(1)=   "Label(70)"
+         Tab(6).Control(2)=   "Label(68)"
+         Tab(6).Control(3)=   "Label(59)"
+         Tab(6).Control(4)=   "Label(51)"
+         Tab(6).Control(5)=   "Label(50)"
+         Tab(6).Control(6)=   "Label(49)"
+         Tab(6).Control(7)=   "Label(48)"
+         Tab(6).Control(8)=   "Label(47)"
+         Tab(6).Control(9)=   "Label(46)"
+         Tab(6).Control(10)=   "labFdo30"
+         Tab(6).Control(11)=   "txtCp(63)"
          Tab(6).Control(12)=   "txtCp(62)"
-         Tab(6).Control(13)=   "txtCp(63)"
-         Tab(6).Control(14)=   "labFdo30"
-         Tab(6).Control(15)=   "Label(46)"
-         Tab(6).Control(16)=   "Label(47)"
-         Tab(6).Control(17)=   "Label(48)"
-         Tab(6).Control(18)=   "Label(49)"
-         Tab(6).Control(19)=   "Label(50)"
-         Tab(6).Control(20)=   "Label(51)"
-         Tab(6).Control(21)=   "Label(59)"
-         Tab(6).Control(22)=   "Label(68)"
-         Tab(6).Control(23)=   "Label(70)"
-         Tab(6).Control(24)=   "Label(71)"
+         Tab(6).Control(13)=   "txtCp(60)"
+         Tab(6).Control(14)=   "ChkCp(6)"
+         Tab(6).Control(15)=   "txtCp(55)"
+         Tab(6).Control(15).Enabled=   0   'False
+         Tab(6).Control(16)=   "txtCp(35)"
+         Tab(6).Control(16).Enabled=   0   'False
+         Tab(6).Control(17)=   "txtCp(34)"
+         Tab(6).Control(17).Enabled=   0   'False
+         Tab(6).Control(18)=   "txtCp(33)"
+         Tab(6).Control(18).Enabled=   0   'False
+         Tab(6).Control(19)=   "txtCp(32)"
+         Tab(6).Control(19).Enabled=   0   'False
+         Tab(6).Control(20)=   "txtCp(31)"
+         Tab(6).Control(20).Enabled=   0   'False
+         Tab(6).Control(21)=   "txtCp(30)"
+         Tab(6).Control(22)=   "bottxtCampo30(2)"
+         Tab(6).Control(22).Enabled=   0   'False
+         Tab(6).Control(23)=   "bottxtCampo30(1)"
+         Tab(6).Control(23).Enabled=   0   'False
+         Tab(6).Control(24)=   "ChkCp(1)"
          Tab(6).ControlCount=   25
          Begin IRRIG.GBotao Botao 
             Height          =   300
-            Index           =   8
-            Left            =   5505
-            TabIndex        =   86
+            Index           =   3
+            Left            =   -63825
+            TabIndex        =   22
             TabStop         =   0   'False
-            Top             =   2835
+            Top             =   1905
+            Width           =   240
+            _ExtentX        =   0
+            _ExtentY        =   0
+            ForeColor       =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CaptionOffset   =   50
+         End
+         Begin IRRIG.GBotao Botao 
+            Height          =   300
+            Index           =   4
+            Left            =   -69795
+            TabIndex        =   14
+            TabStop         =   0   'False
+            Top             =   1440
+            Width           =   240
+            _ExtentX        =   0
+            _ExtentY        =   0
+            ForeColor       =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CaptionOffset   =   50
+         End
+         Begin IRRIG.GBotao Botao 
+            Height          =   300
+            Index           =   5
+            Left            =   -69900
+            TabIndex        =   5
+            TabStop         =   0   'False
+            Top             =   450
+            Width           =   240
+            _ExtentX        =   0
+            _ExtentY        =   0
+            ForeColor       =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CaptionOffset   =   50
+         End
+         Begin IRRIG.GBotao Botao 
+            Height          =   300
+            Index           =   6
+            Left            =   9345
+            TabIndex        =   48
+            TabStop         =   0   'False
+            Top             =   960
             Width           =   240
             _ExtentX        =   0
             _ExtentY        =   0
@@ -647,77 +765,11 @@ Begin VB.Form frmNotaFisc
          End
          Begin IRRIG.GBotao Botao 
             Height          =   300
-            Index           =   6
-            Left            =   -65655
-            TabIndex        =   48
+            Index           =   8
+            Left            =   -69495
+            TabIndex        =   86
             TabStop         =   0   'False
-            Top             =   960
-            Width           =   240
-            _ExtentX        =   0
-            _ExtentY        =   0
-            ForeColor       =   0
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            CaptionOffset   =   50
-         End
-         Begin IRRIG.GBotao Botao 
-            Height          =   300
-            Index           =   5
-            Left            =   5100
-            TabIndex        =   5
-            TabStop         =   0   'False
-            Top             =   450
-            Width           =   240
-            _ExtentX        =   0
-            _ExtentY        =   0
-            ForeColor       =   0
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            CaptionOffset   =   50
-         End
-         Begin IRRIG.GBotao Botao 
-            Height          =   300
-            Index           =   4
-            Left            =   5205
-            TabIndex        =   14
-            TabStop         =   0   'False
-            Top             =   1440
-            Width           =   240
-            _ExtentX        =   0
-            _ExtentY        =   0
-            ForeColor       =   0
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            CaptionOffset   =   50
-         End
-         Begin IRRIG.GBotao Botao 
-            Height          =   300
-            Index           =   3
-            Left            =   11175
-            TabIndex        =   22
-            TabStop         =   0   'False
-            Top             =   1905
+            Top             =   2835
             Width           =   240
             _ExtentX        =   0
             _ExtentY        =   0
@@ -736,7 +788,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo0 
             Height          =   270
             Index           =   0
-            Left            =   -65685
+            Left            =   9315
             Style           =   1  'Graphical
             TabIndex        =   115
             TabStop         =   0   'False
@@ -759,7 +811,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   0
-            Left            =   -67515
+            Left            =   7485
             MultiLine       =   -1  'True
             TabIndex        =   51
             Top             =   1380
@@ -768,7 +820,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo1 
             Height          =   270
             Index           =   0
-            Left            =   -65685
+            Left            =   9315
             Style           =   1  'Graphical
             TabIndex        =   118
             TabStop         =   0   'False
@@ -791,7 +843,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   1
-            Left            =   -67515
+            Left            =   7485
             MultiLine       =   -1  'True
             TabIndex        =   50
             Top             =   1380
@@ -811,7 +863,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   2
-            Left            =   1305
+            Left            =   -73695
             Locked          =   -1  'True
             MaxLength       =   254
             TabIndex        =   78
@@ -833,7 +885,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   3
-            Left            =   1305
+            Left            =   -73695
             MaxLength       =   20
             TabIndex        =   24
             Top             =   2370
@@ -853,7 +905,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   4
-            Left            =   1305
+            Left            =   -73695
             MaxLength       =   60
             TabIndex        =   12
             Top             =   1440
@@ -873,7 +925,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   5
-            Left            =   6960
+            Left            =   -68040
             Locked          =   -1  'True
             MaxLength       =   254
             TabIndex        =   81
@@ -884,7 +936,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo6 
             Height          =   270
             Index           =   1
-            Left            =   10890
+            Left            =   -64110
             Style           =   1  'Graphical
             TabIndex        =   120
             TabStop         =   0   'False
@@ -894,7 +946,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo6 
             Height          =   270
             Index           =   2
-            Left            =   10635
+            Left            =   -64365
             Style           =   1  'Graphical
             TabIndex        =   121
             TabStop         =   0   'False
@@ -916,7 +968,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   6
-            Left            =   6975
+            Left            =   -68025
             TabIndex        =   21
             Top             =   1920
             Width           =   3645
@@ -935,7 +987,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   7
-            Left            =   12390
+            Left            =   -62610
             MaxLength       =   15
             TabIndex        =   23
             Top             =   1905
@@ -955,7 +1007,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   8
-            Left            =   1305
+            Left            =   -73695
             Locked          =   -1  'True
             MaxLength       =   254
             TabIndex        =   79
@@ -977,7 +1029,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   9
-            Left            =   12390
+            Left            =   -62610
             Locked          =   -1  'True
             MaxLength       =   254
             TabIndex        =   80
@@ -988,7 +1040,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo10 
             Height          =   270
             Index           =   0
-            Left            =   8085
+            Left            =   -66915
             Style           =   1  'Graphical
             TabIndex        =   125
             TabStop         =   0   'False
@@ -1010,7 +1062,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   10
-            Left            =   6975
+            Left            =   -68025
             TabIndex        =   6
             Top             =   465
             Width           =   1095
@@ -1029,7 +1081,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   11
-            Left            =   9000
+            Left            =   -66000
             TabIndex        =   7
             Top             =   450
             Width           =   870
@@ -1048,7 +1100,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   12
-            Left            =   1305
+            Left            =   -73695
             MaxLength       =   40
             TabIndex        =   20
             Top             =   1905
@@ -1057,7 +1109,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo13 
             Height          =   270
             Index           =   1
-            Left            =   4935
+            Left            =   -70065
             Style           =   1  'Graphical
             TabIndex        =   128
             TabStop         =   0   'False
@@ -1067,7 +1119,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo13 
             Height          =   270
             Index           =   2
-            Left            =   4680
+            Left            =   -70320
             Style           =   1  'Graphical
             TabIndex        =   129
             TabStop         =   0   'False
@@ -1089,7 +1141,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   13
-            Left            =   1320
+            Left            =   -73680
             TabIndex        =   13
             Top             =   1455
             Width           =   3345
@@ -1097,7 +1149,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo14 
             Height          =   270
             Index           =   1
-            Left            =   4815
+            Left            =   -70185
             Style           =   1  'Graphical
             TabIndex        =   132
             TabStop         =   0   'False
@@ -1107,7 +1159,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo14 
             Height          =   270
             Index           =   2
-            Left            =   4560
+            Left            =   -70440
             Style           =   1  'Graphical
             TabIndex        =   133
             TabStop         =   0   'False
@@ -1129,7 +1181,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   14
-            Left            =   1320
+            Left            =   -73680
             TabIndex        =   4
             Top             =   465
             Width           =   3225
@@ -1148,7 +1200,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   15
-            Left            =   12390
+            Left            =   -62610
             MaxLength       =   8
             TabIndex        =   18
             Top             =   1440
@@ -1157,7 +1209,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo16 
             Height          =   270
             Index           =   2
-            Left            =   14130
+            Left            =   -60870
             Style           =   1  'Graphical
             TabIndex        =   136
             TabStop         =   0   'False
@@ -1179,7 +1231,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   16
-            Left            =   13845
+            Left            =   -61155
             TabIndex        =   19
             Top             =   1455
             Width           =   270
@@ -1187,7 +1239,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo17 
             Height          =   270
             Index           =   2
-            Left            =   8340
+            Left            =   -66660
             Style           =   1  'Graphical
             TabIndex        =   138
             TabStop         =   0   'False
@@ -1209,7 +1261,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   17
-            Left            =   6975
+            Left            =   -68025
             TabIndex        =   16
             Top             =   1455
             Width           =   1350
@@ -1217,7 +1269,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo18 
             Height          =   270
             Index           =   0
-            Left            =   -70335
+            Left            =   4665
             Style           =   1  'Graphical
             TabIndex        =   140
             TabStop         =   0   'False
@@ -1240,7 +1292,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   18
-            Left            =   -72180
+            Left            =   2820
             MultiLine       =   -1  'True
             TabIndex        =   46
             Top             =   975
@@ -1261,7 +1313,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   19
-            Left            =   3465
+            Left            =   -71535
             MultiLine       =   -1  'True
             TabIndex        =   25
             Top             =   2370
@@ -1281,7 +1333,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   20
-            Left            =   4785
+            Left            =   -70215
             MaxLength       =   20
             TabIndex        =   26
             Top             =   2370
@@ -1301,7 +1353,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   1345
             Index           =   21
-            Left            =   120
+            Left            =   -74880
             MultiLine       =   -1  'True
             ScrollBars      =   2  'Vertical
             TabIndex        =   34
@@ -1322,7 +1374,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   22
-            Left            =   6960
+            Left            =   -68040
             MaxLength       =   20
             TabIndex        =   27
             Top             =   2370
@@ -1343,7 +1395,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   23
-            Left            =   12390
+            Left            =   -62610
             MultiLine       =   -1  'True
             TabIndex        =   29
             Top             =   2370
@@ -1364,7 +1416,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   24
-            Left            =   1305
+            Left            =   -73695
             MultiLine       =   -1  'True
             TabIndex        =   30
             Top             =   2835
@@ -1384,7 +1436,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   25
-            Left            =   9825
+            Left            =   -65175
             MaxLength       =   20
             TabIndex        =   28
             Top             =   2370
@@ -1404,7 +1456,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   26
-            Left            =   9390
+            Left            =   -65610
             MaxLength       =   20
             TabIndex        =   17
             Top             =   1440
@@ -1471,7 +1523,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo27 
             Height          =   270
             Index           =   0
-            Left            =   -70350
+            Left            =   4650
             Style           =   1  'Graphical
             TabIndex        =   146
             TabStop         =   0   'False
@@ -1494,7 +1546,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   27
-            Left            =   -72180
+            Left            =   2820
             MultiLine       =   -1  'True
             TabIndex        =   49
             Top             =   1440
@@ -1561,7 +1613,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo28 
             Height          =   270
             Index           =   2
-            Left            =   -70620
+            Left            =   4380
             Style           =   1  'Graphical
             TabIndex        =   148
             TabStop         =   0   'False
@@ -1583,7 +1635,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   28
-            Left            =   -72180
+            Left            =   2820
             TabIndex        =   42
             Top             =   510
             Width           =   1560
@@ -1591,7 +1643,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo29 
             Height          =   270
             Index           =   1
-            Left            =   -65925
+            Left            =   9075
             Style           =   1  'Graphical
             TabIndex        =   150
             TabStop         =   0   'False
@@ -1601,7 +1653,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo29 
             Height          =   270
             Index           =   2
-            Left            =   -66180
+            Left            =   8820
             Style           =   1  'Graphical
             TabIndex        =   151
             TabStop         =   0   'False
@@ -1623,7 +1675,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   29
-            Left            =   -67515
+            Left            =   7485
             TabIndex        =   47
             Top             =   975
             Width           =   1590
@@ -1642,7 +1694,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00000080&
             Height          =   240
             Index           =   0
-            Left            =   -70275
+            Left            =   4725
             TabIndex        =   43
             TabStop         =   0   'False
             Top             =   600
@@ -1651,7 +1703,7 @@ Begin VB.Form frmNotaFisc
          Begin IRRIG.GListV Grid 
             Height          =   4455
             Index           =   4
-            Left            =   -65040
+            Left            =   9960
             TabIndex        =   52
             Tag             =   "1"
             Top             =   750
@@ -1844,7 +1896,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00000080&
             Height          =   240
             Index           =   2
-            Left            =   5520
+            Left            =   -69480
             TabIndex        =   15
             TabStop         =   0   'False
             Top             =   1545
@@ -1890,7 +1942,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   36
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   64
@@ -1914,7 +1966,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   37
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   53
@@ -1938,7 +1990,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   38
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   54
@@ -1962,7 +2014,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   39
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   56
@@ -1986,7 +2038,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   40
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   55
@@ -2010,7 +2062,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   41
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   57
@@ -2034,7 +2086,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   42
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   58
@@ -2058,7 +2110,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   43
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   60
@@ -2082,7 +2134,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   44
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   59
@@ -2106,7 +2158,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   45
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   63
@@ -2130,7 +2182,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   46
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   62
@@ -2154,7 +2206,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   47
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   65
@@ -2178,12 +2230,60 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   48
-            Left            =   -72195
+            Left            =   2805
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   61
             TabStop         =   0   'False
             Top             =   3810
+            Width           =   2115
+         End
+         Begin VB.TextBox txtCp 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H00E0E0E0&
+            DataField       =   "Valor Total IBS"
+            BeginProperty Font 
+               Name            =   "Microsoft Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   360
+            Index           =   118
+            Left            =   7470
+            Locked          =   -1  'True
+            MultiLine       =   -1  'True
+            TabIndex        =   260
+            TabStop         =   0   'False
+            Top             =   3810
+            Width           =   2115
+         End
+         Begin VB.TextBox txtCp 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H00E0E0E0&
+            DataField       =   "Valor Total CBS"
+            BeginProperty Font 
+               Name            =   "Microsoft Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   360
+            Index           =   119
+            Left            =   7470
+            Locked          =   -1  'True
+            MultiLine       =   -1  'True
+            TabIndex        =   261
+            TabStop         =   0   'False
+            Top             =   4275
             Width           =   2115
          End
          Begin IRRIG.GPainel Painel 
@@ -2253,7 +2353,7 @@ Begin VB.Form frmNotaFisc
             Height          =   240
             Index           =   2
             Left            =   -67530
-            TabIndex        =   201
+            TabIndex        =   259
             TabStop         =   0   'False
             Top             =   525
             Width           =   2130
@@ -2366,7 +2466,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   50
-            Left            =   6960
+            Left            =   -68040
             Locked          =   -1  'True
             MaxLength       =   30
             TabIndex        =   32
@@ -2388,7 +2488,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   51
-            Left            =   3180
+            Left            =   -71820
             Locked          =   -1  'True
             MaxLength       =   255
             TabIndex        =   31
@@ -2412,12 +2512,13 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   52
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   87
             TabStop         =   0   'False
             Top             =   3810
+            Visible         =   0   'False
             Width           =   2115
          End
          Begin VB.TextBox txtCp 
@@ -2436,12 +2537,13 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   53
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   88
             TabStop         =   0   'False
             Top             =   4275
+            Visible         =   0   'False
             Width           =   2115
          End
          Begin VB.TextBox txtCp 
@@ -2459,7 +2561,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   54
-            Left            =   10605
+            Left            =   -64395
             MultiLine       =   -1  'True
             TabIndex        =   8
             Top             =   450
@@ -2479,7 +2581,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   3
-            Left            =   11220
+            Left            =   -63780
             TabIndex        =   9
             TabStop         =   0   'False
             Top             =   555
@@ -2523,7 +2625,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   56
-            Left            =   12390
+            Left            =   -62610
             Locked          =   -1  'True
             TabIndex        =   33
             TabStop         =   0   'False
@@ -2546,7 +2648,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   57
-            Left            =   -67530
+            Left            =   7470
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   96
@@ -2609,7 +2711,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00000080&
             Height          =   300
             Index           =   5
-            Left            =   6915
+            Left            =   -68085
             TabIndex        =   99
             Top             =   3255
             Width           =   4545
@@ -2617,7 +2719,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo59 
             Height          =   270
             Index           =   2
-            Left            =   9600
+            Left            =   -65400
             Style           =   1  'Graphical
             TabIndex        =   222
             TabStop         =   0   'False
@@ -2640,7 +2742,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   59
-            Left            =   6960
+            Left            =   -68040
             TabIndex        =   100
             Top             =   885
             Width           =   2625
@@ -2688,7 +2790,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.CommandButton bottxtCampo61 
             Height          =   270
             Index           =   1
-            Left            =   12885
+            Left            =   -62115
             Style           =   1  'Graphical
             TabIndex        =   226
             TabStop         =   0   'False
@@ -2711,7 +2813,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   270
             Index           =   61
-            Left            =   11655
+            Left            =   -63345
             Locked          =   -1  'True
             MultiLine       =   -1  'True
             TabIndex        =   104
@@ -2775,7 +2877,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             Height          =   360
             Index           =   64
-            Left            =   6540
+            Left            =   -68460
             MaxLength       =   254
             MultiLine       =   -1  'True
             TabIndex        =   111
@@ -2788,7 +2890,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   -67530
+            Left            =   7470
             TabIndex        =   114
             Top             =   1365
             Width           =   2115
@@ -2809,7 +2911,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   0
-            Left            =   -69120
+            Left            =   5880
             TabIndex        =   116
             Top             =   1395
             Width           =   1515
@@ -2819,7 +2921,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   -67530
+            Left            =   7470
             TabIndex        =   117
             Top             =   1365
             Width           =   2115
@@ -2829,7 +2931,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   6960
+            Left            =   -68040
             TabIndex        =   119
             Top             =   1905
             Width           =   4200
@@ -2849,7 +2951,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   1
-            Left            =   12000
+            Left            =   -63000
             TabIndex        =   122
             Top             =   1935
             Width           =   315
@@ -2869,7 +2971,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   2
-            Left            =   5985
+            Left            =   -69015
             TabIndex        =   123
             Top             =   1935
             Width           =   900
@@ -2879,7 +2981,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   6960
+            Left            =   -68040
             TabIndex        =   124
             Top             =   450
             Width           =   1395
@@ -2899,7 +3001,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   3
-            Left            =   135
+            Left            =   -74865
             TabIndex        =   126
             Top             =   2400
             Width           =   1095
@@ -2909,7 +3011,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   1305
+            Left            =   -73695
             TabIndex        =   127
             Top             =   1440
             Width           =   3900
@@ -2929,7 +3031,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00800000&
             Height          =   240
             Index           =   4
-            Left            =   -68775
+            Left            =   6225
             TabIndex        =   130
             Top             =   525
             Width           =   1170
@@ -2939,7 +3041,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   1305
+            Left            =   -73695
             TabIndex        =   131
             Top             =   450
             Width           =   3780
@@ -2959,7 +3061,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   5
-            Left            =   345
+            Left            =   -74655
             TabIndex        =   134
             Top             =   480
             Width           =   885
@@ -2969,7 +3071,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   13830
+            Left            =   -61170
             TabIndex        =   135
             Top             =   1440
             Width           =   570
@@ -2979,7 +3081,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   6960
+            Left            =   -68040
             TabIndex        =   137
             Top             =   1440
             Width           =   1650
@@ -2989,7 +3091,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   -72195
+            Left            =   2805
             TabIndex        =   139
             Top             =   960
             Width           =   2130
@@ -3008,7 +3110,7 @@ Begin VB.Form frmNotaFisc
             EndProperty
             ForeColor       =   &H80000008&
             Height          =   240
-            Left            =   120
+            Left            =   -74880
             TabIndex        =   141
             Top             =   3810
             Width           =   840
@@ -3028,7 +3130,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00000000&
             Height          =   240
             Index           =   6
-            Left            =   120
+            Left            =   -74880
             TabIndex        =   142
             Top             =   915
             Width           =   3615
@@ -3036,8 +3138,8 @@ Begin VB.Form frmNotaFisc
          Begin VB.Line Linha 
             BorderColor     =   &H00808080&
             Index           =   0
-            X1              =   120
-            X2              =   14475
+            X1              =   -74880
+            X2              =   -60525
             Y1              =   1305
             Y2              =   1305
          End
@@ -3056,7 +3158,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00800000&
             Height          =   240
             Index           =   7
-            Left            =   11850
+            Left            =   -63150
             TabIndex        =   143
             Top             =   480
             Width           =   465
@@ -3076,7 +3178,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00000000&
             Height          =   240
             Index           =   8
-            Left            =   120
+            Left            =   -74880
             TabIndex        =   144
             Top             =   3300
             Width           =   2700
@@ -3084,8 +3186,8 @@ Begin VB.Form frmNotaFisc
          Begin VB.Line Linha 
             BorderColor     =   &H00808080&
             Index           =   1
-            X1              =   120
-            X2              =   14475
+            X1              =   -74880
+            X2              =   -60525
             Y1              =   3630
             Y2              =   3630
          End
@@ -3094,7 +3196,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   -72195
+            Left            =   2805
             TabIndex        =   145
             Top             =   1425
             Width           =   2115
@@ -3104,7 +3206,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   -72195
+            Left            =   2805
             TabIndex        =   147
             Top             =   495
             Width           =   1845
@@ -3114,7 +3216,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   -67530
+            Left            =   7470
             TabIndex        =   149
             Top             =   960
             Width           =   1875
@@ -3137,7 +3239,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H00FFFFFF&
             Height          =   255
             Index           =   9
-            Left            =   -65040
+            Left            =   9960
             TabIndex        =   152
             Top             =   495
             Width           =   4515
@@ -3247,7 +3349,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   14
-            Left            =   -74325
+            Left            =   675
             TabIndex        =   160
             Top             =   525
             Width           =   2055
@@ -3267,7 +3369,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   15
-            Left            =   -68535
+            Left            =   6465
             TabIndex        =   161
             Top             =   990
             Width           =   930
@@ -3275,8 +3377,8 @@ Begin VB.Form frmNotaFisc
          Begin VB.Line Linha 
             BorderColor     =   &H00C0C0C0&
             Index           =   2
-            X1              =   -74400
-            X2              =   -65415
+            X1              =   600
+            X2              =   9585
             Y1              =   1830
             Y2              =   1830
          End
@@ -3296,7 +3398,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   16
-            Left            =   -74205
+            Left            =   795
             TabIndex        =   162
             Top             =   1980
             Width           =   1935
@@ -3317,7 +3419,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   17
-            Left            =   -74280
+            Left            =   720
             TabIndex        =   163
             Top             =   2445
             Width           =   2010
@@ -3338,7 +3440,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   18
-            Left            =   -73980
+            Left            =   1020
             TabIndex        =   164
             Top             =   2910
             Width           =   1710
@@ -3359,7 +3461,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   19
-            Left            =   -73605
+            Left            =   1395
             TabIndex        =   165
             Top             =   3375
             Width           =   1335
@@ -3380,7 +3482,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   20
-            Left            =   -74805
+            Left            =   195
             TabIndex        =   166
             Top             =   4305
             Width           =   2535
@@ -3401,7 +3503,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   21
-            Left            =   -74880
+            Left            =   120
             TabIndex        =   167
             Top             =   4755
             Width           =   2610
@@ -3421,7 +3523,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   22
-            Left            =   -69480
+            Left            =   5520
             TabIndex        =   168
             Top             =   5220
             Width           =   1875
@@ -3441,7 +3543,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   23
-            Left            =   -69360
+            Left            =   5640
             TabIndex        =   169
             Top             =   3375
             Width           =   1755
@@ -3461,7 +3563,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   24
-            Left            =   -69150
+            Left            =   5850
             TabIndex        =   170
             Top             =   2910
             Width           =   1545
@@ -3481,7 +3583,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   25
-            Left            =   -69450
+            Left            =   5550
             TabIndex        =   171
             Top             =   2445
             Width           =   1845
@@ -3501,7 +3603,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   26
-            Left            =   -69375
+            Left            =   5625
             TabIndex        =   172
             Top             =   1980
             Width           =   1770
@@ -3522,7 +3624,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   27
-            Left            =   -74580
+            Left            =   420
             TabIndex        =   173
             Top             =   5220
             Width           =   2310
@@ -3542,7 +3644,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   28
-            Left            =   -73530
+            Left            =   1470
             TabIndex        =   174
             Top             =   990
             Width           =   1260
@@ -3562,7 +3664,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   29
-            Left            =   -73590
+            Left            =   1410
             TabIndex        =   175
             Top             =   1455
             Width           =   1320
@@ -3583,7 +3685,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   30
-            Left            =   -74325
+            Left            =   675
             TabIndex        =   176
             Top             =   3840
             Width           =   2055
@@ -3603,7 +3705,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   31
-            Left            =   5460
+            Left            =   -69540
             TabIndex        =   177
             Top             =   480
             Width           =   945
@@ -3623,7 +3725,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   32
-            Left            =   8430
+            Left            =   -66570
             TabIndex        =   178
             Top             =   480
             Width           =   495
@@ -3643,7 +3745,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   33
-            Left            =   270
+            Left            =   -74730
             TabIndex        =   179
             Top             =   1470
             Width           =   960
@@ -3663,7 +3765,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   34
-            Left            =   6375
+            Left            =   -68625
             TabIndex        =   180
             Top             =   1470
             Width           =   510
@@ -3683,7 +3785,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   35
-            Left            =   8715
+            Left            =   -66285
             TabIndex        =   181
             Top             =   1470
             Width           =   600
@@ -3703,7 +3805,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   36
-            Left            =   11745
+            Left            =   -63255
             TabIndex        =   182
             Top             =   1470
             Width           =   570
@@ -3723,7 +3825,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   37
-            Left            =   13365
+            Left            =   -61635
             TabIndex        =   183
             Top             =   1470
             Width           =   390
@@ -3743,7 +3845,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   38
-            Left            =   5910
+            Left            =   -69090
             TabIndex        =   184
             Top             =   1935
             Width           =   975
@@ -3763,7 +3865,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   39
-            Left            =   300
+            Left            =   -74700
             TabIndex        =   185
             Top             =   1935
             Width           =   930
@@ -3783,7 +3885,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   40
-            Left            =   3000
+            Left            =   -72000
             TabIndex        =   186
             Top             =   2400
             Width           =   390
@@ -3803,7 +3905,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   41
-            Left            =   4260
+            Left            =   -70740
             TabIndex        =   187
             Top             =   2400
             Width           =   450
@@ -3823,7 +3925,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   42
-            Left            =   6270
+            Left            =   -68730
             TabIndex        =   188
             Top             =   2400
             Width           =   615
@@ -3843,7 +3945,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   43
-            Left            =   8640
+            Left            =   -66360
             TabIndex        =   189
             Top             =   2400
             Width           =   1110
@@ -3863,7 +3965,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   44
-            Left            =   11580
+            Left            =   -63420
             TabIndex        =   190
             Top             =   2400
             Width           =   735
@@ -3883,7 +3985,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   45
-            Left            =   300
+            Left            =   -74700
             TabIndex        =   191
             Top             =   2865
             Width           =   930
@@ -4023,7 +4125,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   52
-            Left            =   210
+            Left            =   -74790
             TabIndex        =   198
             Top             =   2400
             Width           =   1020
@@ -4074,7 +4176,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   54
-            Left            =   6195
+            Left            =   -68805
             TabIndex        =   207
             Top             =   2865
             Width           =   690
@@ -4095,7 +4197,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   55
-            Left            =   2655
+            Left            =   -72345
             TabIndex        =   208
             Top             =   2865
             Width           =   450
@@ -4103,7 +4205,7 @@ Begin VB.Form frmNotaFisc
          Begin VB.Label Label 
             Alignment       =   1  'Right Justify
             AutoSize        =   -1  'True
-            Caption         =   "Base de Cálculo ST:"
+            Caption         =   "Valor CBS:"
             BeginProperty Font 
                Name            =   "Microsoft Sans Serif"
                Size            =   9.75
@@ -4116,15 +4218,15 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   56
-            Left            =   -69450
+            Left            =   6200
             TabIndex        =   209
             Top             =   4305
-            Width           =   1845
+            Width           =   1035
          End
          Begin VB.Label Label 
             Alignment       =   1  'Right Justify
             AutoSize        =   -1  'True
-            Caption         =   "Valor do ICMS ST:"
+            Caption         =   "Valor IBS:"
             BeginProperty Font 
                Name            =   "Microsoft Sans Serif"
                Size            =   9.75
@@ -4137,10 +4239,10 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   57
-            Left            =   -69255
+            Left            =   6200
             TabIndex        =   210
             Top             =   3840
-            Width           =   1650
+            Width           =   1080
          End
          Begin VB.Label Label 
             Alignment       =   1  'Right Justify
@@ -4158,7 +4260,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   58
-            Left            =   9945
+            Left            =   -65055
             TabIndex        =   211
             Top             =   480
             Width           =   585
@@ -4199,7 +4301,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   60
-            Left            =   -65040
+            Left            =   9960
             TabIndex        =   213
             Top             =   5280
             Width           =   600
@@ -4210,7 +4312,7 @@ Begin VB.Form frmNotaFisc
             FillColor       =   &H000000FF&
             Height          =   165
             Index           =   0
-            Left            =   -64365
+            Left            =   10635
             Shape           =   1  'Square
             Top             =   5325
             Width           =   180
@@ -4230,7 +4332,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   61
-            Left            =   -64140
+            Left            =   10860
             TabIndex        =   214
             Top             =   5280
             Width           =   990
@@ -4241,7 +4343,7 @@ Begin VB.Form frmNotaFisc
             FillColor       =   &H000000FF&
             Height          =   165
             Index           =   1
-            Left            =   -62985
+            Left            =   12015
             Shape           =   1  'Square
             Top             =   5325
             Width           =   180
@@ -4261,7 +4363,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   62
-            Left            =   -62745
+            Left            =   12255
             TabIndex        =   215
             Top             =   5280
             Width           =   1050
@@ -4272,7 +4374,7 @@ Begin VB.Form frmNotaFisc
             FillColor       =   &H000000FF&
             Height          =   150
             Index           =   2
-            Left            =   -61530
+            Left            =   13470
             Shape           =   1  'Square
             Top             =   5325
             Width           =   165
@@ -4292,7 +4394,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   63
-            Left            =   -61305
+            Left            =   13695
             TabIndex        =   216
             Top             =   5280
             Width           =   300
@@ -4312,7 +4414,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   64
-            Left            =   -68655
+            Left            =   6345
             TabIndex        =   217
             Top             =   1380
             Width           =   1050
@@ -4332,7 +4434,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   65
-            Left            =   11745
+            Left            =   -63255
             TabIndex        =   218
             Top             =   2865
             Width           =   570
@@ -4352,7 +4454,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   66
-            Left            =   -69480
+            Left            =   5520
             TabIndex        =   219
             Top             =   4755
             Width           =   1875
@@ -4372,7 +4474,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   67
-            Left            =   4965
+            Left            =   -70035
             TabIndex        =   220
             Top             =   885
             Width           =   1920
@@ -4382,7 +4484,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   6945
+            Left            =   -68055
             TabIndex        =   221
             Top             =   870
             Width           =   2925
@@ -4422,7 +4524,7 @@ Begin VB.Form frmNotaFisc
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   69
-            Left            =   9960
+            Left            =   -65040
             TabIndex        =   224
             Top             =   900
             Width           =   1620
@@ -4432,7 +4534,7 @@ Begin VB.Form frmNotaFisc
             BackColor       =   &H80000005&
             BorderStyle     =   1  'Fixed Single
             Height          =   300
-            Left            =   11640
+            Left            =   -63360
             TabIndex        =   225
             Top             =   900
             Width           =   1515
@@ -5340,12 +5442,12 @@ Attribute VB_Exposed = False
 '* Criação...: GAS-2007 - Gerador Automático de Sistemas
 '* Data......: 23/10/2024 11:54:52
 '* * * * * * *
-
 Option Explicit
 DefInt A-Z
-
 Private Const RTC_MIN_VIBS As Double = 0.001
-
+Private Const RTC_PERC_IBSUF As Double = 0.1
+Private Const RTC_PERC_IBSMUN As Double = 0
+Private Const RTC_PERC_CBS As Double = 0.9
 Public vgSituacao As Integer                      'situação de edição que do módulo
 Public vgCaracteristica As Integer                'caracteristica do módulo
 Public vgTipo As Integer                          'tipo do módulo
@@ -5357,6 +5459,7 @@ Public vgUltimoFiltroComTit As String             'titulo do último filtro defin
 Public vgUltimaOrdemComTit As String              'titulo da última ordenação feita no módulo
 Public vgUltimoTabIndex As Integer                'último campo com foco do módulo
 Public vgPriVez As Integer                        'flag de carregamento do módulo
+Public vgExecutandoPreValidacao As Boolean        'flag para evitar recursão infinita em ExecutaPreValidacao
 Public WithEvents vgTb As GRecordSet              'tabela de dados do módulo
 Attribute vgTb.VB_VarHelpID = -1
 Public vgSQL As String                            'expressão SQL que define o módulo
@@ -5380,11 +5483,14 @@ Public vgIdentTab As String                       'nome da tabela principal do m
 Public vgFrmImpCons As New frmImpCons             'impressao de consutlas
 Public vgTooltips As New cTooltips                'classe de ajuda para os controes do módulo
 Public vgFiltroOriginal As String
-Dim txtCampo(75) As New FormataCampos             'classe dos campos tipo texto do módulo
+Dim txtCampo(125) As New FormataCampos             'classe dos campos tipo texto do módulo
 Dim chkCampo(11) As New FormataCampos             'classe dos campos tipo lógico do módulo
 Dim vgPodeFazerUnLoad As Boolean                  'flag se o módulo pode ou nao ser removido da memória
 Dim opcPainel1(1) As New FormataCampos
 Dim opcPainel2(1) As New FormataCampos
+Dim usaRTC As Boolean                             'flag de uso do layout RTC na NFe
+Dim Detalhes As String                            'buffer global para montagem dos detalhes da NFe
+Dim det_nItem As Long                             'contador global dos itens da NFe
 Dim Sequencia_da_Propriedade As Integer, Sequencia_do_Movimento As Long, Imprimiu As Boolean
 Dim Valor_Total_IPI_das_Pecas As Double, Valor_Total_das_Pecas As Double, Codigo_da_ANTT As String
 Dim Endereco_da_Transportadora As String, IE_da_Transportadora As String, Observacao As String
@@ -5431,7 +5537,6 @@ Public txtOrigem2 As Object, txtContrato As Object, Lbl_livro As Object
 Public Txtnfemae As Object, Lbl_Fin As Object, Lbl_Refatura As Object
 Dim Nota_Fiscal As New GRecordSet, Conjuntos_da_Nota_Fiscal As New GRecordSet, Parcelas_Nota_Fiscal As New GRecordSet
 Dim Pecas_da_Nota_Fiscal As New GRecordSet, Produtos_da_Nota_Fiscal As New GRecordSet, Servicos_da_Nota_Fiscal As New GRecordSet
-
 Private ProdutoAux As New GRecordSet, ConjuntoAux As New GRecordSet, ServicoAux As New GRecordSet, PecaAux As New GRecordSet
 Private GeralAux As New GRecordSet, MunicipioAux As New GRecordSet, PropriedadesAux As New GRecordSet, ICMSAux As New GRecordSet
 Private ClassificaçãoAux As New GRecordSet, NatOpeAux As New GRecordSet, TransporteAux As New GRecordSet
@@ -5440,7 +5545,6 @@ Private ProdutoUnidadeAux As New GRecordSet, ConjuntoUnidadeAux As New GRecordSe
 Private MunTransAux As New GRecordSet, TemPropriedade As Boolean, PropriedadesGeralAux As New GRecordSet
 Private PedidoAux As New GRecordSet, PaisAux As New GRecordSet, OrcamentoAux As New GRecordSet
 Public Tipo As Byte, Fechamento2 As Byte
-
 'evento - quando uma opção for selecionada
 Private Sub opcPainel1Cp_Click(Index As Integer)
    If vgPriVez Then Exit Sub
@@ -5462,7 +5566,6 @@ Private Sub opcPainel1Cp_Click(Index As Integer)
       End Select
    End If
 End Sub
-
 'evento - quando uma opção for selecionada
 Private Sub opcPainel2Cp_Click(Index As Integer)
    If vgPriVez Then Exit Sub
@@ -5486,7 +5589,6 @@ Private Sub opcPainel2Cp_Click(Index As Integer)
       'End If 'Manual
    End If
 End Sub
-
 Private Sub RepositionNF()
    On Error Resume Next
    txtPropriedade.PesqSQLExpression = "SELECT Propriedades.[Seqüência da Propriedade], Propriedades.[Nome da Propriedade], Propriedades.CNPJ, " + _
@@ -5526,7 +5628,6 @@ Private Sub RepositionNF()
    Tipo = Tipo_de_Nota
    Fechamento2 = Fechamento
 End Sub
-
 Private Function TotalParcelas(Optional Seq As Integer) As Currency
    Dim Tb As GRecordSet, Total As Currency
    
@@ -5535,9 +5636,7 @@ Private Function TotalParcelas(Optional Seq As Integer) As Currency
    Total = Tb!Total
    
    TotalParcelas = Total
-
 End Function
-
 'mostra fórmulas na janela
 Private Sub MostraFormulas()
    Dim MascaraIE As String
@@ -5650,7 +5749,6 @@ Private Sub MostraFormulas()
    End If
    If Err Then Err.Clear                          'se houve erro, limpa...
 End Sub
-
 Private Function InfoProdutos(Valor_do_Tributo As Double, Sequencia_da_Nota_Fiscal As Long, Sequencia_Produto_Nota_Fiscal As Long, _
    Sequencia_do_Produto As Long, Quantidade As Double, Valor_Unitario As Double, _
    Valor_Total As Double, Valor_do_IPI As Double, Valor_do_ICMS As Double, _
@@ -5679,9 +5777,7 @@ Private Function InfoProdutos(Valor_do_Tributo As Double, Sequencia_da_Nota_Fisc
       Case "Valor Unitário"
          InfoProdutos = ProdutoAux![Valor Total]
    End Select
-
 End Function
-
 Private Function InfoServicos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Servico_Nota_Fiscal As Long, Sequencia_do_Servico As Integer, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, Oq As String) As Variant
    
@@ -5695,9 +5791,7 @@ Private Function InfoServicos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Servic
       Case "Valor Unitário"
          InfoServicos = ServicoAux![Valor Do Serviço]
    End Select
-
 End Function
-
 Private Function InfoConjuntos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Conjunto_Nota_Fiscal As Long, Sequencia_do_Conjunto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -5725,9 +5819,7 @@ Private Function InfoConjuntos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Conju
       Case "Valor Unitário"
          InfoConjuntos = ConjuntoAux![Valor Total]
    End Select
-
 End Function
-
 Private Function InfoPecas(Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Peca_Nota_Fiscal As Long, Sequencia_do_Produto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -5755,9 +5847,7 @@ Private Function InfoPecas(Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Peca_N
       Case "Valor Unitário"
          InfoPecas = PecaAux![Valor Total]
    End Select
-
 End Function
-
 Private Function ProcessaProdutos(Valor_do_Tributo As Double, Sequencia_da_Nota_Fiscal As Long, Sequencia_Produto_Nota_Fiscal As Long, _
    Sequencia_do_Produto As Long, Quantidade As Double, Valor_Unitario As Double, _
    Valor_Total As Double, Valor_do_IPI As Double, Valor_do_ICMS As Double, _
@@ -5825,6 +5915,11 @@ Private Function ProcessaProdutos(Valor_do_Tributo As Double, Sequencia_da_Nota_
       End Select
       vgDb.Execute "Update [Produtos da Nota Fiscal] Set [Valor Total] = " & Substitui(CCur(Quantidade * Valor_Unitario), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência Produto Nota Fiscal] = " & Sequencia_Produto_Nota_Fiscal 'Valor Total
    End If
+   
+   ' Cálculo de IBS e CBS - SEMPRE executado (nota normal OU avulsa)
+   vgDb.Execute "Update [Produtos da Nota Fiscal] Set [Valor IBS] = " & Substitui(CalculaImposto(Sequencia_do_Produto, Nota_Fiscal![Seqüência Do Geral], 16, 1, Quantidade * Valor_Unitario, vrAdicional, Nota_Fiscal![Seqüência da Propriedade]), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência Produto Nota Fiscal] = " & Sequencia_Produto_Nota_Fiscal 'IBS
+   vgDb.Execute "Update [Produtos da Nota Fiscal] Set [Valor CBS] = " & Substitui(CalculaImposto(Sequencia_do_Produto, Nota_Fiscal![Seqüência Do Geral], 17, 1, Quantidade * Valor_Unitario, vrAdicional, Nota_Fiscal![Seqüência da Propriedade]), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência Produto Nota Fiscal] = " & Sequencia_Produto_Nota_Fiscal 'CBS
+   
    vgDb.CommitTrans
       
 DeuErro:
@@ -5833,7 +5928,6 @@ DeuErro:
       vgDb.RollBackTrans
    End If
 End Function
-
 Private Function ProcessaConjuntos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Conjunto_Nota_Fiscal As Long, Sequencia_do_Conjunto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -5898,6 +5992,11 @@ Private Function ProcessaConjuntos(Sequencia_da_Nota_Fiscal As Long, Sequencia_C
       End Select
       vgDb.Execute "Update [Conjuntos da Nota Fiscal] Set [Valor Total] = " & Substitui(CCur(Quantidade * Valor_Unitario), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência Conjunto Nota Fiscal] = " & Sequencia_Conjunto_Nota_Fiscal
    End If
+   
+   ' Cálculo de IBS e CBS - SEMPRE executado (nota normal OU avulsa)
+   vgDb.Execute "Update [Conjuntos da Nota Fiscal] Set [Valor IBS] = " & Substitui(CalculaImposto(Sequencia_do_Conjunto, Nota_Fiscal![Seqüência Do Geral], 16, 2, Quantidade * Valor_Unitario, vrAdicional, Nota_Fiscal![Seqüência da Propriedade], Nota_Fiscal![Seqüência da Classificação]), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência Conjunto Nota Fiscal] = " & Sequencia_Conjunto_Nota_Fiscal 'IBS
+   vgDb.Execute "Update [Conjuntos da Nota Fiscal] Set [Valor CBS] = " & Substitui(CalculaImposto(Sequencia_do_Conjunto, Nota_Fiscal![Seqüência Do Geral], 17, 2, Quantidade * Valor_Unitario, vrAdicional, Nota_Fiscal![Seqüência da Propriedade], Nota_Fiscal![Seqüência da Classificação]), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência Conjunto Nota Fiscal] = " & Sequencia_Conjunto_Nota_Fiscal 'CBS
+   
    vgDb.CommitTrans
       
 DeuErro:
@@ -5906,7 +6005,6 @@ DeuErro:
       vgDb.RollBackTrans
    End If
 End Function
-
 Private Function ProcessaServicos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Servico_Nota_Fiscal As Long, Sequencia_do_Servico As Integer, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double) As Boolean
       
@@ -5926,7 +6024,6 @@ DeuErro:
       vgDb.RollBackTrans
    End If
 End Function
-
 Private Function ProcessaPecas(Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Peca_Nota_Fiscal As Long, Sequencia_do_Produto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -5991,6 +6088,11 @@ Private Function ProcessaPecas(Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Pe
       End Select
       vgDb.Execute "Update [Peças da Nota Fiscal] Set [Valor Total] = " & Substitui(CCur(Quantidade * Valor_Unitario), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência da Peça Nota Fiscal] = " & Sequencia_da_Peca_Nota_Fiscal
    End If
+   
+   ' Cálculo de IBS e CBS - SEMPRE executado (nota normal OU avulsa)
+   vgDb.Execute "Update [Peças da Nota Fiscal] Set [Valor IBS] = " & Substitui(CalculaImposto(Sequencia_do_Produto, Nota_Fiscal![Seqüência Do Geral], 16, 3, Quantidade * Valor_Unitario, vrAdicional, Nota_Fiscal![Seqüência da Propriedade], Nota_Fiscal![Seqüência da Classificação]), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência da Peça Nota Fiscal] = " & Sequencia_da_Peca_Nota_Fiscal 'IBS
+   vgDb.Execute "Update [Peças da Nota Fiscal] Set [Valor CBS] = " & Substitui(CalculaImposto(Sequencia_do_Produto, Nota_Fiscal![Seqüência Do Geral], 17, 3, Quantidade * Valor_Unitario, vrAdicional, Nota_Fiscal![Seqüência da Propriedade], Nota_Fiscal![Seqüência da Classificação]), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal & " AND [Seqüência da Peça Nota Fiscal] = " & Sequencia_da_Peca_Nota_Fiscal 'CBS
+   
    vgDb.CommitTrans
       
 DeuErro:
@@ -5999,10 +6101,8 @@ DeuErro:
       vgDb.RollBackTrans
    End If
 End Function
-
 Private Sub CarregaTotalizador()
    On Error Resume Next
-
    With GrdProdutos
       .ShowSumBar = True
       .ShowSumCol(.Columns("Vr. Total").Index) = True
@@ -6050,7 +6150,6 @@ Private Sub CarregaTotalizador()
    End With
    
 End Sub
-
 Private Sub ComandosProdutos(KeyAscii As Integer, Valor_do_Tributo As Double, Sequencia_da_Nota_Fiscal As Long, Sequencia_Produto_Nota_Fiscal As Long, _
    Sequencia_do_Produto As Long, Quantidade As Double, Valor_Unitario As Double, _
    Valor_Total As Double, Valor_do_IPI As Double, Valor_do_ICMS As Double, _
@@ -6063,7 +6162,6 @@ Private Sub ComandosProdutos(KeyAscii As Integer, Valor_do_Tributo As Double, Se
    Valor_do_Frete As Double, Bc_pis As Double, Bc_cofins As Double, _
    Aliq_do_pis As Single, Aliq_do_cofins As Single)
    Dim Sequencia As Variant, Tb As New GRecordSet
-
    On Error GoTo DeuErro
       
    If KeyAscii = vbKeyF12 Then
@@ -6090,7 +6188,6 @@ DeuErro:
       MsgBox Err.Description, vbCritical + vbOKOnly, vaTitulo
    End If
 End Sub
-
 Private Sub ComandosServicos(KeyAscii As Integer, Sequencia_da_Nota_Fiscal As Long, Sequencia_Servico_Nota_Fiscal As Long, Sequencia_do_Servico As Integer, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double)
    On Error GoTo DeuErro
@@ -6111,7 +6208,6 @@ DeuErro:
       MsgBox Err.Description, vbCritical + vbOKOnly, vaTitulo
    End If
 End Sub
-
 Private Sub ComandosConjuntos(KeyAscii As Integer, Sequencia_da_Nota_Fiscal As Long, Sequencia_Conjunto_Nota_Fiscal As Long, Sequencia_do_Conjunto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -6123,7 +6219,6 @@ Private Sub ComandosConjuntos(KeyAscii As Integer, Sequencia_da_Nota_Fiscal As L
    Bc_pis As Double, Aliq_do_pis As Single, Bc_cofins As Double, _
    Aliq_do_cofins As Single)
    Dim Sequencia As Variant, Tb As New GRecordSet
-
    On Error GoTo DeuErro
    
    If KeyAscii = vbKeyF12 Then
@@ -6148,7 +6243,6 @@ DeuErro:
       MsgBox Err.Description, vbCritical + vbOKOnly, vaTitulo
    End If
 End Sub
-
 Private Sub ComandosPecas(KeyAscii As Integer, Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Peca_Nota_Fiscal As Long, Sequencia_do_Produto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -6160,7 +6254,6 @@ Private Sub ComandosPecas(KeyAscii As Integer, Sequencia_da_Nota_Fiscal As Long,
    Bc_pis As Double, Aliq_do_pis As Single, Bc_cofins As Double, _
    Aliq_do_cofins As Single)
    Dim Sequencia As Variant, Tb As New GRecordSet
-
    On Error GoTo DeuErro
    
    If KeyAscii = vbKeyF12 Then
@@ -6185,7 +6278,6 @@ DeuErro:
       MsgBox Err.Description, vbCritical + vbOKOnly, vaTitulo
    End If
 End Sub
-
 Private Sub ComandosPecas2(KeyCode As Integer, Shift As Integer, Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Peca_Nota_Fiscal As Long, Sequencia_do_Produto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -6215,7 +6307,6 @@ Private Sub ComandosPecas2(KeyCode As Integer, Shift As Integer, Sequencia_da_No
       End If
    End If
 End Sub
-
 Private Sub ComandosConjuntos2(KeyCode As Integer, Shift As Integer, Sequencia_da_Nota_Fiscal As Long, Sequencia_Conjunto_Nota_Fiscal As Long, Sequencia_do_Conjunto As Long, _
    Quantidade As Double, Valor_Unitario As Double, Valor_Total As Double, _
    Valor_do_IPI As Double, Valor_do_ICMS As Double, Aliquota_do_IPI As Double, _
@@ -6245,7 +6336,6 @@ Private Sub ComandosConjuntos2(KeyCode As Integer, Shift As Integer, Sequencia_d
       End If
    End If
 End Sub
-
 Private Sub ComandosProdutos2(KeyCode As Integer, Shift As Integer, Valor_do_Tributo As Double, Sequencia_da_Nota_Fiscal As Long, Sequencia_Produto_Nota_Fiscal As Long, _
    Sequencia_do_Produto As Long, Quantidade As Double, Valor_Unitario As Double, _
    Valor_Total As Double, Valor_do_IPI As Double, Valor_do_ICMS As Double, _
@@ -6276,13 +6366,222 @@ Private Sub ComandosProdutos2(KeyCode As Integer, Shift As Integer, Valor_do_Tri
       End If
    End If
 End Sub
-
 Private Function Filtro() As String
    On Error Resume Next
    Filtro = "[Seqüência da Nota Fiscal] > 0"
    Filtro = Filtro & " AND (AUTORIZADO = 0 AND [Nota Cancelada] = 0 AND [Data de Emissão] >= " & D(CDate("23/03/2011")) & " AND [Número da NFe] > 0 Or ([Data de Emissão] >= " & D(Format(DateAdd("D", -90, Date))) & "))"
 End Function
-
+Private Function NzValor(ByVal Valor As Variant) As Double
+   On Error GoTo EhNulo
+   If IsNull(Valor) Or IsEmpty(Valor) Then
+      NzValor = 0
+   ElseIf VarType(Valor) = vbString And Trim$(Valor & "") = "" Then
+      NzValor = 0
+   Else
+      NzValor = CDbl(Valor)
+   End If
+   Exit Function
+EhNulo:
+   NzValor = 0
+End Function
+Private Function CalcValorOperacaoRTC(ByVal Quantidade As Variant, ByVal ValorUnitario As Variant, _
+   ByVal ValorDesconto As Variant, ByVal ValorFrete As Variant) As Double
+   Dim baseOperacao As Double
+   baseOperacao = NzValor(Quantidade) * NzValor(ValorUnitario)
+   baseOperacao = baseOperacao - NzValor(ValorDesconto) + NzValor(ValorFrete)
+   If baseOperacao < 0.00001 Then baseOperacao = 0
+   CalcValorOperacaoRTC = baseOperacao
+End Function
+Private Function FormataValorSQL(ByVal Valor As Double) As String
+   FormataValorSQL = Substitui(Format$(Valor, "0.00"), ",", ".", SO_UM)
+End Function
+Private Function GetRsValue(Rs As GRecordSet, FieldName As String, Optional DefaultValue As Variant = 0) As Variant
+   ' Função auxiliar para obter valor de um recordset com segurança
+   On Error Resume Next
+   If Rs Is Nothing Then
+      GetRsValue = DefaultValue
+   ElseIf Rs.EOF And Rs.BOF Then
+      GetRsValue = DefaultValue
+   ElseIf IsNull(Rs.Fields(FieldName).Value) Then
+      GetRsValue = DefaultValue
+   Else
+      GetRsValue = Rs.Fields(FieldName).Value
+   End If
+   On Error GoTo 0
+End Function
+Private Sub AtualizaValoresIBSCBS(ByVal SeqNota As Long, ByRef TotalIBS As Double, ByRef TotalCBS As Double)
+   Dim Tb As New GRecordSet, SQL As String
+   Dim baseOperacao As Double, valorIBS As Double, valorCBS As Double
+   Dim pctIBS As Double, pctCBS As Double
+   Dim cntProd As Long, cntConj As Long, cntPeca As Long
+   On Error GoTo TrataIBS
+   Debug.Print "DBG_NF: AtualizaValoresIBSCBS start seq=" & SeqNota & " vgDb Is Nothing=" & (vgDb Is Nothing)
+   pctIBS = (RTC_PERC_IBSUF + RTC_PERC_IBSMUN) / 100
+   pctCBS = RTC_PERC_CBS / 100
+   TotalIBS = 0
+   TotalCBS = 0
+   SQL = "SELECT [Seq??ncia Produto Nota Fiscal] SeqItem, Quantidade, [Valor Unit?rio], [Valor do Desconto], [Valor do Frete], [Valor IBS], [Valor CBS] " & _
+         "FROM [Produtos da Nota Fiscal] WHERE [Seq??ncia da Nota Fiscal] = " & SeqNota
+   Set Tb = vgDb.OpenRecordSet(SQL)
+   If Not Tb Is Nothing Then
+      Do While Not Tb.EOF
+         baseOperacao = CalcValorOperacaoRTC(Tb!Quantidade, Tb![Valor Unit?rio], Tb![Valor Do Desconto], Tb![Valor Do Frete])
+         If IsNull(Tb![Valor IBS]) Or Tb![Valor IBS] < 0 Then
+            valorIBS = Round(baseOperacao * pctIBS, 2)
+         Else
+            valorIBS = Tb![Valor IBS]
+         End If
+         If IsNull(Tb![Valor CBS]) Or Tb![Valor CBS] < 0 Then
+            valorCBS = Round(baseOperacao * pctCBS, 2)
+         Else
+            valorCBS = Tb![Valor CBS]
+         End If
+         TotalIBS = TotalIBS + valorIBS
+         TotalCBS = TotalCBS + valorCBS
+         cntProd = cntProd + 1
+         If IsNull(Tb![Valor IBS]) Or Tb![Valor IBS] < 0 Or IsNull(Tb![Valor CBS]) Or Tb![Valor CBS] < 0 Then
+            vgDb.Execute "UPDATE [Produtos da Nota Fiscal] SET [Valor IBS] = " & FormataValorSQL(valorIBS) & ", [Valor CBS] = " & FormataValorSQL(valorCBS) & _
+                        " WHERE [Seq??ncia Produto Nota Fiscal] = " & Tb!SeqItem
+         End If
+         Tb.MoveNext
+      Loop
+   End If
+   Set Tb = Nothing
+   SQL = "SELECT [Seq??ncia Conjunto Nota Fiscal] SeqItem, Quantidade, [Valor Unit?rio], [Valor do Desconto], [Valor do Frete], [Valor IBS], [Valor CBS] " & _
+         "FROM [Conjuntos da Nota Fiscal] WHERE [Seq??ncia da Nota Fiscal] = " & SeqNota
+   Set Tb = vgDb.OpenRecordSet(SQL)
+   If Not Tb Is Nothing Then
+      Do While Not Tb.EOF
+         baseOperacao = CalcValorOperacaoRTC(Tb!Quantidade, Tb![Valor Unit?rio], Tb![Valor Do Desconto], Tb![Valor Do Frete])
+         If IsNull(Tb![Valor IBS]) Or Tb![Valor IBS] < 0 Then
+            valorIBS = Round(baseOperacao * pctIBS, 2)
+         Else
+            valorIBS = Tb![Valor IBS]
+         End If
+         If IsNull(Tb![Valor CBS]) Or Tb![Valor CBS] < 0 Then
+            valorCBS = Round(baseOperacao * pctCBS, 2)
+         Else
+            valorCBS = Tb![Valor CBS]
+         End If
+         TotalIBS = TotalIBS + valorIBS
+         TotalCBS = TotalCBS + valorCBS
+         cntConj = cntConj + 1
+         If IsNull(Tb![Valor IBS]) Or Tb![Valor IBS] < 0 Or IsNull(Tb![Valor CBS]) Or Tb![Valor CBS] < 0 Then
+            vgDb.Execute "UPDATE [Conjuntos da Nota Fiscal] SET [Valor IBS] = " & FormataValorSQL(valorIBS) & ", [Valor CBS] = " & FormataValorSQL(valorCBS) & _
+                        " WHERE [Seq??ncia Conjunto Nota Fiscal] = " & Tb!SeqItem
+         End If
+         Tb.MoveNext
+      Loop
+   End If
+   Set Tb = Nothing
+   SQL = "SELECT [Seq??ncia da Pe?a Nota Fiscal] SeqItem, Quantidade, [Valor Unit?rio], [Valor do Desconto], [Valor do Frete], [Valor IBS], [Valor CBS] " & _
+         "FROM [Pe?as da Nota Fiscal] WHERE [Seq??ncia da Nota Fiscal] = " & SeqNota
+   Set Tb = vgDb.OpenRecordSet(SQL)
+   If Not Tb Is Nothing Then
+      Do While Not Tb.EOF
+         baseOperacao = CalcValorOperacaoRTC(Tb!Quantidade, Tb![Valor Unit?rio], Tb![Valor Do Desconto], Tb![Valor Do Frete])
+         If IsNull(Tb![Valor IBS]) Or Tb![Valor IBS] < 0 Then
+            valorIBS = Round(baseOperacao * pctIBS, 2)
+         Else
+            valorIBS = Tb![Valor IBS]
+         End If
+         If IsNull(Tb![Valor CBS]) Or Tb![Valor CBS] < 0 Then
+            valorCBS = Round(baseOperacao * pctCBS, 2)
+         Else
+            valorCBS = Tb![Valor CBS]
+         End If
+         TotalIBS = TotalIBS + valorIBS
+         TotalCBS = TotalCBS + valorCBS
+         cntPeca = cntPeca + 1
+         If IsNull(Tb![Valor IBS]) Or Tb![Valor IBS] < 0 Or IsNull(Tb![Valor CBS]) Or Tb![Valor CBS] < 0 Then
+            vgDb.Execute "UPDATE [Pe?as da Nota Fiscal] SET [Valor IBS] = " & FormataValorSQL(valorIBS) & ", [Valor CBS] = " & FormataValorSQL(valorCBS) & _
+                        " WHERE [Seq??ncia da Pe?a Nota Fiscal] = " & Tb!SeqItem
+         End If
+         Tb.MoveNext
+      Loop
+   End If
+TrataIBS:
+   If Err.Number <> 0 Then
+      Debug.Print "DEBUG RTC: Falha ao atualizar IBS/CBS -> " & Err.Description
+      Err.Clear
+   Else
+      Debug.Print "DBG_NF: AtualizaValoresIBSCBS fim seq=" & SeqNota & " prod=" & cntProd & " conj=" & cntConj & " peca=" & cntPeca & " totalIBS=" & TotalIBS & " totalCBS=" & TotalCBS
+   End If
+   Set Tb = Nothing
+End Sub
+Private Sub MontaIBSCBS(ByRef objNFeUtil As Object, ByVal baseOperacao As Double, _
+   ByRef det_IBSCBS As String, ByRef det_IS As String, _
+   ByRef vBC As Double, ByRef vIBSUF As Double, ByRef vIBSMun As Double, ByRef vCBS As Double, _
+   Optional ByVal valorIBS_DB As Double = -1, Optional ByVal valorCBS_DB As Double = -1)
+   Dim ibscbs_CST As String
+   Dim ibscbs_cClassTrib As String
+   Dim ibscbs_pIBSUF As Double, ibscbs_pIBSMun As Double, ibscbs_pCBS As Double
+   Dim gIBSUF_xml As String, gIBSMun_xml As String, gCBS_xml As String, gIBSCBS_xml As String
+   Dim vIBS As Double
+   On Error GoTo TrataIBS
+   ibscbs_CST = "90"
+   ibscbs_cClassTrib = ""
+   vBC = baseOperacao
+   
+   ' Usar valores do banco se fornecidos, caso contr\u00e1rio calcular com constantes
+   If valorIBS_DB >= 0 And valorCBS_DB >= 0 Then
+      ' VALORES DO BANCO (CORRETO - j\u00e1 calculados por CalculaImposto)
+      vIBS = valorIBS_DB
+      vCBS = valorCBS_DB
+      ' Calcular IBSUF e IBSMun proporcionalmente
+      If RTC_PERC_IBSUF + RTC_PERC_IBSMUN > 0 Then
+         ibscbs_pIBSUF = RTC_PERC_IBSUF
+         ibscbs_pIBSMun = RTC_PERC_IBSMUN
+         vIBSUF = vIBS * (ibscbs_pIBSUF / (ibscbs_pIBSUF + ibscbs_pIBSMun))
+         vIBSMun = vIBS * (ibscbs_pIBSMun / (ibscbs_pIBSUF + ibscbs_pIBSMun))
+      Else
+         ibscbs_pIBSUF = 0
+         ibscbs_pIBSMun = 0
+         vIBSUF = vIBS
+         vIBSMun = 0
+      End If
+      If vBC > 0 And vIBSUF > 0 Then ibscbs_pIBSUF = (vIBSUF / vBC) * 100
+      If vBC > 0 And vIBSMun > 0 Then ibscbs_pIBSMun = (vIBSMun / vBC) * 100
+      If vBC > 0 And vCBS > 0 Then ibscbs_pCBS = (vCBS / vBC) * 100 Else ibscbs_pCBS = 0
+   Else
+      ' FALLBACK: Calcular com constantes (APENAS para compatibilidade)
+      ibscbs_pIBSUF = RTC_PERC_IBSUF
+      ibscbs_pIBSMun = RTC_PERC_IBSMUN
+      ibscbs_pCBS = RTC_PERC_CBS
+      vIBSUF = vBC * ibscbs_pIBSUF / 100
+      vIBSMun = vBC * ibscbs_pIBSMun / 100
+      vCBS = vBC * ibscbs_pCBS / 100
+      vIBS = vIBSUF + vIBSMun
+   End If
+   
+   gIBSUF_xml = objNFeUtil.gIBSUF(ibscbs_pIBSUF, 0, 0, 0, 0, 0, vIBSUF)
+   If ibscbs_pIBSMun > 0 Or vIBSMun > 0 Then
+      gIBSMun_xml = objNFeUtil.gIBSMun(ibscbs_pIBSMun, 0, 0, 0, 0, 0, vIBSMun)
+   Else
+      gIBSMun_xml = ""
+   End If
+   gCBS_xml = objNFeUtil.gCBS(ibscbs_pCBS, 0, 0, 0, 0, 0, vCBS)
+   On Error Resume Next
+   ' Usar gIBSCBSv130 (vers\u00e3o 5.0.0m) com 7 par\u00e2metros incluindo vIBS
+   gIBSCBS_xml = objNFeUtil.gIBSCBSv130(vBC, gIBSUF_xml, gIBSMun_xml, vIBS, gCBS_xml, "", "")
+   If Err.Number <> 0 Then
+      Err.Clear
+      ' Fallback para vers\u00e3o antiga (4 par\u00e2metros) se gIBSCBSv130 n\u00e3o existir
+      gIBSCBS_xml = objNFeUtil.gIBSCBS(vBC, gIBSUF_xml, gIBSMun_xml, gCBS_xml)
+      If Err.Number <> 0 Then
+         Err.Clear
+         gIBSCBS_xml = "<gIBSCBS><vBC>" & Format(vBC, "0.00") & "</vBC><vIBS>" & Format(vIBS, "0.00") & "</vIBS>" & gIBSUF_xml & gIBSMun_xml & gCBS_xml & "</gIBSCBS>"
+      End If
+   End If
+   On Error GoTo TrataIBS
+   det_IBSCBS = objNFeUtil.IBSCBSv130(ibscbs_CST, ibscbs_cClassTrib, "", gIBSCBS_xml, "", "")
+   det_IS = objNFeUtil.Is("90", "", 0, 0, 0, "", 0, 0)
+   Exit Sub
+TrataIBS:
+   Debug.Print "DEBUG RTC: Erro MontaIBSCBS -> " & Err.Description
+   det_IBSCBS = ""
+   det_IS = objNFeUtil.Is("90", "", 0, 0, 0, "", 0, 0)
+End Sub
 Private Sub AjustaValores()
    Dim IPIProdutos As New GRecordSet, IpiConjuntos As New GRecordSet, IpiPecas As New GRecordSet
    Dim ICMSProdutos As New GRecordSet, ICMSConjuntos As New GRecordSet, ICMSPecas As New GRecordSet
@@ -6293,15 +6592,19 @@ Private Sub AjustaValores()
    Dim ValorProdutos As New GRecordSet, ValorConjuntos As New GRecordSet, ValorPecas As New GRecordSet, ValorServicos As New GRecordSet
    Dim ValorPIS As New GRecordSet, valorCofins As New GRecordSet, BaseServicos As New GRecordSet, ValorISS As New GRecordSet
    Dim ValorNF As Currency, ValorII As New GRecordSet, ValorTributos As New GRecordSet
-
+   Dim ValorTotalIBS As Double, ValorTotalCBS As Double
    On Error GoTo DeuErro
+   Debug.Print "DBG_NF: AjustaValores start seq=" & Sequencia_da_Nota_Fiscal & " vgDb Is Nothing=" & (vgDb Is Nothing) & " Nota_Fiscal Is Nothing=" & (Nota_Fiscal Is Nothing)
    
    'Campos Optativos
    vgDb.Execute "Update [Nota Fiscal] Set [Tipo de Nota] = " & Tipo & ", Fechamento = " & Fechamento2 & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal
    'Cobrança da Manutenção
-   vgDb.Execute "Update [Manutenção Contas] Set [Seqüência da Cobrança] = " & Nota_Fiscal![Seqüência da Cobrança] & " WHERE [Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
+   If Not Nota_Fiscal Is Nothing Then
+      vgDb.Execute "Update [Manutenção Contas] Set [Seqüência da Cobrança] = " & Nota_Fiscal![Seqüência da Cobrança] & " WHERE [Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
+   End If
    
    If vgSituacao = ACAO_EXCLUINDO Then Exit Sub
+   AtualizaValoresIBSCBS Sequencia_da_Nota_Fiscal, ValorTotalIBS, ValorTotalCBS
    
    'Removido linha de baixa, pois tem que vir certo do orçamento
    'If GeralAux!Revenda And Not Nota_Fiscal![Nota Fiscal Avulsa] Then AjustaSubstituicao
@@ -6388,62 +6691,100 @@ Private Sub AjustaValores()
                                     "FROM [Produtos da Nota Fiscal] " & _
                                     "WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
                                                                                                 
-   ValorNF = IPIProdutos!Total + IpiConjuntos!Total + IpiPecas!Total + ValorProdutosUsados!Total + ValorConjuntosUsados!Total + ValorPecasUsadas!Total + ValorProdutos!Total + ValorConjuntos!Total + ValorPecas!Total + ValorServicos!Total + Valor_do_Seguro + Valor_do_Frete + Outras_Despesas
-   ValorNF = ValorNF + ICMSSTProdutos!Total + ICMSSTConjuntos!Total + ICMSSTPecas!Total + ValorII!Total
+   ' Cálculo do ValorNF usando função segura para acessar recordsets
+   ValorNF = GetRsValue(IPIProdutos, "Total") + GetRsValue(IpiConjuntos, "Total") + GetRsValue(IpiPecas, "Total") + _
+             GetRsValue(ValorProdutosUsados, "Total") + GetRsValue(ValorConjuntosUsados, "Total") + GetRsValue(ValorPecasUsadas, "Total") + _
+             GetRsValue(ValorProdutos, "Total") + GetRsValue(ValorConjuntos, "Total") + GetRsValue(ValorPecas, "Total") + _
+             GetRsValue(ValorServicos, "Total") + Valor_do_Seguro + Valor_do_Frete + Outras_Despesas
+   ValorNF = ValorNF + GetRsValue(ICMSSTProdutos, "Total") + GetRsValue(ICMSSTConjuntos, "Total") + GetRsValue(ICMSSTPecas, "Total") + GetRsValue(ValorII, "Total")
    
    If Mid(PegaValor("Natureza de Operação", "Código da Natureza de Operação", "[Seqüência da Natureza] = " & Sequencia_da_Natureza), 1, 1) = 3 Then
-      ValorNF = ValorNF + ICMSProdutos!Total + ICMSConjuntos!Total + ICMSPecas!Total + ValorISS!Total
+      ValorNF = ValorNF + GetRsValue(ICMSProdutos, "Total") + GetRsValue(ICMSConjuntos, "Total") + GetRsValue(ICMSPecas, "Total") + GetRsValue(ValorISS, "Total")
    End If
    
    ValorNF = Format(ValorNF + IIf(Fechamento = 0, CCur(ValorNF) * CCur(Valor_do_Fechamento) / 100, CCur(Valor_do_Fechamento)), "##,###,##0.00")
-   If Nota_Fiscal![Reter ISS] And ValorServicos.RecordCount > 0 Then ValorNF = ValorNF * (Nota_Fiscal![Alíquota Do ISS] / 100 + 1) 'Reter ISS
-   If ValorServicos.RecordCount > 0 Then ValorNF = ValorNF - Nota_Fiscal![Valor Do Imposto de Renda] 'Imposto de Renda Sempre Subtrai
+   If Not Nota_Fiscal Is Nothing Then
+      If Nota_Fiscal![Reter ISS] And Not ValorServicos Is Nothing And ValorServicos.RecordCount > 0 Then ValorNF = ValorNF * (Nota_Fiscal![Alíquota Do ISS] / 100 + 1) 'Reter ISS
+      If Not ValorServicos Is Nothing And ValorServicos.RecordCount > 0 Then ValorNF = ValorNF - Nota_Fiscal![Valor Do Imposto de Renda] 'Imposto de Renda Sempre Subtrai
+   End If
    
    'Atualizando
+   Debug.Print "DBG_NF: AjustaValores iniciando updates do banco seq=" & Sequencia_da_Nota_Fiscal
    vgDb.BeginTrans
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total IPI dos Produtos] = " & Substitui(IPIProdutos!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'IPI Produtos
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total IPI dos Conjuntos] = " & Substitui(IpiConjuntos!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'IPI Conjuntos
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total IPI das Peças] = " & Substitui(IpiPecas!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'IPI Peças
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do ICMS] = " & Substitui(ICMSProdutos!Total + ICMSConjuntos!Total + ICMSPecas!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do ICMS
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do ICMS ST] = " & Substitui(ICMSSTProdutos!Total + ICMSSTConjuntos!Total + ICMSSTPecas!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do ICMS ST
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total da Base de Cálculo] = " & Substitui(BaseProdutos!Total + BaseConjuntos!Total + BasePecas!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Base de Cálculo ICMS
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total da Base ST] = " & Substitui(BaseSTProdutos!Total + BaseSTConjuntos!Total + BaseSTPecas!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Base de Cálculo ICMS ST
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total de Produtos Usados] = " & Substitui(ValorProdutosUsados!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Produtos Usados
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total Conjuntos Usados] = " & Substitui(ValorConjuntosUsados!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Conjuntos Usados
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total das Peças Usadas] = " & Substitui(ValorPecasUsadas!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Peças Usadas
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total dos Produtos] = " & Substitui(ValorProdutos!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Produtos Novos
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total dos Conjuntos] = " & Substitui(ValorConjuntos!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Conjuntos Novos
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total das Peças] = " & Substitui(ValorPecas!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Peças Novas
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total dos Serviços] = " & Substitui(ValorServicos!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Serviços
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total IPI dos Produtos] = " & Substitui(GetRsValue(IPIProdutos, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'IPI Produtos
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total IPI dos Conjuntos] = " & Substitui(GetRsValue(IpiConjuntos, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'IPI Conjuntos
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total IPI das Peças] = " & Substitui(GetRsValue(IpiPecas, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'IPI Peças
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do ICMS] = " & Substitui(GetRsValue(ICMSProdutos, "Total") + GetRsValue(ICMSConjuntos, "Total") + GetRsValue(ICMSPecas, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do ICMS
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do ICMS ST] = " & Substitui(GetRsValue(ICMSSTProdutos, "Total") + GetRsValue(ICMSSTConjuntos, "Total") + GetRsValue(ICMSSTPecas, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do ICMS ST
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total da Base de Cálculo] = " & Substitui(GetRsValue(BaseProdutos, "Total") + GetRsValue(BaseConjuntos, "Total") + GetRsValue(BasePecas, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Base de Cálculo ICMS
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total da Base ST] = " & Substitui(GetRsValue(BaseSTProdutos, "Total") + GetRsValue(BaseSTConjuntos, "Total") + GetRsValue(BaseSTPecas, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Base de Cálculo ICMS ST
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total de Produtos Usados] = " & Substitui(GetRsValue(ValorProdutosUsados, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Produtos Usados
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total Conjuntos Usados] = " & Substitui(GetRsValue(ValorConjuntosUsados, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Conjuntos Usados
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total das Peças Usadas] = " & Substitui(GetRsValue(ValorPecasUsadas, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Peças Usadas
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total dos Produtos] = " & Substitui(GetRsValue(ValorProdutos, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Produtos Novos
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total dos Conjuntos] = " & Substitui(GetRsValue(ValorConjuntos, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Conjuntos Novos
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total das Peças] = " & Substitui(GetRsValue(ValorPecas, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Peças Novas
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total dos Serviços] = " & Substitui(GetRsValue(ValorServicos, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Serviços
    vgDb.Execute "Update [Nota Fiscal] Set [Valor Total da Nota Fiscal] = " & Substitui(CStr(ValorNF), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor da Nota
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do PIS] = " & Substitui(ValorPIS!pis, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor Total do PIS
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do COFINS] = " & Substitui(valorCofins!cofins, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor Total do COFINS
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total da Importação] = " & Substitui(ValorII!Total, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do Imposto de Importação
-   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do Tributo] = " & Substitui(ValorTributos!Tributos, ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do Tributo
-   vgDb.CommitTrans
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do PIS] = " & Substitui(GetRsValue(ValorPIS, "pis"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor Total do PIS
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do COFINS] = " & Substitui(GetRsValue(valorCofins, "cofins"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor Total do COFINS
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total da Importação] = " & Substitui(GetRsValue(ValorII, "Total"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do Imposto de Importação
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total do Tributo] = " & Substitui(GetRsValue(ValorTributos, "Tributos"), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal 'Valor do Tributo
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total IBS] = " & FormataValorSQL(ValorTotalIBS) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal
+   vgDb.Execute "Update [Nota Fiscal] Set [Valor Total CBS] = " & FormataValorSQL(ValorTotalCBS) & " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal
+   Debug.Print "DBG_NF: AjustaValores atualizando recordset Nota_Fiscal, IsNothing=" & (Nota_Fiscal Is Nothing)
+   If Not Nota_Fiscal Is Nothing Then
+      Debug.Print "DBG_NF: AjustaValores editando Nota_Fiscal IBS=" & ValorTotalIBS & " CBS=" & ValorTotalCBS
       
-   Produtos_da_Nota_Fiscal.Requery
-   Pecas_da_Nota_Fiscal.Requery
-   Servicos_da_Nota_Fiscal.Requery
-   Conjuntos_da_Nota_Fiscal.Requery
+      ' Tentar atualizar os campos IBS/CBS no recordset (pode falhar se metadados não foram recarregados)
+      On Error Resume Next
+      Nota_Fiscal.Edit
+      
+      ' Verificar se os campos existem antes de tentar atualizar
+      Dim tempoErr As Long
+      tempoErr = Err.Number
+      Nota_Fiscal![Valor Total IBS] = ValorTotalIBS
+      If Err.Number <> 0 Then
+         Debug.Print "DBG_NF: AVISO - Campo [Valor Total IBS] não encontrado no recordset (Err=" & Err.Number & "). Valores já foram salvos via SQL."
+         Err.Clear
+      End If
+      
+      Nota_Fiscal![Valor Total CBS] = ValorTotalCBS
+      If Err.Number <> 0 Then
+         Debug.Print "DBG_NF: AVISO - Campo [Valor Total CBS] não encontrado no recordset (Err=" & Err.Number & "). Valores já foram salvos via SQL."
+         Err.Clear
+      End If
+      
+      Nota_Fiscal.Update
+      On Error GoTo DeuErro
+   Else
+      Debug.Print "DBG_NF: WARNING - Nota_Fiscal é Nothing, não foi possível atualizar recordset"
+   End If
+   vgDb.CommitTrans
+   Debug.Print "DBG_NF: AjustaValores done seq=" & Sequencia_da_Nota_Fiscal & " IBS=" & ValorTotalIBS & " CBS=" & ValorTotalCBS
+      
+   On Error Resume Next
+   If Not Produtos_da_Nota_Fiscal Is Nothing Then Produtos_da_Nota_Fiscal.Requery
+   If Not Pecas_da_Nota_Fiscal Is Nothing Then Pecas_da_Nota_Fiscal.Requery
+   If Not Servicos_da_Nota_Fiscal Is Nothing Then Servicos_da_Nota_Fiscal.Requery
+   If Not Conjuntos_da_Nota_Fiscal Is Nothing Then Conjuntos_da_Nota_Fiscal.Requery
+   On Error GoTo DeuErro
+   
+   Exit Sub
    
 DeuErro:
-   If Err Then
-      MsgBox Err.Descption, vbCritical + vbOKOnly, vaTitulo
+   If Err.Number <> 0 Then
+      MsgBox Err.Description, vbCritical + vbOKOnly, vaTitulo
       vgDb.RollBackTrans
    End If
-
 End Sub
-
 Private Sub AbreCancelamento()
    On Error Resume Next
    
    Load frmF_CanNF
    frmF_CanNF.txtNota.Value = Sequencia_da_Nota_Fiscal
    frmF_CanNF.Show
-
 End Sub
-
 'Private Sub ConsultaNota()
 '   On Error Resume Next
    
@@ -6457,10 +6798,8 @@ End Sub
 '   Form_Activate
    
 'End Sub
-
 Private Function UltimaParcela() As Long
    Dim Tb As New GRecordSet
-
    On Error Resume Next
    
    Set Tb = vgDb.OpenRecordSet("SELECT MAX([Número da Parcela]) PC FROM [Parcelas Nota Fiscal] WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
@@ -6470,9 +6809,7 @@ Private Function UltimaParcela() As Long
    Else
       UltimaParcela = 1
    End If
-
 End Function
-
 Private Function UltimoDias() As Long
    Dim Tb As New GRecordSet
    
@@ -6485,20 +6822,14 @@ Private Function UltimoDias() As Long
    Else
       UltimoDias = 0
    End If
-
 End Function
-
-
 Private Sub GerenciarCamposTransporte()
     On Error Resume Next
-
     Dim idxs   As Variant
     Dim i      As Integer
     Dim Codigo As Integer
-
     Codigo = val(txtCp(17).Text)
     idxs = Array(26, 15, 16, 8, 5, 7, 2, 19, 20, 22, 25, 23, 24, 51, 50, 56)
-
     If Codigo = 9 Then
         txtCampo(4).Enabled = False
         For i = LBound(idxs) To UBound(idxs)
@@ -6512,12 +6843,9 @@ Private Sub GerenciarCamposTransporte()
     End If
     On Error GoTo 0
 End Sub
-
 Private Sub txtCp_Click(Index As Integer)
     If Index = 17 Then GerenciarCamposTransporte
 End Sub
-
-
 Private Function UltimoVencimento() As Variant
    Dim Tb As New GRecordSet, RetVal As Variant
    
@@ -6539,15 +6867,11 @@ Private Function UltimoVencimento() As Variant
    Else
       UltimoVencimento = RetVal = Nota_Fiscal![Data de Emissão]
    End If
-
 End Function
-
-
 'Rotina para Buscar a NFSe
 Private Sub RetornaNFSe()
    Dim objNFSe As Object, resultado As String, Arq As Long, Situacao As String, cStat As Byte, Recibo As String
    Dim XML As New GRecordSet, i As Long
-
    On Error GoTo DeuErro
    
    Screen.MousePointer = vbHourglass ' normal
@@ -6669,9 +6993,7 @@ SaiDaSub:
    Else
       lblProgresso.Caption = "AMBIENTE NFe EM MODO TESTE"
    End If
-
 End Sub
-
 'Dados Adicionais da NFe
 Private Function ReservadoFisco(Usado As Boolean, Reducao As Boolean, Diferido As Boolean, SeqProp As Long, Optional Revenda As Boolean, Optional Isento As Boolean, Optional IcmsDest As Double, Optional IcmsRemet As Double) As String
    Dim Natureza As New GRecordSet, Tb1 As New GRecordSet, Produtor As Boolean, Propriedade As New GRecordSet, IPIZero As Boolean, NCMConj As Long, TbGeral As New GRecordSet, OrgonPublico As Boolean, TbMun As New GRecordSet, UF As String, SeqMun As Long, Suframa As Boolean, Cumulativo As Boolean
@@ -6704,9 +7026,10 @@ Private Function ReservadoFisco(Usado As Boolean, Reducao As Boolean, Diferido A
    Set Propriedade = vgDb.OpenRecordSet("SELECT UF " & _
                                         "FROM Propriedades LEFT JOIN Municípios ON Propriedades.[Seqüência Do Município] = Municípios.[Seqüência Do Município] " & _
                                         "WHERE [Seqüência da Propriedade] = " & SeqProp)
-                                        
-                                        
-   NCMConj = frmNotaFisc.vgTb![Seqüência da Classificação]
+
+
+
+NCMConj = frmNotaFisc.vgTb![Seqüência da Classificação]
    
    If Propriedade.RecordCount > 0 Then
       Produtor = Propriedade!UF = "SP" 'É Produtor Paulista
@@ -6719,7 +7042,6 @@ Private Function ReservadoFisco(Usado As Boolean, Reducao As Boolean, Diferido A
       End Select
       Tb1.MoveNext
    Loop
-
  If Tipo_de_Nota = 0 And UF <> "SP" Then ' So em NFe de Saida
    Do While Not TB2.EOF
       Select Case TB2![Seqüência do Produto]
@@ -6792,7 +7114,6 @@ Private Function ReservadoFisco(Usado As Boolean, Reducao As Boolean, Diferido A
    If Suframa And Revenda And SeqMun = 5642 Or SeqMun = 711 Or SeqMun = 1415 Or SeqMun = 1256 Or SeqMun = 1183 Or SeqMun = 1151 Or SeqMun = 1170 Or SeqMun = 1171 Or SeqMun = 1055 Then
       ReservadoFisco = ReservadoFisco & "Isento do Icms Conforme Art. 5o do Decreto 45490/2000.;"
    End If
-
    If OrgonPublico And UF = "SP" Then
       ReservadoFisco = ReservadoFisco & "Isento do Icms Conforme Art. 55 do Ricms/00,Livro 6 Anexo I, Paragrafo 4.;"
    End If
@@ -6876,8 +7197,6 @@ Private Function ReservadoFisco(Usado As Boolean, Reducao As Boolean, Diferido A
    Loop
   
 End Function
-
-
 Private Sub GeraNota()
     '–––– variáveis ––––
     Dim hFile            As Long          ' handle de arquivo
@@ -6887,68 +7206,54 @@ Private Sub GeraNota()
     Dim UltimaEletronica As New GRecordSet
     Dim tpAmb            As Integer
     Dim DataEmissaoAtual As Date
-
     On Error Resume Next
-
     ' Se já tiver Número da NF > 0, sai
     If Nota_Fiscal![Número da Nota Fiscal] > 0 Then Exit Sub
     ' Se Nº da NFe < 9000 e usuário <> YGOR, sai
     If Nota_Fiscal![Número da NFe] < 9000 And vgPWUsuario <> "YGOR" Then Exit Sub
-
     ' Confirma envio quando ainda não está transmitida
     If Not Transmitido Then
         If MsgBox("Deseja Enviar essa Nota Fiscal?", vbQuestion + vbYesNo, vaTitulo) = vbNo Then Exit Sub
     End If
-
     ' Descobre próximo número de NFe, NFSe e Contrato
     Set UltimaEletronica = vgDb.OpenRecordSet( _
         "SELECT MAX([Número da NFe]) AS NFe, " & _
         "MAX([Número da NFSe]) AS NFSe, " & _
         "MAX([Número do Contrato]) AS Contrato " & _
         "FROM [Nota Fiscal]")
-
     ' Atribui novo número de NFe, se ainda for zero
     If Nota_Fiscal![Número da NFe] = 0 Then
         vgDb.Execute "UPDATE [Nota Fiscal] SET [Número da NFe] = " & UltimaEletronica!NFe + 1 & _
                      " WHERE [Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
         Reposition
     End If
-
     ' –––– fluxo A: ainda não transmitida – pré-validação ––––
     If Not Transmitido Then
         tpAmb = Parametros_da_NFe!ambiente       ' 0 = prod / 1 = homol
         DataEmissaoAtual = txtCampo(68).Value
-
         If tpAmb <> 0 Then
             MsgBox "Você está EMITINDO EM HOMOLOGAÇÃO." & vbCrLf & _
                    "Data de Emissão que será usada no XML: " & _
                    Format(DataEmissaoAtual, "dd/mm/yyyy"), _
                    vbInformation, "Aviso de Homologação"
         End If
-
         PreValidaNFE                             ' monta e assina o XML
         Exit Sub
     End If
-
     ' –––– fluxo B: já transmitida ––––
     caminhoBase = "\\Srvdc\Rede$\Faturamento\Nfe_Autorizados\"
     caminhoXML = caminhoBase & _
                  Format(Nota_Fiscal![Número da NFe], "000000") & "_AUTORIZADO.xml"
-
     hFile = FreeFile
     Open caminhoXML For Input As #hFile
         NFXmlAssinada = Input$(LOF(hFile), hFile)
     Close #hFile
-
     If Not Novo_Layout Then
         RetornoNFe500 NFXmlAssinada, 0, "", "", ""
     Else
         RetornoNFe NFXmlAssinada, 0, "", "", ""
     End If
 End Sub
-
-
-
 Private Sub Tabs_MouseDown(Index As Integer, Button As Integer, Shift As Integer, x As Single, y As Single)
    Dim Cancel As Boolean, hMenu As Long, pt As POINTAPI
    If Button = 2 And Not Imprimiu Then
@@ -6962,7 +7267,6 @@ Private Sub Tabs_MouseDown(Index As Integer, Button As Integer, Shift As Integer
       vgPriVez = False
    End If
 End Sub
-
 'evento - quando o botão for pressionado o Botão do PopupMenu
 Private Sub AcaoPopAmbiente(Index As Integer)
    Select Case Index
@@ -7005,10 +7309,6 @@ Private Sub AcaoPopAmbiente(Index As Integer)
    End Select
    Reposition
 End Sub
-
-
-
-
 '------------------------------------------------------------
 '  RetornoNFe  –  adaptado ao ENVIOS SÍNCRONOS (EnviaNFSincrono)
 '------------------------------------------------------------
@@ -7027,21 +7327,17 @@ Private Sub RetornoNFe( _
         nroProtocolo As String, _
         dhProtocolo As String, _
         msgResultado As String)
-
     Dim Arq        As Long
     Dim tpAmbiente As Long
     Dim XML        As New GRecordSet
-
     On Error GoTo DeuErro
     Screen.MousePointer = vbHourglass
     lblProgresso.Caption = "Processando retorno da NFe..."
-
     If Parametros_da_NFe!ambiente = 0 Then
         tpAmbiente = 1               ' Produção
     Else
         tpAmbiente = 2               ' Homologação
     End If
-
     '––––– STATUS JÁ É DEFINITIVO –––––
     Select Case cStat
         Case 100, 150           ' Autorizada
@@ -7051,11 +7347,9 @@ Private Sub RetornoNFe( _
             PrepBotoes Me, vgSituacao
             ExecutaPreValidacao
             DANFE
-
         Case 101                ' Denegada
             GravaAutorizada NFXmlAssinada, nroProtocolo, dhProtocolo, tpAmbiente, False
             MsgBox "NFe Denegada!", vbExclamation, vaTitulo
-
         Case Else               ' Rejeitada
             MsgBox cStat & " – " & msgResultado, vbCritical, "NFe Rejeitada"
             With vgTb
@@ -7065,17 +7359,14 @@ Private Sub RetornoNFe( _
                 .Update
             End With
     End Select
-
 SaiDaSub:
     Screen.MousePointer = vbDefault
     lblProgresso.Caption = IIf(tpAmbiente = 1, "", "AMBIENTE NFe EM MODO TESTE")
     Exit Sub
-
 DeuErro:
     MsgBox Err.Description, vbCritical, vaTitulo
     Resume SaiDaSub
 End Sub
-
 '------------------------------------------------------------
 '  GravaAutorizada  –  salva XML + atualiza tabelas
 '------------------------------------------------------------
@@ -7085,9 +7376,7 @@ Private Sub GravaAutorizada( _
         dhProt As String, _
         tpAmb As Long, _
         autorizada As Boolean)
-
     Dim Arq As Long, pastaOut As String, NomeArq As String, XML As New GRecordSet
-
     '––– atualiza tabela Nota_Fiscal –––
     With Nota_Fiscal
         .Edit
@@ -7099,7 +7388,6 @@ Private Sub GravaAutorizada( _
         .Update
         .BookMark = .LastModified
     End With
-
     '––– define caminho de saída –––
     If tpAmb = 1 Then  ' Produção
         pastaOut = Parametros_da_NFe![Diretório 1 NFe Produção]
@@ -7107,13 +7395,11 @@ Private Sub GravaAutorizada( _
         pastaOut = Parametros_da_NFe![Diretório 1 NFe Homologação]
     End If
     NomeArq = Format(Nota_Fiscal![Número da NFe], "000000") & "_AUTORIZADO.xml"
-
     If Dir(pastaOut & NomeArq, vbArchive) <> "" Then Kill pastaOut & NomeArq
     Arq = FreeFile
     Open pastaOut & NomeArq For Output As #Arq
         Print #Arq, procNFe
     Close #Arq
-
     '––– opcional: guarda numa tabela –––
     Set XML = vgDb.OpenRecordSet("SELECT * FROM [Notas Autorizadas]")
     With XML
@@ -7123,7 +7409,6 @@ Private Sub GravaAutorizada( _
         .Update
     End With
 End Sub
-
 '------------------------------------------------------------
 '  AppendMsg  – concatena texto com quebra de linha
 '------------------------------------------------------------
@@ -7134,16 +7419,11 @@ Private Function AppendMsg(oldTxt As Variant, newTxt As String) As String
         AppendMsg = oldTxt & vbCrLf & newTxt
     End If
 End Function
-
-
-
 'Unidanfe e Prefeitura de Penapolis
 Public Sub DANFE()
    Dim CC As Byte, ret&, Transportadora As GRecordSet
-
    Debug.Print "DEBUG: DANFE - INICIO"
    On Error Resume Next
-
    Debug.Print "DEBUG: Verificando Numero_da_NFe"
    If Numero_da_NFe > 0 Then
       Debug.Print "DEBUG: Numero_da_NFe = " & Numero_da_NFe
@@ -7207,17 +7487,13 @@ Public Sub DANFE()
    End If
    Reposition
 End Sub
-
-
     Private Sub PreValidaNFE()
     Dim Tb As New GRecordSet, Itens As New GRecordSet
     Dim Vector() As String
     Dim Email As New clsEnviaEMail
     Dim i As Long, Campo As Variant, Mensagem As String
     Dim endereco As String, Servicos As New GRecordSet
-
     On Error GoTo DeuErro
-
     ' Aviso para Peso Bruto, Peso Líquido e Volumes
 If FinNFe <> 3 Then
     If val(txtCp(24).Text) = 0 Or val(txtCp(19).Text) = 0 Or val(txtCp(23).Text) = 0 Then
@@ -7229,7 +7505,6 @@ If FinNFe <> 3 Then
         End If          ' usuário optou por continuar ? prossegue
     End If
 End If
-
    
    Set Tb = vgDb.OpenRecordSet("SELECT [Descrição da Natureza Operação], [Código da Natureza de Operação], [Razão Social], Frete, N.[Seqüência da Propriedade], CNPJ, P.Endereço PEndereço, P.Complemento PComplemento, " & _
                                "P.Bairro PBairro, MP.[Código Do IBGE] MPIBGE, MP.UF MPUF, MP.Descrição MPDescrição, P.CEP PCEP, [CPF e CNPJ], G.Endereço GEndereço, G.Complemento GComplemento, G.Bairro GBairro, MG.[Código Do IBGE] MGIBGE, MG.UF MGUF, G.CEP GCEP, " & _
@@ -7270,7 +7545,7 @@ End If
    i = 0 'Tamanho do Vetor
    ReDim Preserve Vector(0) As String
    If Vazio(Tb![Descrição da Natureza Operação]) Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "Descrição da Natureza de Operação"
-   If FinNFe = 0 Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "Informe a Finalidade da NFe 1 - NFe Normal - 2 NFe Complementar - 3 NFe de Ajuste - 4 NFe Devolução / Retorno"
+   If FinNFe = 0 Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "Informe a Finalidade da NFe 1 - NFe Normal - 2 NFe Complementar - 3 NFe de Ajuste - 4 NFe Devolução / Retorno - 5 NFe Crédito IBS/CBS - 6 NFe Débito IBS/CBS"
    If Vazio(Tb![Razão Social]) Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "Razão Social (Geral)"
    If Vazio(Tb!frete) And FinNFe <> 3 Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "Tipo do Frete (Nota Fiscal)"
    
@@ -7279,12 +7554,10 @@ End If
       And Tb![Seqüência da Transportadora] = 0 _
       And Vazio(Tb![Nome da Transportadora Avulsa]) _
       And FinNFe <> 3 Then
-
       i = i + 1
       ReDim Preserve Vector(i)
       Vector(i - 1) = "Transportadora (Nota Fiscal)"
    End If
-
    
    If Tb![Seqüência da Propriedade] > 0 Then
       If Not Mid(Tb![Código da Natureza de Operação], 1, 1) = "7" And Not Mid(Tb![Código da Natureza de Operação], 1, 1) = "3" Then
@@ -7348,9 +7621,10 @@ End If
          If MsgBox("O Sistema Abreviou o que Deveria, mas NÃO foi o suficiente." & vbCrLf & Abreviacao(endereco) & vbCrLf & "Deseja Enviar mesmo assim?", vbYesNo + vbQuestion, vaTitulo) = vbNo Then Exit Sub
       End If
    End If
-   
-   
-   ' If Parametros_da_NFe!ambiente <> 0 Then
+
+
+
+' If Parametros_da_NFe!ambiente <> 0 Then
    '        Parametros_da_NFe![Diretório 1 NFe Homologação] = "C:\VERSOES DO SISTEMA\XML HOMOLOG IRRIG\"
     '   End If
     BlasterNFe400
@@ -7359,18 +7633,12 @@ DeuErro:
    If Err <> 0 Then
       MsgBox Err.Description, vbCritical + vbOKOnly, vaTitulo
    End If
-
 End Sub
-
-
-
-
 Private Sub PreValidaNFSe()
    Dim Tb As New GRecordSet, Itens As New GRecordSet, Parcelamento As New GRecordSet
    Dim Vector() As String
    Dim Email As New clsEnviaEMail
    Dim i As Long, vaPrivez As Boolean, Campo As Variant, Mensagem As String
-
    On Error GoTo DeuErro
    
    'ALGUNS CAMPOS OBRIGATÓRIOS
@@ -7500,9 +7768,7 @@ DeuErro:
    If Err <> 0 Then
       MsgBox Err.Description, vbCritical + vbOKOnly, vaTitulo
    End If
-
 End Sub
-
 Private Sub AbreProforma()
    On Error Resume Next
    
@@ -7517,9 +7783,7 @@ Private Sub AbreProforma()
    InicializaFiltro FProforma
    FProforma.Reposition
    FProformaAberto = True
-
 End Sub
-
 'ROTINA PARA MONTAR XML DA NOTA FISCAL ELETRONICA DE SERVIÇO ISSONLINE
 Private Sub MasterNFSe()
    '====VARIAVEIS AVULSAS====
@@ -7539,7 +7803,6 @@ Private Sub MasterNFSe()
    Dim Descricao As String, ValorUnit As String, Quantidade As String, Servicos As String
    '====CONSOLIDA NFSE====
    Dim NFSe As String
-
    On Error GoTo DeuErro
    
    Screen.MousePointer = vbHourglass ' Ampulheta
@@ -7654,7 +7917,6 @@ Private Sub MasterNFSe()
    
    '----Consolidação NFSe----
    NFSe = objNFSe.ConsolidaNFSe(Identificacao, dadosNFSe, Servicos)
-
    'Salvando o xml...
    Arq = FreeFile
    If Parametros_da_NFe!ambiente = 0 Then 'Produção
@@ -7764,7 +8026,6 @@ SaiDaSub:
       lblProgresso.Caption = "AMBIENTE NFSe EM MODO TESTE"
    End If
 End Sub
-
 'Vamos Ajustar a Substituição se modificarmos os valores Adicionais
 'Private Sub AjustaSubstituicao()
 '   Dim Produtos As New GRecordSet, Pecas As New GRecordset, Conjuntos As New GRecordset
@@ -7821,11 +8082,9 @@ End Sub
 '   End If
 '
 'End Sub
-
 Private Sub Tabs_Click(Index As Integer, PreviousTab As Integer)
    MudaTamCampos Me
 End Sub
-
 Private Sub DANFSE()
    On Error Resume Next
    
@@ -7840,7 +8099,6 @@ Private Sub DANFSE()
    CentraNaTela frmDNFSe
    frmDNFSe.AbreSite frmNotaFisc.vgTb![Recibo NFSe]
 End Sub
-
 'Procedimento para enviar ou abrir a nota
 Private Sub SuperAcao()
    If cmdDanfe.Caption = "DANFE" Then
@@ -7849,7 +8107,6 @@ Private Sub SuperAcao()
       GeraNota 'Vamos Enviar a Nota
    End If
 End Sub
-
 Private Function PegaNCMPadrao() As Long
    Dim Ncm As New GRecordSet
    
@@ -7860,9 +8117,7 @@ Private Function PegaNCMPadrao() As Long
    If Ncm.RecordCount > 0 Then
       PegaNCMPadrao = Ncm![Seqüência da Classificação]
    End If
-
 End Function
-
 Private Function VerificaDebitos() As Boolean
    Dim Tb As New GRecordSet
    
@@ -7873,9 +8128,51 @@ Private Function VerificaDebitos() As Boolean
    If Tb.RecordCount > 0 Then
       VerificaDebitos = True
    End If
-
 End Function
-
+Private Function ValorCampoOpcionalNota(ByVal NomeCampo As String) As String
+   On Error Resume Next
+   ValorCampoOpcionalNota = ""
+   If Nota_Fiscal Is Nothing Then
+      Exit Function
+   End If
+   ValorCampoOpcionalNota = Trim$(CStr(Nota_Fiscal.Fields(NomeCampo).Value))
+   If Err.Number <> 0 Then
+      Err.Clear
+      ValorCampoOpcionalNota = ""
+   End If
+   On Error GoTo 0
+End Function
+Private Function ApenasNumeros(ByVal Valor As String) As String
+   Dim i As Long, digito As String, limpo As String
+   limpo = ""
+   For i = 1 To Len(Valor)
+      digito = Mid$(Valor, i, 1)
+      If digito >= "0" And digito <= "9" Then
+         limpo = limpo & digito
+      End If
+   Next i
+   ApenasNumeros = limpo
+End Function
+Private Function NormalizaCodigoRTC(ByVal Valor As String) As String
+   Dim limpo As String
+   limpo = ApenasNumeros(Trim$(Valor))
+   If limpo = "" Then
+      Exit Function
+   End If
+   NormalizaCodigoRTC = Right$("00" & limpo, 2)
+End Function
+Private Function EhTpNFDebitoValido(ByVal Codigo As String) As Boolean
+   Select Case Codigo
+      Case "01", "02", "03", "04", "05", "06", "07", "08"
+         EhTpNFDebitoValido = True
+   End Select
+End Function
+Private Function EhTpNFCreditoValido(ByVal Codigo As String) As Boolean
+   Select Case Codigo
+      Case "01", "02", "03", "04"
+         EhTpNFCreditoValido = True
+   End Select
+End Function
 'Tp 0 = (Orçamento ou F. Proforma)/Ordem de Serviço; 1 = Pedido/Mvto
 Private Sub AbreOrigem(Tp As Byte)
    Dim Sequencia As Long, Origem As String
@@ -7927,9 +8224,7 @@ Private Sub AbreOrigem(Tp As Byte)
          frmMvtoEsto.SetFocus
          frmMvtoEsto.Reposition
    End Select
-
 End Sub
-
 'Tp 0 = (Orçamento ou F. Proforma)/Ordem de Serviço; 1 = Pedido/Mvto
 Private Function Numero(Tp As Byte, Optional Sequencia As Long, Optional Origem As String) As String
    Dim Tb As New GRecordSet
@@ -7974,7 +8269,6 @@ Private Function Numero(Tp As Byte, Optional Sequencia As Long, Optional Origem 
    End If
    
 End Function
-
 Public Sub AbreDeclarações(SeqNF As Long, SeqProdNF As Long)
    On Error Resume Next
       
@@ -7988,7 +8282,6 @@ Public Sub AbreDeclarações(SeqNF As Long, SeqProdNF As Long)
    frmDecImpor.SetFocus
          
 End Sub
-
 'Private Sub SuperAtualizaProdutos(Opcao As Byte)
 '   Dim Tributos As Double
 '   Dim TotalItens As Double, PercentualRateio As Double, VrItem As Double, PercentualFrete As Double, VrReducao As Double
@@ -8107,9 +8400,7 @@ End Sub
    
 'SaiDaSub:
 '   Screen.MousePointer = vbDefault
-
 'End Sub
-
 Private Sub SuperAtualizaProdutos(Opcao As Byte)
    Dim Tributos As Double, OutrasDespesas As Double, PercentualOutros As Double
    Dim TotalItens As Double, PercentualRateio As Double, VrItem As Double, PercentualFrete As Double, VrReducao As Double
@@ -8234,11 +8525,8 @@ Private Sub SuperAtualizaProdutos(Opcao As Byte)
    
 SaiDaSub:
    Screen.MousePointer = vbDefault
-
 End Sub
-
 Private Sub SuperAtualizaPecas(Opcao As Byte)
-
    On Error GoTo SaiDaSub
        
    Screen.MousePointer = vbHourglass
@@ -8275,11 +8563,8 @@ Private Sub SuperAtualizaPecas(Opcao As Byte)
    
 SaiDaSub:
    Screen.MousePointer = vbDefault
-
 End Sub
-
 Private Sub SuperAtualizaConjuntos(Opcao As Byte)
-
    On Error GoTo SaiDaSub
          
    Screen.MousePointer = vbHourglass
@@ -8316,10 +8601,7 @@ Private Sub SuperAtualizaConjuntos(Opcao As Byte)
   
 SaiDaSub:
    Screen.MousePointer = vbDefault
-
 End Sub
-
-
 Private Sub AtualizaValoresConjuntos()
    Dim Tributos As Double, ValorFrete As Double, ValorSeguro As Double, ValorAcresDesc As Double
    Dim PercentualFrete As Double, TotalItens As Double, PercentualRateio As Double
@@ -8400,9 +8682,7 @@ Private Sub AtualizaValoresConjuntos()
    
 SaiDaSub:
    Screen.MousePointer = vbDefault
-
 End Sub
-
 Private Sub AtualizaValoresPecas()
    Dim Tributos As Double, ValorFrete As Double, ValorSeguro As Double, ValorAcresDesc As Double
    Dim PercentualFrete As Double, TotalItens As Double, PercentualRateio As Double
@@ -8484,34 +8764,26 @@ Private Sub AtualizaValoresPecas()
    
 SaiDaSub:
    Screen.MousePointer = vbDefault
-
 End Sub
-
 Private Sub AtualizaValoresProdutos()
     Dim Tributos As Double
     Dim ValorFrete As Double, ValorSeguro As Double, ValorAcresDesc As Double
     Dim Outros As Double
     Dim NCMProd As String
-
     Screen.MousePointer = vbHourglass
-
     If Produtos_da_Nota_Fiscal.RecordCount > 0 Then
-
         ValorFrete = 0
         ValorSeguro = 0
         ValorAcresDesc = 0
         Outros = 0
-
         If vgSituacao = -ACAO_INCLUINDO Or vgSituacao = -ACAO_EDITANDO Then
             If ValorAcresDesc = 0 And ValorFrete = 0 And ValorSeguro = 0 And Outros = 0 Then GoTo SaiDaSub
         End If
-
         Produtos_da_Nota_Fiscal.MoveFirst
         Do While Not Produtos_da_Nota_Fiscal.EOF
             Tributos = 0
             With Produtos_da_Nota_Fiscal
                 .Edit
-
                 '---- cálculos padrão de ICMS, IPI etc. ----
                 ![Valor da Base de Cálculo] = CalculaImposto( _
                    ![Seqüência do Produto], Nota_Fiscal![Seqüência Do Geral], _
@@ -8522,7 +8794,6 @@ Private Sub AtualizaValoresProdutos()
                    7, 1, (!Quantidade * ![Valor Unitário]) + ValorFrete + ValorAcresDesc + ValorSeguro, _
                    0, Nota_Fiscal![Seqüência da Propriedade], , , MunicipioAux!UF)
                 Tributos = Tributos + ![Valor Do Icms]
-
                 ![Alíquota Do ICMS] = CalculaImposto( _
                    ![Seqüência do Produto], Nota_Fiscal![Seqüência Do Geral], _
                    3, 1, !Quantidade * ![Valor Unitário], 0, _
@@ -8531,7 +8802,6 @@ Private Sub AtualizaValoresProdutos()
                    ![Seqüência do Produto], Nota_Fiscal![Seqüência Do Geral], _
                    2, 1, !Quantidade * ![Valor Unitário], 0, _
                    Nota_Fiscal![Seqüência da Propriedade], , , MunicipioAux!UF)
-
                 ![Valor do IPI] = CalculaImposto( _
                    ![Seqüência do Produto], Nota_Fiscal![Seqüência Do Geral], _
                    8, 1, !Quantidade * ![Valor Unitário], 0, _
@@ -8541,22 +8811,18 @@ Private Sub AtualizaValoresProdutos()
                    ![Seqüência do Produto], Nota_Fiscal![Seqüência Do Geral], _
                    4, 1, !Quantidade * ![Valor Unitário], 0, _
                    Nota_Fiscal![Seqüência da Propriedade], , , MunicipioAux!UF)
-
                 '---- nova regra: revenda .102 ou .922 com NCM 84248 ? zera PIS/Cofins ----
                 If IsNull(![Ncm]) Then
                     NCMProd = ""
                 Else
                     NCMProd = ![Ncm]
                 End If
-
                 If ((Right$(Trim$(![CFOP]), 3) = "102") Or (Right$(Trim$(![CFOP]), 3) = "922")) _
                    And Left$(NCMProd, 5) = "84248" Then
-
                     ![Alíquota Do PIS] = 0
                     ![Valor Do PIS] = 0
                     ![Alíquota Do Cofins] = 0
                     ![Valor Do Cofins] = 0
-
                 Else
                     '---- lógica original de PIS/Cofins ----
                     Select Case !CFOP
@@ -8575,28 +8841,19 @@ Private Sub AtualizaValoresProdutos()
                             Tributos = Tributos + ![Valor Do Cofins]
                     End Select
                 End If   ' ? encerra a regra do NCM
-
                 Tributos = Tributos + ![Valor ICMS ST]
                 ![Valor Do Tributo] = Tributos
-
                 .Update
                 .BookMark = .LastModified
                 .MoveNext
             End With
         Loop
-
         GrdProdutos.ReBind
         Reposition True
     End If
-
 SaiDaSub:
     Screen.MousePointer = vbDefault
 End Sub
-
-
-
-
-
 'Retorna Ação Change' para 'CONJUNTO AVULSO
 Private Sub LimpaNcm()
    If Conjunto_Avulso = True Then
@@ -8605,10 +8862,8 @@ Private Sub LimpaNcm()
       Ncm.Value = 27
    End If
 End Sub
-
 Private Function PesoBruto()
 Dim Tb As New GRecordSet, Tb1 As New GRecordSet, TB2 As New GRecordSet
-
 Set TB2 = vgDb.OpenRecordSet(" Select Quantidade,Peso From [Peças da Nota Fiscal]PeNF,Produtos P Where P.[Seqüência do Produto] = PeNF.[Seqüência do Produto] And  PeNF.[Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
 Set Tb1 = vgDb.OpenRecordSet(" Select Quantidade,[Peso do Conjunto] From [Conjuntos da Nota Fiscal]CNF,Conjuntos C Where C.[Seqüência do Conjunto] = CNF.[Seqüência do Conjunto] And  CNF.[Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
 If Tb1.RecordCount > 0 Or TB2.RecordCount > 0 Then
@@ -8616,14 +8871,11 @@ Set TB2 = vgDb.OpenRecordSet("Select Sum (PeNF.Quantidade * P.Peso)As Soma2 from
 Set Tb1 = vgDb.OpenRecordSet("Select Sum (CNF.Quantidade * C.[Peso do Conjunto])As Soma1 from Conjuntos C,[Conjuntos da Nota Fiscal]CNF where C.[Seqüência do Conjunto] = CNF.[Seqüência do Conjunto] and CNF.[Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
 Bruto.Text = (Tb1!Soma1 + TB2!Soma2): Exit Function
 End If
-
 Set Tb = vgDb.OpenRecordSet("Select Sum (PNF.Quantidade * P.Peso)As Soma from Produtos P,[Produtos da Nota Fiscal]PNF where P.[Seqüência do Produto] = PNF.[Seqüência do Produto] and PNF.[Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
 If Tb.RecordCount > 0 Then
 Bruto.Text = Tb!Soma: Exit Function
 End If
 End Function
-
-
 '------------------------------------------------------------
 '  RetornoNFe500– compatível com envio SÍNCRONO (5.00)
 '
@@ -8639,9 +8891,7 @@ Private Sub RetornoNFe500( _
         ByVal nroProtocolo As String, _
         ByVal dhProtocolo As String, _
         ByVal msgResultado As String)
-
     Dim tpAmbiente As Long
-
 On Error GoTo DeuErro
     Debug.Print "=========================================="
     Debug.Print "RetornoNFe500 - INICIO"
@@ -8652,10 +8902,8 @@ On Error GoTo DeuErro
     Debug.Print "  - dhProtocolo: " & dhProtocolo
     Debug.Print "  - msgResultado: " & Left$(msgResultado, 200)
     Debug.Print "  - NFXmlAssinada len: " & Len(NFXmlAssinada)
-
     Screen.MousePointer = vbHourglass
     Debug.Print "DEBUG: MousePointer definido"
-
     ' Ambiente (1=Produção, 2=Homologação)
     Debug.Print "DEBUG: Verificando Parametros_da_NFe..."
     If Parametros_da_NFe Is Nothing Then
@@ -8663,7 +8911,6 @@ On Error GoTo DeuErro
     Else
         Debug.Print "DEBUG: Parametros_da_NFe OK"
     End If
-
     Debug.Print "DEBUG: Definindo tpAmbiente"
     If Parametros_da_NFe!ambiente = 0 Then
         tpAmbiente = 1
@@ -8671,16 +8918,13 @@ On Error GoTo DeuErro
         tpAmbiente = 2
     End If
     Debug.Print "DEBUG: tpAmbiente = " & tpAmbiente
-
     ' Mapeamento de status (principais):
     ' 100 = Autorizado uso da NF-e
     ' 150 = Autorizado (fora do prazo)
     ' 110/301/302/303 = Uso denegado (irregularidade)
     ' 101 = Cancelamento da NF-e homologado
     ' Demais = Rejeição
-
     Select Case cStat
-
         '==========================
         ' AUTORIZADA (sucesso)
         '==========================
@@ -8692,7 +8936,6 @@ On Error GoTo DeuErro
             Else
                 Debug.Print "DEBUG: Nota_Fiscal OK"
             End If
-
             With Nota_Fiscal
                 Debug.Print "DEBUG: Chamando Nota_Fiscal.Edit"
                 .Edit
@@ -8712,14 +8955,12 @@ On Error GoTo DeuErro
                 .BookMark = .LastModified
                 Debug.Print "DEBUG: BookMark OK"
             End With
-
             Debug.Print "DEBUG: Verificando objeto vgTb..."
             If vgTb Is Nothing Then
                 Debug.Print "ERRO: vgTb e Nothing!"
             Else
                 Debug.Print "DEBUG: vgTb OK"
             End If
-
             With vgTb
                 Debug.Print "DEBUG: Chamando vgTb.Edit"
                 .Edit
@@ -8735,12 +8976,10 @@ On Error GoTo DeuErro
                 .BookMark = .LastModified
                 Debug.Print "DEBUG: vgTb.BookMark OK"
             End With
-
             ' Salva o procNFe autorizado
             Debug.Print "DEBUG: Chamando SalvaXML..."
             SalvaXML NFXmlAssinada, tpAmbiente, True
             Debug.Print "DEBUG: SalvaXML retornou OK"
-
             Debug.Print "DEBUG: Mostrando MsgBox Autorizada"
             MsgBox "NF-e Autorizada!", vbInformation, vaTitulo
             Debug.Print "DEBUG: MsgBox fechado, definindo vgSituacao"
@@ -8753,7 +8992,6 @@ On Error GoTo DeuErro
             DANFE
             Debug.Print "DEBUG: DANFE OK, finalizando Case 100/150"
             GoTo SaiDaSub
-
         '==========================
         ' USO DENEGADO
         ' 110 / 301 / 302 / 303
@@ -8773,7 +9011,6 @@ On Error GoTo DeuErro
                 .Update
                 .BookMark = .LastModified
             End With
-
             With vgTb
                 .Edit
                 If Vazio(!Observação) Then
@@ -8784,12 +9021,10 @@ On Error GoTo DeuErro
                 .Update
                 .BookMark = .LastModified
             End With
-
             ' Salva o XML com denegação (procNFe contendo protNFe de denegado)
             SalvaXML NFXmlAssinada, tpAmbiente, False
             MsgBox "NF-e Denegada!", vbExclamation, vaTitulo
             GoTo SaiDaSub
-
         '==========================
         ' CANCELAMENTO HOMOLOGADO
         ' 101 (e opcionalmente 151)
@@ -8810,7 +9045,6 @@ On Error GoTo DeuErro
                 .Update
                 .BookMark = .LastModified
             End With
-
             With vgTb
                 .Edit
                 If Vazio(!Observação) Then
@@ -8821,18 +9055,15 @@ On Error GoTo DeuErro
                 .Update
                 .BookMark = .LastModified
             End With
-
             ' Salva o XML retornado (a DLL pode devolver o evento/processado)
             SalvaXML NFXmlAssinada, tpAmbiente, False
             MsgBox "NF-e Cancelada!", vbInformation, vaTitulo
             GoTo SaiDaSub
-
         '==========================
         ' DEMAIS – REJEIÇÃO
         '==========================
         Case Else
             MsgBox cStat & " – " & msgResultado, vbCritical, "NF-e Rejeitada"
-
             With vgTb
                 .Edit
                 !Transmitido = False
@@ -8846,12 +9077,10 @@ On Error GoTo DeuErro
             End With
             ' Em rejeição, normalmente NÃO se salva procNFe porque não há protocolo válido de autorização/denegação.
     End Select
-
 SaiDaSub:
     Debug.Print "DEBUG: RetornoNFe500 - Saindo da sub normalmente"
     Screen.MousePointer = vbDefault
     Exit Sub
-
 DeuErro:
     Debug.Print "=========================================="
     Debug.Print "ERRO em RetornoNFe500:"
@@ -8862,30 +9091,22 @@ DeuErro:
     MsgBox Err.Description, vbCritical, vaTitulo
     Resume SaiDaSub
 End Sub
-
-
-
-
 Private Sub SalvaXML(procNFe As String, tpAmb As Long, autorizada As Boolean)
     Dim Arq As Long, ArquivoSaida As String
-
     Debug.Print "DEBUG: SalvaXML - INICIO"
     Debug.Print "  - tpAmb: " & tpAmb
     Debug.Print "  - autorizada: " & autorizada
     Debug.Print "  - procNFe len: " & Len(procNFe)
-
     Debug.Print "DEBUG: Verificando Parametros_da_NFe"
     If Parametros_da_NFe Is Nothing Then
         Debug.Print "ERRO CRITICO: Parametros_da_NFe e Nothing em SalvaXML"
         Exit Sub
     End If
-
     Debug.Print "DEBUG: Verificando Nota_Fiscal"
     If Nota_Fiscal Is Nothing Then
         Debug.Print "ERRO CRITICO: Nota_Fiscal e Nothing em SalvaXML"
         Exit Sub
     End If
-
     Debug.Print "DEBUG: Montando caminho do arquivo"
     If tpAmb = 1 Then   ' Produção
         ArquivoSaida = IIf(autorizada, _
@@ -8899,13 +9120,11 @@ Private Sub SalvaXML(procNFe As String, tpAmb As Long, autorizada As Boolean)
             & Format(Nota_Fiscal![Número da NFe], "000000") & "_AUTORIZADO.xml"
     End If
     Debug.Print "  - ArquivoSaida: " & ArquivoSaida
-
     Debug.Print "DEBUG: Verificando arquivo existente"
     If Dir(ArquivoSaida, vbArchive) <> "" Then
         Debug.Print "DEBUG: Arquivo existe, deletando"
         Kill ArquivoSaida
     End If
-
     Debug.Print "DEBUG: Salvando arquivo XML"
     Arq = FreeFile
     Open ArquivoSaida For Output As #Arq
@@ -8914,12 +9133,8 @@ Private Sub SalvaXML(procNFe As String, tpAmb As Long, autorizada As Boolean)
     Debug.Print "DEBUG: Arquivo salvo com sucesso"
     Debug.Print "DEBUG: SalvaXML - FIM"
 End Sub
-
-
-
-'Layout 4.00 – Envio Síncrono de NF-e (FlexDocs 2Gv5.00k)
+'Layout 5.00 – Envio Síncrono de NF-e (FlexDocs 2Gv5.00n)
 Private Sub TransmitirNFe500(ByVal NFe As String, ByVal chaveNFe As String)
-
     '–––– parâmetros da chamada ao Web-Service ––––
    Dim msgDados       As String
    Dim msgRetWS       As String
@@ -8927,25 +9142,21 @@ Private Sub TransmitirNFe500(ByVal NFe As String, ByVal chaveNFe As String)
    Dim siglaWS        As String
    Dim certificado    As String
    Dim licenca        As String
-
     '–––– variáveis do envio síncrono ––––
     Dim NFXmlAssinada  As String   ' XML assinado que volta da DLL
     Dim nroProtocolo   As String   ' nº do protocolo de autorização
     Dim dhProtocolo    As String   ' data-hora do protocolo
     Dim cStat          As Long     ' código de status
-   Dim versao         As String   ' "4.00"
-
+   Dim versao         As String   ' "5.00"
     '–––– infraestrutura local ––––
     Dim i              As Integer
     Dim objNFeUtil     As Object
     Dim proxy          As String
     Dim usuario        As String
     Dim senha          As String
-
 On Error GoTo DeuErro
-
     Debug.Print "=========================================="
-    Debug.Print "TransmitirNFe500 - TESTE com versao 4.00 (sincrono)"
+   Debug.Print "TransmitirNFe500 - Envio com versao 5.00 (sincrono)"
     Debug.Print "=========================================="
     Debug.Print "DEBUG: Inicio - Definindo MousePointer"
     Screen.MousePointer = vbHourglass
@@ -8953,19 +9164,16 @@ On Error GoTo DeuErro
     Debug.Print "DEBUG: Definindo lblProgresso.Caption"
     lblProgresso.Caption = "Transmitindo NFe..."
     Debug.Print "DEBUG: lblProgresso OK"
-
     ' OBS: Requer cadeia de certificados das AC instalada (conforme LEIAME)
     '      no repositório do Windows (Computador Local > Entidades Raiz/Intermediárias).
-
-   ' === OBJETO FLEXDOCS NFe 4.00 ===
-   ' Usar DLL 2Gv5.00k registrada (NFe_Util_2G.dll da pasta 2Gv5.00k)
+   ' === OBJETO FLEXDOCS NFe 5.00 ===
+   ' Usar DLL 2Gv5.00n registrada (NFe_Util_2G.dll da pasta 2Gv5.00n)
     Debug.Print "DEBUG: Criando objeto NFe_Util_2G.Util"
     Set objNFeUtil = CreateObject("NFe_Util_2G.Util")
     Debug.Print "DEBUG: NFe_Util_2G.Util criado com sucesso"
     If objNFeUtil Is Nothing Then
         Debug.Print "ERRO CRITICO: objNFeUtil e Nothing apos CreateObject"
     End If
-
     ' === PARÂMETROS AMBIENTE ===
     Debug.Print "DEBUG: Acessando Parametros_da_NFe"
     If Parametros_da_NFe Is Nothing Then
@@ -8974,7 +9182,6 @@ On Error GoTo DeuErro
     Debug.Print "DEBUG: Lendo certificado digital"
     certificado = Parametros_da_NFe![Certificado Digital]
     Debug.Print "DEBUG: Certificado lido com sucesso"
-
     Debug.Print "DEBUG: Lendo siglaWS (UF)"
     On Error Resume Next
     siglaWS = Parametros_da_NFe![UF] & ""
@@ -8985,28 +9192,22 @@ On Error GoTo DeuErro
         siglaWS = "SP"
     End If
     Debug.Print "DEBUG: siglaWS definido: " & siglaWS
-
-    versao = "4.00"
+   versao = "5.00"
     licenca = "23433296a6c7b3e6e602aa8c71ded18804ec302656cfa8590ff7b35454b14834f4f5aed7ed5b4e4986a6a2d2a4b1abad6758927b36d70c5a1d4588597eaf0de2"
-
     ' (Opcional) Proxy corporativo:
     proxy = ""   ' "http://proxy:3128"
     usuario = "" ' "dominio\usuario"
     senha = ""   ' "******"
-
     Debug.Print "DEBUG: Parametros:"
     Debug.Print "  - siglaWS: " & siglaWS
     Debug.Print "  - versao : " & versao
     Debug.Print "  - chave  : " & chaveNFe
     Debug.Print "  - XML len: " & Len(NFe)
-
-    ' Sanidade: o XML precisa estar na versao correta (comentado para teste 4.00)
-   'If InStr(1, NFe, "versao=""4.00""", vbTextCompare) = 0 Then
-   '    MsgBox "O XML não está no layout 4.00. Gere novamente a NF-e (identificadorRTC) e tente de novo.", vbExclamation, "Layout incorreto"
-    '    GoTo SaiDaSub
-    'End If
-    Debug.Print "DEBUG: Validacao de versao desabilitada para teste com 4.00"
-
+   If InStr(1, NFe, "versao=""5.00""", vbTextCompare) = 0 Then
+      MsgBox "O XML não está no layout 5.00. Gere novamente a NF-e e tente de novo.", vbExclamation, "Layout incorreto"
+      GoTo SaiDaSub
+   End If
+   Debug.Print "DEBUG: Layout 5.00 confirmado no XML"
     ' === ENVIO SÍNCRONO ===
     For i = 1 To 5
         Debug.Print "DEBUG: tentativa " & i & " de envio síncrono..."
@@ -9016,31 +9217,24 @@ On Error GoTo DeuErro
             Exit For
         End If
         Debug.Print "DEBUG: objNFeUtil OK, chamando EnviaNFSincrono..."
-
         NFXmlAssinada = objNFeUtil.EnviaNFSincrono( _
             siglaWS, NFe, certificado, versao, _
             msgDados, msgRetWS, cStat, msgResultado, _
             nroProtocolo, dhProtocolo, NFXmlAssinada, _
             proxy, usuario, senha, licenca)
-
         Debug.Print "  - cStat        : " & cStat
         Debug.Print "  - msgResultado : " & Left$(msgResultado, 300)
-
    Debug.Print "DEBUG: Chamando GravaHistorico tentativa " & i
-   GravaHistorico "Transmitindo NFe (4.00)... Tentativa " & i
+   GravaHistorico "Transmitindo NFe (5.00)... Tentativa " & i
         Debug.Print "DEBUG: GravaHistorico retornou OK"
-
         ' 105 = em processamento; 108/109 = WS com problemas.
         If cStat <> 105 And cStat <> 108 And cStat <> 109 Then Exit For
-
         DoEvents
         ' Se tiver o Declare do Sleep, pode pausar levemente entre as tentativas:
         ' Sleep 800
     Next
-
     ' === TRATAMENTO DE RETORNO ===
     Select Case cStat
-
         ' SUCESSO (autorizada/uso autorizado) – síncrono
         Case 100, 150
             Debug.Print "DEBUG: Case 100/150 detectado em TransmitirNFe500"
@@ -9055,7 +9249,6 @@ On Error GoTo DeuErro
             RetornoNFe500 NFXmlAssinada, cStat, nroProtocolo, dhProtocolo, msgResultado
             Debug.Print "DEBUG: DEPOIS de RetornoNFe500 - retornou com sucesso"
             GoTo SaiDaSub
-
         ' Cancelada já (retorno síncrono)
         Case 101
             Debug.Print "DEBUG: Case 101 - Cancelamento"
@@ -9063,7 +9256,6 @@ On Error GoTo DeuErro
             RetornoNFe500 NFXmlAssinada, cStat, nroProtocolo, dhProtocolo, msgResultado
             Debug.Print "DEBUG: DEPOIS de RetornoNFe500 caso 101"
             GoTo SaiDaSub
-
         ' Duplicidade: trate como "já existe na SEFAZ" (ajuste conforme sua regra)
         Case 204
             Debug.Print "DEBUG: Case 204 - Duplicidade"
@@ -9073,26 +9265,23 @@ On Error GoTo DeuErro
             RetornoNFe500 NFXmlAssinada, cStat, nroProtocolo, dhProtocolo, msgResultado
             Debug.Print "DEBUG: DEPOIS de RetornoNFe500 caso 204"
             GoTo SaiDaSub
-
         ' Falhas típicas do WS
         Case 108, 109
             Debug.Print "DEBUG: Case 108/109 - WS com problemas"
             MsgBox msgResultado & vbCrLf & "WebService com problemas na recepção.", vbCritical, "WS instável"
             Debug.Print "DEBUG: Chamando GravaHistorico caso 108/109"
-            GravaHistorico "Erro ao Transmitir NFe (4.00): " & msgResultado
+            GravaHistorico "Erro ao Transmitir NFe (5.00): " & msgResultado
             Debug.Print "DEBUG: GravaHistorico OK, indo para SaiDaSub"
             GoTo SaiDaSub
-
         ' Demais rejeições
         Case Else
             Debug.Print "DEBUG: Case Else - Rejeicao cStat=" & cStat
             MsgBox "Descrição do erro: " & vbCrLf & cStat & " - " & msgResultado, vbCritical, "WS rejeitou a NFe"
             Debug.Print "DEBUG: Chamando GravaHistorico caso Else"
-            GravaHistorico "Erro ao Transmitir NFe (4.00): " & cStat & " - " & msgResultado
+            GravaHistorico "Erro ao Transmitir NFe (5.00): " & cStat & " - " & msgResultado
             Debug.Print "DEBUG: GravaHistorico OK, indo para SaiDaSub"
             GoTo SaiDaSub
     End Select
-
 SaiDaSub:
     Debug.Print "DEBUG: TransmitirNFe500 - Finalizando normalmente"
     Debug.Print "DEBUG: Restaurando MousePointer"
@@ -9112,7 +9301,6 @@ SaiDaSub:
     End If
     Debug.Print "DEBUG: lblProgresso definido, saindo da sub"
     Exit Sub
-
 DeuErro:
     Debug.Print "=========================================="
     Debug.Print "ERRO em TransmitirNFe500:"
@@ -9123,10 +9311,6 @@ DeuErro:
     MsgBox Err.Description, vbCritical, vaTitulo
     Resume SaiDaSub
 End Sub
-
-
-
-
 '– rotina auxiliar para histórico ––
 Private Sub GravaHistorico(txt As String)
     Debug.Print "DEBUG: GravaHistorico - INICIO"
@@ -9150,7 +9334,6 @@ Private Sub GravaHistorico(txt As String)
     End With
     Debug.Print "DEBUG: GravaHistorico - FIM"
 End Sub
-
 'Gera a chave de acesso concatenando os campos da NFe
 Private Function MontaChaveAcessoNF(cUF As String, Ano As String, Mes As String, _
    emiCNPJ As String, modelo As String, serie As String, Numero As String, _
@@ -9160,8 +9343,6 @@ Private Function MontaChaveAcessoNF(cUF As String, Ano As String, Mes As String,
    cDV = GDVChaveNFe(chaveSemDV)           'calcula o digito verificador pelo modulo 11 (2 a 9)
    MontaChaveAcessoNF = chaveSemDV & cDV
 End Function
-
-
 'layout 4.00
     'ROTINA QUE MONTA O XML DA NOTA FISCAL ELETRONICA
     Private Sub BlasterNFe400()
@@ -9180,7 +9361,7 @@ End Function
    Dim ide_cMunFGIBS As String, ide_tpNFDebito As String, ide_tpNFCredito As String
    Dim ide_gCompraGov As String, ide_NFePagAntecipado As String
        Dim ide_tpImp As Long, ide_cDV As String, ide_tpAmb As Long, ide_finNFe As Long, ide_tpEmis As Long, ide_procEmi As Long
-       Dim ide_verProc As String, ide_NFref As String, ide_dhCont As String, ide_xJust As String
+   Dim ide_verProc As String, ide_NFref As String, ide_dhCont As String, ide_xJust As String, ide_dPrevEntrega As String
        'Campos Novos Identificação do Documento Layout 3.10
        Dim ide_dhEmi As String, ide_dhSaiEnt As String, ide_idDest As Integer, ide_indFinal As Integer, ide_indPres As Integer
        '======Chave da NFe===========
@@ -9205,7 +9386,7 @@ End Function
        'Campos Novos Identificação do Destinatario Layout 3.10
        Dim dest_idEstrangeiro As String, dest_indIEDest As String, dest_IM As String
        '======Identificação do Produtos/Serviços=====
-   Dim det_nItem As Long, det_produto As String, det_imposto As String, det_IS As String
+   Dim det_produto As String, det_imposto As String, det_IS As String
        Dim Prod_cProd As String, Prod_cEAN As String, Prod_xProd As String, Prod_NCM As String, Prod_ExTIPI As String
        Dim Prod_CFOP As String, Prod_uCOM As String, Prod_qCom As String, Prod_vUnCom As String, Prod_vProd As String
        Dim Prod_cEANTrib As String, Prod_uTrib As String, Prod_qTrib As String, Prod_vUnTrib As String, Prod_DI As String
@@ -9266,7 +9447,7 @@ End Function
        ' Layout 4,00 Totais
        Dim TotvFCP As Double, TotvFCPST As Double, TotvFCPSTRet As Double, TotvIPIDevol As Double
        '=====Totais RTC=======
-       Dim vIBSTotal As Double, vCBSTotal As Double, vBCIBSCBS As Double
+   Dim vIBSTotal As Double, vIBSUFTotal As Double, vIBSMunTotal As Double, vCBSTotal As Double, vBCIBSCBS As Double
        Dim gIBSUF_xml As String, gIBSMun_xml As String, gCBS_xml As String, gIBSCBS_xml As String
        Dim gIBSTot_Total_xml As String, gCBSTot_Total_xml As String, IBSCBSTot_xml As String
        '=====Detalhe310 Campos Novos======
@@ -9293,7 +9474,7 @@ End Function
        '=====Identificação da Cana=====
        '=====Consolidação da NFe=======
        Dim NFe As String, versao As String, Id As String, ide As String, emit As String, avulsa As String, dest As String
-       Dim retirada As String, Entrega As String, Detalhes As String, Total As String, transp As String, Cobr As String
+   Dim retirada As String, Entrega As String, Total As String, transp As String, Cobr As String
        Dim infAdic As String, exporta As String, compra As String, cana As String, chaveNFe As String
        Dim Pag As String, autXML As String ' Campos Novos Layout 3.10
        '=====Valor Total do Tributo=======
@@ -9312,22 +9493,20 @@ End Function
           
        'Bora lah Blaster
        On Error GoTo DeuErro
-
        Screen.MousePointer = vbHourglass ' Ampulheta
-
        lblProgresso.Caption = "Gerando XML..."
-
+      Detalhes = ""
+   det_nItem = 0
        Debug.Print "=========================================="
-       Debug.Print "INICIO BlasterNFe400 - ANALISE DE VERSAO"
+   Debug.Print "INICIO BlasterNFe400 - ANALISE DE VERSAO 5.00"
        Debug.Print "=========================================="
-
        'INICIALIZACAO DAS VARIAVEIS RTC
-       vIBSTotal = 0
+   vIBSTotal = 0
+   vIBSUFTotal = 0
+   vIBSMunTotal = 0
        vCBSTotal = 0
        vBCIBSCBS = 0
-
        Debug.Print "DEBUG RTC: Variaveis RTC inicializadas (zeradas)"
-
        Set Cliente = vgDb.OpenRecordSet("SELECT [CPF e CNPJ], Endereço, [Número do Endereço], Complemento, Bairro, [Código do IBGE], Descrição Municipio, UF, " & _
                                         "[RG e IE], [Razão Social], [Fone 1], Tipo, G.CEP, Email, Isento, [Seqüência do País], Revenda, [Código do Suframa] " & _
                                         "FROM Geral G LEFT JOIN Municípios M ON G.[Seqüência do Município] = M.[Seqüência do Município] WHERE G.[Seqüência do Geral] = " & Nota_Fiscal![Seqüência Do Geral])
@@ -9357,14 +9536,14 @@ End Function
        Set Item = vgDb.OpenRecordSet("SELECT * FROM( " & _
                                      "SELECT 'Produto' As Tipo, [Seqüência da Nota Fiscal], P.[Seqüência do Produto], P.[Código de Barras], P.Descrição [Descrição Produto], C.NCM, C.CEST, C.[Un Exterior] UnidEx, CFOP, U.[Sigla da Unidade] [Descrição Unidade], PNF.Quantidade, PNF.[Valor Unitário], PNF.[Valor Total], " & _
                                      "[Percentual da Redução], [Valor da Base de Cálculo], [Alíquota do ICMS], [Valor do ICMS], [Alíquota do IPI], [Valor do IPI], [Valor do PIS], [Valor do Cofins], Diferido, Usado, CST, PNF.IVA, [Base de Cálculo ST], [Valor ICMS ST], [Alíquota do ICMS ST], " & _
-                                     "[Base de Cálculo da Importação], [Valor do Imposto de Importação], [Valor das Despesas Aduaneiras], [Valor do IOF], [Seqüência Produto Nota Fiscal] SeqItem, [Valor do Tributo], Importado, PNF.[Valor do Frete], PNF.[Valor do Desconto], PNF.[Bc Pis], PNF.[Aliq do Pis], PNF.[Bc Cofins], PNF.[Aliq do Cofins] " & _
+                                     "[Base de Cálculo da Importação], [Valor do Imposto de Importação], [Valor das Despesas Aduaneiras], [Valor do IOF], [Seqüência Produto Nota Fiscal] SeqItem, [Valor do Tributo], Importado, PNF.[Valor do Frete], PNF.[Valor do Desconto], PNF.[Bc Pis], PNF.[Aliq do Pis], PNF.[Bc Cofins], PNF.[Aliq do Cofins], PNF.[Valor IBS], PNF.[Valor CBS] " & _
                                      "FROM [Produtos da Nota Fiscal] PNF INNER JOIN Produtos P ON PNF.[Seqüência Do Produto] = P.[Seqüência Do Produto] " & _
                                      "LEFT JOIN Unidades U ON P.[Seqüência da Unidade] = U.[Seqüência da Unidade] " & _
                                      "LEFT JOIN [Classificação Fiscal] C ON P.[Seqüência da Classificação] = C.[Seqüência da Classificação] " & _
                                      "UNION ALL " & _
                                      "SELECT 'Conjunto' As Tipo, CNF.[Seqüência da Nota Fiscal], C.[Seqüência do Conjunto], '', C.Descrição [Descrição Conjunto], CF.NCM, CF.CEST, CF.[Un Exterior] UnidEx, CFOP, U.[Sigla da Unidade] [Descrição Unidade], CNF.Quantidade, CNF.[Valor Unitário], CNF.[Valor Total], " & _
                                      "[Percentual da Redução], [Valor da Base de Cálculo], [Alíquota do ICMS], [Valor do ICMS], [Alíquota do IPI], [Valor do IPI], [Valor do PIS], [Valor do Cofins], Diferido, Usado, CST, CNF.IVA, [Base de Cálculo ST], [Valor ICMS ST], [Alíquota do ICMS ST], " & _
-                                     "0 As [Base de Cálculo da Importação], 0 As [Valor do Imposto de Importação], 0 As [Valor das Despesas Aduaneiras], 0 As [Valor do IOF], 0 SeqItem, [Valor do Tributo], 0 As Importado, CNF.[Valor do Frete], CNF.[Valor do Desconto], CNF.[Bc Pis], CNF.[Aliq do Pis], CNF.[Bc Cofins], CNF.[Aliq do Cofins] " & _
+                                     "0 As [Base de Cálculo da Importação], 0 As [Valor do Imposto de Importação], 0 As [Valor das Despesas Aduaneiras], 0 As [Valor do IOF], 0 SeqItem, [Valor do Tributo], 0 As Importado, CNF.[Valor do Frete], CNF.[Valor do Desconto], CNF.[Bc Pis], CNF.[Aliq do Pis], CNF.[Bc Cofins], CNF.[Aliq do Cofins], CNF.[Valor IBS], CNF.[Valor CBS] " & _
                                      "FROM [Conjuntos da Nota Fiscal] CNF INNER JOIN Conjuntos C on CNF.[Seqüência Do Conjunto] = C.[Seqüência Do Conjunto] " & _
                                      "LEFT JOIN Unidades U ON C.[Seqüência da Unidade] = U.[Seqüência da Unidade] " & _
                                      "LEFT JOIN [Nota Fiscal] NF ON CNF.[Seqüência da Nota Fiscal] = NF.[Seqüência da Nota Fiscal] " & _
@@ -9372,13 +9551,13 @@ End Function
                                      "UNION ALL " & _
                                      "SELECT 'Peças' As Tipo, PNF.[Seqüência da Nota Fiscal], P.[Seqüência do Produto], P.[Código de Barras], P.Descrição [Descrição Produto], C.NCM, C.CEST, C.[Un Exterior] UnidEx, CFOP, U.[Sigla da Unidade] [Descrição Unidade], PNF.Quantidade, PNF.[Valor Unitário], PNF.[Valor Total], " & _
                                      "[Percentual da Redução], [Valor da Base de Cálculo], [Alíquota do ICMS], [Valor do ICMS], [Alíquota do IPI], [Valor do IPI], [Valor do PIS], [Valor do Cofins], Diferido, Usado, CST, PNF.IVA, [Base de Cálculo ST], [Valor ICMS ST], [Alíquota do ICMS ST], " & _
-                                     "0 As [Base de Cálculo da Importação], 0 As [Valor do Imposto de Importação], 0 As [Valor das Despesas Aduaneiras], 0 As [Valor do IOF], 0 SeqItem, [Valor do Tributo], Importado, PNF.[Valor do Frete], PNF.[Valor do Desconto], PNF.[Bc Pis], PNF.[Aliq do Pis], PNF.[Bc Cofins], PNF.[Aliq do Cofins] " & _
+                                     "0 As [Base de Cálculo da Importação], 0 As [Valor do Imposto de Importação], 0 As [Valor das Despesas Aduaneiras], 0 As [Valor do IOF], 0 SeqItem, [Valor do Tributo], Importado, PNF.[Valor do Frete], PNF.[Valor do Desconto], PNF.[Bc Pis], PNF.[Aliq do Pis], PNF.[Bc Cofins], PNF.[Aliq do Cofins], PNF.[Valor IBS], PNF.[Valor CBS] " & _
                                      "FROM [Peças da Nota Fiscal] PNF INNER JOIN Produtos P on PNF.[Seqüência Do Produto] = P.[Seqüência Do Produto] " & _
                                      "LEFT JOIN Unidades U ON P.[Seqüência da Unidade] = U.[Seqüência da Unidade] " & _
                                      "LEFT JOIN [Nota Fiscal] NF ON PNF.[Seqüência da Nota Fiscal] = NF.[Seqüência da Nota Fiscal] " & _
                                      "LEFT JOIN [Classificação Fiscal] C ON P.[Seqüência da Classificação] = C.[Seqüência da Classificação]" & _
                                      ") Item " & _
-                                     "WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
+                                     " WHERE [Seqüência da Nota Fiscal] = " & Sequencia_da_Nota_Fiscal)
        Else
        Set Item = vgDb.OpenRecordSet("SELECT * FROM( " & _
                                      "SELECT 'Produto' As Tipo, [Seqüência da Nota Fiscal], P.[Seqüência do Produto], P.[Código de Barras], P.Descrição [Descrição Produto], C.NCM, C.CEST, CFOP, U.[Sigla da Unidade] [Descrição Unidade], PNF.Quantidade, PNF.[Valor Unitário], PNF.[Valor Total], " & _
@@ -9440,9 +9619,10 @@ End If
        ide_finNFe = FinNFe ' finalidade da emissão da NF-e 1- NF-e normal 2 - NF-e Complementar - 3 NF-e de Ajuste - 4 Devolução / Retorno
        ide_tpEmis = 1                            ' forma de emissão da NF-e 1- normal, 2 - contingência FS, 3 - contingência SCAN, etc.
        ide_procEmi = 0                           ' identificação do processo de emissão da NF-e 0 - aplicação do contribuinte
-       ide_verProc = "NFe_Util_2G"               ' identificação da versão do processo de emissão
-       ide_dhCont = ""            ' data e hora de entrada em contingência - informar quanto tpEmis diferente de 1, informe #12:00:00 AM# para deixar vazio em VB
-       ide_xJust = ""                            ' justificativa para emissão em contingência
+   ide_verProc = "NFe_Util_2G 5.00n"         ' identificação da versão do processo de emissão
+   ide_dhCont = ""            ' data e hora de entrada em contingência - informar quanto tpEmis diferente de 1, informe #12:00:00 AM# para deixar vazio em VB
+   ide_xJust = ""                            ' justificativa para emissão em contingência
+   ide_dPrevEntrega = ""                      ' data prevista de entrega (RTC v130)
        
        'Campo Novo Layout 3.10
        If ide_finNFe = 2 Then
@@ -9499,7 +9679,6 @@ End If
        Debug.Print "DEBUG: Criando objeto NFe_Util_2G.Util..."
        Set objNFeUtil = CreateObject("NFe_Util_2G.Util")
        Debug.Print "DEBUG: Objeto criado com sucesso"
-
        Randomize Timer
    cNF = Format$(Int(Rnd * 100000000), "00000000")
    chaveNFe = MontaChaveAcessoNF(cUF, Ano, Mes, emi_CNPJ, modelo, serie, Numero, tpEmis, cNF, cDV)
@@ -9516,7 +9695,6 @@ End If
            .Update
            .BookMark = .LastModified
         End With
-
        
        'Gera Grupo NFeRef
        If Not Vazio(Nota_Fiscal![Chave Acesso NFe Referenciada]) Then
@@ -9535,16 +9713,30 @@ End If
           ide_NFRefs = ide_NFRefs + objNFeUtil.NFeRef(Nota_Fiscal![Chave da Devolução 3])
        End If
        
-   Dim usaRTC As Boolean
+   Dim permiteTributosLegados As Boolean
+   Dim exigeModoRTCPuro As Boolean
+   Dim ehNotaCreditoRTC As Boolean
+   Dim ehNotaDebitoRTC As Boolean
+   Dim tpNFDebitoRegistro As String
+   Dim tpNFCreditoRegistro As String
    usaRTC = True
-
+   ehNotaCreditoRTC = (FinNFe = 5)
+   ehNotaDebitoRTC = (FinNFe = 6)
+   permiteTributosLegados = Not (ehNotaCreditoRTC Or ehNotaDebitoRTC)
+   exigeModoRTCPuro = Not permiteTributosLegados
+   tpNFDebitoRegistro = ""
+   tpNFCreditoRegistro = ""
        Debug.Print "=========================================="
-       Debug.Print "*** ALERTA: usaRTC = " & usaRTC & " ***"
-       Debug.Print "ERRO ESPERADO: cMunFGIBS, impostoIBS, vItem nao sao validos no schema 4.00!"
-       If usaRTC Then
-          Debug.Print "USANDO identificadorRTC (NFe 4.00) - TERA ERRO DE SCHEMA!"
+       Debug.Print "*** usaRTC = " & usaRTC & " - layout 5.00 com suporte RTC ***"
+       If exigeModoRTCPuro Then
+          Debug.Print "*** MODO RTC PURO: finNFe=" & FinNFe & " - tributos legados (ICMS/IPI/PIS/COFINS/ISS) serão suprimidos conforme B25-80/90/100 ***"
        Else
-          Debug.Print "USANDO identificador202006 (NFe 4.00)"
+          Debug.Print "*** MODO HÍBRIDO: finNFe=" & FinNFe & " - tributos legados permanecem habilitados ***"
+       End If
+       If usaRTC Then
+          Debug.Print "Usando identificadorRTCv130 (FlexDocs 2G v5.00n)"
+       Else
+          Debug.Print "Usando identificador202006 (compatibilidade sem RTC)"
        End If
        Debug.Print "=========================================="
        Debug.Print "Parametros do identificador:"
@@ -9553,32 +9745,53 @@ End If
        Debug.Print "- ide_serie: " & ide_serie
        Debug.Print "- ide_nNF: " & ide_nNF
        Debug.Print "=========================================="
-
        'Inicializar campos RTC opcionais
        If usaRTC Then
           ide_cMunFGIBS = ide_cMunFG
-          ide_tpNFDebito = "0"
-          ide_tpNFCredito = "0"
+          ide_tpNFDebito = ""
+          ide_tpNFCredito = ""
           ide_gCompraGov = ""
           ide_NFePagAntecipado = ""
-          Debug.Print "*** PROBLEMA 1: ide_cMunFGIBS = " & ide_cMunFGIBS & " (NAO EXISTE NO SCHEMA 4.00!) ***"
+          tpNFDebitoRegistro = NormalizaCodigoRTC(ValorCampoOpcionalNota("tpNFDebito"))
+          If tpNFDebitoRegistro = "" Then
+             tpNFDebitoRegistro = NormalizaCodigoRTC(ValorCampoOpcionalNota("Tipo Nota Debito"))
+          End If
+          If FinNFe = 6 Then
+             If EhTpNFDebitoValido(tpNFDebitoRegistro) Then
+                ide_tpNFDebito = tpNFDebitoRegistro
+             Else
+                Debug.Print "AVISO: Nota de débito exige tpNFDebito válido (01-08)."
+             End If
+          End If
+          tpNFCreditoRegistro = NormalizaCodigoRTC(ValorCampoOpcionalNota("tpNFCredito"))
+          If tpNFCreditoRegistro = "" Then
+             tpNFCreditoRegistro = NormalizaCodigoRTC(ValorCampoOpcionalNota("Tipo Nota Credito"))
+          End If
+          If FinNFe = 5 Then
+             If EhTpNFCreditoValido(tpNFCreditoRegistro) Then
+                ide_tpNFCredito = tpNFCreditoRegistro
+             Else
+                Debug.Print "AVISO: Nota de crédito exige tpNFCredito válido (01-04)."
+             End If
+          End If
+          Debug.Print "    cMunFGIBS (RTC): " & ide_cMunFGIBS
        Else
           ide_cMunFGIBS = ""
           ide_tpNFDebito = ""
           ide_tpNFCredito = ""
           ide_gCompraGov = ""
           ide_NFePagAntecipado = ""
+          ide_dPrevEntrega = ""
        End If
-
        Debug.Print "DEBUG: Campos RTC opcionais inicializados:"
        Debug.Print "  - ide_cMunFGIBS: [" & ide_cMunFGIBS & "]"
        Debug.Print "  - ide_tpNFDebito: [" & ide_tpNFDebito & "]"
        Debug.Print "  - ide_tpNFCredito: [" & ide_tpNFCredito & "]"
        Debug.Print "  - ide_gCompraGov: [" & ide_gCompraGov & "]"
-       Debug.Print "  - ide_NFePagAntecipado: [" & ide_NFePagAntecipado & "]"
-
-       'Chamada identificadorRTC com 29 parametros conforme 2Gv5.00k
-       Debug.Print "DEBUG: Chamando identificadorRTC com 29 parametros..."
+   Debug.Print "  - ide_NFePagAntecipado: [" & ide_NFePagAntecipado & "]"
+   Debug.Print "  - ide_dPrevEntrega: [" & ide_dPrevEntrega & "]"
+   'Chamada identificadorRTC v130 conforme 2Gv5.00n
+   Debug.Print "DEBUG: Chamando identificadorRTCv130..."
        Debug.Print "  Parametros principais:"
        Debug.Print "    cUF=" & ide_cUF & ", cNF=" & ide_cNF & ", natOp=" & ide_natOp
        Debug.Print "    mod=" & ide_mode & ", serie=" & ide_serie & ", nNF=" & ide_nNF
@@ -9589,30 +9802,28 @@ End If
           Debug.Print "  Parametros RTC (opcionais):"
           Debug.Print "    indIntermed=0, cMunFGIBS=" & ide_cMunFGIBS & ", tpNFDebito=" & ide_tpNFDebito & ", tpNFCredito=" & ide_tpNFCredito
           Debug.Print "    gCompraGov=" & IIf(ide_gCompraGov = "", "(vazio)", ide_gCompraGov) & ", NFePagAntecipado=" & IIf(ide_NFePagAntecipado = "", "(vazio)", ide_NFePagAntecipado)
+          Debug.Print "    dPrevEntrega=" & IIf(ide_dPrevEntrega = "", "(vazio)", ide_dPrevEntrega)
        Else
-          Debug.Print "  Parametros RTC (opcionais): desabilitados para layout 4.00"
+          Debug.Print "  Parametros RTC (opcionais): desabilitados porque usaRTC=False"
        End If
-
        On Error Resume Next
        If usaRTC Then
-          ide = objNFeUtil.identificadorRTC(CInt(ide_cUF), CLng(ide_cNF), ide_natOp, CInt(ide_mode), CInt(ide_serie), CLng(ide_nNF), ide_dhEmi, ide_dhSaiEnt, CInt(ide_tpNF), CInt(ide_idDest), ide_cMunFG, ide_NFRefs, CInt(ide_tpImp), CInt(ide_tpEmis), CInt(ide_cDV), CInt(ide_tpAmb), CInt(ide_finNFe), CInt(ide_indFinal), CInt(ide_indPres), CInt(ide_procEmi), ide_verProc, ide_dhCont, ide_xJust, 0, ide_cMunFGIBS, ide_tpNFDebito, ide_tpNFCredito, ide_gCompraGov, ide_NFePagAntecipado)
+          ide = objNFeUtil.identificadorRTCv130(CInt(ide_cUF), CLng(ide_cNF), ide_natOp, CInt(ide_mode), CInt(ide_serie), CLng(ide_nNF), ide_dhEmi, ide_dhSaiEnt, CInt(ide_tpNF), CInt(ide_idDest), ide_cMunFG, ide_NFRefs, CInt(ide_tpImp), CInt(ide_tpEmis), CInt(ide_cDV), CInt(ide_tpAmb), CInt(ide_finNFe), CInt(ide_indFinal), CInt(ide_indPres), CInt(ide_procEmi), ide_verProc, ide_dhCont, ide_xJust, 0, ide_cMunFGIBS, ide_tpNFDebito, ide_tpNFCredito, ide_gCompraGov, ide_NFePagAntecipado, ide_dPrevEntrega)
        Else
           ide = objNFeUtil.identificador202006(CInt(ide_cUF), CLng(ide_cNF), ide_natOp, CInt(ide_mode), CInt(ide_serie), CLng(ide_nNF), ide_dhEmi, ide_dhSaiEnt, CInt(ide_tpNF), CInt(ide_idDest), ide_cMunFG, ide_NFRefs, CInt(ide_tpImp), CInt(ide_tpEmis), CInt(ide_cDV), CInt(ide_tpAmb), CInt(ide_finNFe), CInt(ide_indFinal), CInt(ide_indPres), CInt(ide_procEmi), ide_verProc, ide_dhCont, ide_xJust, 0)
        End If
-
        If Err.Number <> 0 Then
-          Debug.Print "ERRO ao chamar " & IIf(usaRTC, "identificadorRTC", "identificador202006") & ":"
+          Debug.Print "ERRO ao chamar " & IIf(usaRTC, "identificadorRTCv130", "identificador202006") & ":"
           Debug.Print "  Erro: " & Err.Number & " - " & Err.Description
-      Debug.Print "  Verifique se biblioteca 2Gv5.00k esta instalada corretamente"
+      Debug.Print "  Verifique se biblioteca 2Gv5.00n esta instalada corretamente"
    MsgBox "Erro ao gerar identificador da NFe:" & vbCrLf & vbCrLf & _
          "Erro: " & Err.Number & " - " & Err.Description & vbCrLf & vbCrLf & _
-         "Verifique se a biblioteca FlexDocs 2Gv5.00k esta instalada.", vbCritical, "Erro identificadorRTC"
+         "Verifique se a biblioteca FlexDocs 2Gv5.00n esta instalada.", vbCritical, "Erro identificadorRTC"
           Exit Sub
        Else
           Debug.Print "SUCESSO: identificadorRTC executado sem erros"
        End If
        On Error GoTo DeuErro
-
        Debug.Print "DEBUG: XML ide gerado (primeiros 300 chars): " & Left(ide, 300)
        Debug.Print "DEBUG: Tamanho do XML ide: " & Len(ide) & " caracteres"
        '=====Grupo de Identificação do Emitente (Grupo B do Manual de Integração 4.01-NT2009/006 - página 113)=======
@@ -9873,280 +10084,268 @@ End If
              CNPJFab_Opc = ""
              cBenef_Opc = ""
              Rastro_Opc = ""
-             det_produto = objNFeUtil.produto400(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, IndEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, Rastro_Opc)
-             '========Grupo de Informações do Imposto do Item=========
-             
-             '=========Dados do ICMS (Grupo N01 do Manual de Integração - Páginas 128-)=====================
-             'Bom se nw for importação entao vai ser 0 a origem, senao vai ser 1
-             If Not Mid(NatOpe![Código da Natureza de Operação], 1, 1) = "3" And Item!Importado = 0 Then
-                icms_orig = "0"                             ' Tabela A - origem da mercadoria 0=nacional
-             Else
-                icms_orig = "1"                             ' Tabela A - origem da mercadoria 1=Estrangeiro
-             End If
-             If Len(Item!CST) <= 2 Then
-                icms_CST = Format(Item!CST, "00")           ' Tabela B
-             Else
-                icms_CST = Format(Mid(Item!CST, 2, 2), "00") ' Tabela B
-             End If
-             icms_modBC = 3                              ' modalidade de determinação da BC = 3-valor da operação
-             icms_pRedBC = Item![Percentual da Redução]  ' percentual de redução da BC
-             icms_vBC = Item![Valor da Base de Cálculo]  ' valor da BC do ICMS = vProd + vFrete + vSeguro + vOutro
-             icms_pICMS = IIf(Nota_Fiscal!FinNFe = 3, 100, Item![Alíquota Do ICMS])  ' alíquota do ICMS com tratamento para finalidade 3
-             icms_vICMS = Item![Valor Do Icms]           ' valor do ICMS
-             icms_modBCST = 4                            ' modalidade de determinação da BC ICMS ST
-             icms_pmVAST = Item!IVA                      ' percentual de valor de margem e valor adicionado
-             icms_pRedBCST = 0                           ' percentual de redução da BC do ICMS ST
-             icms_vBCST = Item![Base de Cálculo ST]      ' BC do ICMS ST
-             icms_pICMSST = Item![Alíquota Do ICMS ST]   ' percentual do ICMSST
-             icms_vICMSST = Item![Valor ICMS ST]         ' valor do ICMS ST devido
-             If Item!CST = "60" Then
-               ' icms_vBCSTRet = Prod_vProd + Prod_vSeguro + Prod_vFrete + Prod_vOutro - Prod_vDesc ' informação do ICMS retindo anteriormente por ST
-                icms_vBCSTRet = 0 ' A Marina mandou (zerar)
-                icms_vICMSSTRet = 0                         ' estes campos devem ser informado somente no caso do CST = 60 ou CSOSN = 500'
-             End If
-             icms_motDesICMS = 0                         ' motivo de desoneração do ICMS, só deve ser informado no caso de CST = 40 (isenção condicional)'
-             icms_pBCOp = 0                              ' campos para uso nos casos de ICMSPart/ICMSST
-             icms_UFST = ""                              '
-             icms_vICMSSTDest = 0                        '
-             icms_vBCICMSSTDest = 0                      '
-             icms_pCredSN = 0                            ' campos exclusivos para emissor optante do Simples Nacional CSOSN= 101, 201 e 900
-             icms_vCredICMSSN = 0                        ' não esquecer de informar o CRT=1
-             If icms_CST = "20" Then
-                Reducao = True
-             ElseIf icms_CST = "51" Then
-                Diferido = True
-             End If
-             'Alteração Conforme Lei da Transparência 12.741/12
-             'Vigor em 01/06/2013
-             det_vTotTrib = Item![Valor Do Tributo]
-             icms_vICMSDeson = 0 ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina(Contadora)
-             icms_vICMSOp = 0    ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
-             icms_pDif = 0       ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
-             icms_vICMSDif = 0   ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
-             
-             ' Partilha do ICMS Fora do Estado Consumidor Final Nw Contribuinte merda de sefaz
-             If ide_indFinal = 1 And ide_idDest = 2 And dest_indIEDest = 9 Then
-                ValorBase = Item![Valor da Base de Cálculo]
-                FormaCalculo = 3
-                  If Ano = "16" Then
-                      AnoOperacao = 2016
-                    ElseIf Ano = "17" Then
-                      AnoOperacao = 2017
-                    ElseIf Ano = "18" Then
-                      AnoOperacao = 2018
-                    Else
-                      AnoOperacao = 2019
-                  End If
-                  AliqFCP = 0
-                  If Ano = "16" Then
-                      pICMSInterPart = 40
-                   ElseIf Ano = "17" Then
-                      pICMSInterPart = 60
-                   ElseIf Ano = "18" Then
-                     pICMSInterPart = 80
-                   Else
-                     pICMSInterPart = 100
-                  End If
-                  AliqDestino = TbIcms![Alíquota InterEstadual] ' Aliquota Interna
-                  vBCFCPUFDest_Opc = 0
-                  If icms_orig = 1 Then ' se for item importado
-                     AliqInterstadual = 4
-                  Else
-                     AliqInterstadual = TbIcms![Porcentagem de ICMS] ' Aliquota Intestadual
-                  End If
-                  If ValorBase > 0 Then
-                     CalcICMSUFDest = objNFeUtil.CalcICMSUFDest(FormaCalculo, ValorBase, AliqDestino, AliqInterstadual, AliqFCP, AnoOperacao, vBCUFDest, pFCPUFDest, pICMSUFDest, pICMSInter, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet, vBCopeInter, vICMSOpeInter, cResultado, msgResultado)
-                  Else
-                     vICMSUFDest = 0
-                     vICMSUFRemet = 0
-                     CalcICMSUFDest = objNFeUtil.ICMSUFDest400(ValorBase, vBCFCPUFDest_Opc, AliqFCP, AliqDestino, AliqInterstadual, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet)
-                  End If
-               'Totais devem ser amarrados no grupo totalICMSNT2015003
-               TotICMSUFDest = TotICMSUFDest + vICMSUFDest
-               TotICMSUFRemet = TotICMSUFRemet + vICMSUFRemet
-               TotvFCPUFDest = TotvFCPUFDest + vFCPUFDest
-              End If
-             
-             'Gera Grupo do ICMS
-             'det_icms = objNFeUtil.icms310(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN,icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif)
-             'Layout 4.00
-              vBCFCP = 0  ' Fundo de Combate a pobreza po bolso dos politicos ricos vamos zerar tudo povo ladrao
-              PFCP = 0
-              VFCP = 0
-              vBCFCPST = 0
-              PFCPST = 0
-              VFCPST = 0
-              vBCFCPSTRet = 0
-              pFCPSTRet = 0
-              vFCPSTRet = 0
-              pST = 0
-              'xml
-              det_icms = objNFeUtil.icms400(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN, icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif, vBCFCP, PFCP, VFCP, vBCFCPST, PFCPST, VFCPST, vBCFCPSTRet, pFCPSTRet, vFCPSTRet, pST)
-                     
-             '=========Dados do IPI=====================
-             ipi_clEnq = ""
-             ipi_CNPJProd = ""
-             ipi_cSelo = ""
-             ipi_qSelo = 0
-             If Not cEncManual Then
-                ipi_cEnq = "999"
-             Else
-                ipi_cEnq = IpicEnc
-             End If
-             If Item![Valor do IPI] > 0 Then
-                ipi_CST = "50"
-             Else
-                Select Case Item!CFOP
-                   Case "6920", "5920" 'Rem.Vasilhame e Sacaria
-                      ipi_CST = "55"
-                      ipi_cEnq = "103"
-                   Case "5914", "6914"   'Rem. Merc P/ Exp. e Feira
-                      ipi_CST = "55"
-                      ipi_cEnq = "102"
-                   Case "5901" ' Rem Para Industr. D. E.
-                      ipi_CST = "55"
-                      ipi_cEnq = "109"
-                   Case Else
-                      ipi_CST = "99"
-                End Select
-             End If
-             If cEncManual Then
-                ipi_CST = CstIpi
-                ipi_cEnq = IpicEnc
-             End If
-             ipi_vBC = (Item![Valor Total])
-             ipi_pIPI = Item![Alíquota Do IPI]
-             ipi_qUnid = 0
-             ipi_vUnid = 0
-             ipi_vIPI = Item![Valor do IPI]
-              
-             'Gera Grupo do IPI
-             det_IPI = objNFeUtil.IPI400(ipi_CNPJProd, ipi_cSelo, ipi_qSelo, ipi_cEnq, ipi_CST, ipi_vBC, ipi_pIPI, ipi_vIPI, ipi_qUnid, ipi_vUnid)
-              
-             '=========Dados do PIS=====================
-             If Item![Valor Do PIS] > 0 Then
-                If Item![Aliq Do Pis] = 2 Then
-                   pis_CST = "02"
-                Else
-                   pis_CST = "01"
-                End If
-             Else
-                pis_CST = "49"
-             End If
-             
-             'pis_vBC = (Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
-             pis_vBC = Item![Bc Pis] 'pis_vBC - Pis_vBC * 48.1 / 100 '((Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
-             
-              'If pis_CST = "01" Then
-                 pis_pPIS = Item![Aliq Do Pis] '1.65
-              'Else
-                ' pis_CST = "02"
-                 'pis_pPIS = 2
-              'End If
-              If pis_CST = "49" Then
-                 pis_pPIS = 0
-              End If
-             pis_qBCProd = 0
-             pis_vAliqProd = 0
-             pis_vPIS = Item![Valor Do PIS]
-             
-             'Gera Grupo do PIS
-             det_PIS = objNFeUtil.pis(pis_CST, pis_vBC, pis_pPIS, pis_vPIS, pis_qBCProd, pis_vAliqProd)
-             
-             '=========Dados do COFINS=====================
-             If Item![Valor Do Cofins] > 0 Then
-                If Item![Aliq Do Cofins] = 9.6 Then
-                   cofins_CST = "02"
-                Else
-                   cofins_CST = "01"
-                End If
-             Else
-                cofins_CST = "49"
-             End If
-             'cofins_vBC = '(Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
-             cofins_vBC = Item![Bc Cofins] 'cofins_vBC - cofins_vBC * 48.1 / 100 '((Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
-             
-             'If cofins_CST = "01" Then
-                'cofins_pCOFINS = 7.6
-             'ElseIf cofins_CST = "02" Then
-                'cofins_pCOFINS = 9.6
-             'Else
-                cofins_pCOFINS = Item![Aliq Do Cofins] '0
-             'End If
-             
-             cofins_qBCProd = 0
-             cofins_vAliqProd = 0
-             cofins_vCOFINS = Item![Valor Do Cofins]
-             
-             'Gera Grupo do COFINS
-             det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
-
              If usaRTC Then
-                Debug.Print "=========================================="
-                Debug.Print "DEBUG RTC: Gerando impostos RTC para item " & det_nItem
-                Debug.Print "=========================================="
-
-                '=========IMPOSTOS RTC - IBS/CBS (FASE TRANSICAO OUTUBRO 2025)=========
-                ibscbs_CST = "90"
-                ibscbs_cClassTrib = ""
-                ibscbs_pIBSUF = 0
-                ibscbs_pIBSMun = 0
-                ibscbs_pCBS = 0
-                ibscbs_vIBSUF = RTC_MIN_VIBS
-                ibscbs_vIBSMun = 0
-                ibscbs_vCBS = 0
-                ibscbs_vBC = ibscbs_vIBSUF + ibscbs_vIBSMun + ibscbs_vCBS
-
-                Debug.Print "DEBUG: Serviço - gIBSUF"
-                gIBSUF_xml = objNFeUtil.gIBSUF(ibscbs_pIBSUF, 0, 0, 0, 0, 0, ibscbs_vIBSUF)
-                Debug.Print "DEBUG: Serviço - gIBSMun"
-                gIBSMun_xml = objNFeUtil.gIBSMun(ibscbs_pIBSMun, 0, 0, 0, 0, 0, ibscbs_vIBSMun)
-                Debug.Print "DEBUG: Serviço - gCBS"
-                gCBS_xml = objNFeUtil.gCBS(ibscbs_pCBS, 0, 0, 0, 0, 0, ibscbs_vCBS)
-                Debug.Print "DEBUG: Serviço - gIBSCBS"
-
-                On Error Resume Next
-                gIBSCBS_xml = objNFeUtil.gIBSCBS(ibscbs_vBC, gIBSUF_xml, gIBSMun_xml, gCBS_xml, "", "", "", "")
-                If Err.Number <> 0 Then
-                   Debug.Print "DEBUG: gIBSCBS 8 parametros falhou - " & Err.Number & ": " & Err.Description
-                   Err.Clear
-                   gIBSCBS_xml = objNFeUtil.gIBSCBS(ibscbs_vBC, gIBSUF_xml, gIBSMun_xml, gCBS_xml)
-                   If Err.Number <> 0 Then
-                      Debug.Print "DEBUG: ERRO 4 parametros - " & Err.Number & ": " & Err.Description
-                      Err.Clear
-                      Debug.Print "DEBUG: Criando gIBSCBS manualmente (fallback)..."
-                      gIBSCBS_xml = "<gIBSCBS><vBC>" & Format(ibscbs_vBC, "0.00") & "</vBC>" & gIBSUF_xml & gIBSMun_xml & gCBS_xml & "</gIBSCBS>"
-                      Debug.Print "DEBUG: gIBSCBS manual OK"
+                det_produto = objNFeUtil.produtoRTCv130(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, IndEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, Rastro_Opc, "", 0, "")
+             Else
+                det_produto = objNFeUtil.produto400(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, IndEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, Rastro_Opc)
+             End If
+             '========Grupo de Informações do Imposto do Item=========
+             det_icms = ""
+             det_IPI = ""
+             det_II = ""
+             det_PIS = ""
+             det_PISST = ""
+             det_COFINS = ""
+             det_COFINSST = ""
+             det_ISSQN = ""
+             CalcICMSUFDest = ""
+             '=========Dados do ICMS (Grupo N01 do Manual de Integração - Páginas 128-)=====================
+             If permiteTributosLegados Then
+                'Bom se nw for importação entao vai ser 0 a origem, senao vai ser 1
+                If Not Mid(NatOpe![Código da Natureza de Operação], 1, 1) = "3" And Item!Importado = 0 Then
+                   icms_orig = "0"                             ' Tabela A - origem da mercadoria 0=nacional
+                Else
+                   icms_orig = "1"                             ' Tabela A - origem da mercadoria 1=Estrangeiro
+                End If
+                If Len(Item!CST) <= 2 Then
+                   icms_CST = Format(Item!CST, "00")           ' Tabela B
+                Else
+                   icms_CST = Format(Mid(Item!CST, 2, 2), "00") ' Tabela B
+                End If
+                icms_modBC = 3                              ' modalidade de determinação da BC = 3-valor da operação
+                icms_pRedBC = Item![Percentual da Redução]  ' percentual de redução da BC
+                icms_vBC = Item![Valor da Base de Cálculo]  ' valor da BC do ICMS = vProd + vFrete + vSeguro + vOutro
+                icms_pICMS = IIf(Nota_Fiscal!FinNFe = 3, 100, Item![Alíquota Do ICMS])  ' alíquota do ICMS com tratamento para finalidade 3
+                icms_vICMS = Item![Valor Do Icms]           ' valor do ICMS
+                icms_modBCST = 4                            ' modalidade de determinação da BC ICMS ST
+                icms_pmVAST = Item!IVA                      ' percentual de valor de margem e valor adicionado
+                icms_pRedBCST = 0                           ' percentual de redução da BC do ICMS ST
+                icms_vBCST = Item![Base de Cálculo ST]      ' BC do ICMS ST
+                icms_pICMSST = Item![Alíquota Do ICMS ST]   ' percentual do ICMSST
+                icms_vICMSST = Item![Valor ICMS ST]         ' valor do ICMS ST devido
+                If Item!CST = "60" Then
+                  ' icms_vBCSTRet = Prod_vProd + Prod_vSeguro + Prod_vFrete + Prod_vOutro - Prod_vDesc ' informação do ICMS retindo anteriormente por ST
+                   icms_vBCSTRet = 0 ' A Marina mandou (zerar)
+                   icms_vICMSSTRet = 0                         ' estes campos devem ser informado somente no caso do CST = 60 ou CSOSN = 500'
+                End If
+                icms_motDesICMS = 0                         ' motivo de desoneração do ICMS, só deve ser informado no caso de CST = 40 (isenção condicional)'
+                icms_pBCOp = 0                              ' campos para uso nos casos de ICMSPart/ICMSST
+                icms_UFST = ""                              '
+                icms_vICMSSTDest = 0                        '
+                icms_vBCICMSSTDest = 0                      '
+                icms_pCredSN = 0                            ' campos exclusivos para emissor optante do Simples Nacional CSOSN= 101, 201 e 900
+                icms_vCredICMSSN = 0                        ' não esquecer de informar o CRT=1
+                If icms_CST = "20" Then
+                   Reducao = True
+                ElseIf icms_CST = "51" Then
+                   Diferido = True
+                End If
+                'Alteração Conforme Lei da Transparência 12.741/12
+                'Vigor em 01/06/2013
+                det_vTotTrib = Item![Valor Do Tributo]
+                icms_vICMSDeson = 0 ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina(Contadora)
+                icms_vICMSOp = 0    ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
+                icms_pDif = 0       ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
+                icms_vICMSDif = 0   ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
+                
+                ' Partilha do ICMS Fora do Estado Consumidor Final Nw Contribuinte merda de sefaz
+                If ide_indFinal = 1 And ide_idDest = 2 And dest_indIEDest = 9 Then
+                   ValorBase = Item![Valor da Base de Cálculo]
+                   FormaCalculo = 3
+                     If Ano = "16" Then
+                         AnoOperacao = 2016
+                       ElseIf Ano = "17" Then
+                         AnoOperacao = 2017
+                       ElseIf Ano = "18" Then
+                         AnoOperacao = 2018
+                       Else
+                         AnoOperacao = 2019
+                     End If
+                     AliqFCP = 0
+                     If Ano = "16" Then
+                         pICMSInterPart = 40
+                      ElseIf Ano = "17" Then
+                         pICMSInterPart = 60
+                      ElseIf Ano = "18" Then
+                        pICMSInterPart = 80
+                      Else
+                        pICMSInterPart = 100
+                     End If
+                     AliqDestino = TbIcms![Alíquota InterEstadual] ' Aliquota Interna
+                     vBCFCPUFDest_Opc = 0
+                     If icms_orig = 1 Then ' se for item importado
+                        AliqInterstadual = 4
+                     Else
+                        AliqInterstadual = TbIcms![Porcentagem de ICMS] ' Aliquota Intestadual
+                     End If
+                     If ValorBase > 0 Then
+                        CalcICMSUFDest = objNFeUtil.CalcICMSUFDest(FormaCalculo, ValorBase, AliqDestino, AliqInterstadual, AliqFCP, AnoOperacao, vBCUFDest, pFCPUFDest, pICMSUFDest, pICMSInter, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet, vBCopeInter, vICMSOpeInter, cResultado, msgResultado)
+                     Else
+                        vICMSUFDest = 0
+                        vICMSUFRemet = 0
+                        CalcICMSUFDest = objNFeUtil.ICMSUFDest400(ValorBase, vBCFCPUFDest_Opc, AliqFCP, AliqDestino, AliqInterstadual, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet)
+                     End If
+                  'Totais devem ser amarrados no grupo totalICMSNT2015003
+                  TotICMSUFDest = TotICMSUFDest + vICMSUFDest
+                  TotICMSUFRemet = TotICMSUFRemet + vICMSUFRemet
+                  TotvFCPUFDest = TotvFCPUFDest + vFCPUFDest
+                 End If
+                
+                'Gera Grupo do ICMS
+                'det_icms = objNFeUtil.icms310(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN,icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif)
+                'Layout 4.00
+                 vBCFCP = 0  ' Fundo de Combate a pobreza po bolso dos politicos ricos vamos zerar tudo povo ladrao
+                 PFCP = 0
+                 VFCP = 0
+                 vBCFCPST = 0
+                 PFCPST = 0
+                 VFCPST = 0
+                 vBCFCPSTRet = 0
+                 pFCPSTRet = 0
+                 vFCPSTRet = 0
+                 pST = 0
+                 'xml
+                 det_icms = objNFeUtil.icms400(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN, icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif, vBCFCP, PFCP, VFCP, vBCFCPST, PFCPST, VFCPST, vBCFCPSTRet, pFCPSTRet, vFCPSTRet, pST)
+                        
+                '=========Dados do IPI=====================
+                ipi_clEnq = ""
+                ipi_CNPJProd = ""
+                ipi_cSelo = ""
+                ipi_qSelo = 0
+                If Not cEncManual Then
+                   ipi_cEnq = "999"
+                Else
+                   ipi_cEnq = IpicEnc
+                End If
+                If Item![Valor do IPI] > 0 Then
+                   ipi_CST = "50"
+                Else
+                   Select Case Item!CFOP
+                      Case "6920", "5920" 'Rem.Vasilhame e Sacaria
+                         ipi_CST = "55"
+                         ipi_cEnq = "103"
+                      Case "5914", "6914"   'Rem. Merc P/ Exp. e Feira
+                         ipi_CST = "55"
+                         ipi_cEnq = "102"
+                      Case "5901" ' Rem Para Industr. D. E.
+                         ipi_CST = "55"
+                         ipi_cEnq = "109"
+                      Case Else
+                         ipi_CST = "99"
+                   End Select
+                End If
+                If cEncManual Then
+                   ipi_CST = CstIpi
+                   ipi_cEnq = IpicEnc
+                End If
+                ipi_vBC = (Item![Valor Total])
+                ipi_pIPI = Item![Alíquota Do IPI]
+                ipi_qUnid = 0
+                ipi_vUnid = 0
+                ipi_vIPI = Item![Valor do IPI]
+                 
+                'Gera Grupo do IPI
+                det_IPI = objNFeUtil.IPI400(ipi_CNPJProd, ipi_cSelo, ipi_qSelo, ipi_cEnq, ipi_CST, ipi_vBC, ipi_pIPI, ipi_vIPI, ipi_qUnid, ipi_vUnid)
+                 
+                '=========Dados do PIS=====================
+                If Item![Valor Do PIS] > 0 Then
+                   If Item![Aliq Do Pis] = 2 Then
+                      pis_CST = "02"
                    Else
-                      Debug.Print "DEBUG: gIBSCBS 4 parametros OK"
+                      pis_CST = "01"
                    End If
                 Else
-                   Debug.Print "DEBUG: gIBSCBS 8 parametros OK"
+                   pis_CST = "49"
                 End If
-                On Error GoTo DeuErro
-
-                Debug.Print "DEBUG: gIBSCBS_xml final: " & Left(gIBSCBS_xml, 150)
-                Debug.Print "DEBUG: Chamando IBSCBS..."
-                det_IBSCBS = objNFeUtil.IBSCBS(ibscbs_CST, ibscbs_cClassTrib, gIBSCBS_xml, "")
-                Debug.Print "DEBUG: IBSCBS OK - XML: " & Left(det_IBSCBS, 150)
-                Debug.Print "DEBUG: Gerando grupo IS (zerado)..."
-                det_IS = objNFeUtil.IS("90", "", 0, 0, 0, "", 0, 0)
-                Debug.Print "DEBUG: IS OK - XML: " & Left(det_IS, 150)
+                
+                'pis_vBC = (Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
+                pis_vBC = Item![Bc Pis] 'pis_vBC - Pis_vBC * 48.1 / 100 '((Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
+                
+                 'If pis_CST = "01" Then
+                    pis_pPIS = Item![Aliq Do Pis] '1.65
+                 'Else
+                   ' pis_CST = "02"
+                    'pis_pPIS = 2
+                 'End If
+                 If pis_CST = "49" Then
+                    pis_pPIS = 0
+                 End If
+                pis_qBCProd = 0
+                pis_vAliqProd = 0
+                pis_vPIS = Item![Valor Do PIS]
+                
+                'Gera Grupo do PIS
+                det_PIS = objNFeUtil.pis(pis_CST, pis_vBC, pis_pPIS, pis_vPIS, pis_qBCProd, pis_vAliqProd)
+                
+                '=========Dados do COFINS=====================
+                If Item![Valor Do Cofins] > 0 Then
+                   If Item![Aliq Do Cofins] = 9.6 Then
+                      cofins_CST = "02"
+                   Else
+                      cofins_CST = "01"
+                   End If
+                Else
+                   cofins_CST = "49"
+                End If
+                'cofins_vBC = '(Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
+                cofins_vBC = Item![Bc Cofins] 'cofins_vBC - cofins_vBC * 48.1 / 100 '((Item![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
+                
+                'If cofins_CST = "01" Then
+                   'cofins_pCOFINS = 7.6
+                'ElseIf cofins_CST = "02" Then
+                   'cofins_pCOFINS = 9.6
+                'Else
+                   cofins_pCOFINS = Item![Aliq Do Cofins] '0
+                'End If
+                
+                cofins_qBCProd = 0
+                cofins_vAliqProd = 0
+                cofins_vCOFINS = Item![Valor Do Cofins]
+                
+                'Gera Grupo do COFINS
+                det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
+             Else
+                Debug.Print "DEBUG RTC: FinNFe=" & FinNFe & " - impostos legados do item removidos (ICMS/IPI/PIS/COFINS)"
+             End If
+             If usaRTC Then
+                Dim baseValorRTC As Double
+                Dim valorIBS_Item As Double, valorCBS_Item As Double
+                baseValorRTC = CalcValorOperacaoRTC(Item!Quantidade, Item![Valor Unitário], Item![Valor Do Desconto], Item![Valor Do Frete])
+                ' Ler valores IBS/CBS já calculados e salvos no banco
+                valorIBS_Item = -1
+                valorCBS_Item = -1
+                ' Validar posição do recordset antes de acessar campos
+                If Not Item.EOF And Not Item.BOF Then
+                   On Error Resume Next
+                   valorIBS_Item = Item![Valor IBS]
+                   If Err.Number <> 0 Then Err.Clear: valorIBS_Item = -1
+                   If IsNull(valorIBS_Item) Then valorIBS_Item = -1
+                   valorCBS_Item = Item![Valor CBS]
+                   If Err.Number <> 0 Then Err.Clear: valorCBS_Item = -1
+                   If IsNull(valorCBS_Item) Then valorCBS_Item = -1
+                   On Error GoTo 0
+                End If
+                Debug.Print "=========================================="
+                Debug.Print "DEBUG RTC: Gerando impostos RTC para item " & det_nItem & " | base=" & baseValorRTC
+                Debug.Print "DEBUG RTC: Valores do banco - IBS=" & valorIBS_Item & " CBS=" & valorCBS_Item
+                Debug.Print "=========================================="
+                MontaIBSCBS objNFeUtil, baseValorRTC, det_IBSCBS, det_IS, ibscbs_vBC, ibscbs_vIBSUF, ibscbs_vIBSMun, ibscbs_vCBS, valorIBS_Item, valorCBS_Item
              Else
                 det_IS = ""
                 det_IBSCBS = ""
              End If
-
              '==============Dados do Imposto de importação
-             If Mid(NatOpe![Código da Natureza de Operação], 1, 1) = "3" Then
-                det_II = objNFeUtil.ii(Item![Base de Cálculo da Importação], Item![Valor das Despesas Aduaneiras], Item![Valor do Imposto de Importação], Item![Valor do IOF])
+             If permiteTributosLegados Then
+                If Mid(NatOpe![Código da Natureza de Operação], 1, 1) = "3" Then
+                   det_II = objNFeUtil.ii(Item![Base de Cálculo da Importação], Item![Valor das Despesas Aduaneiras], Item![Valor do Imposto de Importação], Item![Valor do IOF])
+                End If
              End If
                                          
              'Gera Grupo do Imposto
              'Lei da Transparencia
              'det_imposto = objNFeUtil.imposto310(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN)
              If usaRTC Then
-                Debug.Print "*** PROBLEMA 2: Chamando impostoRTC com impostoIBS (NAO EXISTE NO SCHEMA 4.00!) ***"
+                Debug.Print "DEBUG RTC: Chamando impostoRTC com grupos IBS/CBS"
                 det_imposto = objNFeUtil.impostoRTC(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest, det_IS, det_IBSCBS)
              Else
                 det_imposto = objNFeUtil.impostoNT2015003(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest)
@@ -10158,19 +10357,33 @@ End If
              
              'Gera Grupo de Detalhamento do Produto
              If usaRTC Then
-                Debug.Print "*** PROBLEMA 3: Chamando detalheRTC com vItem = " & Prod_vProd & " (NAO EXISTE NO SCHEMA 4.00!) ***"
+                Debug.Print "DEBUG RTC: Chamando detalheRTC com vItem = " & Prod_vProd
                 Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", Prod_vProd, "")
              Else
                 Detalhes = Detalhes & objNFeUtil.detalhe310(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol)
              End If
-
-             'Acumular totais RTC
+             'Acumular totais RTC - USAR VALORES DO BANCO ao inv\u00e9s dos recalculados
              If usaRTC Then
-                vIBSTotal = vIBSTotal + ibscbs_vIBSUF + ibscbs_vIBSMun
-                vCBSTotal = vCBSTotal + ibscbs_vCBS
+                ' Usar valores do banco se dispon\u00edveis, sen\u00e3o usar valores de MontaIBSCBS
+                If valorIBS_Item >= 0 And valorCBS_Item >= 0 Then
+                   vIBSTotal = vIBSTotal + valorIBS_Item
+                   vCBSTotal = vCBSTotal + valorCBS_Item
+                   ' Distribuir IBS entre UF e Mun proporcionalmente
+                   If RTC_PERC_IBSUF + RTC_PERC_IBSMUN > 0 Then
+                      vIBSUFTotal = vIBSUFTotal + (valorIBS_Item * (RTC_PERC_IBSUF / (RTC_PERC_IBSUF + RTC_PERC_IBSMUN)))
+                      vIBSMunTotal = vIBSMunTotal + (valorIBS_Item * (RTC_PERC_IBSMUN / (RTC_PERC_IBSUF + RTC_PERC_IBSMUN)))
+                   Else
+                      vIBSUFTotal = vIBSUFTotal + valorIBS_Item
+                   End If
+                Else
+                   ' Fallback: usar valores recalculados por MontaIBSCBS
+                   vIBSUFTotal = vIBSUFTotal + ibscbs_vIBSUF
+                   vIBSMunTotal = vIBSMunTotal + ibscbs_vIBSMun
+                   vIBSTotal = vIBSTotal + ibscbs_vIBSUF + ibscbs_vIBSMun
+                   vCBSTotal = vCBSTotal + ibscbs_vCBS
+                End If
                 vBCIBSCBS = vBCIBSCBS + ibscbs_vBC
              End If
-
              Item.MoveNext
           Loop
        End If
@@ -10212,39 +10425,54 @@ End If
       ' det_Servicos = objNFeUtil.produtoNT2015003(cServico, "", xServico, Serv_NCM, "", "", "", Serv_CFOP, Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "")
        det_Servicos = objNFeUtil.produto400(cServico, "SEM GTIN", xServico, Serv_NCM, "", "", "", "", "", "", Serv_CFOP, Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "SEM GTIN", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "", "")
        '========Grupo de Informações do Imposto dos Serviços=========
-       '========Dados ISSQN=======================================
-       Serv_BC = Servicos![Valor Total] - Serv_Desc
-       Serv_Aliq = Nota_Fiscal![Alíquota Do ISS]
-       Serv_vISSQN = Round((Serv_BC * Serv_Aliq / 100), 2)
-       Serv_cMunFG = "3537305"
-       cListServ = "14.01"
-       indISS = 1
-       indIncentivo = 2
-       'Gera Grupo do ISSQN
-       ISSQN310 = objNFeUtil.ISSQN310(Serv_BC, Serv_Aliq, Serv_vISSQN, Serv_cMunFG, cListServ, 0, 0, 0, Serv_Desc, 0, indISS, "", "", "", "", indIncentivo)
-       '=========Dados do PIS ISSQN=====================
-       pis_CST = "01"
-       pis_vBC = Servicos![Valor Total] - Serv_Desc
-       pis_pPIS = 1.65
-       pis_qBCProd = 0
-       pis_vAliqProd = 0
-       pis_vPIS = Round((pis_vBC * pis_pPIS / 100), 2)
-       'Gera Grupo do PIS
-       det_PIS = objNFeUtil.pis(pis_CST, pis_vBC, pis_pPIS, pis_vPIS, pis_qBCProd, pis_vAliqProd)
-       '=========Dados do COFINS=====================
-       cofins_CST = "01"
-       cofins_vBC = Servicos![Valor Total] - Serv_Desc
-       cofins_pCOFINS = 7.6
-       cofins_qBCProd = 0
-       cofins_vAliqProd = 0
-       cofins_vCOFINS = Round((cofins_vBC * cofins_pCOFINS / 100), 2)
-       'Gera Grupo do COFINS
-       det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
-       'Gera Grupo do Imposto
-       'Lei da Transparencia
+       ISSQN310 = ""
+       det_PIS = ""
+       det_COFINS = ""
+       If permiteTributosLegados Then
+          '========Dados ISSQN=======================================
+          Serv_BC = Servicos![Valor Total] - Serv_Desc
+          Serv_Aliq = Nota_Fiscal![Alíquota Do ISS]
+          Serv_vISSQN = Round((Serv_BC * Serv_Aliq / 100), 2)
+          Serv_cMunFG = "3537305"
+          cListServ = "14.01"
+          indISS = 1
+          indIncentivo = 2
+          'Gera Grupo do ISSQN
+          ISSQN310 = objNFeUtil.ISSQN310(Serv_BC, Serv_Aliq, Serv_vISSQN, Serv_cMunFG, cListServ, 0, 0, 0, Serv_Desc, 0, indISS, "", "", "", "", indIncentivo)
+          '=========Dados do PIS ISSQN=====================
+          pis_CST = "01"
+          pis_vBC = Servicos![Valor Total] - Serv_Desc
+          pis_pPIS = 1.65
+          pis_qBCProd = 0
+          pis_vAliqProd = 0
+          pis_vPIS = Round((pis_vBC * pis_pPIS / 100), 2)
+          'Gera Grupo do PIS
+          det_PIS = objNFeUtil.pis(pis_CST, pis_vBC, pis_pPIS, pis_vPIS, pis_qBCProd, pis_vAliqProd)
+          '=========Dados do COFINS=====================
+          cofins_CST = "01"
+          cofins_vBC = Servicos![Valor Total] - Serv_Desc
+          cofins_pCOFINS = 7.6
+          cofins_qBCProd = 0
+          cofins_vAliqProd = 0
+          cofins_vCOFINS = Round((cofins_vBC * cofins_pCOFINS / 100), 2)
+          'Gera Grupo do COFINS
+          det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
+       Else
+          Debug.Print "DEBUG RTC: FinNFe=" & FinNFe & " - impostos de serviços (ISS/PIS/COFINS) suprimidos"
+       End If
+       Dim baseServicoRTC As Double
+       Dim valorIBS_Serv As Double, valorCBS_Serv As Double
        If usaRTC Then
+          baseServicoRTC = CalcValorOperacaoRTC(Servicos!Quantidade, Servicos![Valor Unitário], Serv_Desc, 0)
+          ' Ler valores IBS/CBS do banco (serviços não têm esses campos, usar 0)
+          valorIBS_Serv = 0
+          valorCBS_Serv = 0
+          ' Serviços podem não ter campos IBS/CBS - usar recálculo
+          MontaIBSCBS objNFeUtil, baseServicoRTC, det_IBSCBS, det_IS, ibscbs_vBC, ibscbs_vIBSUF, ibscbs_vIBSMun, ibscbs_vCBS
           det_imposto = objNFeUtil.impostoRTC(Round((Serv_vISSQN + pis_vPIS + cofins_vCOFINS), 2), "", "", "", det_PIS, "", det_COFINS, "", ISSQN310, "", det_IS, det_IBSCBS)
        Else
+          det_IS = ""
+          det_IBSCBS = ""
           det_imposto = objNFeUtil.impostoNT2015003(Round((Serv_vISSQN + pis_vPIS + cofins_vCOFINS), 2), "", "", "", det_PIS, "", det_COFINS, "", ISSQN310, "")
        End If
        Det_pDevol = 0
@@ -10255,8 +10483,9 @@ End If
        Else
           Detalhes = Detalhes & objNFeUtil.detalhe310(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol)
        End If
-
        If usaRTC Then
+          vIBSUFTotal = vIBSUFTotal + ibscbs_vIBSUF
+          vIBSMunTotal = vIBSMunTotal + ibscbs_vIBSMun
           vIBSTotal = vIBSTotal + ibscbs_vIBSUF + ibscbs_vIBSMun
           vCBSTotal = vCBSTotal + ibscbs_vCBS
           vBCIBSCBS = vBCIBSCBS + ibscbs_vBC
@@ -10267,7 +10496,6 @@ End If
        'fim Serviços
        GoTo Continua
     
-
 OcultaValor:
     'Vamos Esconder os Valores. Frescura na Bunda, Acho que isso nw pode mas tudo bem o fumo depois nw vai pra mim mesmo rsrs
     det_nItem = 1
@@ -10333,223 +10561,244 @@ OcultaValor:
     
     'Gera Grupo do Produto
      det_produto = objNFeUtil.produto400(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, IndEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, Rastro_Opc)
-
-
        '========Grupo de Informações do Imposto do Item=========
-          
-       '=========Dados do ICMS (Grupo N01 do Manual de Integração - Páginas 128-)=====================
-       icms_orig = "0"                             ' Tabela A - origem da mercadoria 0=nacional
-       icms_modBC = 3                              ' modalidade de determinação da BC = 3-valor da operação
-       icms_pRedBC = CalculaImposto(0, Sequencia_do_Geral, 2, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)) ' percentual de redução da BC
-       icms_vBC = SemValores![Base de Calculo]     ' valor da BC do ICMS = vProd + vFrete + vSeguro + vOutro
-       'icms_pICMS = CalculaImposto(0, Sequencia_do_Geral, 3, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)) ' alíquota do ICMS
-       icms_pICMS = SemValores![Alíquota ICMS]
-       icms_vICMS = SemValores![Valor ICMS]        ' valor do ICMS
-       If Mid(NatOpe![Código da Natureza de Operação], 1, 1) = "7" Then
-          icms_CST = "41" 'Alterado de 041 para 41 o Tipo de Dados é String então Não Pode 041 tem que ser 41
-       Else
-          If Not Nota_Fiscal![Nota Fiscal Avulsa] Then
-             'icms_CST = Format(CalculaImposto(0, Sequencia_do_Geral, 5, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)), "00") ' Tabela B
-             icms_CST = Format(SemValores!CST, "00")
-          Else
-             icms_CST = Format(Item!CST, "00")
-          End If
-       End If
-       icms_modBCST = 4                            ' modalidade de determinação da BC ICMS ST
-       icms_pmVAST = CalculaImposto(0, Sequencia_do_Geral, 12, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao))                             ' percentual de valor de margem e valor adicionado
-       icms_pRedBCST = 0                           ' percentual de redução da BC do ICMS ST
-       icms_vBCST = SemValores![Base de Cálculo ST] ' BC do ICMS ST
-       icms_pICMSST = CalculaImposto(0, Sequencia_do_Geral, 15, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)) 'percentual do ICMSST
-       icms_vICMSST = SemValores![Valor ICMS ST]    ' valor do ICMS ST devido
-       If icms_CST = "60" Then
-          icms_vBCSTRet = Prod_vProd + Prod_vSeguro + Prod_vFrete + Prod_vOutro - Prod_vDesc ' informação do ICMS retindo anteriormente por ST
-          icms_vICMSSTRet = 0                         ' estes campos devem ser informado somente no caso do CST = 60 ou CSOSN = 500'
-       End If
-       icms_motDesICMS = 0                         ' motivo de desoneração do ICMS, só deve ser informado no caso de CST = 40 (isenção condicional)'
-       icms_pBCOp = 0                              ' campos para uso nos casos de ICMSPart/ICMSST
-       icms_UFST = ""                              '
-       icms_vICMSSTDest = 0                        '
-       icms_vBCICMSSTDest = 0                      '
-       icms_pCredSN = 0                            ' campos exclusivos para emissor optante do Simples Nacional CSOSN= 101, 201 e 900
-       icms_vCredICMSSN = 0                        ' não esquecer de informar o CRT=1
-       If icms_CST = "20" Then
-          Reducao = True
-       ElseIf icms_CST = "51" Then
-          Diferido = True
-       End If
-       'Alteração Conforme Lei da Transparência 12.741/12
-       'Vigor em 01/06/2013
+       det_icms = ""
+       det_IPI = ""
+       det_PIS = ""
+       det_PISST = ""
+       det_COFINS = ""
+       det_COFINSST = ""
+       CalcICMSUFDest = ""
        det_vTotTrib = SemValores![Valor Do Tributo]
-       icms_vICMSDeson = 0      ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina(Contadora)
-       icms_vICMSOp = 0         ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
-       icms_pDif = 0            ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
-       icms_vICMSDif = 0        ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
-       
-       'Layout 4.00
-       vBCFCP = 0  ' Fundo de Combate a pobreza po bolso dos politicos ricos vamos zerar tudo povo ladrao
-       PFCP = 0
-       VFCP = 0
-       vBCFCPST = 0
-       PFCPST = 0
-       VFCPST = 0
-       vBCFCPSTRet = 0
-       pFCPSTRet = 0
-       vFCPSTRet = 0
-       pST = 0
-       
-       'Partilha do ICMS
-       If ide_indFinal = 1 And ide_idDest = 2 And dest_indIEDest = 9 Then  ' Fora do Estado Consumidor Final nw Contribuinte
-          ValorBase = SemValores![Base de Calculo]
-          FormaCalculo = 3
-             If Ano = "16" Then
-                AnoOperacao = 2016
-             ElseIf Ano = "17" Then
-                AnoOperacao = 2017
-             ElseIf Ano = "18" Then
-                AnoOperacao = 2018
-             Else
-                AnoOperacao = 2019
-             End If
-             AliqFCP = 0
-             If Ano = "16" Then
-                pICMSInterPart = 40
-             ElseIf Ano = "17" Then
-                pICMSInterPart = 60
-             ElseIf Ano = "18" Then
-                pICMSInterPart = 80
-             Else
-                pICMSInterPart = 100
-             End If
-             AliqDestino = TbIcms![Alíquota InterEstadual]  ' Aliquota Interna
-             vBCFCPUFDest_Opc = 0
-             If icms_orig = 1 Then ' se for item importado
-                AliqInterstadual = 4
-             Else
-                AliqInterstadual = TbIcms![Porcentagem de ICMS] ' Aliquota Interstadual
-             End If
-             If ValorBase > 0 Then
-                CalcICMSUFDest = objNFeUtil.CalcICMSUFDest(FormaCalculo, ValorBase, AliqDestino, AliqInterstadual, AliqFCP, AnoOperacao, vBCUFDest, pFCPUFDest, pICMSUFDest, pICMSInter, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet, vBCopeInter, vICMSOpeInter, cResultado, msgResultado)
-             Else
-                vICMSUFDest = 0
-                vICMSUFRemet = 0
-                CalcICMSUFDest = objNFeUtil.ICMSUFDest400(ValorBase, vBCFCPUFDest_Opc, AliqFCP, AliqDestino, AliqInterstadual, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet)
-             End If
-             'Totais devem ser amarrados no grupo totalICMSNT2015003
-                TotICMSUFDest = vICMSUFDest
-                TotICMSUFRemet = vICMSUFRemet
-                TotvFCPUFDest = vFCPUFDest
-             End If
-             
-       'Gera Grupo do ICMS
-       'det_icms = objNFeUtil.icms310(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN, icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif)
-        det_icms = objNFeUtil.icms400(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN, icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif, vBCFCP, PFCP, VFCP, vBCFCPST, PFCPST, VFCPST, vBCFCPSTRet, pFCPSTRet, vFCPSTRet, pST)
-          
-       '=========Dados do IPI=====================
-       ipi_clEnq = ""
-       ipi_CNPJProd = ""
-       ipi_cSelo = ""
-       ipi_qSelo = 0
-       If Not cEncManual Then
-       ipi_cEnq = "999"
-       Else
-       ipi_cEnq = IpicEnc
-       End If
-       If Item![Valor do IPI] > 0 Then
-          ipi_CST = "50"
-       Else
-       Select Case Item!CFOP
-       Case "6920", "5920" 'Rem.Vasilhame e Sacaria
-          ipi_CST = "55"
-          ipi_cEnq = "103"
-       Case "5914", "6914"   'Rem. Merc P/ Exp. e Feira
-          ipi_CST = "55"
-          ipi_cEnq = "102"
-       Case "5901" ' Rem Para Industr. D. E.
-          ipi_CST = "55"
-          ipi_cEnq = "109"
-       Case Else
-          ipi_CST = "99"
-       End Select
-       End If
-       If cEncManual Then
-          ipi_CST = CstIpi
-          ipi_cEnq = IpicEnc
-       End If
-       ipi_vBC = SemValores![Valor Total]
-       ipi_pIPI = CalculaImposto(0, Sequencia_do_Geral, 4, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao))
-       ipi_qUnid = 0
-       ipi_vUnid = 0
-       ipi_vIPI = SemValores![Valor IPI]
-           
-       'Gera Grupo do IPI
-       det_IPI = objNFeUtil.IPI400(ipi_CNPJProd, ipi_cSelo, ipi_qSelo, ipi_cEnq, ipi_CST, ipi_vBC, ipi_pIPI, ipi_vIPI, ipi_qUnid, ipi_vUnid)
-                
-       '=========Dados do PIS=====================
-       If SemValores![Valor PIS] > 0 Then
-          If SemValores![Aliq Do Pis] = 2 Then
-             pis_CST = "02"
+       If permiteTributosLegados Then
+          '=========Dados do ICMS (Grupo N01 do Manual de Integração - Páginas 128-)=====================
+          icms_orig = "0"                             ' Tabela A - origem da mercadoria 0=nacional
+          icms_modBC = 3                              ' modalidade de determinação da BC = 3-valor da operação
+          icms_pRedBC = CalculaImposto(0, Sequencia_do_Geral, 2, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)) ' percentual de redução da BC
+          icms_vBC = SemValores![Base de Calculo]     ' valor da BC do ICMS = vProd + vFrete + vSeguro + vOutro
+          'icms_pICMS = CalculaImposto(0, Sequencia_do_Geral, 3, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)) ' alíquota do ICMS
+          icms_pICMS = SemValores![Alíquota ICMS]
+          icms_vICMS = SemValores![Valor ICMS]        ' valor do ICMS
+          If Mid(NatOpe![Código da Natureza de Operação], 1, 1) = "7" Then
+             icms_CST = "41" 'Alterado de 041 para 41 o Tipo de Dados é String então Não Pode 041 tem que ser 41
           Else
-             pis_CST = "01"
+             If Not Nota_Fiscal![Nota Fiscal Avulsa] Then
+                'icms_CST = Format(CalculaImposto(0, Sequencia_do_Geral, 5, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)), "00") ' Tabela B
+                icms_CST = Format(SemValores!CST, "00")
+             Else
+                icms_CST = Format(Item!CST, "00")
+             End If
           End If
+          icms_modBCST = 4                            ' modalidade de determinação da BC ICMS ST
+          icms_pmVAST = CalculaImposto(0, Sequencia_do_Geral, 12, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao))                             ' percentual de valor de margem e valor adicionado
+          icms_pRedBCST = 0                           ' percentual de redução da BC do ICMS ST
+          icms_vBCST = SemValores![Base de Cálculo ST] ' BC do ICMS ST
+          icms_pICMSST = CalculaImposto(0, Sequencia_do_Geral, 15, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao)) 'percentual do ICMSST
+          icms_vICMSST = SemValores![Valor ICMS ST]    ' valor do ICMS ST devido
+          If icms_CST = "60" Then
+             icms_vBCSTRet = Prod_vProd + Prod_vSeguro + Prod_vFrete + Prod_vOutro - Prod_vDesc ' informação do ICMS retindo anteriormente por ST
+             icms_vICMSSTRet = 0                         ' estes campos devem ser informado somente no caso do CST = 60 ou CSOSN = 500'
+          End If
+          icms_motDesICMS = 0                         ' motivo de desoneração do ICMS, só deve ser informado no caso de CST = 40 (isenção condicional)'
+          icms_pBCOp = 0                              ' campos para uso nos casos de ICMSPart/ICMSST
+          icms_UFST = ""                              '
+          icms_vICMSSTDest = 0                        '
+          icms_vBCICMSSTDest = 0                      '
+          icms_pCredSN = 0                            ' campos exclusivos para emissor optante do Simples Nacional CSOSN= 101, 201 e 900
+          icms_vCredICMSSN = 0                        ' não esquecer de informar o CRT=1
+          If icms_CST = "20" Then
+             Reducao = True
+          ElseIf icms_CST = "51" Then
+             Diferido = True
+          End If
+          'Alteração Conforme Lei da Transparência 12.741/12
+          'Vigor em 01/06/2013
+          icms_vICMSDeson = 0      ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina(Contadora)
+          icms_vICMSOp = 0         ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
+          icms_pDif = 0            ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
+          icms_vICMSDif = 0        ' Campo Novo Layout 3.10 a Irrigação Pode Informar 0 Assim diz a Marina
+          
+          'Layout 4.00
+          vBCFCP = 0  ' Fundo de Combate a pobreza po bolso dos politicos ricos vamos zerar tudo povo ladrao
+          PFCP = 0
+          VFCP = 0
+          vBCFCPST = 0
+          PFCPST = 0
+          VFCPST = 0
+          vBCFCPSTRet = 0
+          pFCPSTRet = 0
+          vFCPSTRet = 0
+          pST = 0
+          
+          'Partilha do ICMS
+          If ide_indFinal = 1 And ide_idDest = 2 And dest_indIEDest = 9 Then  ' Fora do Estado Consumidor Final nw Contribuinte
+             ValorBase = SemValores![Base de Calculo]
+             FormaCalculo = 3
+                If Ano = "16" Then
+                   AnoOperacao = 2016
+                ElseIf Ano = "17" Then
+                   AnoOperacao = 2017
+                ElseIf Ano = "18" Then
+                   AnoOperacao = 2018
+                Else
+                   AnoOperacao = 2019
+                End If
+                AliqFCP = 0
+                If Ano = "16" Then
+                   pICMSInterPart = 40
+                ElseIf Ano = "17" Then
+                   pICMSInterPart = 60
+                ElseIf Ano = "18" Then
+                   pICMSInterPart = 80
+                Else
+                   pICMSInterPart = 100
+                End If
+                AliqDestino = TbIcms![Alíquota InterEstadual]  ' Aliquota Interna
+                vBCFCPUFDest_Opc = 0
+                If icms_orig = 1 Then ' se for item importado
+                   AliqInterstadual = 4
+                Else
+                   AliqInterstadual = TbIcms![Porcentagem de ICMS] ' Aliquota Interstadual
+                End If
+                If ValorBase > 0 Then
+                   CalcICMSUFDest = objNFeUtil.CalcICMSUFDest(FormaCalculo, ValorBase, AliqDestino, AliqInterstadual, AliqFCP, AnoOperacao, vBCUFDest, pFCPUFDest, pICMSUFDest, pICMSInter, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet, vBCopeInter, vICMSOpeInter, cResultado, msgResultado)
+                Else
+                   vICMSUFDest = 0
+                   vICMSUFRemet = 0
+                   CalcICMSUFDest = objNFeUtil.ICMSUFDest400(ValorBase, vBCFCPUFDest_Opc, AliqFCP, AliqDestino, AliqInterstadual, pICMSInterPart, vFCPUFDest, vICMSUFDest, vICMSUFRemet)
+                End If
+                'Totais devem ser amarrados no grupo totalICMSNT2015003
+                   TotICMSUFDest = vICMSUFDest
+                   TotICMSUFRemet = vICMSUFRemet
+                   TotvFCPUFDest = vFCPUFDest
+                End If
+                
+          'Gera Grupo do ICMS
+          'det_icms = objNFeUtil.icms310(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN, icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif)
+          det_icms = objNFeUtil.icms400(icms_orig, icms_CST, icms_modBC, icms_pRedBC, icms_vBC, icms_pICMS, icms_vICMS, icms_modBCST, icms_pmVAST, icms_pRedBCST, icms_vBCST, icms_pICMSST, icms_vICMSST, icms_vBCSTRet, icms_vICMSSTRet, icms_vBCICMSSTDest, icms_vICMSSTDest, icms_motDesICMS, icms_pBCOp, icms_UFST, icms_pCredSN, icms_vCredICMSSN, icms_vICMSDeson, icms_vICMSOp, icms_pDif, icms_vICMSDif, vBCFCP, PFCP, VFCP, vBCFCPST, PFCPST, VFCPST, vBCFCPSTRet, pFCPSTRet, vFCPSTRet, pST)
+          
+          '=========Dados do IPI=====================
+          ipi_clEnq = ""
+          ipi_CNPJProd = ""
+          ipi_cSelo = ""
+          ipi_qSelo = 0
+          If Not cEncManual Then
+             ipi_cEnq = "999"
+          Else
+             ipi_cEnq = IpicEnc
+          End If
+          If Item![Valor do IPI] > 0 Then
+             ipi_CST = "50"
+          Else
+             Select Case Item!CFOP
+                Case "6920", "5920" 'Rem.Vasilhame e Sacaria
+                   ipi_CST = "55"
+                   ipi_cEnq = "103"
+                Case "5914", "6914"   'Rem. Merc P/ Exp. e Feira
+                   ipi_CST = "55"
+                   ipi_cEnq = "102"
+                Case "5901" ' Rem Para Industr. D. E.
+                   ipi_CST = "55"
+                   ipi_cEnq = "109"
+                Case Else
+                   ipi_CST = "99"
+             End Select
+          End If
+          If cEncManual Then
+             ipi_CST = CstIpi
+             ipi_cEnq = IpicEnc
+          End If
+          ipi_vBC = SemValores![Valor Total]
+          ipi_pIPI = CalculaImposto(0, Sequencia_do_Geral, 4, 2, SemValores![Valor Total], 0, CLng(Sequencia_da_Propriedade), CLng(Sequencia_da_Classificacao))
+          ipi_qUnid = 0
+          ipi_vUnid = 0
+          ipi_vIPI = SemValores![Valor IPI]
+          
+          'Gera Grupo do IPI
+          det_IPI = objNFeUtil.IPI400(ipi_CNPJProd, ipi_cSelo, ipi_qSelo, ipi_cEnq, ipi_CST, ipi_vBC, ipi_pIPI, ipi_vIPI, ipi_qUnid, ipi_vUnid)
+          
+          '=========Dados do PIS=====================
+          If SemValores![Valor PIS] > 0 Then
+             If SemValores![Aliq Do Pis] = 2 Then
+                pis_CST = "02"
+             Else
+                pis_CST = "01"
+             End If
+          Else
+             pis_CST = "49"
+          End If
+          'pis_vBC = (SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
+          pis_vBC = SemValores![Bc Pis] 'pis_vBC - pis_vBC * 48.1 / 100 '((SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
+          
+          pis_pPIS = SemValores![Aliq Do Pis]
+          pis_qBCProd = 0
+          pis_vAliqProd = 0
+          pis_vPIS = SemValores![Valor PIS]
+          
+          'Gera Grupo do PIS
+          det_PIS = objNFeUtil.pis(pis_CST, pis_vBC, pis_pPIS, pis_vPIS, pis_qBCProd, pis_vAliqProd)
+          
+          '=========Dados do COFINS=====================
+          If SemValores![Valor Cofins] > 0 Then
+             cofins_CST = "02"
+          Else
+             cofins_CST = "49"
+          End If
+          cofins_vBC = SemValores![Bc Cofins] '(SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
+         ' cofins_vBC = cofins_vBC - ((SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
+          
+          cofins_pCOFINS = SemValores![Aliq Do Cofins]
+          cofins_qBCProd = 0
+          cofins_vAliqProd = 0
+          cofins_vCOFINS = SemValores![Valor Cofins]
+          
+          'Gera Grupo do COFINS
+          det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
        Else
-            pis_CST = "49"
+          Debug.Print "DEBUG RTC: FinNFe=" & FinNFe & " - tributos legados suprimidos no agrupamento SemValores"
        End If
-       'pis_vBC = (SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
-       pis_vBC = SemValores![Bc Pis] 'pis_vBC - pis_vBC * 48.1 / 100 '((SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
-       
-       pis_pPIS = SemValores![Aliq Do Pis]
-       pis_qBCProd = 0
-       pis_vAliqProd = 0
-       pis_vPIS = SemValores![Valor PIS]
-          
-       'Gera Grupo do PIS
-       det_PIS = objNFeUtil.pis(pis_CST, pis_vBC, pis_pPIS, pis_vPIS, pis_qBCProd, pis_vAliqProd)
-          
-       '=========Dados do COFINS=====================
-       If SemValores![Valor Cofins] > 0 Then
-          cofins_CST = "02"
-       Else
-          cofins_CST = "49"
-       End If
-       cofins_vBC = SemValores![Bc Cofins] '(SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS
-      ' cofins_vBC = cofins_vBC - ((SemValores![Valor Total] + Prod_vFrete - Prod_vDesc) - icms_vICMS) * 48.1 / 100
-       
-       cofins_pCOFINS = SemValores![Aliq Do Cofins]
-       cofins_qBCProd = 0
-       cofins_vAliqProd = 0
-       cofins_vCOFINS = SemValores![Valor Cofins]
-          
-       'Gera Grupo do COFINS
-       det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
-                                      
        'Gera Grupo do Imposto
        'Lei da Transparencia
        If usaRTC Then
           ibscbs_CST = "90"
           ibscbs_cClassTrib = ""
-          ibscbs_pIBSUF = 0
-          ibscbs_pIBSMun = 0
-          ibscbs_pCBS = 0
-          ibscbs_vIBSUF = RTC_MIN_VIBS
-          ibscbs_vIBSMun = 0
-          ibscbs_vCBS = 0
-          ibscbs_vBC = ibscbs_vIBSUF + ibscbs_vIBSMun + ibscbs_vCBS
+          Dim baseValorAgrupado As Double
+          If IsNull(SemValores![Valor Total]) Then
+             baseValorAgrupado = 0
+          Else
+             baseValorAgrupado = Round(CDbl(SemValores![Valor Total]), 2)
+          End If
+          ibscbs_pIBSUF = RTC_PERC_IBSUF
+          ibscbs_pIBSMun = RTC_PERC_IBSMUN
+          ibscbs_pCBS = RTC_PERC_CBS
+          ibscbs_vIBSUF = Round(baseValorAgrupado * ibscbs_pIBSUF / 100, 2)
+          ibscbs_vIBSMun = Round(baseValorAgrupado * ibscbs_pIBSMun / 100, 2)
+          ibscbs_vCBS = Round(baseValorAgrupado * ibscbs_pCBS / 100, 2)
+          ibscbs_vBC = baseValorAgrupado
           On Error Resume Next
           gIBSUF_xml = objNFeUtil.gIBSUF(ibscbs_pIBSUF, 0, 0, 0, 0, 0, ibscbs_vIBSUF)
-          gIBSMun_xml = objNFeUtil.gIBSMun(ibscbs_pIBSMun, 0, 0, 0, 0, 0, ibscbs_vIBSMun)
+          If ibscbs_pIBSMun > 0 Or ibscbs_vIBSMun > 0 Then
+             gIBSMun_xml = objNFeUtil.gIBSMun(ibscbs_pIBSMun, 0, 0, 0, 0, 0, ibscbs_vIBSMun)
+          Else
+             gIBSMun_xml = ""
+          End If
           gCBS_xml = objNFeUtil.gCBS(ibscbs_pCBS, 0, 0, 0, 0, 0, ibscbs_vCBS)
-          gIBSCBS_xml = objNFeUtil.gIBSCBS(ibscbs_vBC, gIBSUF_xml, gIBSMun_xml, gCBS_xml, "", "", "", "")
+          Dim vIBS_Agrupado As Double
+          vIBS_Agrupado = ibscbs_vIBSUF + ibscbs_vIBSMun
+          ' Usar gIBSCBSv130 (vers\u00e3o 5.0.0m)
+          gIBSCBS_xml = objNFeUtil.gIBSCBSv130(ibscbs_vBC, gIBSUF_xml, gIBSMun_xml, vIBS_Agrupado, gCBS_xml, "", "")
           If Err.Number <> 0 Then
              Err.Clear
+             ' Fallback para vers\u00e3o antiga
              gIBSCBS_xml = objNFeUtil.gIBSCBS(ibscbs_vBC, gIBSUF_xml, gIBSMun_xml, gCBS_xml)
              If Err.Number <> 0 Then
                 Err.Clear
-                gIBSCBS_xml = "<gIBSCBS><vBC>" & Format(ibscbs_vBC, "0.00") & "</vBC>" & gIBSUF_xml & gIBSMun_xml & gCBS_xml & "</gIBSCBS>"
+                gIBSCBS_xml = "<gIBSCBS><vBC>" & Format(ibscbs_vBC, "0.00") & "</vBC><vIBS>" & Format(vIBS_Agrupado, "0.00") & "</vIBS>" & gIBSUF_xml & gIBSMun_xml & gCBS_xml & "</gIBSCBS>"
              End If
           End If
           On Error GoTo DeuErro
-          det_IBSCBS = objNFeUtil.IBSCBS(ibscbs_CST, ibscbs_cClassTrib, gIBSCBS_xml, "")
-          det_IS = objNFeUtil.IS("90", "", 0, 0, 0, "", 0, 0)
+          det_IBSCBS = objNFeUtil.IBSCBSv130(ibscbs_CST, ibscbs_cClassTrib, "", gIBSCBS_xml, "", "")
+          det_IS = objNFeUtil.Is("90", "", 0, 0, 0, "", 0, 0)
        Else
           det_IBSCBS = ""
           det_IS = ""
@@ -10566,6 +10815,8 @@ OcultaValor:
        'Gera Grupo de Detalhamento do Produto
        If usaRTC Then
           Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", SemValores![Valor Total], "")
+          vIBSUFTotal = vIBSUFTotal + ibscbs_vIBSUF
+          vIBSMunTotal = vIBSMunTotal + ibscbs_vIBSMun
           vIBSTotal = vIBSTotal + ibscbs_vIBSUF + ibscbs_vIBSMun
           vCBSTotal = vCBSTotal + ibscbs_vCBS
           vBCIBSCBS = vBCIBSCBS + ibscbs_vBC
@@ -10821,39 +11072,24 @@ OcultaValor:
        Serv_indTot = 0
    Serv_qCOM = Replace(Format$(val(Serv_qCOM), "0.0000"), ",", ".")
     Serv_qTrib = Replace(Format$(val(Serv_qTrib), "0.0000"), ",", ".")
-       ibscbs_CST = "90"
-       ibscbs_cClassTrib = ""
-       ibscbs_pIBSUF = 0
-       ibscbs_pIBSMun = 0
-       ibscbs_pCBS = 0
-       ibscbs_vIBSUF = RTC_MIN_VIBS
-       ibscbs_vIBSMun = 0
-       ibscbs_vCBS = 0
-       ibscbs_vBC = ibscbs_vIBSUF + ibscbs_vIBSMun + ibscbs_vCBS
-       Debug.Print "DEBUG: Serviço - gIBSUF"
-       gIBSUF_xml = objNFeUtil.gIBSUF(ibscbs_pIBSUF, 0, 0, 0, 0, 0, ibscbs_vIBSUF)
-       Debug.Print "DEBUG: Serviço - gIBSMun"
-       gIBSMun_xml = objNFeUtil.gIBSMun(ibscbs_pIBSMun, 0, 0, 0, 0, 0, ibscbs_vIBSMun)
-       Debug.Print "DEBUG: Serviço - gCBS"
-       gCBS_xml = objNFeUtil.gCBS(ibscbs_pCBS, 0, 0, 0, 0, 0, ibscbs_vCBS)
-       On Error Resume Next
-       Debug.Print "DEBUG: Serviço - gIBSCBS"
-       gIBSCBS_xml = objNFeUtil.gIBSCBS(ibscbs_vBC, gIBSUF_xml, gIBSMun_xml, gCBS_xml, "", "", "", "")
-       If Err.Number <> 0 Then
-          Err.Clear
-          gIBSCBS_xml = objNFeUtil.gIBSCBS(ibscbs_vBC, gIBSUF_xml, gIBSMun_xml, gCBS_xml)
-          If Err.Number <> 0 Then
-             Err.Clear
-             gIBSCBS_xml = "<gIBSCBS><vBC>" & Format(ibscbs_vBC, "0.00") & "</vBC>" & gIBSUF_xml & gIBSMun_xml & gCBS_xml & "</gIBSCBS>"
-          End If
-       End If
        If usaRTC Then
-          On Error GoTo DeuErro
-          det_IBSCBS = objNFeUtil.IBSCBS(ibscbs_CST, ibscbs_cClassTrib, gIBSCBS_xml, "")
-          det_IS = objNFeUtil.IS("90", "", 0, 0, 0, "", 0, 0)
+          Dim baseServRTC As Double
+          Dim valorIBS_ServRTC As Double, valorCBS_ServRTC As Double
+          baseServRTC = CalcValorOperacaoRTC(Servicos!Quantidade, Servicos![Valor Unitário], Serv_Desc, 0)
+          ' Ler valores IBS/CBS do banco (serviços podem não ter esses campos)
+          On Error Resume Next
+          valorIBS_ServRTC = 0
+          valorCBS_ServRTC = 0
+          ' Serviços geralmente não têm campos IBS/CBS - usar recálculo
+          On Error GoTo 0
+          MontaIBSCBS objNFeUtil, baseServRTC, det_IBSCBS, det_IS, ibscbs_vBC, ibscbs_vIBSUF, ibscbs_vIBSMun, ibscbs_vCBS
        Else
           det_IBSCBS = ""
           det_IS = ""
+          ibscbs_vBC = 0
+          ibscbs_vIBSUF = 0
+          ibscbs_vIBSMun = 0
+          ibscbs_vCBS = 0
        End If
       'Gera Grupo do Serviço
        'det_Servicos = objNFeUtil.produtoNT2015003(cServico, "", xServico, Serv_NCM, "", "", "", Serv_CFOP, Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "")
@@ -10899,6 +11135,8 @@ OcultaValor:
        'Gera Grupo de Detalhamento dos Serviços
        If usaRTC Then
           Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol, "", "", vServ, "")
+          vIBSUFTotal = vIBSUFTotal + ibscbs_vIBSUF
+          vIBSMunTotal = vIBSMunTotal + ibscbs_vIBSMun
           vIBSTotal = vIBSTotal + ibscbs_vIBSUF + ibscbs_vIBSMun
           vCBSTotal = vCBSTotal + ibscbs_vCBS
           vBCIBSCBS = vBCIBSCBS + ibscbs_vBC
@@ -10912,10 +11150,10 @@ OcultaValor:
       
 Continua:
        '=========Totais da NFe=====================
-       vBC = Nota_Fiscal![Valor Total da Base de Cálculo]
-       vICMS = Nota_Fiscal![Valor Total Do ICMS]
-       vBCST = Nota_Fiscal![Valor Total da Base ST]
-       vST = Nota_Fiscal![Valor Total Do ICMS ST]
+   vBC = Nota_Fiscal![Valor Total da Base de Cálculo]
+   vICMS = Nota_Fiscal![Valor Total Do ICMS]
+   vBCST = Nota_Fiscal![Valor Total da Base ST]
+   vST = Nota_Fiscal![Valor Total Do ICMS ST]
        vProd = Nota_Fiscal![Valor Total dos Produtos] + Nota_Fiscal![Valor Total dos Conjuntos] + Nota_Fiscal![Valor Total das Peças] + Nota_Fiscal![Valor Total das Peças Usadas] + Nota_Fiscal![Valor Total de Produtos Usados] + Nota_Fiscal![Valor Total Conjuntos Usados]
        vFrete = Nota_Fiscal![Valor Do Frete]
        vSeg = Nota_Fiscal![Valor Do Seguro]
@@ -10932,6 +11170,27 @@ Continua:
        vCOFINS = Nota_Fiscal![Valor Total Do COFINS]
        If Nota_Fiscal![Outras Despesas] > 0 Then
           vOutro = Nota_Fiscal![Outras Despesas] ' valor de outras despesas
+       End If
+       If Not permiteTributosLegados Then
+          vBC = 0
+          vICMS = 0
+          vBCST = 0
+          vST = 0
+          vFrete = 0
+          vSeg = 0
+          vDesc = 0
+          vII = 0
+          vIPI = 0
+          vPIS = 0
+          vCOFINS = 0
+          vOutro = 0
+          TotICMSUFDest = 0
+          TotICMSUFRemet = 0
+          TotvFCPUFDest = 0
+          TotvFCP = 0
+          TotvFCPST = 0
+          TotvFCPSTRet = 0
+          TotvIPIDevol = 0
        End If
        
        If Servicos.RecordCount > 0 Then
@@ -10950,8 +11209,19 @@ Continua:
           totCofinsISS = 0
           TotalTribISS = 0
        End If
+       If Not permiteTributosLegados Then
+          totServ = 0
+          totBCISS = 0
+          totISS = 0
+          totPisISS = 0
+          totCofinsISS = 0
+          TotalTribISS = 0
+       End If
        
        vTotTrib = Nota_Fiscal![Valor Total Do Tributo] + TotalTribISS
+       If Not permiteTributosLegados Then
+          vTotTrib = Round(vIBSTotal + vCBSTotal, 2)
+       End If
        vNF = Nota_Fiscal![Valor Total da Nota Fiscal]
        vICMSDeson = 0
        'Gera Total ICMS
@@ -10962,58 +11232,64 @@ Continua:
         TotvFCPSTRet = 0
         TotvIPIDevol = 0
        '=================
-        If Item.RecordCount = 0 Then
-           TotalICMS = objNFeUtil.totalICMS400(0, 0, 0, 0, 0, 0, 0, vDesc, 0, 0, 0, 0, 0, vNF, vTotTrib, 0, 0, 0, 0, 0, 0, 0, 0)
+        If permiteTributosLegados Then
+           If Item.RecordCount = 0 Then
+              TotalICMS = objNFeUtil.totalICMS400(0, 0, 0, 0, 0, 0, 0, vDesc, 0, 0, 0, 0, 0, vNF, vTotTrib, 0, 0, 0, 0, 0, 0, 0, 0)
+           Else
+              TotalICMS = objNFeUtil.totalICMS400(vBC, vICMS, vBCST, vST, vProd, vFrete, vSeg, vDesc, vII, vIPI, vPIS, vCOFINS, vOutro, vNF, vTotTrib, vICMSDeson, TotICMSUFDest, TotICMSUFRemet, TotvFCPUFDest, TotvFCP, TotvFCPST, TotvFCPSTRet, TotvIPIDevol)
+           End If
         Else
-           TotalICMS = objNFeUtil.totalICMS400(vBC, vICMS, vBCST, vST, vProd, vFrete, vSeg, vDesc, vII, vIPI, vPIS, vCOFINS, vOutro, vNF, vTotTrib, vICMSDeson, TotICMSUFDest, TotICMSUFRemet, TotvFCPUFDest, TotvFCP, TotvFCPST, TotvFCPSTRet, TotvIPIDevol)
+           TotalICMS = ""
         End If
-        If Servicos.RecordCount > 0 Then
+        If Servicos.RecordCount > 0 And permiteTributosLegados Then
            ISSQNTot = objNFeUtil.totalISS310(totServ, totBCISS, totISS, totPisISS, totCofinsISS, dCompet, 0, 0, 0, TotDescISS, 0, "")
         Else
            ISSQNTot = ""
         End If
-
        'Imposto Seletivo (IS) - zerado na fase de transicao
        Dim vIS As Double
        vIS = 0
-
        If usaRTC Then
           Debug.Print "=========================================="
           Debug.Print "DEBUG RTC: Gerando Totais RTC"
           Debug.Print "- vIBSTotal: " & vIBSTotal
+          Debug.Print "- vIBSUFTotal: " & vIBSUFTotal
+          Debug.Print "- vIBSMunTotal: " & vIBSMunTotal
           Debug.Print "- vCBSTotal: " & vCBSTotal
           Debug.Print "- vBCIBSCBS: " & vBCIBSCBS
           Debug.Print "- vIS: " & vIS & " (Imposto Seletivo zerado na transicao)"
           Debug.Print "=========================================="
-
+          Dim vIBSUFTotalRTC As Double
+          Dim vIBSMunTotalRTC As Double
+          Dim vIBSTotalRTC As Double
+          Dim vBCIBSCBSRTC As Double
+          vIBSUFTotalRTC = vIBSUFTotal
+          vIBSMunTotalRTC = vIBSMunTotal
+          vIBSTotalRTC = vIBSTotal
+          vBCIBSCBSRTC = vBCIBSCBS
+          If vIBSUFTotalRTC = 0 Then vIBSUFTotalRTC = RTC_MIN_VIBS
+          If vIBSTotalRTC = 0 Then vIBSTotalRTC = RTC_MIN_VIBS
+          If vBCIBSCBSRTC = 0 Then vBCIBSCBSRTC = RTC_MIN_VIBS
           'Gera Totais RTC (zerados na transicao)
           Debug.Print "DEBUG: Chamando gIBSTot..."
-          gIBSTot_Total_xml = objNFeUtil.gIBSTot(0, 0, 0, 0, 0, 0, vIBSTotal, 0, 0)
+          gIBSTot_Total_xml = objNFeUtil.gIBSTot(0, 0, vIBSUFTotalRTC, 0, 0, vIBSMunTotalRTC, vIBSTotalRTC, 0, 0)
           Debug.Print "DEBUG: gIBSTot OK - XML: " & Left(gIBSTot_Total_xml, 100)
-
           Debug.Print "DEBUG: Chamando gCBSTot..."
           gCBSTot_Total_xml = objNFeUtil.gCBSTot(0, 0, vCBSTotal, 0, 0)
           Debug.Print "DEBUG: gCBSTot OK - XML: " & Left(gCBSTot_Total_xml, 100)
-
           Debug.Print "DEBUG: Chamando IBSCBSTot..."
-          IBSCBSTot_xml = objNFeUtil.IBSCBSTot(vBCIBSCBS, gIBSTot_Total_xml, gCBSTot_Total_xml, "")
+          IBSCBSTot_xml = objNFeUtil.IBSCBSTotv130(vBCIBSCBSRTC, gIBSTot_Total_xml, gCBSTot_Total_xml, "", "")
           Debug.Print "DEBUG: IBSCBSTot OK - XML: " & Left(IBSCBSTot_xml, 150)
-
-          If vIBSTotal = 0 Then vIBSTotal = RTC_MIN_VIBS
-          If vBCIBSCBS = 0 Then vBCIBSCBS = RTC_MIN_VIBS
-
           Debug.Print "=========================================="
-          Debug.Print "*** PROBLEMA 4: USANDO totalRTC ***"
-          Debug.Print "USANDO totalRTC (NFe 4.00) - COEXISTENCIA"
+          Debug.Print "*** totalRTC: consolidação de totais RTC (layout 5.00) ***"
           Debug.Print "ICMSTot: PRESENTE (impostos tradicionais)"
-          Debug.Print "IBSCBSTot: PRESENTE (impostos RTC - NAO EXISTE NO SCHEMA 4.00!)"
+          Debug.Print "IBSCBSTot: PRESENTE (impostos RTC 5.00)"
           Debug.Print "vIS: " & vIS
           Debug.Print "vNFTot: " & vNF
           Debug.Print "=========================================="
-
           'Gera Total NFe 5.0 RTC com metodo totalRTC
           On Error Resume Next
-          Debug.Print "DEBUG: Chamando totalRTC... (TERA ERRO DE SCHEMA!)"
+          Debug.Print "DEBUG: Chamando totalRTC..."
           Total = objNFeUtil.totalRTC(TotalICMS, ISSQNTot, retTrib, vIS, IBSCBSTot_xml, vNF)
           If Err.Number <> 0 Then
              Debug.Print "ERRO ao chamar totalRTC:"
@@ -11031,11 +11307,10 @@ Continua:
              Debug.Print "SUCESSO: totalRTC executado"
           End If
           On Error GoTo DeuErro
-
           Debug.Print "DEBUG: Total XML final (primeiros 300 chars): " & Left(Total, 300)
        Else
           IBSCBSTot_xml = ""
-          Debug.Print "DEBUG: Gerando totais no layout 4.00 legado"
+          Debug.Print "DEBUG: Gerando totais no layout legado (sem RTC)"
           Total = "<total>" & TotalICMS
           If ISSQNTot <> "" Then Total = Total & ISSQNTot
           If retTrib <> "" Then Total = Total & retTrib
@@ -11070,9 +11345,10 @@ Continua:
              TransUF = MunTransAvulsa!UF
           End If
        End If
-       
-       
-       '--- Dados do Frete (txtCp(17)) e escolha do modFrete ---
+
+
+
+'--- Dados do Frete (txtCp(17)) e escolha do modFrete ---
 Dim escolha As String
 escolha = Trim$(txtCp(17).Text)
 Select Case escolha
@@ -11091,7 +11367,6 @@ Select Case escolha
     Case Else
         modFrete = 9
 End Select
-
 '--- Gera Dados da Transportadora somente se modFrete for 0,1 ou 2 ---
 If modFrete = "0" Or modFrete = "1" Or modFrete = "2" Then
     transporta = objNFeUtil.transporta(TransCNPJ, TransCPF, TransxNome, TransIE, TransxEnder, TransxMun, TransUF)
@@ -11099,7 +11374,6 @@ Else
     transporta = ""
     retTransp = ""
 End If
-
 '--- Gera Dados do Veículo (placa, UF e ANTT) sempre que houver placa e UF ---
 If Not Vazio(Nota_Fiscal![Placa Do Veículo]) And Not Vazio(Nota_Fiscal![UF Do Veículo]) Then
     placa = RemoveCaracteres(SuperTiraAcentos(UCase(Nota_Fiscal![Placa Do Veículo])))
@@ -11115,15 +11389,9 @@ Else
     veicTransp = ""
 End If
 
-       
-       
-       
-       
-       
-       
-       
-       
-       '=========Dados do Volume=====================
+
+
+'=========Dados do Volume=====================
        qVol = Nota_Fiscal!Volume
        esp = RemoveCaracteres(SuperTiraAcentos(Nota_Fiscal!Espécie))
        marca = RemoveCaracteres(SuperTiraAcentos(Nota_Fiscal!marca))
@@ -11225,9 +11493,8 @@ End If
           Else
              xPag = ""
           End If
- 
- 
- 
+
+
 
 '1) Gera o <detPag> exatamente com os 7 parâmetros exigidos pelo método
 xmlDetPag = objNFeUtil.DetPag( _
@@ -11245,7 +11512,6 @@ xmlDetPag = objNFeUtil.DetPag( _
              If Pos > 0 Then xmlDetPag = Left(xmlDetPag, Pos - 1) & "<xPag>" & xPag & "</xPag>" & Mid(xmlDetPag, Pos)
           End If
              
-
 '2) Gera o nó <pag> definitivo
 Pag = objNFeUtil.pagamento400(xmlDetPag, vTroco_Opc)
 End If
@@ -11262,13 +11528,12 @@ End If
        '=========Dados da Nota Fiscal Eletrônica=====================
        'NFe 5.0 requer prefixo "NFe" no atributo Id
        Id = "NFe" & chaveNFe
-       Debug.Print "=========================================="
-   Debug.Print "GERANDO NFe 4.00 RTC - Montagem manual do XML"
-       Debug.Print "=========================================="
-   versao = "4.00"
-
+      Debug.Print "=========================================="
+   Debug.Print "GERANDO NFe 5.00 RTC - Montagem manual do XML"
+      Debug.Print "=========================================="
+   versao = "5.00"
        'Monta XML completo da NFe 5.0 manualmente
-   Debug.Print "DEBUG: Montando XML NFe 4.00 completo..."
+   Debug.Print "DEBUG: Montando XML NFe 5.00 completo..."
        Debug.Print "  - chaveNFe: " & chaveNFe
        Debug.Print "  - Id (com prefixo NFe): " & Id
        Debug.Print "  - versao: " & versao
@@ -11281,10 +11546,9 @@ End If
        Debug.Print "  - Tamanho Cobr: " & Len(Cobr) & " chars"
        Debug.Print "  - Tamanho Pag: " & Len(Pag) & " chars"
        Debug.Print "  - Tamanho infAdic: " & Len(infAdic) & " chars"
-
        NFe = "<?xml version=""1.0"" encoding=""UTF-8""?>" & _
              "<NFe xmlns=""http://www.portalfiscal.inf.br/nfe"">" & _
-             "<infNFe versao=""4.00"" Id=""" & Id & """>" & _
+             "<infNFe versao=""5.00"" Id=""" & Id & """>" & _
              ide & _
              emit & _
              dest & _
@@ -11296,8 +11560,7 @@ End If
              infAdic & _
              "</infNFe>" & _
              "</NFe>"
-
-   Debug.Print "DEBUG: XML NFe 4.00 montado com sucesso"
+   Debug.Print "DEBUG: XML NFe 5.00 montado com sucesso"
        Debug.Print "  - Tamanho total do XML: " & Len(NFe) & " caracteres"
        Debug.Print "  - XML (primeiros 500 chars): " & Left(NFe, 500)
        Debug.Print "  - XML (ultimos 200 chars): " & Right(NFe, 200)
@@ -11314,13 +11577,11 @@ End If
           Debug.Print "  - Ambiente: HOMOLOGACAO"
        End If
        Debug.Print "  - Caminho: " & caminhoArquivo
-
        On Error Resume Next
        If Dir(caminhoArquivo, vbArchive) <> "" Then
           Kill caminhoArquivo
           Debug.Print "  - Arquivo existente excluido"
        End If
-
        Open caminhoArquivo For Append As #Arq
        If Err.Number <> 0 Then
           Debug.Print "ERRO ao abrir arquivo para gravacao:"
@@ -11330,7 +11591,6 @@ End If
                  "Erro: " & Err.Number & " - " & Err.Description, vbCritical, "Erro ao salvar XML"
           Exit Sub
        End If
-
        Print #Arq, NFe
        Close #Arq
        Debug.Print "  - Arquivo XML salvo com sucesso"
@@ -11366,13 +11626,10 @@ SaiDaSub:
           lblProgresso.Caption = "AMBIENTE NFe EM MODO TESTE"
        End If
     End Sub
-
-
 Private Sub DataSaida()
   If Autorizado Then Exit Sub
      txtDtSaida.Text = Date + DiasSaida
 End Sub
-
 Public Sub LigaDesligaBotoes()
    Botao(3).Enabled = Botao(3).Enabled And Permitido("Municípios", ACAO_NAVEGANDO)
    Botao(4).Enabled = Botao(4).Enabled And Permitido("Geral", ACAO_NAVEGANDO)
@@ -11382,11 +11639,9 @@ Public Sub LigaDesligaBotoes()
    Botao(8).Enabled = Botao(8).Enabled And Permitido("Países", ACAO_NAVEGANDO)
    Botao(9).Enabled = Botao(9).Enabled And Permitido("Geral", ACAO_NAVEGANDO)
 End Sub
-
 Public Property Get txtCampoTab(Index As Integer) As FormataCampos
    Set txtCampoTab = txtCampo(Index)
 End Sub
-
 'inicializa variaveis (apelidos) coms os campos correspondentes
 Private Sub InicializaApelidos(vgComOQue As Integer)
    On Error Resume Next                           'prepara para possíveis erros
@@ -11585,7 +11840,6 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
    End If
    If Err Then Err.Clear                          'se deu algum erro, vamos resetá-lo
 End Sub
-
 'verifica permissões para as condições especiais
 'e muda situação de alguns botões
 Private Sub AnalisaCondicoes()
@@ -11615,10 +11869,10 @@ Private Sub AnalisaCondicoes()
       LigaDesligaControles Me, Not i
    End With
 End Sub
-
 'executa processos/validacoes nos campos do arquivo
 Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As String
    Dim i As Integer, vgRsError As GRecordSet, vgMsg As String, vgOk As Integer, vgPV As Boolean, vgNVez As Integer, vgInd As Integer
+   Debug.Print ">>> EXECUTAR INICIO: vgOq=" & vgOq & " vgSituacao=" & vgSituacao
    On Error GoTo DeuErro                          'fica na espera de um erro...
    vgMsg$ = ""                                    'retorna uma msg dizendo o motivo
    vgOk = True                                    'se a validação esta OK
@@ -11626,6 +11880,7 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
    vgColumn = -1
    vgNVez = 0                                     'porque não fez o processo/validacoes
    If vgOq = VALIDACOES Then
+      Debug.Print ">>> EXECUTAR: VALIDACOES - vgSituacao=" & vgSituacao
       InicializaApelidos COM_TEXTBOX
       If (Autorizado = 0) And Nota_Cancelada = 0 And Nota_Fiscal_Avulsa = True And Sequencia_do_Movimento = 0 Then
          vgOk = ((Not Vazio(Data_de_Emissao)) And (IsDate(Data_de_Emissao) Or Vazio(Data_de_Emissao)))
@@ -11633,24 +11888,10 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          If Not vgOk Then vgColumn = 69
       End If
       If vgOk Then
-         If (Autorizado = 0) And Nota_Cancelada = 0 And Nota_Fiscal_Avulsa = True And Sequencia_do_Movimento = 0 Then
-            vgOk = (Sequencia_do_Geral > 0)
-            vgMsg$ = "Seqüência do Geral inválido!"
-            If Not vgOk Then vgColumn = 67
-         End If
-      End If
-      If vgOk Then
          If False Then
             vgOk = ((Not Vazio(Data_de_Saida)) And (IsDate(Data_de_Saida) Or Vazio(Data_de_Saida)))
             vgMsg$ = "Data de Saída não pode ser vazio!"
             If Not vgOk Then vgColumn = 11
-         End If
-      End If
-      If vgOk Then
-         If Not Vazio(Placa_do_Veiculo) Then
-            vgOk = (Not Vazio(UF_do_Veiculo))
-            vgMsg$ = "UF do Veículo inválido!"
-            If Not vgOk Then vgColumn = 17
          End If
       End If
       If vgOk Then
@@ -11685,7 +11926,7 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
       End If
       If vgOk Then
          vgOk = (FinNFe > 0)
-         vgMsg$ = "Informar a Finalidade da NFe 1 - NFe Normal - 2 NFe Complementar - 3 NFe de Ajuste - 4 NFe Devolução / Retorno"
+         vgMsg$ = "Informar a Finalidade da NFe 1 - NFe Normal - 2 NFe Complementar - 3 NFe de Ajuste - 4 NFe Devolução / Retorno - 5 NFe Crédito IBS/CBS - 6 NFe Débito IBS/CBS"
          If Not vgOk Then vgColumn = 60
       End If
       If vgOk Then
@@ -11810,45 +12051,96 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          End If
       Next
    ElseIf vgOq = POE_NO_ARQUIVO Then
+      Debug.Print ">>> EXECUTAR: POE_NO_ARQUIVO"
+      Debug.Print ">>> POE_NO_ARQUIVO: Iniciando loop txtCampo, UBound=" & UBound(txtCampo)
       For i = 0 To UBound(txtCampo)
          If Len(txtCampo(i).DataField) > 0 Then
-            If Not vgTb.Table.Columns(txtCampo(i).DataField).SeqInterno Then
-               If (txtCampo(i).Value & "" <> vgTb.Fields(txtCampo(i).DataField).Value & "") Or _
-                        (IsNull(txtCampo(i).Value) Xor IsNull(vgTb.Fields(txtCampo(i).DataField).Value)) Then    'se for diferente do conteúdo atual do RS
-                  vgTb.Fields(txtCampo(i).DataField).Value = txtCampo(i).Value
+            Debug.Print ">>> POE_NO_ARQUIVO: txtCampo(" & i & ").DataField=" & txtCampo(i).DataField
+            
+            ' Verifica se o campo existe na tabela antes de acessar
+            On Error Resume Next
+            Dim coluna As Object
+            Set coluna = vgTb.Table.Columns(txtCampo(i).DataField)
+            If Err.Number <> 0 Then
+               Debug.Print ">>> POE_NO_ARQUIVO: AVISO - Campo nao existe na tabela: " & txtCampo(i).DataField
+               Err.Clear
+               Set coluna = Nothing
+            End If
+            On Error GoTo DeuErro
+            
+            If Not coluna Is Nothing Then
+               If Not coluna.SeqInterno Then
+                  If (txtCampo(i).Value & "" <> vgTb.Fields(txtCampo(i).DataField).Value & "") Or _
+                           (IsNull(txtCampo(i).Value) Xor IsNull(vgTb.Fields(txtCampo(i).DataField).Value)) Then    'se for diferente do conteúdo atual do RS
+                     Debug.Print ">>> POE_NO_ARQUIVO: Atualizando campo " & txtCampo(i).DataField
+                     vgTb.Fields(txtCampo(i).DataField).Value = txtCampo(i).Value
+                  End If
                End If
             End If
+            Set coluna = Nothing
          End If
       Next
+      Debug.Print ">>> POE_NO_ARQUIVO: Loop txtCampo concluido"
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Sequencia_do_Movimento"
       Sequencia_do_Movimento = IIf(IsNull(vgTb![Seqüência do Movimento]), 0, vgTb![Seqüência do Movimento])
+      Debug.Print ">>> POE_NO_ARQUIVO: Sequencia_do_Movimento=" & Sequencia_do_Movimento
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Imprimiu"
       Imprimiu = IIf(IsNull(vgTb!Imprimiu), 0, vgTb!Imprimiu)
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Numero_da_Nota_Fiscal"
       Numero_da_Nota_Fiscal = IIf(IsNull(vgTb![Número da Nota Fiscal]), 0, vgTb![Número da Nota Fiscal])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Numero_da_NFe"
       Numero_da_NFe = IIf(IsNull(vgTb![Número da NFe]), 0, vgTb![Número da NFe])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Numero_da_NFSe"
       Numero_da_NFSe = IIf(IsNull(vgTb![Número da NFSe]), 0, vgTb![Número da NFSe])
+      Debug.Print ">>> POE_NO_ARQUIVO: Chamando InicializaApelidos COM_TEXTBOX"
       InicializaApelidos COM_TEXTBOX
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Transportadora_Avulsa"
       vgTb![Transportadora Avulsa] = Transportadora_Avulsa
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Fechamento"
       vgTb!Fechamento = Fechamento
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Tipo_de_Nota"
       vgTb![Tipo de Nota] = Tipo_de_Nota
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Nota_Cancelada"
       Nota_Cancelada = IIf(IsNull(vgTb![Nota Cancelada]), 0, vgTb![Nota Cancelada])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Sequencia_do_Pedido"
       Sequencia_do_Pedido = IIf(IsNull(vgTb![Seqüência Do Pedido]), 0, vgTb![Seqüência Do Pedido])
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Nota_Fiscal_Avulsa"
       vgTb![Nota Fiscal Avulsa] = Nota_Fiscal_Avulsa
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Ocultar_Valor_Unitario"
       vgTb![Ocultar Valor Unitário] = Ocultar_Valor_Unitario
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Contra_Apresentacao"
       vgTb![Contra Apresentação] = Contra_Apresentacao
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando NFe_Complementar"
       vgTb![NFe Complementar] = NFe_Complementar
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Transmitido"
       Transmitido = IIf(IsNull(vgTb!Transmitido), 0, vgTb!Transmitido)
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Autorizado"
       Autorizado = IIf(IsNull(vgTb!Autorizado), 0, vgTb!Autorizado)
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Valor_Total_do_Tributo"
       Valor_Total_do_Tributo = IIf(IsNull(vgTb![Valor Total Do Tributo]), 0, vgTb![Valor Total Do Tributo])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Valor_Total_do_PIS"
       Valor_Total_do_PIS = IIf(IsNull(vgTb![Valor Total Do PIS]), 0, vgTb![Valor Total Do PIS])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Valor_Total_do_COFINS"
       Valor_Total_do_COFINS = IIf(IsNull(vgTb![Valor Total Do COFINS]), 0, vgTb![Valor Total Do COFINS])
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Reter_ISS"
       vgTb![Reter ISS] = Reter_ISS
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Numero_do_Contrato"
       Numero_do_Contrato = IIf(IsNull(vgTb![Número do Contrato]), 0, vgTb![Número do Contrato])
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Conjunto_Avulso"
       vgTb![Conjunto Avulso] = Conjunto_Avulso
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Novo_Layout"
       vgTb![Novo Layout] = Novo_Layout
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Nota_de_Devolucao"
       vgTb![Nota de Devolução] = Nota_de_Devolucao
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Cancelada_no_livro"
       Cancelada_no_livro = IIf(IsNull(vgTb![Cancelada no livro]), 0, vgTb![Cancelada no livro])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Refaturamento"
       Refaturamento = IIf(IsNull(vgTb!Refaturamento), 0, vgTb!Refaturamento)
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Nota_de_venda"
       Nota_de_venda = IIf(IsNull(vgTb![Nota de Venda]), 0, vgTb![Nota de Venda])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Financiamento"
       Financiamento = IIf(IsNull(vgTb!Financiamento), 0, vgTb!Financiamento)
+      Debug.Print ">>> POE_NO_ARQUIVO: Concluido com sucesso!"
    ElseIf vgOq = INI_APELIDOS Then
       InicializaApelidos COM_REGISTRO
       ExecutaVisivel
@@ -11891,29 +12183,44 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
       opcPainel2(vgInd).Locked = Not (vgOk And opcPainel2(vgInd).Editable)
       ExecutaPreValidacao
    ElseIf vgOq = APOS_EDICAO Then
+      Debug.Print ">>> EXECUTAR: APOS_EDICAO - vgSituacao=" & vgSituacao & " Abs(vgSituacao)=" & Abs(vgSituacao)
       On Error GoTo DeuErro
       InicializaApelidos COM_REGISTRO
+      Debug.Print ">>> EXECUTAR: InicializaApelidos OK"
       If Abs(vgSituacao) = ACAO_INCLUINDO Then
+         Debug.Print ">>> EXECUTAR: Chamando AjustaValores para INCLUSAO"
          AjustaValores
+         Debug.Print ">>> EXECUTAR: AjustaValores INCLUSAO concluido"
       ElseIf Abs(vgSituacao) = ACAO_EDITANDO Then
+         Debug.Print ">>> EXECUTAR: Chamando AjustaValores para EDICAO"
          AjustaValores
+         Debug.Print ">>> EXECUTAR: AjustaValores EDICAO concluido"
       End If
+      Debug.Print ">>> EXECUTAR: APOS_EDICAO concluido"
+   Else
+      Debug.Print ">>> EXECUTAR: CASO NAO TRATADO! vgOq=" & vgOq
    End If
    Executar = vgMsg$                              'prepara saida da função
    vgPriVez = vgPV
+   Debug.Print ">>> EXECUTAR FIM NORMAL: vgOq=" & vgOq & " vgMsg=" & vgMsg$
    Exit Function                                  'e cai fora...
-
 DeuErro:
+   Debug.Print ">>> EXECUTAR ERRO: Err=" & Err.Number & " Desc=" & Err.Description & " Source=" & Err.Source & " vgOq=" & vgOq
+   Debug.Print ">>> EXECUTAR ERRO: vgSituacao=" & vgSituacao & " Nota_Fiscal Is Nothing=" & (Nota_Fiscal Is Nothing) & " vgDb Is Nothing=" & (vgDb Is Nothing)
+   On Error Resume Next
+   Debug.Print ">>> EXECUTAR ERRO: Sequencia_da_Nota_Fiscal=" & Sequencia_da_Nota_Fiscal
+   Debug.Print ">>> EXECUTAR ERRO: vgTb Is Nothing=" & (vgTb Is Nothing)
+   If Not vgTb Is Nothing Then
+      Debug.Print ">>> EXECUTAR ERRO: vgTb.EOF=" & vgTb.EOF & " vgTb.BOF=" & vgTb.BOF
+   End If
+   On Error GoTo 0
    Select Case Err                                'vamos verificar se deu algum erro
-
       Case -2147467259
          Resume Next
-
       Case -2147217885                            'registro foi apagado
          vgPriVez = False
          MoveRegistro Me, REG_FORCAVOLTA          'volta um registro
          PrepBotoes Me, vgSituacao                'acerta icones dos botoes
-
    End Select
    Executar = Err.Source + "|" + Trim$(Str$(Err)) + "|" + Error$ 'não teve jeito o erro não pode ser evitado...
    If Err = 3265 Then Executar = Executar & vbCrLf & vbCrLf & txtCampo(i).DataField
@@ -11923,7 +12230,6 @@ DeuErro:
    End If
    vgPriVez = vgPV
 End Function
-
 Private Sub grdBrowse_DeleteData(ByVal vgItem As Long, vgColumns() As Variant, vgDataDeleted As Boolean, vgErrorMessage As String)
    vgDataDeleted = mdiIRRIG.ExcluiRegistro()
 End Sub
@@ -11931,31 +12237,25 @@ End Sub
 Private Sub grdBrowse_InitEdit(CancelEdit As Boolean)
    Reposition
 End Sub
-
 Private Sub grdBrowse_ItemSelect(ByVal vgItem As Long, vgColumns() As Variant)
    If vgPriVez Or Not grdBrowse.Visible Then Exit Sub
    If vgSituacao = ACAO_NAVEGANDO Then Executar PEGA_DO_ARQUIVO
 End Sub
-
 'evento disparado ao mudar de registro no grid.
 Private Sub grdBrowse_SkipRecord(Columns() As Variant, ByVal BookMark As Variant)
    If vgSituacao = ACAO_NAVEGANDO Then Reposition
 End Sub
-
 Private Sub grdBrowse_GetColumnFilter(ByVal vgColumn As Integer, vgColumns() As Variant, vgFilter As String)
    If UBound(txtCampo) >= vgColumn - 1 Then
       vgFilter = txtCampo(vgColumn - 1).Filter
    End If
 End Sub
-
    
 'executa a pré-validação da coluna do grid do modo grade do formulário
 Private Sub grdBrowse_GetColumnLocked(ByVal vgRow As Long, ByVal vgCol As Long, vgColumns() As Variant, ByRef FormField As FormataCampos, ByRef vgLocked As Boolean)
    ExecutaPreValidacao                            'checa as pré-validações
    vgLocked = Not FormField.Enabled               'aplica as definições de pré-validação que são aplicadas ao campo da tela
 End Sub
-
-
 Private Sub grdBrowse_SaveData(ByVal vgItem As Long, vgColumns() As Variant, vgDataSaved As Boolean, vgColumn As Integer, vgErrorMessage As String)
    mdiIRRIG.SalvaDados vgColumn
    vgDataSaved = (vgSituacao = ACAO_NAVEGANDO)
@@ -11968,12 +12268,10 @@ Private Sub grdBrowse_StatusChanged(ByVal vgNewStatus As Integer)
    PrepBotoes Me, vgNewStatus                          'acerta icones dos botoes
    mdiIRRIG.RemontaForm                                'remonta dos os form da tela
 End Sub
-
 'apresenta popup menu para trabalhar com o grid
 Private Sub grdBrowse_MouseUp(Button As Integer, Shift As Integer, x As Single, y As Single, ByVal vgCurCol As Integer)
    MostraPopGrid Me, Button
 End Sub
-
 'liga/desliga flag de repetição do último reg visualizado
 Public Sub LigaDesligaAlterar()
    vgAlterar = Not vgAlterar
@@ -11983,7 +12281,6 @@ Public Sub LigaDesligaAlterar()
    ExecutaVisivel
    PrepBotoes Me, vgSituacao                           'acerta icones dos botoes
 End Sub
-
 Private Sub Form_KeyPress(KeyAscii As Integer)
    Dim Ok As Boolean
    If Not Me.ActiveControl Is Nothing Then
@@ -12000,8 +12297,6 @@ Private Sub Form_KeyPress(KeyAscii As Integer)
       Unload Me                                          'tira este form da memória
    End If
 End Sub
-
-
 '================================================================================
 ' Captura Ctrl+F10 e alterna Parametros_da_NFe!ambiente (0=Produção / 1=Homologação)
 '================================================================================
@@ -12023,16 +12318,13 @@ Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
             ' Se está em Produção, muda para Homologação
             MsgBox "ATENÇÃO: Ambiente de Homologação. Notas Fiscais Emitidas NÃO terão validade jurídica.", _
                    vbExclamation + vbOKOnly, vaTitulo
-
             With Parametros_da_NFe
                 .Edit
                 !ambiente = 1
                 .Update
                 .BookMark = .LastModified
             End With
-
             lblProgresso.Caption = "AMBIENTE NFe EM MODO TESTE"
-
             With vgTb
                 .Edit
                 !Autorizado = False
@@ -12040,21 +12332,17 @@ Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
                 .Update
                 .BookMark = .LastModified
             End With
-
         Else
             ' Se está em Homologação, volta para Produção
             MsgBox "ATENÇÃO: Ambiente de Produção. Notas Fiscais Emitidas terão validade jurídica.", _
                    vbExclamation + vbOKOnly, vaTitulo
-
             With Parametros_da_NFe
                 .Edit
                 !ambiente = 0
                 .Update
                 .BookMark = .LastModified
             End With
-
             lblProgresso.Caption = ""  ' limpa legenda
-
             With vgTb
                 .Edit
                 !Autorizado = False
@@ -12063,22 +12351,14 @@ Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
                 .BookMark = .LastModified
             End With
         End If
-
         ' “Consome” a tecla para não repercutir em nenhum controle
         KeyCode = 0
     End If
 End Sub
-
-
-
-
-
-
 'evento - quando o formuário for pintado
 Private Sub Form_Paint()
    grdBrowse.Visible = vgEmBrowse                 'AH VB!!...
 End Sub
-
 Public Sub CancelGrids()
    Dim i As Integer
    For i = 0 To Grid.Count - 1
@@ -12087,7 +12367,6 @@ Public Sub CancelGrids()
       End If
    Next
 End Sub
-
 Public Sub SaveGrids()
    Dim i As Integer
    For i = 0 To Grid.Count - 1
@@ -12096,7 +12375,6 @@ Public Sub SaveGrids()
       End If
    Next
 End Sub
-
 'prepara botões e o formulário para o novo registro
 Public Sub Reposition(Optional ForceRebind As Boolean, Optional LockGrids As Boolean = True)
    Dim i As Integer, x As String, MudouFiltro As Boolean, vgCols() As Variant
@@ -12192,10 +12470,17 @@ Public Sub Reposition(Optional ForceRebind As Boolean, Optional LockGrids As Boo
 DeuErro:
    
 End Sub
-
 'executa a pré-validação dos campos
 Private Sub ExecutaPreValidacao()
    Dim Ok As Boolean, vgPV As Integer
+   
+   ' Proteção contra recursão infinita
+   If vgExecutandoPreValidacao Then
+      Debug.Print "DEBUG: ExecutaPreValidacao - RECURSAO DETECTADA, saindo..."
+      Exit Sub
+   End If
+   
+   vgExecutandoPreValidacao = True
    Debug.Print "DEBUG: ExecutaPreValidacao - INICIO"
    On Error Resume Next                           'prepara para possiveis erros
    vgPV = vgPriVez
@@ -12329,8 +12614,9 @@ Private Sub ExecutaPreValidacao()
    txtCampo(69).Enabled = Ok Or Not vgAlterar
    If Err Then Err.Clear                          'se houve erro, limpa...
    vgPriVez = vgPV
+   vgExecutandoPreValidacao = False               'libera flag de recursão
+   Debug.Print "DEBUG: ExecutaPreValidacao - FIM"
 End Sub
-
 'coloca os campos visíveis segundo a condição
 Private Sub ExecutaVisivel()
    On Error Resume Next                           'prepara para possiveis erros
@@ -12364,7 +12650,6 @@ Private Sub ExecutaVisivel()
    Label(87).Visible = (Refaturamento = True)
    If Err Then Err.Clear                          'se houve erro, limpa...
 End Sub
-
 'evento - quando o botão for pressionado o Botão do PopupMenu
 Public Sub AcaoPopUp0(Index As Integer)
    Select Case Index
@@ -12376,47 +12661,34 @@ Public Sub AcaoPopUp0(Index As Integer)
          mdiIRRIG.MFRM00907
    End Select
 End Sub
-
-
-
-
 Private Sub txtCp_Change(Index As Integer)
     ' Protecao de primeira vez
     If vgPriVez Or txtCampo(Index).PriVez Then Exit Sub
-
     ' Foco e binding original
     If Len(txtCampo(Index).DataField) > 0 Then
         LigaFocos Me
     End If
     InicializaApelidos COM_TEXTBOX
-
     ' **LINHA REMOVIDA**: txtCampo(Index).Change
-
     ' Visibilidade e pre-validacao generica
     If Index = 6 Or Index = 13 Or Index = 14 Or Index = 16 Or _
        Index = 28 Or Index = 29 Or Index = 30 Or Index = 49 Or _
        Index = 56 Or Index = 59 Or Index = 66 Or Index = 69 Then
-
         ExecutaVisivel
         ExecutaPreValidacao
         MostraFormulas
     End If
-
     ' Mudanca no combo de frete
     If Index = 17 Then
         ExecutaVisivel
         GerenciarCamposTransporte
     End If
-
     ' Reposicionamento original
     Select Case Index
         Case 6, 13, 66
             RepositionNF
     End Select
 End Sub
-
-
-
 'evento - quando o campo receber o foco
 Private Sub txtCp_GotFocus(Index As Integer)
    If vgSituacao <> ACAO_NAVEGANDO Or (Len(txtCampo(Index).PesqSQLExpression) > 0) Then
@@ -12497,7 +12769,6 @@ Private Sub txtCp_GotFocus(Index As Integer)
    End If
    txtCampo(Index).GotFocus
 End Sub
-
 'evento - quando qq tecla for digitada no campo
 Private Sub txtCp_KeyDown(Index As Integer, KeyCode As Integer, Shift As Integer)
    If KeyCode = vbKeyReturn And vgSituacao <> ACAO_NAVEGANDO Then  'se tela esta em edição e digitou ENTER
@@ -12506,12 +12777,10 @@ Private Sub txtCp_KeyDown(Index As Integer, KeyCode As Integer, Shift As Integer
    End If
    txtCampo(Index).KeyDown KeyCode, Shift
 End Sub
-
 'evento - quando qq tecla for digitada no campo
 Private Sub txtCp_KeyPress(Index As Integer, KeyAscii As Integer)
    txtCampo(Index).KeyPress KeyAscii
 End Sub
-
 'evento - quando o campo perder o foco
 Private Sub txtCp_LostFocus(Index As Integer)
    txtCampo(Index).LostFocus
@@ -12526,8 +12795,6 @@ Private Sub txtCp_LostFocus(Index As Integer)
          DataSaida
    End Select
 End Sub
-
-
 'evento - quando o check for marcado/desmarcado
 Private Sub chkCp_Click(Index As Integer)
    If vgPriVez Then Exit Sub
@@ -12536,34 +12803,24 @@ Private Sub chkCp_Click(Index As Integer)
          chkCampo(0).Value = Contra_Apresentacao
       ElseIf Index = 1 Then
          chkCampo(1).Value = NFe_Complementar
-
       ElseIf Index = 2 Then
          chkCampo(2).Value = Transportadora_Avulsa
-
       ElseIf Index = 3 Then
          chkCampo(3).Value = Reter_ISS
-
       ElseIf Index = 4 Then
          chkCampo(4).Value = Conjunto_Avulso
-
       ElseIf Index = 5 Then
          chkCampo(5).Value = Ganbiarra
-
       ElseIf Index = 6 Then
          chkCampo(6).Value = Nota_de_Devolucao
-
       ElseIf Index = 7 Then
          chkCampo(7).Value = Nota_Fiscal_Avulsa
-
       ElseIf Index = 8 Then
          chkCampo(8).Value = Ocultar_Valor_Unitario
-
       ElseIf Index = 9 Then
          chkCampo(9).Value = Novo_Layout
-
       ElseIf Index = 10 Then
          chkCampo(10).Value = cEncManual
-
       ElseIf Index = 11 Then
          chkCampo(11).Value = LayoutAntigo
       End If
@@ -12580,37 +12837,30 @@ Private Sub chkCp_Click(Index As Integer)
          LimpaNcm
    End Select
 End Sub
-
 'evento - quando o check receber o foco
 Private Sub chkCp_GotFocus(Index As Integer)
    chkCampo(Index).GotFocus
 End Sub
-
 'evento - quando qq tecla for digitada no check
 Private Sub chkCp_KeyDown(Index As Integer, KeyCode As Integer, Shift As Integer)
    chkCampo(Index).KeyDown KeyCode, Shift
 End Sub
-
 'evento - quando qq tecla for digitada no check
 Private Sub chkCp_KeyPress(Index As Integer, KeyAscii As Integer)
    chkCampo(Index).KeyPress KeyAscii
 End Sub
-
 'evento - quando o check perder o foco
 Private Sub chkCp_LostFocus(Index As Integer)
    chkCampo(Index).LostFocus
 End Sub
-
 'evento - quando qq tecla for digitada no campo
 Private Sub opcPainel1Cp_KeyPress(Index As Integer, KeyAscii As Integer)
    opcPainel1(Index).KeyPress KeyAscii
 End Sub
-
 'evento - quando qq tecla for digitada no campo
 Private Sub opcPainel1Cp_KeyDown(Index As Integer, KeyCode As Integer, Shift As Integer)
    opcPainel1(Index).KeyDown KeyCode, Shift
 End Sub
-
 'evento - quando o campo receber o foco
 Private Sub opcPainel1Cp_GotFocus(Index As Integer)
    opcPainel1(Index).GotFocus
@@ -12638,22 +12888,18 @@ Private Sub opcPainel1Cp_GotFocus(Index As Integer)
       End Select
    End If
 End Sub
-
 'evento - quando o campo perder o foco
 Private Sub opcPainel1Cp_LostFocus(Index As Integer)
    opcPainel1(Index).LostFocus
 End Sub
-
 'evento - quando qq tecla for digitada no campo
 Private Sub opcPainel2Cp_KeyPress(Index As Integer, KeyAscii As Integer)
    opcPainel2(Index).KeyPress KeyAscii
 End Sub
-
 'evento - quando qq tecla for digitada no campo
 Private Sub opcPainel2Cp_KeyDown(Index As Integer, KeyCode As Integer, Shift As Integer)
    opcPainel2(Index).KeyDown KeyCode, Shift
 End Sub
-
 'evento - quando o campo receber o foco
 Private Sub opcPainel2Cp_GotFocus(Index As Integer)
    opcPainel2(Index).GotFocus
@@ -12681,12 +12927,10 @@ Private Sub opcPainel2Cp_GotFocus(Index As Integer)
       End Select
    End If
 End Sub
-
 'evento - quando o campo perder o foco
 Private Sub opcPainel2Cp_LostFocus(Index As Integer)
    opcPainel2(Index).LostFocus
 End Sub
-
 'evento - quando o formulário receber o foco
 Private Sub Form_Activate()
    If vgPriVez = False Then
@@ -12707,7 +12951,6 @@ Private Sub Form_Activate()
    End If
    Screen.MousePointer = vbDefault
 End Sub
-
 'evento - inicialização do formulário
 Private Sub Form_Load()
    On Error GoTo DeuErro
@@ -12883,6 +13126,8 @@ Private Sub Form_Load()
    vgTooltips.AddTool Botao(8), 0, LoadGasString(66593)
    Label(56).Caption = LoadGasString(66594)
    Label(57).Caption = LoadGasString(66595)
+   Label(56).Caption = "Valor CBS:"
+   Label(57).Caption = "Valor IBS:"
    Label(58).Caption = LoadGasString(66596)
    vgTooltips.AddTool txtCampo(54).CtPri, 0, LoadGasString(66597)
    vgTooltips.AddTool chkCampo(3).CtPri, 0, LoadGasString(66598)
@@ -12978,6 +13223,8 @@ Private Sub Form_Load()
       .AddColumn Nothing, , "% Cofins", "Aliq do cofins", TP_NUMERICO, "99,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1020
       .AddColumn Nothing, , "Vr. COFINS", "Valor do Cofins", TP_NUMERICO, "999.999,9999", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
       .AddColumn Nothing, , "Vr. Tributo", "Valor do Tributo", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
+      .AddColumn Nothing, , "Vr. IBS", "", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
+      .AddColumn Nothing, , "Vr. CBS", "", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
    End With
    With Grid(1)
       .RowHeight = 315
@@ -13034,6 +13281,8 @@ Private Sub Form_Load()
       .AddColumn Nothing, , "% Cofins", "Aliq do cofins", TP_NUMERICO, "99,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1125
       .AddColumn Nothing, , "Vr. COFINS", "Valor do Cofins", TP_NUMERICO, "999.999,9999", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1305
       .AddColumn Nothing, , "Vr. Tributo", "Valor do Tributo", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
+      .AddColumn Nothing, , "Vr. IBS", "", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
+      .AddColumn Nothing, , "Vr. CBS", "", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
    End With
    With Grid(3)
       .RowHeight = 315
@@ -13073,6 +13322,8 @@ Private Sub Form_Load()
       .AddColumn Nothing, , "% Cofins", "Aliq do cofins", TP_NUMERICO, "99,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1005
       .AddColumn Nothing, , "Vr. COFINS", "Valor do Cofins", TP_NUMERICO, "999.999,9999", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1260
       .AddColumn Nothing, , "Vr. Tributo", "Valor do Tributo", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
+      .AddColumn Nothing, , "Vr. IBS", "", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
+      .AddColumn Nothing, , "Vr. CBS", "", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1320
    End With
    With Grid(4)
       .RowHeight = 315
@@ -13098,15 +13349,12 @@ Private Sub Form_Load()
    Reposition
    Screen.MousePointer = vbDefault
    Exit Sub
-
 DeuErro:
    CErr.NumErro = Err
    CErr.FunctionName = "IniciaForm"
    CErr.Origem = CStr(vgFormID) + " - " + Me.Caption
    CErr.Show
 End Sub
-
-
 Public Sub DefineControles()
  On Error GoTo DeuErro
  grdBrowse.AddControlIgnoreFocus mdiIRRIG.botCancela.hWnd           'não deixa o grid tentar gravar automaticamente
@@ -13114,7 +13362,6 @@ Public Sub DefineControles()
    grdBrowse.AllowDelete = True
    grdBrowse.AllowEdit = vgAlterar
    grdBrowse.SpecialPopupDisabled POP_GRID_BARS
-
    Set txtCampo(65).CtPri = txtCp(65)
    txtCampo(65).DataType = 1
    txtCampo(65).Mask = "999999"
@@ -13125,7 +13372,6 @@ Public Sub DefineControles()
    txtCampo(65).Relation = ""
    txtCampo(65).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(65).DataField), txtCampo(65)
-
    Set txtCampo(68).CtPri = txtCp(68)
    Set txtCampo(68).CtFdo = labFdo68
    Set txtCampo(68).CtBot(BOT_ACAO) = bottxtCampo68(BOT_ACAO)
@@ -13138,7 +13384,6 @@ Public Sub DefineControles()
    txtCampo(68).Relation = ""
    txtCampo(68).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(68).DataField), txtCampo(68)
-
    Set txtCampo(66).CtPri = txtCp(66)
    Set txtCampo(66).CtFdo = labFdo66
    Set txtCampo(66).CtBot(BOT_LISTA) = bottxtCampo66(BOT_LISTA)
@@ -13156,7 +13401,6 @@ Public Sub DefineControles()
    txtCampo(66).Source = "Geral"
    txtCampo(66).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(66).DataField), txtCampo(66)
-
    Set txtCampo(69).CtPri = txtCp(69)
    Set txtCampo(69).CtFdo = labFdo69
    Set txtCampo(69).CtBot(BOT_LISTA) = bottxtCampo69(BOT_LISTA)
@@ -13173,7 +13417,6 @@ Public Sub DefineControles()
    txtCampo(69).Source = "Propriedades"
    txtCampo(69).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(69).DataField), txtCampo(69)
-
    Set txtCampo(14).CtPri = txtCp(14)
    Set txtCampo(14).CtFdo = labFdo14
    Set txtCampo(14).CtBot(BOT_LISTA) = bottxtCampo14(BOT_LISTA)
@@ -13191,7 +13434,6 @@ Public Sub DefineControles()
    txtCampo(14).Source = "Natureza de Operação"
    txtCampo(14).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(14).DataField), txtCampo(14)
-
    Set txtCampo(10).CtPri = txtCp(10)
    Set txtCampo(10).CtFdo = labFdo10
    Set txtCampo(10).CtBot(BOT_ACAO) = bottxtCampo10(BOT_ACAO)
@@ -13204,7 +13446,6 @@ Public Sub DefineControles()
    txtCampo(10).Relation = ""
    txtCampo(10).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(10).DataField), txtCampo(10)
-
    Set txtCampo(11).CtPri = txtCp(11)
    txtCampo(11).DataType = 2
    txtCampo(11).Mask = "99:99"
@@ -13214,7 +13455,6 @@ Public Sub DefineControles()
    txtCampo(11).Relation = ""
    txtCampo(11).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(11).DataField), txtCampo(11)
-
    Set txtCampo(54).CtPri = txtCp(54)
    txtCampo(54).DataType = 1
    txtCampo(54).Mask = "99,99"
@@ -13224,22 +13464,18 @@ Public Sub DefineControles()
    txtCampo(54).Relation = ""
    txtCampo(54).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(54).DataField), txtCampo(54)
-
    Set chkCampo(3).CtPri = ChkCp(3)
    chkCampo(3).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(3).DataField), chkCampo(3)
-
    Set opcPainel1(0).CtPri = opcPainel1Cp(0)
    Set opcPainel1(0).CtFdo = labopcPainel1
    opcPainel1(0).DataType = 6
    opcPainel1(0).BookMark = 0
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(opcPainel1(0).DataField), opcPainel1(0)
-
    Set opcPainel1(1).CtPri = opcPainel1Cp(1)
    Set opcPainel1(1).CtFdo = labopcPainel1
    opcPainel1(1).DataType = 6
    opcPainel1(1).BookMark = 1
-
    Set txtCampo(4).CtPri = txtCp(4)
    txtCampo(4).DataType = 0
    txtCampo(4).Mask = "@x"
@@ -13249,7 +13485,6 @@ Public Sub DefineControles()
    txtCampo(4).Relation = ""
    txtCampo(4).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(4).DataField), txtCampo(4)
-
    Set txtCampo(13).CtPri = txtCp(13)
    Set txtCampo(13).CtFdo = labFdo13
    Set txtCampo(13).CtBot(BOT_LISTA) = bottxtCampo13(BOT_LISTA)
@@ -13267,11 +13502,9 @@ Public Sub DefineControles()
    txtCampo(13).Source = "Geral"
    txtCampo(13).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(13).DataField), txtCampo(13)
-
    Set chkCampo(2).CtPri = ChkCp(2)
    chkCampo(2).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(2).DataField), chkCampo(2)
-
    Set txtCampo(17).CtPri = txtCp(17)
    Set txtCampo(17).CtFdo = labFdo17
    Set txtCampo(17).CtBot(BOT_COMBO) = bottxtCampo17(BOT_COMBO)
@@ -13279,7 +13512,6 @@ Public Sub DefineControles()
    txtCampo(17).DataType = 0
    txtCampo(17).ListFields = "Emitente|Destinatário|Transporte Próprio Remetente|Transporte Próprio Destinatário|Sem Transporte"
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(17).DataField), txtCampo(17)
-
    Set txtCampo(26).CtPri = txtCp(26)
    txtCampo(26).DataType = 0
    txtCampo(26).Mask = "@x"
@@ -13289,7 +13521,6 @@ Public Sub DefineControles()
    txtCampo(26).Relation = ""
    txtCampo(26).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(26).DataField), txtCampo(26)
-
    Set txtCampo(15).CtPri = txtCp(15)
    txtCampo(15).DataType = 0
    txtCampo(15).Mask = "@x"
@@ -13299,7 +13530,6 @@ Public Sub DefineControles()
    txtCampo(15).Relation = ""
    txtCampo(15).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(15).DataField), txtCampo(15)
-
    Set txtCampo(16).CtPri = txtCp(16)
    Set txtCampo(16).CtFdo = labFdo16
    Set txtCampo(16).CtBot(BOT_COMBO) = bottxtCampo16(BOT_COMBO)
@@ -13307,7 +13537,6 @@ Public Sub DefineControles()
    txtCampo(16).DataType = 0
    txtCampo(16).ListFields = "AC|AL|AP|AM|BA|CE|DF|ES|TO|GO|MA|MT|MS|MG|PA|PB|PR|PE|PI|RN|RS|RJ|RO|RR|SC|SP|SE"
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(16).DataField), txtCampo(16)
-
    Set txtCampo(12).CtPri = txtCp(12)
    txtCampo(12).DataType = 0
    txtCampo(12).Mask = "@x"
@@ -13317,7 +13546,6 @@ Public Sub DefineControles()
    txtCampo(12).Relation = ""
    txtCampo(12).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(12).DataField), txtCampo(12)
-
    Set txtCampo(6).CtPri = txtCp(6)
    Set txtCampo(6).CtFdo = labFdo6
    Set txtCampo(6).CtBot(BOT_LISTA) = bottxtCampo6(BOT_LISTA)
@@ -13335,7 +13563,6 @@ Public Sub DefineControles()
    txtCampo(6).Source = "Municípios"
    txtCampo(6).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(6).DataField), txtCampo(6)
-
    Set txtCampo(7).CtPri = txtCp(7)
    txtCampo(7).DataType = 0
    txtCampo(7).Mask = "@x"
@@ -13345,7 +13572,6 @@ Public Sub DefineControles()
    txtCampo(7).Relation = ""
    txtCampo(7).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(7).DataField), txtCampo(7)
-
    Set txtCampo(3).CtPri = txtCp(3)
    txtCampo(3).DataType = 0
    txtCampo(3).Mask = "@x"
@@ -13355,7 +13581,6 @@ Public Sub DefineControles()
    txtCampo(3).Relation = ""
    txtCampo(3).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(3).DataField), txtCampo(3)
-
    Set txtCampo(19).CtPri = txtCp(19)
    txtCampo(19).DataType = 1
    txtCampo(19).Mask = "999999"
@@ -13365,7 +13590,6 @@ Public Sub DefineControles()
    txtCampo(19).Relation = ""
    txtCampo(19).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(19).DataField), txtCampo(19)
-
    Set txtCampo(20).CtPri = txtCp(20)
    txtCampo(20).DataType = 0
    txtCampo(20).Mask = "@x"
@@ -13375,7 +13599,6 @@ Public Sub DefineControles()
    txtCampo(20).Relation = ""
    txtCampo(20).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(20).DataField), txtCampo(20)
-
    Set txtCampo(22).CtPri = txtCp(22)
    txtCampo(22).DataType = 0
    txtCampo(22).Mask = "@x"
@@ -13385,7 +13608,6 @@ Public Sub DefineControles()
    txtCampo(22).Relation = ""
    txtCampo(22).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(22).DataField), txtCampo(22)
-
    Set txtCampo(25).CtPri = txtCp(25)
    txtCampo(25).DataType = 0
    txtCampo(25).Mask = "@x"
@@ -13395,7 +13617,6 @@ Public Sub DefineControles()
    txtCampo(25).Relation = ""
    txtCampo(25).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(25).DataField), txtCampo(25)
-
    Set txtCampo(23).CtPri = txtCp(23)
    txtCampo(23).DataType = 1
    txtCampo(23).Mask = "99.999.999,99"
@@ -13405,7 +13626,6 @@ Public Sub DefineControles()
    txtCampo(23).Relation = ""
    txtCampo(23).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(23).DataField), txtCampo(23)
-
    Set txtCampo(24).CtPri = txtCp(24)
    txtCampo(24).DataType = 1
    txtCampo(24).Mask = "99.999.999,99"
@@ -13415,7 +13635,6 @@ Public Sub DefineControles()
    txtCampo(24).Relation = ""
    txtCampo(24).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(24).DataField), txtCampo(24)
-
    Set txtCampo(51).CtPri = txtCp(51)
    txtCampo(51).DataType = 0
    txtCampo(51).Mask = "@x"
@@ -13425,7 +13644,6 @@ Public Sub DefineControles()
    txtCampo(51).OrderFields = ""
    txtCampo(51).Relation = ""
    txtCampo(51).Source = ""
-
    Set txtCampo(50).CtPri = txtCp(50)
    txtCampo(50).DataType = 0
    txtCampo(50).Mask = "@x"
@@ -13435,7 +13653,6 @@ Public Sub DefineControles()
    txtCampo(50).OrderFields = ""
    txtCampo(50).Relation = ""
    txtCampo(50).Source = ""
-
    Set txtCampo(56).CtPri = txtCp(56)
    txtCampo(56).DataType = 1
    txtCampo(56).Mask = "999999"
@@ -13447,7 +13664,6 @@ Public Sub DefineControles()
    txtCampo(56).Source = "Geral"
    txtCampo(56).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(56).DataField), txtCampo(56)
-
    Set txtCampo(21).CtTit = labtxtCampo21
    Set txtCampo(21).CtPri = txtCp(21)
    txtCampo(21).DataType = 4
@@ -13458,7 +13674,6 @@ Public Sub DefineControles()
    txtCampo(21).Relation = ""
    txtCampo(21).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(21).DataField), txtCampo(21)
-
    Set txtCampo(49).CtPri = txtCp(49)
    Set txtCampo(49).CtFdo = labFdo49
    Set txtCampo(49).CtBot(BOT_LISTA) = bottxtCampo49(BOT_LISTA)
@@ -13476,7 +13691,6 @@ Public Sub DefineControles()
    txtCampo(49).Source = "Classificação Fiscal"
    txtCampo(49).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(49).DataField), txtCampo(49)
-
    Set txtCampo(28).CtPri = txtCp(28)
    Set txtCampo(28).CtFdo = labFdo28
    Set txtCampo(28).CtBot(BOT_COMBO) = bottxtCampo28(BOT_COMBO)
@@ -13484,22 +13698,18 @@ Public Sub DefineControles()
    txtCampo(28).DataType = 0
    txtCampo(28).ListFields = "Vista|Prazo|Antecipado"
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(28).DataField), txtCampo(28)
-
    Set chkCampo(0).CtPri = ChkCp(0)
    chkCampo(0).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(0).DataField), chkCampo(0)
-
    Set opcPainel2(0).CtPri = opcPainel2Cp(0)
    Set opcPainel2(0).CtFdo = labopcPainel2
    opcPainel2(0).DataType = 6
    opcPainel2(0).BookMark = 0
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(opcPainel2(0).DataField), opcPainel2(0)
-
    Set opcPainel2(1).CtPri = opcPainel2Cp(1)
    Set opcPainel2(1).CtFdo = labopcPainel2
    opcPainel2(1).DataType = 6
    opcPainel2(1).BookMark = 1
-
    Set txtCampo(18).CtPri = txtCp(18)
    Set txtCampo(18).CtFdo = labFdo18
    Set txtCampo(18).CtBot(BOT_ACAO) = bottxtCampo18(BOT_ACAO)
@@ -13512,7 +13722,6 @@ Public Sub DefineControles()
    txtCampo(18).Relation = ""
    txtCampo(18).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(18).DataField), txtCampo(18)
-
    Set txtCampo(29).CtPri = txtCp(29)
    Set txtCampo(29).CtFdo = labFdo29
    Set txtCampo(29).CtBot(BOT_LISTA) = bottxtCampo29(BOT_LISTA)
@@ -13530,7 +13739,6 @@ Public Sub DefineControles()
    txtCampo(29).Source = "Tipo de Cobrança"
    txtCampo(29).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(29).DataField), txtCampo(29)
-
    Set txtCampo(27).CtPri = txtCp(27)
    Set txtCampo(27).CtFdo = labFdo27
    Set txtCampo(27).CtBot(BOT_ACAO) = bottxtCampo27(BOT_ACAO)
@@ -13543,7 +13751,6 @@ Public Sub DefineControles()
    txtCampo(27).Relation = ""
    txtCampo(27).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(27).DataField), txtCampo(27)
-
    Set txtCampo(1).CtPri = txtCp(1)
    Set txtCampo(1).CtFdo = labFdo1
    Set txtCampo(1).CtBot(BOT_ACAO) = bottxtCampo1(BOT_ACAO)
@@ -13556,11 +13763,8 @@ Public Sub DefineControles()
    txtCampo(1).Relation = ""
    txtCampo(1).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(1).DataField), txtCampo(1)
-
  DefineControles1
-
  Exit Sub
-
 DeuErro:
   CErr.NumErro = Err
   CErr.FunctionName = "DefineControles0"
@@ -13569,7 +13773,6 @@ DeuErro:
 End Sub
 Public Sub DefineControles1()
  On Error GoTo DeuErro
-
    Set txtCampo(0).CtPri = txtCp(0)
    Set txtCampo(0).CtFdo = labFdo0
    Set txtCampo(0).CtBot(BOT_ACAO) = bottxtCampo0(BOT_ACAO)
@@ -13582,7 +13785,6 @@ Public Sub DefineControles1()
    txtCampo(0).Relation = ""
    txtCampo(0).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(0).DataField), txtCampo(0)
-
    Set txtCampo(37).CtPri = txtCp(37)
    txtCampo(37).DataType = 1
    txtCampo(37).Mask = "99.999.999,99"
@@ -13593,7 +13795,6 @@ Public Sub DefineControles1()
    txtCampo(37).Relation = ""
    txtCampo(37).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(37).DataField), txtCampo(37)
-
    Set txtCampo(38).CtPri = txtCp(38)
    txtCampo(38).DataType = 1
    txtCampo(38).Mask = "99.999.999,99"
@@ -13604,7 +13805,6 @@ Public Sub DefineControles1()
    txtCampo(38).Relation = ""
    txtCampo(38).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(38).DataField), txtCampo(38)
-
    Set txtCampo(40).CtPri = txtCp(40)
    txtCampo(40).DataType = 1
    txtCampo(40).Mask = "99.999.999,99"
@@ -13615,7 +13815,6 @@ Public Sub DefineControles1()
    txtCampo(40).Relation = ""
    txtCampo(40).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(40).DataField), txtCampo(40)
-
    Set txtCampo(39).CtPri = txtCp(39)
    txtCampo(39).DataType = 1
    txtCampo(39).Mask = "99.999.999,99"
@@ -13626,7 +13825,6 @@ Public Sub DefineControles1()
    txtCampo(39).Relation = ""
    txtCampo(39).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(39).DataField), txtCampo(39)
-
    Set txtCampo(41).CtPri = txtCp(41)
    txtCampo(41).DataType = 1
    txtCampo(41).Mask = "99.999.999,99"
@@ -13637,7 +13835,6 @@ Public Sub DefineControles1()
    txtCampo(41).Relation = ""
    txtCampo(41).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(41).DataField), txtCampo(41)
-
    Set txtCampo(42).CtPri = txtCp(42)
    txtCampo(42).DataType = 1
    txtCampo(42).Mask = "99.999.999,99"
@@ -13648,7 +13845,6 @@ Public Sub DefineControles1()
    txtCampo(42).Relation = ""
    txtCampo(42).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(42).DataField), txtCampo(42)
-
    Set txtCampo(44).CtPri = txtCp(44)
    txtCampo(44).DataType = 1
    txtCampo(44).Mask = "99.999.999,99"
@@ -13659,7 +13855,6 @@ Public Sub DefineControles1()
    txtCampo(44).Relation = ""
    txtCampo(44).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(44).DataField), txtCampo(44)
-
    Set txtCampo(43).CtPri = txtCp(43)
    txtCampo(43).DataType = 1
    txtCampo(43).Mask = "99.999.999,99"
@@ -13670,7 +13865,6 @@ Public Sub DefineControles1()
    txtCampo(43).Relation = ""
    txtCampo(43).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(43).DataField), txtCampo(43)
-
    Set txtCampo(48).CtPri = txtCp(48)
    txtCampo(48).DataType = 1
    txtCampo(48).Mask = "99.999.999,99"
@@ -13681,7 +13875,6 @@ Public Sub DefineControles1()
    txtCampo(48).Relation = ""
    txtCampo(48).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(48).DataField), txtCampo(48)
-
    Set txtCampo(46).CtPri = txtCp(46)
    txtCampo(46).DataType = 1
    txtCampo(46).Mask = "99.999.999,99"
@@ -13692,7 +13885,6 @@ Public Sub DefineControles1()
    txtCampo(46).Relation = ""
    txtCampo(46).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(46).DataField), txtCampo(46)
-
    Set txtCampo(45).CtPri = txtCp(45)
    txtCampo(45).DataType = 1
    txtCampo(45).Mask = "99.999.999,99"
@@ -13703,7 +13895,26 @@ Public Sub DefineControles1()
    txtCampo(45).Relation = ""
    txtCampo(45).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(45).DataField), txtCampo(45)
-
+   Set txtCampo(118).CtPri = txtCp(118)
+   txtCampo(118).DataType = 1
+   txtCampo(118).Mask = "99.999.999,99"
+   txtCampo(118).Editable = False
+   txtCampo(118).BoundColumn = ""
+   txtCampo(118).ListFields = ""
+   txtCampo(118).OrderFields = ""
+   txtCampo(118).Relation = ""
+   txtCampo(118).Source = ""
+   grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(118).DataField), txtCampo(118), , txtCampo(118).DataField
+   Set txtCampo(119).CtPri = txtCp(119)
+   txtCampo(119).DataType = 1
+   txtCampo(119).Mask = "99.999.999,99"
+   txtCampo(119).Editable = False
+   txtCampo(119).BoundColumn = ""
+   txtCampo(119).ListFields = ""
+   txtCampo(119).OrderFields = ""
+   txtCampo(119).Relation = ""
+   txtCampo(119).Source = ""
+   grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(119).DataField), txtCampo(119), , txtCampo(119).DataField
    Set txtCampo(36).CtPri = txtCp(36)
    txtCampo(36).DataType = 1
    txtCampo(36).Mask = "99.999.999,99"
@@ -13714,7 +13925,6 @@ Public Sub DefineControles1()
    txtCampo(36).Relation = ""
    txtCampo(36).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(36).DataField), txtCampo(36)
-
    Set txtCampo(47).CtPri = txtCp(47)
    txtCampo(47).DataType = 1
    txtCampo(47).Mask = "99.999.999,99"
@@ -13725,7 +13935,6 @@ Public Sub DefineControles1()
    txtCampo(47).Relation = ""
    txtCampo(47).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(47).DataField), txtCampo(47)
-
    Set txtCampo(31).CtPri = txtCp(31)
    txtCampo(31).DataType = 0
    txtCampo(31).Mask = "@x"
@@ -13736,7 +13945,6 @@ Public Sub DefineControles1()
    txtCampo(31).Relation = ""
    txtCampo(31).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(31).DataField), txtCampo(31)
-
    Set txtCampo(32).CtPri = txtCp(32)
    txtCampo(32).DataType = 0
    txtCampo(32).Mask = "@x"
@@ -13747,7 +13955,6 @@ Public Sub DefineControles1()
    txtCampo(32).Relation = ""
    txtCampo(32).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(32).DataField), txtCampo(32)
-
    Set txtCampo(33).CtPri = txtCp(33)
    txtCampo(33).DataType = 0
    txtCampo(33).Mask = "@x"
@@ -13758,7 +13965,6 @@ Public Sub DefineControles1()
    txtCampo(33).Relation = ""
    txtCampo(33).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(33).DataField), txtCampo(33)
-
    Set txtCampo(34).CtPri = txtCp(34)
    txtCampo(34).DataType = 0
    txtCampo(34).Mask = "@x"
@@ -13769,7 +13975,6 @@ Public Sub DefineControles1()
    txtCampo(34).Relation = ""
    txtCampo(34).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(34).DataField), txtCampo(34)
-
    Set txtCampo(35).CtPri = txtCp(35)
    txtCampo(35).DataType = 4
    txtCampo(35).Mask = ""
@@ -13780,11 +13985,9 @@ Public Sub DefineControles1()
    txtCampo(35).Relation = ""
    txtCampo(35).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(35).DataField), txtCampo(35)
-
    Set chkCampo(1).CtPri = ChkCp(1)
    chkCampo(1).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(1).DataField), chkCampo(1)
-
    Set txtCampo(30).CtPri = txtCp(30)
    Set txtCampo(30).CtFdo = labFdo30
    Set txtCampo(30).CtBot(BOT_LISTA) = bottxtCampo30(BOT_LISTA)
@@ -13802,15 +14005,12 @@ Public Sub DefineControles1()
    txtCampo(30).Source = "Nota Fiscal"
    txtCampo(30).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(30).DataField), txtCampo(30)
-
    Set chkCampo(8).CtPri = ChkCp(8)
    chkCampo(8).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(8).DataField), chkCampo(8)
-
    Set chkCampo(7).CtPri = ChkCp(7)
    chkCampo(7).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(7).DataField), chkCampo(7)
-
    Set txtCampo(67).CtPri = txtCp(67)
    txtCampo(67).DataType = 1
    txtCampo(67).Mask = ""
@@ -13820,7 +14020,6 @@ Public Sub DefineControles1()
    txtCampo(67).OrderFields = ""
    txtCampo(67).Relation = ""
    txtCampo(67).Source = ""
-
    Set txtCampo(2).CtPri = txtCp(2)
    txtCampo(2).DataType = 0
    txtCampo(2).Mask = ""
@@ -13830,7 +14029,6 @@ Public Sub DefineControles1()
    txtCampo(2).OrderFields = ""
    txtCampo(2).Relation = ""
    txtCampo(2).Source = ""
-
    Set txtCampo(8).CtPri = txtCp(8)
    txtCampo(8).DataType = 0
    txtCampo(8).Mask = ""
@@ -13840,7 +14038,6 @@ Public Sub DefineControles1()
    txtCampo(8).OrderFields = ""
    txtCampo(8).Relation = ""
    txtCampo(8).Source = ""
-
    Set txtCampo(9).CtPri = txtCp(9)
    txtCampo(9).DataType = 0
    txtCampo(9).Mask = ""
@@ -13850,7 +14047,6 @@ Public Sub DefineControles1()
    txtCampo(9).OrderFields = ""
    txtCampo(9).Relation = ""
    txtCampo(9).Source = ""
-
    Set txtCampo(5).CtPri = txtCp(5)
    txtCampo(5).DataType = 0
    txtCampo(5).Mask = ""
@@ -13860,7 +14056,6 @@ Public Sub DefineControles1()
    txtCampo(5).OrderFields = ""
    txtCampo(5).Relation = ""
    txtCampo(5).Source = ""
-
    Set txtCampo(52).CtPri = txtCp(52)
    txtCampo(52).DataType = 1
    txtCampo(52).Mask = "99.999.999,99"
@@ -13871,7 +14066,6 @@ Public Sub DefineControles1()
    txtCampo(52).Relation = ""
    txtCampo(52).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(52).DataField), txtCampo(52)
-
    Set txtCampo(53).CtPri = txtCp(53)
    txtCampo(53).DataType = 1
    txtCampo(53).Mask = "99.999.999,99"
@@ -13882,7 +14076,6 @@ Public Sub DefineControles1()
    txtCampo(53).Relation = ""
    txtCampo(53).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(53).DataField), txtCampo(53)
-
    Set txtCampo(55).CtPri = txtCp(55)
    txtCampo(55).DataType = 0
    txtCampo(55).Mask = "@x"
@@ -13893,7 +14086,6 @@ Public Sub DefineControles1()
    txtCampo(55).Relation = ""
    txtCampo(55).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(55).DataField), txtCampo(55)
-
    Set txtCampo(70).CtPri = txtCp(70)
    txtCampo(70).DataType = 0
    txtCampo(70).Mask = ""
@@ -13903,7 +14095,6 @@ Public Sub DefineControles1()
    txtCampo(70).OrderFields = ""
    txtCampo(70).Relation = ""
    txtCampo(70).Source = ""
-
    Set txtCampo(71).CtPri = txtCp(71)
    txtCampo(71).DataType = 0
    txtCampo(71).Mask = ""
@@ -13913,7 +14104,6 @@ Public Sub DefineControles1()
    txtCampo(71).OrderFields = ""
    txtCampo(71).Relation = ""
    txtCampo(71).Source = ""
-
    Set txtCampo(72).CtPri = txtCp(72)
    txtCampo(72).DataType = 0
    txtCampo(72).Mask = ""
@@ -13923,7 +14113,6 @@ Public Sub DefineControles1()
    txtCampo(72).OrderFields = ""
    txtCampo(72).Relation = ""
    txtCampo(72).Source = ""
-
    Set txtCampo(57).CtPri = txtCp(57)
    txtCampo(57).DataType = 1
    txtCampo(57).Mask = "99.999.999,99"
@@ -13934,11 +14123,9 @@ Public Sub DefineControles1()
    txtCampo(57).Relation = ""
    txtCampo(57).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(57).DataField), txtCampo(57)
-
    Set chkCampo(4).CtPri = ChkCp(4)
    chkCampo(4).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(4).DataField), chkCampo(4)
-
    Set txtCampo(58).CtPri = txtCp(58)
    txtCampo(58).DataType = 0
    txtCampo(58).Mask = "@x"
@@ -13948,10 +14135,8 @@ Public Sub DefineControles1()
    txtCampo(58).Relation = ""
    txtCampo(58).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(58).DataField), txtCampo(58)
-
    Set chkCampo(5).CtPri = ChkCp(5)
    chkCampo(5).DataType = 5
-
    Set txtCampo(59).CtPri = txtCp(59)
    Set txtCampo(59).CtFdo = labFdo59
    Set txtCampo(59).CtBot(BOT_COMBO) = bottxtCampo59(BOT_COMBO)
@@ -13965,15 +14150,11 @@ Public Sub DefineControles1()
    txtCampo(59).Source = "Finalidade NFe"
    txtCampo(59).vgfrmGMCale.grdListaG.AutoRebind = True
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(59).DataField), txtCampo(59)
-
    Set chkCampo(9).CtPri = ChkCp(9)
    chkCampo(9).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(9).DataField), chkCampo(9)
-
  DefineControles2
-
  Exit Sub
-
 DeuErro:
   CErr.NumErro = Err
   CErr.FunctionName = "DefineControles1"
@@ -13982,11 +14163,9 @@ DeuErro:
 End Sub
 Public Sub DefineControles2()
  On Error GoTo DeuErro
-
    Set chkCampo(6).CtPri = ChkCp(6)
    chkCampo(6).DataType = 5
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(chkCampo(6).DataField), chkCampo(6)
-
    Set txtCampo(60).CtPri = txtCp(60)
    txtCampo(60).DataType = 0
    txtCampo(60).Mask = "@!"
@@ -13996,7 +14175,6 @@ Public Sub DefineControles2()
    txtCampo(60).Relation = ""
    txtCampo(60).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(60).DataField), txtCampo(60)
-
    Set txtCampo(61).CtPri = txtCp(61)
    Set txtCampo(61).CtFdo = labFdo61
    Set txtCampo(61).CtBot(BOT_LISTA) = bottxtCampo61(BOT_LISTA)
@@ -14011,7 +14189,6 @@ Public Sub DefineControles2()
    txtCampo(61).Relation = ""
    txtCampo(61).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(61).DataField), txtCampo(61)
-
    Set txtCampo(62).CtPri = txtCp(62)
    txtCampo(62).DataType = 0
    txtCampo(62).Mask = "@!"
@@ -14021,7 +14198,6 @@ Public Sub DefineControles2()
    txtCampo(62).Relation = ""
    txtCampo(62).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(62).DataField), txtCampo(62)
-
    Set txtCampo(63).CtPri = txtCp(63)
    txtCampo(63).DataType = 0
    txtCampo(63).Mask = "@!"
@@ -14031,10 +14207,8 @@ Public Sub DefineControles2()
    txtCampo(63).Relation = ""
    txtCampo(63).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(63).DataField), txtCampo(63)
-
    Set chkCampo(10).CtPri = ChkCp(10)
    chkCampo(10).DataType = 5
-
    Set txtCampo(73).CtTit = labtxtCampo73
    Set txtCampo(73).CtPri = txtCp(73)
    txtCampo(73).DataType = 0
@@ -14044,7 +14218,6 @@ Public Sub DefineControles2()
    txtCampo(73).OrderFields = ""
    txtCampo(73).Relation = ""
    txtCampo(73).Source = ""
-
    Set txtCampo(74).CtTit = labtxtCampo74
    Set txtCampo(74).CtPri = txtCp(74)
    txtCampo(74).DataType = 0
@@ -14054,10 +14227,8 @@ Public Sub DefineControles2()
    txtCampo(74).OrderFields = ""
    txtCampo(74).Relation = ""
    txtCampo(74).Source = ""
-
    Set chkCampo(11).CtPri = ChkCp(11)
    chkCampo(11).DataType = 5
-
    Set txtCampo(64).CtPri = txtCp(64)
    txtCampo(64).DataType = 1
    txtCampo(64).Mask = "99"
@@ -14066,7 +14237,6 @@ Public Sub DefineControles2()
    txtCampo(64).OrderFields = ""
    txtCampo(64).Relation = ""
    txtCampo(64).Source = ""
-
    Set txtCampo(75).CtPri = txtCp(75)
    txtCampo(75).DataType = 0
    txtCampo(75).Mask = ""
@@ -14076,16 +14246,13 @@ Public Sub DefineControles2()
    txtCampo(75).OrderFields = ""
    txtCampo(75).Relation = ""
    txtCampo(75).Source = ""
-
  Exit Sub
-
 DeuErro:
   CErr.NumErro = Err
   CErr.FunctionName = "DefineControles2"
   CErr.Origem = CStr(vgFormID) + " - " + Me.Caption
  CErr.Show
 End Sub
-
 'poe relacionamento e filtro na lista externa (combobox)
 Private Sub PoeRelEFiltroCbo(Index As Integer)
     On Error Resume Next
@@ -14145,8 +14312,6 @@ Private Sub PoeRelEFiltroCbo(Index As Integer)
             txtCampo(Index).PesqSQLExpression = ""
     End Select
 End Sub
-
-
 'evento - antes de descarregar o formulário
 Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
    If vgPodeFazerUnLoad = False Then
@@ -14160,13 +14325,11 @@ Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
       End If
    End If
 End Sub
-
 'evento - redefinido o tamanho do formulário
 Private Sub Form_Resize()
    AjustaPanFundo Me
    lblProgresso.Caption = IIf(Parametros_da_NFe!ambiente = 1, "AMBIENTE NFe EM MODO TESTE", ""): MudaTamCampos Me
 End Sub
-
 'evento - descarregando o formulário da memória
 Private Sub Form_Unload(Cancel As Integer)
    Dim i As Integer
@@ -14245,20 +14408,16 @@ Private Sub Form_Unload(Cancel As Integer)
       Servicos_da_Nota_Fiscal.CloseRecordset
       Set Servicos_da_Nota_Fiscal = Nothing
    End If
-
    'se tiver imprimindo registros em grade, fecha form de selecao/preview
    Unload vgFrmImpCons
    Set vgFrmImpCons = Nothing
-
    'vamos descarregar todos os grids
    For i = 0 To Grid.Count - 1
       Grid(i).Finalize
    Next
-
    grdBrowse.Finalize                             'descarrega o grid
    Set frmNotaFisc = Nothing                      'libera o segmento de código do form
 End Sub
-
 'evento - quando qq tecla for digitada no grid filho
 Private Sub Grid_KeyDown(Index As Integer, ByVal KeyCode As Integer, ByVal Shift As Integer, vgColumns() As Variant)
    Select Case Index
@@ -14270,7 +14429,6 @@ Private Sub Grid_KeyDown(Index As Integer, ByVal KeyCode As Integer, ByVal Shift
          ExecutaGrid3 vgColumns(), KEYDOWN_NO_GRID, , , , , , KeyCode, Shift
    End Select
 End Sub
-
 'evento - quando qq tecla for digitada no grid filho
 Private Sub Grid_KeyPress(Index As Integer, ByVal KeyAscii As Integer, ByVal Shift As Integer, vgColumns() As Variant)
    Select Case Index
@@ -14284,69 +14442,220 @@ Private Sub Grid_KeyPress(Index As Integer, ByVal KeyAscii As Integer, ByVal Shi
          ExecutaGrid3 vgColumns(), KEYPRESS_NO_GRID, , , , , , KeyAscii
    End Select
 End Sub
-
 'evento - está mudando a linha selecionada do grid
 Private Sub Grid_SkipRecord(Index As Integer, vgColumns() As Variant, ByVal vgBookMark As Variant)
    ExecutaGrid Index, vgColumns(), CONDICOES_ESPECIAIS
 End Sub
-
+'evento - captura erros do componente Grid
+Private Sub Grid_Error(Index As Integer, ByVal Number As Long, Description As String, ByVal SCode As Long, Source As String, HelpFile As String, ByVal HelpContext As Long, CancelDisplay As Boolean)
+   Dim gridName As String
+   Select Case Index
+      Case 0: gridName = "PRODUTOS"
+      Case 1: gridName = "SERVICOS"
+      Case 2: gridName = "CONJUNTOS"
+      Case 3: gridName = "PECAS"
+      Case 4: gridName = "PARCELAS"
+      Case Else: gridName = "DESCONHECIDO"
+   End Select
+   
+   Debug.Print ">>> Grid_Error CAPTURADO: Grid=" & gridName & " Number=" & Number & " Description=" & Description & " Source=" & Source
+   
+   ' Se for erro 91 (Object variable not set) em campos IBS/CBS, suprimir erro
+   If Number = 91 Then
+      Debug.Print ">>> Grid_Error: Suprimindo erro 91 (Object variable not set)"
+      CancelDisplay = True  ' Não mostrar mensagem de erro para o usuário
+   End If
+End Sub
 'evento - após efetuar update do recordset do grid
 Private Sub Grid_AfterUpdateRecord(Index As Integer, ByVal vgItem As Long, vgColumns() As Variant, vgIsValid As Boolean, vgColumn As Integer, vgErrorMessage As String)
+   On Error Resume Next
+   Dim gridName As String
    Select Case Index
       Case 0
+         gridName = "PRODUTOS"
+      Case 1
+         gridName = "SERVICOS"
+      Case 2
+         gridName = "CONJUNTOS"
+      Case 3
+         gridName = "PECAS"
+      Case 4
+         gridName = "PARCELAS"
+   End Select
+   Debug.Print ">>> Grid_AfterUpdateRecord INICIO: Grid=" & gridName & " (Index=" & Index & ") vgItem=" & vgItem & " Status=" & Grid(Index).Status & " vgIsValid=" & vgIsValid
+   
+   Select Case Index
+      Case 0
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando PROCESSOS_DIRETOS para " & gridName
          ExecutaGrid Index, vgColumns(), PROCESSOS_DIRETOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em PROCESSOS_DIRETOS: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando APOS_EDICAO para " & gridName
          ExecutaGrid Index, vgColumns(), APOS_EDICAO, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em APOS_EDICAO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
    GeraLog Me, Grid(Index).Status, Index, False
       Case 1
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando PROCESSOS_DIRETOS para " & gridName
          ExecutaGrid Index, vgColumns(), PROCESSOS_DIRETOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em PROCESSOS_DIRETOS: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando APOS_EDICAO para " & gridName
          ExecutaGrid Index, vgColumns(), APOS_EDICAO, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em APOS_EDICAO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
    GeraLog Me, Grid(Index).Status, Index, False
       Case 2
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando PROCESSOS_DIRETOS para " & gridName
          ExecutaGrid Index, vgColumns(), PROCESSOS_DIRETOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em PROCESSOS_DIRETOS: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando APOS_EDICAO para " & gridName
          ExecutaGrid Index, vgColumns(), APOS_EDICAO, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em APOS_EDICAO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
    GeraLog Me, Grid(Index).Status, Index, False
       Case 3
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando PROCESSOS_DIRETOS para " & gridName
          ExecutaGrid Index, vgColumns(), PROCESSOS_DIRETOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em PROCESSOS_DIRETOS: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
+         Debug.Print ">>> Grid_AfterUpdateRecord: Chamando APOS_EDICAO para " & gridName
          ExecutaGrid Index, vgColumns(), APOS_EDICAO, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_AfterUpdateRecord ERRO em APOS_EDICAO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
    GeraLog Me, Grid(Index).Status, Index, False
       Case 4
    GeraLog Me, Grid(Index).Status, Index, False
    End Select
+   Debug.Print ">>> Grid_AfterUpdateRecord FIM: Grid=" & gridName
 End Sub
-
 'evento - antes de efetuar o edit do recordset do grid
 Private Sub Grid_BeforeEditRecord(Index As Integer, ByVal vgItem As Long, vgColumns() As Variant, vgIsValid As Boolean, vgColumn As Integer, vgErrorMessage As String)
+   On Error Resume Next
+   Dim gridName As String
+   Select Case Index
+      Case 0: gridName = "PRODUTOS"
+      Case 1: gridName = "SERVICOS"
+      Case 2: gridName = "CONJUNTOS"
+      Case 3: gridName = "PECAS"
+      Case 4: gridName = "PARCELAS"
+   End Select
+   Debug.Print ">>> Grid_BeforeEditRecord: Grid=" & gridName & " (Index=" & Index & ") vgItem=" & vgItem & " Status=" & Grid(Index).Status
+   
    GeraLog Me, Grid(Index).Status, Index, True
    Select Case Index
       Case 0
          ExecutaGrid Index, Grid(Index).GetColumnValues(vgItem), PROCESSOS_INVERSOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeEditRecord ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 1
          ExecutaGrid Index, Grid(Index).GetColumnValues(vgItem), PROCESSOS_INVERSOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeEditRecord ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 2
          ExecutaGrid Index, Grid(Index).GetColumnValues(vgItem), PROCESSOS_INVERSOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeEditRecord ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 3
          ExecutaGrid Index, Grid(Index).GetColumnValues(vgItem), PROCESSOS_INVERSOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeEditRecord ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 4
          ExecutaGrid Index, Grid(Index).GetColumnValues(vgItem), PROCESSOS_INVERSOS, vgItem, 0, vgIsValid, vgColumn, vgErrorMessage
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeEditRecord ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
    End Select
 End Sub
-
 'evento - antes de efetuar o update do recordset do grid
 Private Sub Grid_BeforeUpdateRecord(Index As Integer, ByVal vgItem As Long, vgColumns() As Variant, vgIsValid As Boolean, vgColumn As Integer, vgErrorMessage As String)
+   On Error Resume Next
+   Dim gridName As String
+   
+   ' Identificar nome do grid para debug
+   Select Case Index
+      Case 0: gridName = "PRODUTOS"
+      Case 1: gridName = "SERVICOS"
+      Case 2: gridName = "CONJUNTOS"
+      Case 3: gridName = "PECAS"
+      Case 4: gridName = "PARCELAS"
+      Case Else: gridName = "DESCONHECIDO"
+   End Select
+   
+   Debug.Print ">>> Grid_BeforeUpdateRecord INICIO: Grid=" & gridName & " (Index=" & Index & ") Status=" & Grid(Index).Status & " vgIsValid=" & vgIsValid & " vgColumn=" & vgColumn
+   
    Select Case Index
       Case 0
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para " & gridName
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para " & gridName
          Produtos_da_Nota_Fiscal![Seqüência da Nota Fiscal] = Nota_Fiscal![Seqüência da Nota Fiscal]
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeUpdateRecord ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         Else
+            Debug.Print ">>> Grid_BeforeUpdateRecord: Chave atribuída com sucesso para " & gridName
+         End If
       Case 1
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para SERVICOS"
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para SERVICOS"
          Servicos_da_Nota_Fiscal![Seqüência da Nota Fiscal] = Nota_Fiscal![Seqüência da Nota Fiscal]
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeUpdateRecord ERRO: Grid=SERVICOS Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 2
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para CONJUNTOS"
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para CONJUNTOS"
          Conjuntos_da_Nota_Fiscal![Seqüência da Nota Fiscal] = Nota_Fiscal![Seqüência da Nota Fiscal]
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeUpdateRecord ERRO: Grid=CONJUNTOS Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 3
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para PECAS"
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para PECAS"
          Pecas_da_Nota_Fiscal![Seqüência da Nota Fiscal] = Nota_Fiscal![Seqüência da Nota Fiscal]
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeUpdateRecord ERRO: Grid=PECAS Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 4
+         Debug.Print ">>> Grid_BeforeUpdateRecord: Atribuindo chave estrangeira para PARCELAS"
          Parcelas_Nota_Fiscal![Seqüência da Nota Fiscal] = Nota_Fiscal![Seqüência da Nota Fiscal]
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_BeforeUpdateRecord ERRO: Grid=PARCELAS Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
    End Select
+   
+   Debug.Print ">>> Grid_BeforeUpdateRecord FIM: Grid=" & gridName
 End Sub
-
 'evento - antes de efetuar o delete no recordset do grid
 Private Sub Grid_BeforeDeleteRecord(Index As Integer, ByVal vgItem As Long, vgColumns() As Variant, vgIsValid As Boolean, vgColumn As Integer, vgErrorMessage As String)
    GeraLog Me, ACAO_EXCLUINDO, Index, True
@@ -14359,37 +14668,205 @@ Private Sub Grid_BeforeDeleteRecord(Index As Integer, ByVal vgItem As Long, vgCo
       Case 4
    End Select
 End Sub
-
 'evento - quer pegar valores para cada célula
 Private Sub Grid_GetColumnValue(Index As Integer, ByVal vgItem As Long, ByVal vgCol As Integer, vgColumns() As Variant, vgNewText As Variant)
+   On Error Resume Next
    Dim RetVal As Variant, NCol As Integer
+   Dim gridName As String
+   
+   Select Case Index
+      Case 0: gridName = "PRODUTOS"
+      Case 1: gridName = "SERVICOS"
+      Case 2: gridName = "CONJUNTOS"
+      Case 3: gridName = "PECAS"
+      Case 4: gridName = "PARCELAS"
+   End Select
+   
+   ' Debug apenas para colunas IBS/CBS (33 e 34 no Grid0)
+   If Index = 0 And (vgCol = 33 Or vgCol = 34) Then
+      Debug.Print ">>> Grid_GetColumnValue: Grid=" & gridName & " vgItem=" & vgItem & " vgCol=" & vgCol
+   End If
+   
    RetVal = ExecutaGrid(Index, vgColumns(), CONTEUDODACOLUNA, vgItem, vgCol, , NCol)
+   
+   If Err.Number <> 0 Then
+      Debug.Print ">>> Grid_GetColumnValue ERRO: Grid=" & gridName & " vgCol=" & vgCol & " Err=" & Err.Number & " " & Err.Description
+      Err.Clear
+      NCol = -1
+      RetVal = 0
+   End If
+   
    If NCol = -1 Then
       vgNewText = RetVal
    End If
 End Sub
-
 'evento - recordset do grid foi mudado
 Private Sub Grid_RecordSetChanged(Index As Integer, ByVal vgNewRecordSet As GRecordSet)
+   On Error Resume Next
+   Dim gridName As String
+   
+   Select Case Index
+      Case 0: gridName = "PRODUTOS"
+      Case 1: gridName = "SERVICOS"
+      Case 2: gridName = "CONJUNTOS"
+      Case 3: gridName = "PECAS"
+      Case 4: gridName = "PARCELAS"
+   End Select
+   
+   Debug.Print ">>> Grid_RecordSetChanged: Grid=" & gridName & " (Index=" & Index & ")"
+   
    Select Case Index
       Case 0
          Set Produtos_da_Nota_Fiscal = vgNewRecordSet
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_RecordSetChanged ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 1
          Set Servicos_da_Nota_Fiscal = vgNewRecordSet
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_RecordSetChanged ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 2
          Set Conjuntos_da_Nota_Fiscal = vgNewRecordSet
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_RecordSetChanged ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 3
          Set Pecas_da_Nota_Fiscal = vgNewRecordSet
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_RecordSetChanged ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
       Case 4
          Set Parcelas_Nota_Fiscal = vgNewRecordSet
+         If Err.Number <> 0 Then
+            Debug.Print ">>> Grid_RecordSetChanged ERRO: Grid=PARCELAS Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
    End Select
+   
+   Debug.Print ">>> Grid_RecordSetChanged FIM: Grid=" & gridName
 End Sub
-
 'evento - quer validar dados, está gravando
 Private Sub Grid_ValidateData(Index As Integer, ByVal vgItem As Long, vgColumns() As Variant, vgIsValid As Boolean, vgColumn As Integer, vgErrorMessage As String)
+   On Error Resume Next
+   Dim gridName As String
+   
+   Select Case Index
+      Case 0: gridName = "PRODUTOS"
+      Case 1: gridName = "SERVICOS"
+      Case 2: gridName = "CONJUNTOS"
+      Case 3: gridName = "PECAS"
+      Case 4: gridName = "PARCELAS"
+   End Select
+   
+   Debug.Print ">>> Grid_ValidateData: Grid=" & gridName & " (Index=" & Index & ") vgItem=" & vgItem & " vgColumn=" & vgColumn
+   
    ExecutaGrid Index, vgColumns(), VALIDACOES, vgItem, vgColumn, vgIsValid, vgColumn, vgErrorMessage
+   
+   If Err.Number <> 0 Then
+      Debug.Print ">>> Grid_ValidateData ERRO: Grid=" & gridName & " Err=" & Err.Number & " " & Err.Description
+      Err.Clear
+   End If
+   
+   ' HACK CRÍTICO: Se for a última validação (vgColumn=-1) e for grid de produtos/conjuntos/peças
+   ' Verificar se campos IBS/CBS existem no recordset - se não existirem, CANCELAR update automático
+   If vgColumn = -1 And (Index = 0 Or Index = 2 Or Index = 3) Then
+      Debug.Print ">>> Grid_ValidateData: HACK - Verificando campos IBS/CBS para " & gridName
+      
+      Dim temErroIBS As Boolean
+      Dim temErroCBS As Boolean
+      temErroIBS = False
+      temErroCBS = False
+      
+      Select Case Index
+         Case 0  ' Produtos
+            If Not Produtos_da_Nota_Fiscal Is Nothing Then
+               On Error Resume Next
+               Dim testIBS As Variant
+               Dim testCBS As Variant
+               
+               ' Tentar ler os campos - se erro, campos não existem
+               testIBS = Produtos_da_Nota_Fiscal![Valor IBS]
+               If Err.Number <> 0 Then
+                  temErroIBS = True
+                  Err.Clear
+               End If
+               
+               testCBS = Produtos_da_Nota_Fiscal![Valor CBS]
+               If Err.Number <> 0 Then
+                  temErroCBS = True
+                  Err.Clear
+               End If
+               
+               Debug.Print ">>> Grid_ValidateData: PRODUTOS - temErroIBS=" & temErroIBS & " temErroCBS=" & temErroCBS
+            End If
+            
+         Case 2  ' Conjuntos
+            If Not Conjuntos_da_Nota_Fiscal Is Nothing Then
+               On Error Resume Next
+               testIBS = Conjuntos_da_Nota_Fiscal![Valor IBS]
+               If Err.Number <> 0 Then
+                  temErroIBS = True
+                  Err.Clear
+               End If
+               
+               testCBS = Conjuntos_da_Nota_Fiscal![Valor CBS]
+               If Err.Number <> 0 Then
+                  temErroCBS = True
+                  Err.Clear
+               End If
+               
+               Debug.Print ">>> Grid_ValidateData: CONJUNTOS - temErroIBS=" & temErroIBS & " temErroCBS=" & temErroCBS
+            End If
+            
+         Case 3  ' Peças
+            If Not Pecas_da_Nota_Fiscal Is Nothing Then
+               On Error Resume Next
+               testIBS = Pecas_da_Nota_Fiscal![Valor IBS]
+               If Err.Number <> 0 Then
+                  temErroIBS = True
+                  Err.Clear
+               End If
+               
+               testCBS = Pecas_da_Nota_Fiscal![Valor CBS]
+               If Err.Number <> 0 Then
+                  temErroCBS = True
+                  Err.Clear
+               End If
+               
+               Debug.Print ">>> Grid_ValidateData: PECAS - temErroIBS=" & temErroIBS & " temErroCBS=" & temErroCBS
+            End If
+      End Select
+      
+      ' Se os campos não existem no recordset, não tentar fazer update automático
+      ' O update será feito via SQL no ProcessaProdutos/Conjuntos/Pecas
+      If temErroIBS Or temErroCBS Then
+         Debug.Print ">>> Grid_ValidateData: CAMPOS IBS/CBS NÃO EXISTEM NO CACHE - Grid continuará normalmente"
+         ' NÃO cancelar validação - deixar grid continuar
+         ' O erro será tratado no Grid_Error
+      Else
+         Debug.Print ">>> Grid_ValidateData: Campos IBS/CBS existem - atribuindo zero"
+         ' Se campos existem, inicializar com zero
+         Select Case Index
+            Case 0
+               Produtos_da_Nota_Fiscal![Valor IBS] = 0
+               Produtos_da_Nota_Fiscal![Valor CBS] = 0
+            Case 2
+               Conjuntos_da_Nota_Fiscal![Valor IBS] = 0
+               Conjuntos_da_Nota_Fiscal![Valor CBS] = 0
+            Case 3
+               Pecas_da_Nota_Fiscal![Valor IBS] = 0
+               Pecas_da_Nota_Fiscal![Valor CBS] = 0
+         End Select
+      End If
+   End If
+   
+   Debug.Print ">>> Grid_ValidateData FIM: Grid=" & gridName & " vgColumn=" & vgColumn
 End Sub
-
 'evento - após a exclusao de um registro no grid filho
 Private Sub Grid_AfterDeleteRecord(Index As Integer, ByVal vgItem As Long, vgColumns() As Variant, vgIsValid As Boolean, vgColumn As Integer, vgErrorMessage As String)
    GeraLog Me, ACAO_EXCLUINDO, Index, False
@@ -14406,11 +14883,9 @@ Private Sub Grid_AfterDeleteRecord(Index As Integer, ByVal vgItem As Long, vgCol
    mdiIRRIG.RemontaForm                                   'vamos atualizar os forms de dados
    Grid(Index).Repaint -1                                 'atualiza dados do grid (registro posicionado)
 End Sub
-
 Private Sub Grid_ControlButtonClick(Index As Integer)
    Grid(Index).ShowFilterBar = Not Grid(Index).ShowFilterBar
 End Sub
-
 Private Sub Grid_GotFocus(Index As Integer)
    If vgSituacao <> ACAO_NAVEGANDO And Grid(Index).Status = ACAO_NAVEGANDO Then                 'o formulário pai não está em navegação
       mdiIRRIG.SalvaDados                         'salva o resitro em edição
@@ -14419,7 +14894,6 @@ Private Sub Grid_GotFocus(Index As Integer)
       End If
    End If
 End Sub
-
 Private Sub Grid_StatusChanged(Index As Integer, ByVal vgNewStatus As Integer)
    Dim vgTemAltGrdOld As Boolean
    If vgNewStatus <> ACAO_NAVEGANDO Then vgNewStatus = -vgNewStatus
@@ -14430,17 +14904,14 @@ Private Sub Grid_StatusChanged(Index As Integer, ByVal vgNewStatus As Integer)
       Reposition , Not vgTemAltGrdOld
    End If
 End Sub
-
 'evento - atualiza valores para os filtros das colunas do grid filho
 Private Sub Grid_GetColumnFilter(Index As Integer, ByVal vgColumn As Integer, vgColumns() As Variant, vgFilter As String)
    vgFilter = ExecutaGrid(Index, vgColumns(), PEGAFILTRODASCOLUNAS, , vgColumn)
 End Sub
-
 'evento - pega expressão SQL para abertura de pesquisa
 Private Sub Grid_GetColumnSQLSearch(Index As Integer, ByVal vgColumn As Integer, vgColumns() As Variant, vgSQLSearch As String)
    vgSQLSearch = ExecutaGrid(Index, vgColumns(), PEGAEXPRESSAOPESQUISA, , vgColumn)
 End Sub
-
 'inicializações, validações e processos para o grid
 Private Function ExecutaGrid(Index As Integer, ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Select Case Index
@@ -14456,7 +14927,6 @@ Private Function ExecutaGrid(Index As Integer, ColumnValue() As Variant, ByVal v
          ExecutaGrid = ExecutaGrid4(ColumnValue(), vgOq, vgItem, vgCol, vgIsValid, vgColumn, vgErrorMessage, KeyCodeAscii, Shift)
    End Select
 End Function
-
 'inicializações, validações e processos do grid filho
 Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Dim vgRetVal As Variant, vgRsError As GRecordSet, x As String, vgNVez As Integer
@@ -14470,7 +14940,7 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
    Dim Base_de_Calculo_da_Importacao As Double, Valor_das_Despesas_Aduaneiras As Double, Valor_do_Imposto_de_Importacao As Double
    Dim Valor_do_IOF As Double, Valor_do_Desconto As Double, Valor_do_Frete As Double
    Dim Bc_pis As Double, Bc_cofins As Double, Aliq_do_pis As Single
-   Dim Aliq_do_cofins As Single
+   Dim Aliq_do_cofins As Single, Valor_IBS As Double, Valor_CBS As Double
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
       vgRetVal = False
@@ -14505,7 +14975,13 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
          Case 10
             vgRetVal = (Round((Quantidade * Valor_Unitario), 2))
-            vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
+            vgColumn = -1                   'flag para permitir defini??o desse novo valor para coluna do grid
+         Case 33
+            vgRetVal = Valor_IBS
+            vgColumn = -1
+         Case 34
+            vgRetVal = Valor_CBS
+            vgColumn = -1
       End Select
       If Err Then Err.Clear
    ElseIf vgOq = PREVALIDACOES Then
@@ -14515,6 +14991,8 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
             vgRetVal = Not (Nota_Fiscal![Nota Fiscal Avulsa] And Nota_Fiscal![Seqüência do Movimento] = 0)
          Case 6
             vgRetVal = Not (Nota_Fiscal![Nota Fiscal Avulsa] And Nota_Fiscal![Seqüência do Movimento] = 0)
+         Case 33, 34
+            vgRetVal = True
          Case Else
             vgRetVal = False
       End Select
@@ -14548,11 +15026,9 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
    ElseIf vgOq = ABRE_TABELA_GRID Then
       On Error Resume Next
       vgRetVal = "SELECT * FROM [Produtos da Nota Fiscal]"
-
       'definindo a expressão de ligação com o pai
       x$ = "[Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
       vgRetVal = InsereSQL(vgRetVal, EXP_WHERE, x$)
-
    ElseIf vgOq = DEFAULTDASCOLUNAS Then
       GoSub IniApDaCol
       vgRetVal = Null
@@ -14623,18 +15099,37 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
          End If
          If Not vgIsValid And Len(vgErrorMessage$) = 0 Then vgErrorMessage$ = "Err"
       ElseIf vgOq = APOS_EDICAO Then
+         Debug.Print ">>> GRID0 (Produtos) APOS_EDICAO: vgSituacao=" & vgSituacao & " Abs(vgSituacao)=" & Abs(vgSituacao)
          On Error GoTo DeuErro
          GoSub IniApDaCol
          If Abs(vgSituacao) = ACAO_INCLUINDO Then
+            Debug.Print ">>> GRID0: Chamando AjustaValores INCLUSAO"
             AjustaValores
+            Debug.Print ">>> GRID0: AjustaValores INCLUSAO concluido"
          ElseIf Abs(vgSituacao) = ACAO_EDITANDO Then
+            Debug.Print ">>> GRID0: Chamando AjustaValores EDICAO"
             AjustaValores
+            Debug.Print ">>> GRID0: AjustaValores EDICAO concluido"
          ElseIf Abs(vgSituacao) = ACAO_EXCLUINDO Then
+            Debug.Print ">>> GRID0: Chamando AjustaValores EXCLUSAO"
             AjustaValores
+            Debug.Print ">>> GRID0: AjustaValores EXCLUSAO concluido"
          End If
       ElseIf vgOq = PROCESSOS_DIRETOS Then
+         Debug.Print ">>> GRID0_PROCESSOS_DIRETOS: Inicio - SeqProduto=" & Sequencia_do_Produto
+         On Error Resume Next
          GoSub IniApDaCol
+         If Err.Number <> 0 Then
+            Debug.Print ">>> GRID0_PROCESSOS_DIRETOS: ERRO em IniApDaCol - Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
+         Debug.Print ">>> GRID0_PROCESSOS_DIRETOS: Chamando Edit - IBS=" & Valor_IBS & " CBS=" & Valor_CBS
          Produtos_da_Nota_Fiscal.Edit
+         If Err.Number <> 0 Then
+            Debug.Print ">>> GRID0_PROCESSOS_DIRETOS: ERRO em Produtos_da_Nota_Fiscal.Edit - Err=" & Err.Number & " " & Err.Description
+            Err.Clear
+         End If
+         On Error GoTo DeuErro
          Set vgRsError = Produtos_da_Nota_Fiscal
          If ProcessaProdutos(Valor_do_Tributo, Sequencia_da_Nota_Fiscal, Sequencia_Produto_Nota_Fiscal, Sequencia_do_Produto, Quantidade, Valor_Unitario, _
    Valor_Total, Valor_do_IPI, Valor_do_ICMS, Aliquota_do_IPI, Aliquota_do_ICMS, Percentual_da_Reducao, _
@@ -14645,7 +15140,9 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
             Produtos_da_Nota_Fiscal![Seqüência da Nota Fiscal] = (0)
             Sequencia_da_Nota_Fiscal = Produtos_da_Nota_Fiscal![Seqüência da Nota Fiscal]
          End If
+         Debug.Print ">>> GRID0_PROCESSOS_DIRETOS: Chamando Update"
          Produtos_da_Nota_Fiscal.Update
+         Debug.Print ">>> GRID0_PROCESSOS_DIRETOS: Update concluido"
          Set vgRsError = Nothing
       ElseIf vgOq = PROCESSOS_INVERSOS Or vgOq = EXCLUSOES Then
          On Error GoTo DeuErro
@@ -14654,7 +15151,6 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
    End If
    GoTo FimDaSub
    Exit Function
-
 IniApDaCol:
    On Error Resume Next
    Sequencia_do_Produto = val(Parse$(CStr(ColumnValue(1)), Chr$(1), 1))
@@ -14686,6 +15182,8 @@ IniApDaCol:
    Aliq_do_cofins = ColumnValue(30)
    Valor_do_Cofins = ColumnValue(31)
    Valor_do_Tributo = ColumnValue(32)
+   Valor_IBS = ColumnValue(33)
+   Valor_CBS = ColumnValue(34)
    If Grid(0).Status <> ACAO_INCLUINDO Then
       If Produtos_da_Nota_Fiscal.EOF = False And Produtos_da_Nota_Fiscal.BOF = False And Produtos_da_Nota_Fiscal.RecordCount > 0 Then
          Sequencia_Produto_Nota_Fiscal = Produtos_da_Nota_Fiscal![Seqüência Produto Nota Fiscal]
@@ -14695,7 +15193,6 @@ IniApDaCol:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 IniApDaTb:
    On Error Resume Next
    If Produtos_da_Nota_Fiscal.EOF = False And Produtos_da_Nota_Fiscal.BOF = False And Produtos_da_Nota_Fiscal.RecordCount > 0 Then
@@ -14724,6 +15221,17 @@ IniApDaTb:
       Valor_das_Despesas_Aduaneiras = Produtos_da_Nota_Fiscal![Valor das Despesas Aduaneiras]
       Valor_do_Imposto_de_Importacao = Produtos_da_Nota_Fiscal![Valor do Imposto de Importação]
       Valor_do_IOF = Produtos_da_Nota_Fiscal![Valor do IOF]
+      
+      ' Leitura de IBS/CBS com proteção de erro - inicializa com zero
+      Valor_IBS = 0
+      Valor_CBS = 0
+      Err.Clear
+      Valor_IBS = Produtos_da_Nota_Fiscal![Valor IBS]
+      If Err.Number <> 0 Then Err.Clear
+      
+      Valor_CBS = Produtos_da_Nota_Fiscal![Valor CBS]
+      If Err.Number <> 0 Then Err.Clear
+      
       Valor_do_Desconto = Produtos_da_Nota_Fiscal![Valor Do Desconto]
       Valor_do_Frete = Produtos_da_Nota_Fiscal![Valor Do Frete]
       Bc_pis = Produtos_da_Nota_Fiscal![Bc Pis]
@@ -14734,7 +15242,6 @@ IniApDaTb:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 DeuErro:
    If vgOq = CONTEUDODACOLUNA Or vgOq = DEFAULTDASCOLUNAS Or vgOq < 0 Then
       vgRetVal = Null
@@ -14748,16 +15255,12 @@ DeuErro:
       Set vgRsError = Nothing
    End If
    Resume ResumeErro
-
 ResumeErro:
    On Error Resume Next
-
 FimDaSub:
    ExecutaGrid0 = vgRetVal
    vgPriVez = False
 End Function
-
-
 'inicializações, validações e processos do grid filho
 Private Function ExecutaGrid1(ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Dim vgRetVal As Variant, vgRsError As GRecordSet, x As String, vgNVez As Integer
@@ -14814,11 +15317,9 @@ Private Function ExecutaGrid1(ColumnValue() As Variant, ByVal vgOq As Integer, O
    ElseIf vgOq = ABRE_TABELA_GRID Then
       On Error Resume Next
       vgRetVal = "SELECT * FROM [Serviços da Nota Fiscal]"
-
       'definindo a expressão de ligação com o pai
       x$ = "[Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
       vgRetVal = InsereSQL(vgRetVal, EXP_WHERE, x$)
-
    ElseIf vgOq = DEFAULTDASCOLUNAS Then
       GoSub IniApDaCol
       vgRetVal = Null
@@ -14866,14 +15367,21 @@ Private Function ExecutaGrid1(ColumnValue() As Variant, ByVal vgOq As Integer, O
          End If
          If Not vgIsValid And Len(vgErrorMessage$) = 0 Then vgErrorMessage$ = "Err"
       ElseIf vgOq = APOS_EDICAO Then
+         Debug.Print ">>> GRID1 (Conjuntos) APOS_EDICAO: vgSituacao=" & vgSituacao & " Abs(vgSituacao)=" & Abs(vgSituacao)
          On Error GoTo DeuErro
          GoSub IniApDaCol
          If Abs(vgSituacao) = ACAO_INCLUINDO Then
+            Debug.Print ">>> GRID1: Chamando AjustaValores INCLUSAO"
             AjustaValores
+            Debug.Print ">>> GRID1: AjustaValores INCLUSAO concluido"
          ElseIf Abs(vgSituacao) = ACAO_EDITANDO Then
+            Debug.Print ">>> GRID1: Chamando AjustaValores EDICAO"
             AjustaValores
+            Debug.Print ">>> GRID1: AjustaValores EDICAO concluido"
          ElseIf Abs(vgSituacao) = ACAO_EXCLUINDO Then
+            Debug.Print ">>> GRID1: Chamando AjustaValores EXCLUSAO"
             AjustaValores
+            Debug.Print ">>> GRID1: AjustaValores EXCLUSAO concluido"
          End If
       ElseIf vgOq = PROCESSOS_DIRETOS Then
          GoSub IniApDaCol
@@ -14892,7 +15400,6 @@ Private Function ExecutaGrid1(ColumnValue() As Variant, ByVal vgOq As Integer, O
    End If
    GoTo FimDaSub
    Exit Function
-
 IniApDaCol:
    On Error Resume Next
    Sequencia_do_Servico = val(Parse$(CStr(ColumnValue(1)), Chr$(1), 1))
@@ -14907,7 +15414,6 @@ IniApDaCol:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 IniApDaTb:
    On Error Resume Next
    If Servicos_da_Nota_Fiscal.EOF = False And Servicos_da_Nota_Fiscal.BOF = False And Servicos_da_Nota_Fiscal.RecordCount > 0 Then
@@ -14920,7 +15426,6 @@ IniApDaTb:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 DeuErro:
    If vgOq = CONTEUDODACOLUNA Or vgOq = DEFAULTDASCOLUNAS Or vgOq < 0 Then
       vgRetVal = Null
@@ -14934,16 +15439,12 @@ DeuErro:
       Set vgRsError = Nothing
    End If
    Resume ResumeErro
-
 ResumeErro:
    On Error Resume Next
-
 FimDaSub:
    ExecutaGrid1 = vgRetVal
    vgPriVez = False
 End Function
-
-
 'inicializações, validações e processos do grid filho
 Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Dim vgRetVal As Variant, vgRsError As GRecordSet, x As String, vgNVez As Integer
@@ -14955,7 +15456,7 @@ Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, O
    Dim IVA As Double, Base_de_Calculo_ST As Double, Valor_ICMS_ST As Double
    Dim CFOP As Integer, CST As Integer, Aliquota_do_ICMS_ST As Single
    Dim Valor_do_Desconto As Double, Valor_do_Frete As Double, Bc_pis As Double
-   Dim Aliq_do_pis As Single, Bc_cofins As Double, Aliq_do_cofins As Single
+   Dim Aliq_do_pis As Single, Bc_cofins As Double, Aliq_do_cofins As Single, Valor_IBS As Double, Valor_CBS As Double
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
       vgRetVal = False
@@ -14982,6 +15483,12 @@ Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, O
          Case 9
             vgRetVal = (Quantidade * Valor_Unitario)
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
+         Case 28
+            vgRetVal = Valor_IBS
+            vgColumn = -1
+         Case 29
+            vgRetVal = Valor_CBS
+            vgColumn = -1
       End Select
       If Err Then Err.Clear
    ElseIf vgOq = PREVALIDACOES Then
@@ -14991,6 +15498,8 @@ Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, O
             vgRetVal = Not (Nota_Fiscal![Nota Fiscal Avulsa] And Nota_Fiscal![Seqüência do Movimento] = 0)
          Case 5
             vgRetVal = Not (Nota_Fiscal![Nota Fiscal Avulsa] And Nota_Fiscal![Seqüência do Movimento] = 0)
+         Case 28, 29
+            vgRetVal = True
          Case Else
             vgRetVal = False
       End Select
@@ -15022,11 +15531,9 @@ Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, O
    ElseIf vgOq = ABRE_TABELA_GRID Then
       On Error Resume Next
       vgRetVal = "SELECT * FROM [Conjuntos da Nota Fiscal]"
-
       'definindo a expressão de ligação com o pai
       x$ = "[Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
       vgRetVal = InsereSQL(vgRetVal, EXP_WHERE, x$)
-
    ElseIf vgOq = DEFAULTDASCOLUNAS Then
       GoSub IniApDaCol
       vgRetVal = Null
@@ -15096,17 +15603,26 @@ Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, O
          End If
          If Not vgIsValid And Len(vgErrorMessage$) = 0 Then vgErrorMessage$ = "Err"
       ElseIf vgOq = APOS_EDICAO Then
+         Debug.Print ">>> GRID2 (Peças) APOS_EDICAO: vgSituacao=" & vgSituacao & " Abs(vgSituacao)=" & Abs(vgSituacao)
          On Error GoTo DeuErro
          GoSub IniApDaCol
          If Abs(vgSituacao) = ACAO_INCLUINDO Then
+            Debug.Print ">>> GRID2: Chamando AjustaValores INCLUSAO"
             AjustaValores
+            Debug.Print ">>> GRID2: AjustaValores INCLUSAO concluido"
          ElseIf Abs(vgSituacao) = ACAO_EDITANDO Then
+            Debug.Print ">>> GRID2: Chamando AjustaValores EDICAO"
             AjustaValores
+            Debug.Print ">>> GRID2: AjustaValores EDICAO concluido"
          ElseIf Abs(vgSituacao) = ACAO_EXCLUINDO Then
+            Debug.Print ">>> GRID2: Chamando AjustaValores EXCLUSAO"
             AjustaValores
+            Debug.Print ">>> GRID2: AjustaValores EXCLUSAO concluido"
          End If
       ElseIf vgOq = PROCESSOS_DIRETOS Then
+         Debug.Print ">>> GRID2_PROCESSOS_DIRETOS: Inicio - SeqConjunto=" & Sequencia_do_Conjunto
          GoSub IniApDaCol
+         Debug.Print ">>> GRID2_PROCESSOS_DIRETOS: Chamando Edit - IBS=" & Valor_IBS & " CBS=" & Valor_CBS
          Conjuntos_da_Nota_Fiscal.Edit
          Set vgRsError = Conjuntos_da_Nota_Fiscal
          If ProcessaConjuntos(Sequencia_da_Nota_Fiscal, Sequencia_Conjunto_Nota_Fiscal, Sequencia_do_Conjunto, Quantidade, Valor_Unitario, Valor_Total, _
@@ -15117,7 +15633,9 @@ Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, O
             Conjuntos_da_Nota_Fiscal![Seqüência da Nota Fiscal] = (0)
             Sequencia_da_Nota_Fiscal = Conjuntos_da_Nota_Fiscal![Seqüência da Nota Fiscal]
          End If
+         Debug.Print ">>> GRID2_PROCESSOS_DIRETOS: Chamando Update"
          Conjuntos_da_Nota_Fiscal.Update
+         Debug.Print ">>> GRID2_PROCESSOS_DIRETOS: Update concluido"
          Set vgRsError = Nothing
       ElseIf vgOq = PROCESSOS_INVERSOS Or vgOq = EXCLUSOES Then
          On Error GoTo DeuErro
@@ -15126,7 +15644,6 @@ Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, O
    End If
    GoTo FimDaSub
    Exit Function
-
 IniApDaCol:
    On Error Resume Next
    Sequencia_do_Conjunto = val(Parse$(CStr(ColumnValue(1)), Chr$(1), 1))
@@ -15154,6 +15671,8 @@ IniApDaCol:
    Aliq_do_cofins = ColumnValue(25)
    Valor_do_Cofins = ColumnValue(26)
    Valor_do_Tributo = ColumnValue(27)
+   Valor_IBS = ColumnValue(28)
+   Valor_CBS = ColumnValue(29)
    If Grid(2).Status <> ACAO_INCLUINDO Then
       If Conjuntos_da_Nota_Fiscal.EOF = False And Conjuntos_da_Nota_Fiscal.BOF = False And Conjuntos_da_Nota_Fiscal.RecordCount > 0 Then
          Sequencia_Conjunto_Nota_Fiscal = Conjuntos_da_Nota_Fiscal![Seqüência Conjunto Nota Fiscal]
@@ -15163,7 +15682,6 @@ IniApDaCol:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 IniApDaTb:
    On Error Resume Next
    If Conjuntos_da_Nota_Fiscal.EOF = False And Conjuntos_da_Nota_Fiscal.BOF = False And Conjuntos_da_Nota_Fiscal.RecordCount > 0 Then
@@ -15194,11 +15712,20 @@ IniApDaTb:
       Aliq_do_pis = Conjuntos_da_Nota_Fiscal![Aliq Do Pis]
       Bc_cofins = Conjuntos_da_Nota_Fiscal![Bc Cofins]
       Aliq_do_cofins = Conjuntos_da_Nota_Fiscal![Aliq Do Cofins]
+      
+      ' Leitura de IBS/CBS com proteção de erro - inicializa com zero
+      Valor_IBS = 0
+      Valor_CBS = 0
+      Err.Clear
+      Valor_IBS = Conjuntos_da_Nota_Fiscal![Valor IBS]
+      If Err.Number <> 0 Then Err.Clear
+      
+      Valor_CBS = Conjuntos_da_Nota_Fiscal![Valor CBS]
+      If Err.Number <> 0 Then Err.Clear
    End If
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 DeuErro:
    If vgOq = CONTEUDODACOLUNA Or vgOq = DEFAULTDASCOLUNAS Or vgOq < 0 Then
       vgRetVal = Null
@@ -15212,16 +15739,12 @@ DeuErro:
       Set vgRsError = Nothing
    End If
    Resume ResumeErro
-
 ResumeErro:
    On Error Resume Next
-
 FimDaSub:
    ExecutaGrid2 = vgRetVal
    vgPriVez = False
 End Function
-
-
 'inicializações, validações e processos do grid filho
 Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Dim vgRetVal As Variant, vgRsError As GRecordSet, x As String, vgNVez As Integer
@@ -15233,7 +15756,7 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
    Dim IVA As Double, Base_de_Calculo_ST As Double, Valor_ICMS_ST As Double
    Dim CFOP As Integer, CST As Integer, Aliquota_do_ICMS_ST As Single
    Dim Valor_do_Desconto As Double, Valor_do_Frete As Double, Bc_pis As Double
-   Dim Aliq_do_pis As Single, Bc_cofins As Double, Aliq_do_cofins As Single
+   Dim Aliq_do_pis As Single, Bc_cofins As Double, Aliq_do_cofins As Single, Valor_IBS As Double, Valor_CBS As Double
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
       vgRetVal = False
@@ -15260,6 +15783,12 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
          Case 9
             vgRetVal = (Quantidade * Valor_Unitario)
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
+         Case 28
+            vgRetVal = Valor_IBS
+            vgColumn = -1
+         Case 29
+            vgRetVal = Valor_CBS
+            vgColumn = -1
       End Select
       If Err Then Err.Clear
    ElseIf vgOq = PREVALIDACOES Then
@@ -15269,6 +15798,8 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
             vgRetVal = Not (Nota_Fiscal![Nota Fiscal Avulsa] And Nota_Fiscal![Seqüência do Movimento] = 0)
          Case 5
             vgRetVal = Not (Nota_Fiscal![Nota Fiscal Avulsa] And Nota_Fiscal![Seqüência do Movimento] = 0)
+         Case 28, 29
+            vgRetVal = True
          Case Else
             vgRetVal = False
       End Select
@@ -15300,11 +15831,9 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
    ElseIf vgOq = ABRE_TABELA_GRID Then
       On Error Resume Next
       vgRetVal = "SELECT * FROM [Peças da Nota Fiscal]"
-
       'definindo a expressão de ligação com o pai
       x$ = "[Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
       vgRetVal = InsereSQL(vgRetVal, EXP_WHERE, x$)
-
    ElseIf vgOq = DEFAULTDASCOLUNAS Then
       GoSub IniApDaCol
       vgRetVal = Null
@@ -15384,7 +15913,9 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
             AjustaValores
          End If
       ElseIf vgOq = PROCESSOS_DIRETOS Then
+         Debug.Print ">>> GRID3_PROCESSOS_DIRETOS: Inicio - SeqProduto=" & Sequencia_do_Produto
          GoSub IniApDaCol
+         Debug.Print ">>> GRID3_PROCESSOS_DIRETOS: Chamando Edit - IBS=" & Valor_IBS & " CBS=" & Valor_CBS
          Pecas_da_Nota_Fiscal.Edit
          Set vgRsError = Pecas_da_Nota_Fiscal
          If ProcessaPecas(Sequencia_da_Nota_Fiscal, Sequencia_da_Peca_Nota_Fiscal, Sequencia_do_Produto, Quantidade, Valor_Unitario, Valor_Total, _
@@ -15395,7 +15926,9 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
             Pecas_da_Nota_Fiscal![Seqüência da Nota Fiscal] = (0)
             Sequencia_da_Nota_Fiscal = Pecas_da_Nota_Fiscal![Seqüência da Nota Fiscal]
          End If
+         Debug.Print ">>> GRID3_PROCESSOS_DIRETOS: Chamando Update"
          Pecas_da_Nota_Fiscal.Update
+         Debug.Print ">>> GRID3_PROCESSOS_DIRETOS: Update concluido"
          Set vgRsError = Nothing
       ElseIf vgOq = PROCESSOS_INVERSOS Or vgOq = EXCLUSOES Then
          On Error GoTo DeuErro
@@ -15404,7 +15937,6 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
    End If
    GoTo FimDaSub
    Exit Function
-
 IniApDaCol:
    On Error Resume Next
    Sequencia_do_Produto = val(Parse$(CStr(ColumnValue(1)), Chr$(1), 1))
@@ -15432,6 +15964,8 @@ IniApDaCol:
    Aliq_do_cofins = ColumnValue(25)
    Valor_do_Cofins = ColumnValue(26)
    Valor_do_Tributo = ColumnValue(27)
+   Valor_IBS = ColumnValue(28)
+   Valor_CBS = ColumnValue(29)
    If Grid(3).Status <> ACAO_INCLUINDO Then
       If Pecas_da_Nota_Fiscal.EOF = False And Pecas_da_Nota_Fiscal.BOF = False And Pecas_da_Nota_Fiscal.RecordCount > 0 Then
          Sequencia_da_Peca_Nota_Fiscal = Pecas_da_Nota_Fiscal![Seqüência da Peça Nota Fiscal]
@@ -15441,7 +15975,6 @@ IniApDaCol:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 IniApDaTb:
    On Error Resume Next
    If Pecas_da_Nota_Fiscal.EOF = False And Pecas_da_Nota_Fiscal.BOF = False And Pecas_da_Nota_Fiscal.RecordCount > 0 Then
@@ -15472,11 +16005,20 @@ IniApDaTb:
       Aliq_do_pis = Pecas_da_Nota_Fiscal![Aliq Do Pis]
       Bc_cofins = Pecas_da_Nota_Fiscal![Bc Cofins]
       Aliq_do_cofins = Pecas_da_Nota_Fiscal![Aliq Do Cofins]
+      
+      ' Leitura de IBS/CBS com proteção de erro - inicializa com zero
+      Valor_IBS = 0
+      Valor_CBS = 0
+      Err.Clear
+      Valor_IBS = Pecas_da_Nota_Fiscal![Valor IBS]
+      If Err.Number <> 0 Then Err.Clear
+      
+      Valor_CBS = Pecas_da_Nota_Fiscal![Valor CBS]
+      If Err.Number <> 0 Then Err.Clear
    End If
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 DeuErro:
    If vgOq = CONTEUDODACOLUNA Or vgOq = DEFAULTDASCOLUNAS Or vgOq < 0 Then
       vgRetVal = Null
@@ -15490,16 +16032,12 @@ DeuErro:
       Set vgRsError = Nothing
    End If
    Resume ResumeErro
-
 ResumeErro:
    On Error Resume Next
-
 FimDaSub:
    ExecutaGrid3 = vgRetVal
    vgPriVez = False
 End Function
-
-
 'inicializações, validações e processos do grid filho
 Private Function ExecutaGrid4(ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Dim vgRetVal As Variant, vgRsError As GRecordSet, x As String, vgNVez As Integer
@@ -15535,11 +16073,9 @@ Private Function ExecutaGrid4(ColumnValue() As Variant, ByVal vgOq As Integer, O
    ElseIf vgOq = ABRE_TABELA_GRID Then
       On Error Resume Next
       vgRetVal = "SELECT * FROM [Parcelas Nota Fiscal]"
-
       'definindo a expressão de ligação com o pai
       x$ = "[Seqüência da Nota Fiscal] = " & Nota_Fiscal![Seqüência da Nota Fiscal]
       vgRetVal = InsereSQL(vgRetVal, EXP_WHERE, x$)
-
    ElseIf vgOq = DEFAULTDASCOLUNAS Then
       GoSub IniApDaCol
       vgRetVal = Null
@@ -15581,7 +16117,6 @@ Private Function ExecutaGrid4(ColumnValue() As Variant, ByVal vgOq As Integer, O
    End If
    GoTo FimDaSub
    Exit Function
-
 IniApDaCol:
    On Error Resume Next
    Numero_da_Parcela = ColumnValue(1)
@@ -15591,7 +16126,6 @@ IniApDaCol:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 IniApDaTb:
    On Error Resume Next
    If Parcelas_Nota_Fiscal.EOF = False And Parcelas_Nota_Fiscal.BOF = False And Parcelas_Nota_Fiscal.RecordCount > 0 Then
@@ -15603,7 +16137,6 @@ IniApDaTb:
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
-
 DeuErro:
    If vgOq = CONTEUDODACOLUNA Or vgOq = DEFAULTDASCOLUNAS Or vgOq < 0 Then
       vgRetVal = Null
@@ -15617,20 +16150,16 @@ DeuErro:
       Set vgRsError = Nothing
    End If
    Resume ResumeErro
-
 ResumeErro:
    On Error Resume Next
-
 FimDaSub:
    ExecutaGrid4 = vgRetVal
    vgPriVez = False
 End Function
-
 'evento - pega o valor inicial das colunas do grid
 Private Sub Grid_GetColumnDefaultValue(Index As Integer, ByVal vgCol As Integer, vgColumns() As Variant, ByRef vgDefaultValue As Variant)
    vgDefaultValue = ExecutaGrid(Index, vgColumns(), DEFAULTDASCOLUNAS, , vgCol)
 End Sub
-
 'evento - quer pegar valores para cada célula
 Private Sub Grid_GetColumnLocked(Index As Integer, ByVal vgRow As Long, ByVal vgCol As Long, vgColumns() As Variant, ByRef FormField As FormataCampos, ByRef vgLocked As Boolean)
    Select Case Index
@@ -15646,15 +16175,12 @@ Private Sub Grid_GetColumnLocked(Index As Integer, ByVal vgRow As Long, ByVal vg
          vgLocked = ExecutaGrid(Index, vgColumns(), PREVALIDACOES, , vgCol)
    End Select
 End Sub
-
-
 'evento - quando o tempo esgotar
 Private Sub timUnLoad_Timer()
    timUnLoad.Enabled = False
    vgPodeFazerUnLoad = True
    Unload Me
 End Sub
-
 'evento - quando o botão for pressionado
 Private Sub Botao_Click(Index As Integer)
    Dim Cancel As Boolean, hMenu As Long, pt As POINTAPI
@@ -15701,148 +16227,122 @@ Private Sub Botao_Click(Index As Integer)
          AbreOrigem 1
    End Select
 End Sub
-
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo68_Click(Index As Integer)
    txtCampo(68).SetFocus
    DoEvents
    txtCampo(68).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo66_Click(Index As Integer)
    txtCampo(66).SetFocus
    DoEvents
    txtCampo(66).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo69_Click(Index As Integer)
    txtCampo(69).SetFocus
    DoEvents
    txtCampo(69).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo14_Click(Index As Integer)
    txtCampo(14).SetFocus
    DoEvents
    txtCampo(14).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo10_Click(Index As Integer)
    txtCampo(10).SetFocus
    DoEvents
    txtCampo(10).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo13_Click(Index As Integer)
    txtCampo(13).SetFocus
    DoEvents
    txtCampo(13).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo17_Click(Index As Integer)
    txtCampo(17).SetFocus
    DoEvents
    txtCampo(17).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo16_Click(Index As Integer)
    txtCampo(16).SetFocus
    DoEvents
    txtCampo(16).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo6_Click(Index As Integer)
    txtCampo(6).SetFocus
    DoEvents
    txtCampo(6).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo49_Click(Index As Integer)
    txtCampo(49).SetFocus
    DoEvents
    txtCampo(49).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo28_Click(Index As Integer)
    txtCampo(28).SetFocus
    DoEvents
    txtCampo(28).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo18_Click(Index As Integer)
    txtCampo(18).SetFocus
    DoEvents
    txtCampo(18).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo29_Click(Index As Integer)
    txtCampo(29).SetFocus
    DoEvents
    txtCampo(29).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo27_Click(Index As Integer)
    txtCampo(27).SetFocus
    DoEvents
    txtCampo(27).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo1_Click(Index As Integer)
    txtCampo(1).SetFocus
    DoEvents
    txtCampo(1).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo0_Click(Index As Integer)
    txtCampo(0).SetFocus
    DoEvents
    txtCampo(0).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo30_Click(Index As Integer)
    txtCampo(30).SetFocus
    DoEvents
    txtCampo(30).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo59_Click(Index As Integer)
    txtCampo(59).SetFocus
    DoEvents
    txtCampo(59).BotClick Index
 End Sub
-
 'evento - quando o botão for apertado
 Private Sub bottxtCampo61_Click(Index As Integer)
    txtCampo(61).SetFocus
    DoEvents
    txtCampo(61).BotClick Index
 End Sub
-
 'evento - quando o mouse for pressionado sobre o campo
 Private Sub txtCp_MouseDown(Index As Integer, Button As Integer, Shift As Integer, x As Single, y As Single)
    txtCampo(Index).MouseDown
 End Sub
-
-
-
-
-
 
