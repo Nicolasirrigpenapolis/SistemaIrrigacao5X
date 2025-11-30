@@ -885,7 +885,6 @@ End Function
 'Função Utilizada para saber se estamos usando o vb ou o .exe
 Public Function EstaEmIDE()
    On Error Resume Next
-   Debug.Print 1 / 0
    If Err Then EstaEmIDE = True
    Err.Clear
 End Function
@@ -2272,7 +2271,7 @@ End Function
 
 
 
-'Oq: 1=CFOP, 2=Redução, 3=%ICMS, 4=%IPI, 5=CST, 6=BC do ICMS, 7=Valor do ICMS, 8=Valor do IPI, 9=Diferido, 10=PIS, 11=COFINS, 12=IVA, 13=BC do ICMS ST, 14=Valor do ICMS ST, 15=%ICMS ST
+'Oq: 1=CFOP, 2=Redução, 3=%ICMS, 4=%IPI, 5=CST, 6=BC do ICMS, 7=Valor do ICMS, 8=Valor do IPI, 9=Diferido, 10=PIS, 11=COFINS, 12=IVA, 13=BC do ICMS ST, 14=Valor do ICMS ST, 15=%ICMS ST, 16=Valor IBS, 17=Valor CBS, 18=CodigoClassTrib, 19=CST_IBSCBS
 'Tabela = 1-Produtos, 2-Conjuntos, 3-Peças
 Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer, Tabela As Integer, VrTotal As Double, vrAdicional As Double, SeqProp As Long, Optional Ncm As Long, Optional SemIPI As Boolean, Optional UFAvulso As String, Optional vFrete As Double) As Variant
    Dim Tb1 As New GRecordSet, TB2 As New GRecordSet, Tb3 As New GRecordSet, TB4 As New GRecordSet, Tb5 As New GRecordSet, TB6 As New GRecordSet
@@ -2282,30 +2281,72 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
    Dim Convenio As Boolean, Sucata As Boolean, UF As String, Isento As Boolean, Importado As Boolean, Imobilizado As Integer, OrgonPublico As Boolean, EmpresaProdutor As Boolean
    Dim TabelaIVA As New GRecordSet
    Dim NCM2 As String, RedPis As Double, RedCofins As Double
+   Dim ProdutoDiferido As Boolean, AliqIPI As Double, VrIPI As Double  'Novas variáveis para IPI e Diferimento
    
    On Error Resume Next
    ICMSAux = 0
    
+   Debug.Print "*** CalculaImposto CHAMADO - Oq=" & Oq & " Tabela=" & Tabela & " SeqItem=" & SeqItem
+   
    'ITEM
    Select Case Tabela
-      Case "1" 'Produtos
+      Case 1 'Produtos
+         Debug.Print "*** Tabela 1 (Produtos) - Abrindo recordset..."
          Set Tb1 = vgDb.OpenRecordSet("SELECT * FROM Produtos WHERE [Seqüência do Produto] = " & SeqItem & " AND [Seqüência do Produto] > 0") 'Produtos
+         Debug.Print "*** Recordset Produtos aberto"
          Sucata = Tb1!Sucata
          Importado = Tb1!Importado
-      Case "2" 'Conjuntos
+      Case 2 'Conjuntos
+         Debug.Print "*** Tabela 2 (Conjuntos) - Abrindo recordset..."
          Set Tb1 = vgDb.OpenRecordSet("SELECT * FROM Conjuntos WHERE [Seqüência do Conjunto] = " & SeqItem) 'Conjuntos
-      Case "3" 'Peças
+         Debug.Print "*** Recordset Conjuntos aberto"
+      Case 3 'Peças
+         Debug.Print "*** Tabela 3 (Peças) - Abrindo recordset..."
          Set Tb1 = vgDb.OpenRecordSet("SELECT * FROM Produtos WHERE [Seqüência do Produto] = " & SeqItem) 'Peças
+         Debug.Print "*** Recordset Peças aberto"
          Sucata = Tb1!Sucata
          Importado = Tb1!Importado
    End Select
-   If Tb1.RecordCount = 0 Then CalculaImposto = 0: Exit Function
-   If Tabela = "2" Or Tabela = "3" Then 'Conjuntos e Peças
-      Set TB2 = vgDb.OpenRecordSet("SELECT * FROM [Classificação Fiscal] WHERE [Seqüência da Classificação] = " & Ncm & " AND [Seqüência da Classificação] > 0") 'Classificação Fiscal (NCM)
-   Else
-      Set TB2 = vgDb.OpenRecordSet("SELECT * FROM [Classificação Fiscal] WHERE [Seqüência da Classificação] = " & Tb1![Seqüência da Classificação] & " AND [Seqüência da Classificação] > 0") 'Classificação Fiscal (NCM)
+   
+   Debug.Print "*** Verificando se Tb1 tem registros..."
+   If Tb1.RecordCount = 0 Then
+      Debug.Print "*** ERRO: Tb1.RecordCount = 0 - Saindo com valor 0"
+      CalculaImposto = 0: Exit Function
    End If
-   If TB2.RecordCount = 0 Then CalculaImposto = 0: Exit Function
+   Debug.Print "*** Tb1.RecordCount = " & Tb1.RecordCount & " - OK"
+   
+   Debug.Print "*** Abrindo Classificação Fiscal com ClassTrib..."
+   If Tabela = 2 Or Tabela = 3 Then 'Conjuntos e Peças
+      Set TB2 = vgDb.OpenRecordSet("SELECT CF.*, " & _
+         "CT.CodigoClassTrib, CT.CodigoSituacaoTributaria AS CST_IBSCBS, " & _
+         "CT.PercentualReducaoIBS, CT.PercentualReducaoCBS, CT.ValidoParaNFe " & _
+         "FROM [Classificação Fiscal] CF " & _
+         "LEFT JOIN ClassTrib CT ON CF.ClassTribId = CT.Id " & _
+         "WHERE CF.[Seqüência da Classificação] = " & Ncm & " AND CF.[Seqüência da Classificação] > 0") 'Classificação Fiscal (NCM) + ClassTrib
+   Else
+      Set TB2 = vgDb.OpenRecordSet("SELECT CF.*, " & _
+         "CT.CodigoClassTrib, CT.CodigoSituacaoTributaria AS CST_IBSCBS, " & _
+         "CT.PercentualReducaoIBS, CT.PercentualReducaoCBS, CT.ValidoParaNFe " & _
+         "FROM [Classificação Fiscal] CF " & _
+         "LEFT JOIN ClassTrib CT ON CF.ClassTribId = CT.Id " & _
+         "WHERE CF.[Seqüência da Classificação] = " & Tb1![Seqüência da Classificação] & " AND CF.[Seqüência da Classificação] > 0") 'Classificação Fiscal (NCM) + ClassTrib
+   End If
+   Debug.Print "*** Classificação Fiscal com ClassTrib aberta"
+   
+   If TB2.RecordCount = 0 Then
+      Debug.Print "*** ERRO: TB2.RecordCount = 0 - Saindo com valor 0"
+      CalculaImposto = 0: Exit Function
+   End If
+   Debug.Print "*** TB2.RecordCount = " & TB2.RecordCount & " - OK"
+   
+   'VALIDAÇÃO: NCM Inativo
+   If TB2!Inativo Then
+      MsgBox "ATENÇÃO: O NCM " & TB2!Ncm & " está INATIVO e não pode ser utilizado!" & vbCrLf & vbCrLf & _
+             "Produto: " & Tb1![Descrição Do Produto] & vbCrLf & _
+             "NCM: " & TB2![Descrição do NCM], vbExclamation, "NCM Inativo"
+      CalculaImposto = 0
+      Exit Function
+   End If
    
    'DESTINATÁRIO
    Set Tb3 = vgDb.OpenRecordSet("SELECT * FROM Geral WHERE [Seqüência do Geral] = " & SeqGeral & " AND [Seqüência do Geral] > 0") 'Geral
@@ -2344,6 +2385,13 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
    ProdTerceiro = Tb1![Material Adquirido de Terceiro]
    Revenda = Tb3!Revenda 'Contribuinte Substituído (Revenda)
    Convenio = TB2![Tem Convênio] 'Opa vamos Reduzir em 80%
+   ProdutoDiferido = TB2![Produto Diferido] 'ICMS Diferido
+   AliqIPI = IIf(IsNull(TB2![Porcentagem do IPI]), 0, TB2![Porcentagem do IPI]) 'Alíquota do IPI
+   
+   'Inicializa a Alíquota do ICMS a partir da tabela ICMS (cadastrada no sistema)
+   'TB6 já foi carregado com o registro do ICMS da UF de destino
+   AliqICMS = TB6![Porcentagem de ICMS]
+   
    If TabelaIVA.RecordCount > 0 Then
       If TabelaIVA!IVA > 0 Then
          Substituicao = True 'TabelaIVA.RecordCount > 0  'Item Faz Parte da Substituição?
@@ -2474,30 +2522,30 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          If TB2![Anexo da Redução] = 0 Then 'Anexo I
            If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
                BCRed = CCur(73.43)   'Base de Cálculo Reduzida
-               AliqICMS = 7    'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(26.57) 'Alíquota da Redução
             ElseIf InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0 Then
                BCRed = CCur(73.33)   'Base de Cálculo Reduzida
-               AliqICMS = 12   'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(26.67) 'Alíquota da Redução
             End If
          Else 'Anexo II modificado em  2023
             If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
                BCRed = CCur(58.57)   'Base de Cálculo Reduzida Antes de 2021
                 'BCRed = CCur(67.14)   'Base de Cálculo Reduzida Apos 2021
-                AliqICMS = 7    'Alíquota do ICMS
+                AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(41.43) 'Alíquota da Redução Antes de 2021
                 'AliqRed = CCur(32.86) 'Alíquota da Redução Apos de 2021
             ElseIf InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0 Then
                BCRed = CCur(58.33)   'Base de Cálculo Reduzida Antes de 2021
               ' BCRed = CCur(66.67)   'Base de Cálculo Reduzida apos de 2021
-               AliqICMS = 12   'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(41.67) 'Alíquota da Redução Antes de 2021
               ' AliqRed = CCur(33.33) 'Alíquota da Redução Apos de 2021
             End If
             If UF = "SP" Then 'Segundo O Sergio se Tiver Redução Em SP Calcula da Seguinte Forma Abaixo:
                BCRed = CCur(46.67)   'Base de Cálculo Reduzida
-               AliqICMS = 12    'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(53.33) 'Alíquota da Redução
             End If
          End If
@@ -2508,11 +2556,11 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
         If TB2![Anexo da Redução] = 0 Then 'Anexo I
            If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
                BCRed = CCur(73.43)   'Base de Cálculo Reduzida
-               AliqICMS = 7    'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(26.57) 'Alíquota da Redução
             ElseIf InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0 Then
                BCRed = CCur(73.33)   'Base de Cálculo Reduzida
-               AliqICMS = 12   'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(26.67) 'Alíquota da Redução
             End If
          Else
@@ -2520,36 +2568,32 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
             If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
                BCRed = CCur(58.57) 'Base de Cálculo Reduzida
                 'BCRed = CCur(67.14)
-                AliqICMS = 7 'Alíquota do ICMS
+                AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(41.43) 'Alíquota da Redução
                ' AliqRed = CCur(32.86)
             Else
                 BCRed = CCur(58.33) 'Base de Cálculo Reduzida
                 'BCRed = CCur(66.67)
-                AliqICMS = 12 'Alíquota do ICMS
+                AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                 AliqRed = CCur(41.67) 'Alíquota da Redução
                  'AliqRed = CCur(33.33)
             End If
-         Else 'Revenda dentro do estado
-               If Revenda Then
-                  BCRed = CCur(0) 'Base de Cálculo Reduzida
-                  AliqICMS = 0 'Alíquota do ICMS
-                  AliqRed = CCur(100) 'Alíquota da Redução
-               Else
-                  'BCRed = CCur(58.34)   'Base de Cálculo Reduzida
-                  'AliqICMS = 12    'Alíquota do ICMS
-                  'AliqRed = CCur(41.66) 'Alíquota da Redução
-                  BCRed = CCur(46.67)   'Base de Cálculo Reduzida
-                  AliqICMS = 12    'Alíquota do ICMS
-                  AliqRed = CCur(53.33) 'Alíquota da Redução
-               End If
+         Else
+            'BCRed = CCur(58.34)   'Base de Cálculo Reduzida
+            'AliqICMS = 12    'Alíquota do ICMS
+            'AliqRed = CCur(41.66) 'Alíquota da Redução
+            BCRed = CCur(46.67)   'Base de Cálculo Reduzida
+            AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
+            AliqRed = CCur(53.33) 'Alíquota da Redução
          End If
       End If
       Else 'Opa se nw tem redução o esquema é outro
         If Tb3!Tipo = 0 Then 'Pessoa Fisica
-           AliqICMS = TB6![Porcentagem de ICMS] '18 Alíquota do ICMS
+           'Usa alíquota da tabela ICMS
+           AliqICMS = TB6![Porcentagem de ICMS]
         Else 'Pessoa Juridica, porém não Contribuinte, pq nw ela nw tem propriedade entao vamos pegar a Aliquota vigente do estado do Cabloco
-           AliqICMS = TB6![Porcentagem de ICMS] 'Alíquota do ICMS
+           'Usa alíquota da tabela ICMS
+           AliqICMS = TB6![Porcentagem de ICMS]
         End If
       End If
    End If
@@ -2562,74 +2606,36 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          If TB2![Anexo da Redução] = 0 Then 'Anexo I
             If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
                BCRed = CCur(73.43)   'Base de Cálculo Reduzida
-               AliqICMS = 7    'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(26.57) 'Alíquota da Redução
             ElseIf InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0 Then
                BCRed = CCur(73.33)   'Base de Cálculo Reduzida
-               AliqICMS = 12   'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(26.67) 'Alíquota da Redução
             End If
          Else 'Anexo II
             If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
                BCRed = CCur(58.57)   'Base de Cálculo Reduzida
                'BCRed = CCur(67.14)   'Base de Cálculo Reduzida
-               AliqICMS = 7    'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(41.43) 'Alíquota da Redução
                'AliqRed = CCur(32.86) 'Alíquota da Redução
             ElseIf InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0 Then
                BCRed = CCur(58.33)   'Base de Cálculo Reduzida
                'BCRed = CCur(66.67)   'Base de Cálculo Reduzida
-               AliqICMS = 12   'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(41.67) 'Alíquota da Redução
                'AliqRed = CCur(33.33) 'Alíquota da Redução
             End If
             If UF = "SP" Then 'Segundo O Sergio faverão maldonado se Tiver Redução Em SP Calcula da Seguinte Forma Abaixo:
                BCRed = CCur(46.67)   'Base de Cálculo Reduzida
-               AliqICMS = 12    'Alíquota do ICMS
+               AliqICMS = TB6![Porcentagem de ICMS]  'Alíquota do ICMS da tabela
                AliqRed = CCur(53.33) 'Alíquota da Redução
             End If
          End If
       Else
-      AliqICMS = TB6![Porcentagem de ICMS] 'Alíquota do ICMS
-        End If
-      End If
- 
- ' O Sistema da Irrigaçaõ Nw Deixa Cadastrar Propriedade se o Cliente For Fora do Estado e Tiver CNPJ(EMPRESA) Então Fiz o recurso abaixo
- ' Para Fazer Os Calculos Como Produtor e Pegar A Redução E ALIQ do Icms Conforme Sua Região
- If EmpresaProdutor Then
-      If TB2![Redução de Base de Cálculo] Then
-         If TB2![Anexo da Redução] = 0 Then 'Anexo I
-            If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
-               BCRed = CCur(73.43)   'Base de Cálculo Reduzida
-               AliqICMS = 7    'Alíquota do ICMS
-               AliqRed = CCur(26.57) 'Alíquota da Redução
-            ElseIf InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0 Then
-               BCRed = CCur(73.33)   'Base de Cálculo Reduzida
-               AliqICMS = 12   'Alíquota do ICMS
-               AliqRed = CCur(26.67) 'Alíquota da Redução
-            End If
-         Else 'Anexo II
-            If InStr(Norte, UF) > 0 Or InStr(Nordeste, UF) > 0 Or InStr(CentroOeste, UF) > 0 Or UF = "ES" Then
-               BCRed = CCur(58.57)   'Base de Cálculo Reduzida
-               'BCRed = CCur(67.14)   'Base de Cálculo Reduzida
-               AliqICMS = 7    'Alíquota do ICMS
-               AliqRed = CCur(41.43) 'Alíquota da Redução
-               'AliqRed = CCur(32.86) 'Alíquota da Redução
-            ElseIf InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0 Then
-               BCRed = CCur(58.33)   'Base de Cálculo Reduzida
-               'BCRed = CCur(66.67)   'Base de Cálculo Reduzida
-               AliqICMS = 12   'Alíquota do ICMS
-               AliqRed = CCur(41.67) 'Alíquota da Redução
-               'AliqRed = CCur(33.33) 'Alíquota da Redução
-            End If
-            If UF = "SP" Then 'Segundo O Sergio faverão maldonado se Tiver Redução Em SP Calcula da Seguinte Forma Abaixo:
-               BCRed = CCur(46.67)   'Base de Cálculo Reduzida
-               AliqICMS = 12    'Alíquota do ICMS
-               AliqRed = CCur(53.33) 'Alíquota da Redução
-            End If
-         End If
-      Else
-      AliqICMS = TB6![Porcentagem de ICMS] 'Alíquota do ICMS
+      'Usa alíquota da tabela ICMS quando não tem redução
+      AliqICMS = TB6![Porcentagem de ICMS]
         End If
       End If
  
@@ -2690,9 +2696,15 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          CalculaImposto = AliqRed
          Exit Function
       Case "3" '% ICMS
-         If Suframa Then CalculaImposto = 0: Exit Function
-         If Imobilizado = 4 Then CalculaImposto = 0: Exit Function ' Venda do Ativo
-         If OrgonPublico And Not ForadoEstado Then CalculaImposto = 0: Exit Function 'Orgon Publico
+         If Suframa Then
+            CalculaImposto = 0: Exit Function
+         End If
+         If Imobilizado = 4 Then
+            CalculaImposto = 0: Exit Function
+         End If
+         If OrgonPublico And Not ForadoEstado Then
+            CalculaImposto = 0: Exit Function
+         End If
          'Calculos para Rebocador Aeronautico
          'Região Sul e Sudeste menos ES
          If (InStr(Sul, UF) > 0 Or InStr(Sudeste, UF) > 0) And NCM2 = "84271090" Then
@@ -2700,27 +2712,42 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          End If
          'Calc Para conjunto de gerador Dentro do Estado calcula icms 12%  conforme contabilidade
          If Not ForadoEstado Then
-            If (NCM2 = "85021110" Or NCM2 = "85021210" Or NCM2 = "85016400" Or NCM2 = "85444200" Or NCM2 = "85389010" Or NCM2 = "90308990" Or NCM2 = "85365090") Then CalculaImposto = 12: Exit Function
-            If NCM2 = "85016100" Then CalculaImposto = 18: Exit Function
+            If (NCM2 = "85021110" Or NCM2 = "85021210" Or NCM2 = "85016400" Or NCM2 = "85444200" Or NCM2 = "85389010" Or NCM2 = "90308990" Or NCM2 = "85365090") Then
+               CalculaImposto = 12: Exit Function
+            End If
+            If NCM2 = "85016100" Then
+               CalculaImposto = 18: Exit Function
+            End If
          End If
          ' Continua
-         If Tb3!Tipo = 1 And Isento And TB2![Redução de Base de Cálculo] = False And Not Importado Then CalculaImposto = AliqICMS: Exit Function  ' Pessoa Juridica Isento de IE
-         If Not ForadoEstado And Sucata Then CalculaImposto = 0: Exit Function 'É sucata entao nw calcula nada
-         If Substituicao And MateriaPrima And NCM2 = "85071090" Then CalculaImposto = 0: Exit Function 'Tem Substituição pago antecipado entao vamos cair fora
-         If TB2![Produto Diferido] And ProdutorPaulista And Not Tb1!Usado Then CalculaImposto = 0: Exit Function 'Se For Produtor Paulista Vamos Cair Fora
-         If Importado And Not ForadoEstado And TB2![Redução de Base de Cálculo] = False Then CalculaImposto = 18: Exit Function 'Produto Importados são cobrados 4% de ICMS qdo Fora do Estado
-         If Importado And ForadoEstado And TB2![Redução de Base de Cálculo] = False Then CalculaImposto = 4: Exit Function 'Produto Importados são cobrados 4% de ICMS qdo Fora do Estado
+         If Tb3!Tipo = 1 And Isento And TB2![Redução de Base de Cálculo] = False And Not Importado Then
+            CalculaImposto = AliqICMS: Exit Function
+         End If
+         If Not ForadoEstado And Sucata Then
+            CalculaImposto = 0: Exit Function
+         End If
+         If Substituicao And MateriaPrima And NCM2 = "85071090" Then
+            CalculaImposto = 0: Exit Function
+         End If
+         If TB2![Produto Diferido] And ProdutorPaulista And Not Tb1!Usado Then
+            CalculaImposto = 0: Exit Function
+         End If
+         If Importado And Not ForadoEstado And TB2![Redução de Base de Cálculo] = False Then
+            CalculaImposto = 18: Exit Function
+         End If
+         If Importado And ForadoEstado And TB2![Redução de Base de Cálculo] = False Then
+            CalculaImposto = 4: Exit Function
+         End If
          If Tb1!Usado And Convenio Then 'É Usado Entao Vamos Pegar a Alíquota do Estado
             CalculaImposto = AliqICMS 'Vamos Pegar de Acordo com A redução
          Else
             If TB2![Redução de Base de Cálculo] Then 'Tem Redução
                CalculaImposto = AliqICMS 'Vamos Pegar de Acordo com A redução
-            Else 'Nw Tem
-               If Contribuinte Then
-                  CalculaImposto = TB6![Porcentagem de ICMS] 'Vamos Pegar do Estado
-               Else 'Isento ou Pessoa Fisica, lembrando pessoa fisica sempre 18%
-                  CalculaImposto = AliqICMS
-               End If
+            Else 'Nw Tem Redução
+               'CORREÇÃO 18/11/2025: Usa alíquota por UF em vez da tabela ICMS desatualizada
+               'Antes: CalculaImposto = TB6![Porcentagem de ICMS] para Contribuinte
+               'Agora: Usa AliqICMS (calculado por UF) para TODOS os casos
+               CalculaImposto = AliqICMS
             End If
          End If
          Exit Function
@@ -2731,11 +2758,13 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
             If Not Vazio(Tb3![Código Do Suframa]) Then CalculaImposto = 0: Exit Function 'Se Cliente Suframa
          If TB2![Porcentagem do IPI] = 0 Then CalculaImposto = 0: Exit Function 'Se nw Tiver Percentual
          If Tb1!Usado Then CalculaImposto = 0: Exit Function 'Se Item for Usado ou se for conjunto
+         If Revenda Then CalculaImposto = 0: Exit Function 'Se for Revenda (Contribuinte Substituído) não cobra IPI
          If Oq = 4 Then '%IPI
             CalculaImposto = TB2![Porcentagem do IPI]
          Else 'Valor IPI
             If OrgonPublico And Not ForadoEstado Then CalculaImposto = 0: Exit Function   'Orgon Publico
-            CalculaImposto = Round((VrTotal * (TB2![Porcentagem do IPI] / 100)), 2)
+            'Base do IPI = Valor Total + Frete (SEM desconto)
+            CalculaImposto = Round(((VrTotal + vFrete) * (TB2![Porcentagem do IPI] / 100)), 2)
          End If
          Exit Function
       Case "5" 'CST 'Alteração em 19/09/2024 - Inserção e validação do CST 70 na lógica
@@ -2772,13 +2801,13 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          If Substituicao And MateriaPrima And NCM2 = "85071090" Then CalculaImposto = 0: Exit Function 'Tem Substituição e materia Prima pagou antecipado St
          If TB2![Produto Diferido] And ProdutorPaulista And Not Tb1!Usado Then CalculaImposto = 0: Exit Function 'Produtor Paulista, Item Diferido e Novo
          If Not SemIPI And TB2![Porcentagem do IPI] > 0 And Not Suframa And Not Tb1!Usado And Tabela = 1 And Not Revenda And Not MateriaPrima Then 'Se for Produto tem IPI, for Novo e nw for Revenda e nw For Materia Prima
-            BC = Round(VrTotal * (TB2![Porcentagem do IPI] / 100), 2) 'Vamos Adicionar o IPI na Base de ICMS
+            BC = Round((VrTotal + vFrete) * (TB2![Porcentagem do IPI] / 100), 2) 'Vamos Adicionar o IPI na Base de ICMS (corrigido para incluir frete)
          End If
          'If Not SemIPI And TB2![Porcentagem Do IPI] > 0 And Not Tb1!Usado And Tabela = 1 And Revenda And Not MateriaPrima Then 'Se for Produto tem IPI, for Novo e nw for Revenda e nw For Materia Prima
          ' BC = Round(VrTotal * (TB2![Porcentagem Do IPI] / 100), 2) 'Vamos Adicionar o IPI na Base de ICMS
          'End If
          If Tb1!Usado And Convenio Then 'Item Usado e a classificação faz parte do convenio Reduzir a BC em 80%
-            BC = Round((BC + VrTotal + vrAdicional) * 20 / 100, 2) 'Alterado Ygor
+            BC = Round((BC + VrTotal + vFrete + vrAdicional) * 20 / 100, 2) 'Alterado Ygor
             CalculaImposto = BC
             Exit Function
          Else
@@ -2786,12 +2815,12 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
             '    BC = Round(((BC + VrTotal + vrAdicional) * (BCRed / 100)), 2)
             'Else
             If TB2![Redução de Base de Cálculo] Then 'Tem Redução
-                BC = Round(((BC + VrTotal + vrAdicional) * (BCRed / 100)), 2)
+                BC = Round(((BC + VrTotal + vFrete + vrAdicional) * (BCRed / 100)), 2)
             Else
             If TB2![Redução de Base de Cálculo] And SeqGeral = 2701 Then 'Tem Redução
-                BC = Round(((BC + VrTotal + vrAdicional) * (BCRed / 100)), 2)
+                BC = Round(((BC + VrTotal + vFrete + vrAdicional) * (BCRed / 100)), 2)
             Else 'Nw tem Redução
-               BC = Round(BC + VrTotal + vrAdicional, 2)
+               BC = Round(BC + VrTotal + vFrete + vrAdicional, 2)
             End If
             End If
             CalculaImposto = BC
@@ -2815,23 +2844,23 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          If Substituicao And MateriaPrima And NCM2 = "85071090" Then CalculaImposto = 0: ICMSAux = CalculaImposto: Exit Function 'Tem Substituição e Materia Prima St Pago Antecipado
          If TB2![Produto Diferido] And ProdutorPaulista And Not Tb1!Usado Then CalculaImposto = 0: ICMSAux = CalculaImposto: Exit Function 'Produtor Paulista, Item Diferido e Novo
          If Not SemIPI And TB2![Porcentagem do IPI] > 0 And Not Suframa And Not Tb1!Usado And Tabela = 1 And Not Revenda And Not MateriaPrima Then 'Se for Produto tem IPI, for Novo e nw for Revenda e nw for Materia Prima
-            BC = Round(VrTotal * (TB2![Porcentagem do IPI] / 100), 2) 'Vamos Adicionar o IPI na Base de ICMS
+            BC = Round((VrTotal + vFrete) * (TB2![Porcentagem do IPI] / 100), 2) 'Vamos Adicionar o IPI na Base de ICMS (corrigido para incluir frete)
          End If
         ' If Not SemIPI And TB2![Porcentagem Do IPI] > 0 And Not Tb1!Usado And Tabela = 1 And Revenda And Not MateriaPrima Then 'Se for Produto tem IPI, for Novo e nw for Revenda e nw for Materia Prima
           '  CalculaImposto = Round(BC * (AliqICMS / 100), 2)
         ' End If
          If Tb1!Usado And Convenio Then 'Item Usado e a classificação faz parte do convenio Reduzir a BC em 80%
-            BC = Round((BC + VrTotal + vrAdicional) * 20 / 100, 2) 'Alterado Ygor
+            BC = Round((BC + VrTotal + vFrete + vrAdicional) * 20 / 100, 2) 'Alterado Ygor
             CalculaImposto = Round((BC * (AliqICMS / 100)), 2)
             ICMSAux = CalculaImposto
          Else
             If TB2![Redução de Base de Cálculo] Then 'Tem Redução
-               BC = Round(((BC + VrTotal + vrAdicional) * (BCRed / 100)), 2)
+               BC = Round(((BC + VrTotal + vFrete + vrAdicional) * (BCRed / 100)), 2)
                CalculaImposto = Round(BC * (AliqICMS / 100), 2)
                ICMSAux = CalculaImposto
                Exit Function
             Else
-               BC = Round(BC + VrTotal + vrAdicional, 2)
+               BC = Round(BC + VrTotal + vFrete + vrAdicional, 2)
             End If
             If Contribuinte Then
                If Not Importado Then
@@ -2865,8 +2894,14 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          End If
          Exit Function
       Case "9" 'Diferido
+         'IMPORTANTE: Produto Diferido = ICMS é postergado para momento posterior
          If Sucata And Not ForadoEstado Then CalculaImposto = 1: Exit Function
-         If TB2![Produto Diferido] And ProdutorPaulista And Not Tb1!Usado Then CalculaImposto = 1: Exit Function
+         If ProdutoDiferido And ProdutorPaulista And Not Tb1!Usado Then CalculaImposto = 1: Exit Function
+         'Outras condições de diferimento podem ser adicionadas aqui
+         If ProdutoDiferido And Not ForadoEstado Then
+            CalculaImposto = 1
+            Exit Function
+         End If
          CalculaImposto = 0: Exit Function
          
      Case "10" 'Valor do PIS
@@ -3010,14 +3045,73 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
             Exit Function
          End If
          CalculaImposto = 0: Exit Function
-      Case "16" 'Valor IBS (Imposto sobre Bens e Serviços - UF/Municipal)
-         ' IBS = VrTotal * 0.1% (alíquota de transição 2026)
-         CalculaImposto = Round(VrTotal * 0.001, 2)
+      Case 16 'Valor IBS (Imposto sobre Bens e Serviços - UF/Municipal)
+         ' IBS = VrTotal * 0.1% * (1 - ReducaoIBS) - alíquota de transição 2026
+         ' ReducaoIBS pode vir como 60 (percentual) ou 0.60 (fração) - tratamos ambos
+         Dim ReducaoIBS As Double
+         On Error Resume Next
+         If Not IsNull(TB2!PercentualReducaoIBS) Then
+            ReducaoIBS = TB2!PercentualReducaoIBS
+            ' Se valor > 1, assumimos que é percentual (ex: 60) e convertemos para fração (0.60)
+            If ReducaoIBS > 1 Then
+               ReducaoIBS = ReducaoIBS / 100
+            End If
+         Else
+            ReducaoIBS = 0 ' Sem redução se não tiver ClassTrib vinculado
+         End If
+         On Error GoTo 0
+         CalculaImposto = Round(VrTotal * 0.001 * (1 - ReducaoIBS), 2)
+         Debug.Print "*** IBS calculado: VrTotal=" & VrTotal & " ReducaoIBS=" & ReducaoIBS & " (fator=" & (1 - ReducaoIBS) & ") Resultado=" & CalculaImposto
          Exit Function
-      Case "17" 'Valor CBS (Contribuição sobre Bens e Serviços)
-         ' CBS = VrTotal * 0.9% (alíquota de transição 2026)
-         CalculaImposto = Round(VrTotal * 0.009, 2)
+      Case 17 'Valor CBS (Contribuição sobre Bens e Serviços)
+         ' CBS = VrTotal * 0.9% * (1 - ReducaoCBS) - alíquota de transição 2026
+         ' ReducaoCBS pode vir como 60 (percentual) ou 0.60 (fração) - tratamos ambos
+         Dim ReducaoCBS As Double
+         On Error Resume Next
+         If Not IsNull(TB2!PercentualReducaoCBS) Then
+            ReducaoCBS = TB2!PercentualReducaoCBS
+            ' Se valor > 1, assumimos que é percentual (ex: 60) e convertemos para fração (0.60)
+            If ReducaoCBS > 1 Then
+               ReducaoCBS = ReducaoCBS / 100
+            End If
+         Else
+            ReducaoCBS = 0 ' Sem redução se não tiver ClassTrib vinculado
+         End If
+         On Error GoTo 0
+         CalculaImposto = Round(VrTotal * 0.009 * (1 - ReducaoCBS), 2)
+         Debug.Print "*** CBS calculado: VrTotal=" & VrTotal & " ReducaoCBS=" & ReducaoCBS & " (fator=" & (1 - ReducaoCBS) & ") Resultado=" & CalculaImposto
          Exit Function
+      Case 18 'Código ClassTrib (para XML da NFe)
+         On Error Resume Next
+         If Not IsNull(TB2!CodigoClassTrib) Then
+            ' Verifica se ClassTrib é válido para NFe
+            If Not IsNull(TB2!ValidoParaNFe) Then
+               If TB2!ValidoParaNFe = False Then
+                  Debug.Print "*** AVISO: ClassTrib " & TB2!CodigoClassTrib & " NAO é válido para NFe (ValidoParaNFe=0)"
+                  CalculaImposto = "" ' Não usar ClassTrib inválido para NFe
+               Else
+                  CalculaImposto = TB2!CodigoClassTrib
+               End If
+            Else
+               CalculaImposto = TB2!CodigoClassTrib ' Se campo é NULL, assume válido
+            End If
+         Else
+            CalculaImposto = "" ' Vazio se não tiver ClassTrib vinculado
+         End If
+         On Error GoTo 0
+         Debug.Print "*** CodigoClassTrib retornado: " & CalculaImposto
+         Exit Function
+      Case 19 'CST do IBS/CBS (para XML da NFe)
+         On Error Resume Next
+         If Not IsNull(TB2!CST_IBSCBS) Then
+            CalculaImposto = TB2!CST_IBSCBS
+         Else
+            CalculaImposto = "90" ' CST padrão "Outros" se não tiver ClassTrib vinculado
+         End If
+         On Error GoTo 0
+         Debug.Print "*** CST_IBSCBS retornado: " & CalculaImposto
+         Exit Function
+         
    End Select
    
 End Function
@@ -6533,28 +6627,40 @@ Public Sub GeraLog(F As Form, vgSit As Integer, Optional IndGrid As Integer = -1
    Dim vgLin As String, vgPosAlteracao As Double, vgNInd As String
    Dim vgCamposChave As String, j As Integer, vgSep As String, vgGrvLog As Boolean, vgTab As Object, vgIdentTb As String
    On Error Resume Next
+   Debug.Print "@@@ GeraLog: INÍCIO - vgSit=" & vgSit & ", IndGrid=" & IndGrid & ", GravaDadosAnt=" & GravaDadosAnt
    If IndGrid >= 0 Then
       Set vgTab = F.Grid(IndGrid).RecordSet
       vgIdentTb$ = vgTab.Name
+      Debug.Print "@@@ GeraLog: Usando Grid(" & IndGrid & ") - Nome tabela=" & vgIdentTb$
    Else
       Set vgTab = F.vgTb
       vgIdentTb$ = F.vgIdentTab
+      Debug.Print "@@@ GeraLog: Usando vgTb - Nome tabela=" & vgIdentTb$
    End If
    If Err Then
       Err.Clear
       vgIdentTb$ = ExtraiSQL(vgTab.Source, EXP_FROM)
+      Debug.Print "@@@ GeraLog: Recuperando nome via ExtraiSQL - Resultado=" & vgIdentTb$
    End If
    vgSit = Abs(vgSit)
+   Debug.Print "@@@ GeraLog: vgSit normalizado=" & vgSit
    On Error GoTo DeuErro
    vgSep$ = Chr(160)
    vgArqLog$ = Left$(vgConsultaINI$, Rat(vgConsultaINI$, "\"))
+   Debug.Print "@@@ GeraLog: vgConsultaINI$=" & vgConsultaINI$
+   Debug.Print "@@@ GeraLog: Caminho base do log=" & vgArqLog$
    vgArqLog$ = vgArqLog$ + vgAliasDb$(1) + ".Lag"
+   Debug.Print "@@@ GeraLog: Arquivo de log final=" & vgArqLog$
    vgRet = PreparaArqLog
+   Debug.Print "@@@ GeraLog: PreparaArqLog retornou=" & vgRet
    If vgRet > 0 Then Error vgRet
    vgIdentTb$ = Retira(vgIdentTb$, "[]", UM_A_UM)
+   Debug.Print "@@@ GeraLog: vgIdentTb após Retira=[] => " & vgIdentTb$
    If GravaDadosAnt Or vgSit = ACAO_INCLUINDO Then
+      Debug.Print "@@@ GeraLog: Redimensionando vetores - Columns.Count=" & vgDb.Tables(vgIdentTb$).Columns.Count
       ReDim vgDadosAntTabela(vgDb.Tables(vgIdentTb$).Columns.Count) As String  'vamos redimencionar o vetor que receberá os dados antes da gravação
       ReDim vgDadosPostTabela(vgDb.Tables(vgIdentTb$).Columns.Count) As String 'vamos redimencionar o vetor que receberá os dados depois da gravação
+      Debug.Print "@@@ GeraLog: Vetores redimensionados"
    End If
    If GravaDadosAnt Then
       If vgSit <> ACAO_INCLUINDO Then                                          'se não for preparação para inclusão
@@ -6570,8 +6676,18 @@ Public Sub GeraLog(F As Form, vgSit As Integer, Optional IndGrid As Integer = -1
       End If
       vgLin$ = Format(Now, "yyyy/mm/dd hh:mm") + vgSep$                        'data e hora
       vgLin$ = vgLin$ + vgIdentTb$ + vgSep$ + vgPWUsuario$ + vgSep$            'nome da tabela e usuário
-      vgLin$ = vgLin$ + "[" + Mid("IME", vgSit - 1, 1) + "]" + vgSep$          'tipo da operação
+      'Evita erro 5 (Invalid procedure call) quando vgSit=1 (ACAO_NAVEGANDO)
+      'Mapeia somente INCLUIR(2)=I, EDITAR(3)=M, EXCLUIR(4)=E; demais = N (navegação ou outros)
+      Dim opChar As String
+      Select Case vgSit
+         Case ACAO_INCLUINDO: opChar = "I"
+         Case ACAO_EDITANDO: opChar = "M"
+         Case ACAO_EXCLUINDO: opChar = "E"
+         Case Else: opChar = "N"  'navegando ou não classificado
+      End Select
+      vgLin$ = vgLin$ + "[" & opChar & "]" & vgSep$          'tipo da operação
       vgCamposChave$ = ""
+   Debug.Print "@@@ GeraLog: Linha base preparada=" & vgLin$
 
       'se estiver editando... pega o nome dos campos que compõem o índice primário
       If vgSit = ACAO_EDITANDO Then
@@ -6589,6 +6705,7 @@ Public Sub GeraLog(F As Form, vgSit As Integer, Optional IndGrid As Integer = -1
             For j = 1 To vgDb.Tables(vgIdentTb$).Indexes(vgNInd$).Columns.Count
                vgCamposChave$ = UCase(vgCamposChave$ + vgDb.Tables(vgIdentTb$).Indexes(vgNInd$).Columns(j).Name + ";")
             Next
+              Debug.Print "@@@ GeraLog: Campos chave=" & vgCamposChave$
          End If
       End If
 
@@ -6596,6 +6713,10 @@ Public Sub GeraLog(F As Form, vgSit As Integer, Optional IndGrid As Integer = -1
       x$ = ""
       For i = 1 To vgDb.Tables(vgIdentTb$).Columns.Count
          If vgDb.Tables(vgIdentTb$).Columns(i).ColumnType <> TP_BINARIO And Not vgDb.Tables(vgIdentTb$).Columns(i).Hidden Then 'imagem ou campo invisivel não pode
+               If vgDadosAntTabela$(i) <> vgDadosPostTabela$(i) Then
+                  Debug.Print "@@@ GeraLog: Alteração coluna=" & vgDb.Tables(vgIdentTb$).Columns(i).Name & _
+                              " | Ant=" & vgDadosAntTabela$(i) & " | Pos=" & vgDadosPostTabela$(i)
+               End If
                If vgDadosAntTabela$(i) <> vgDadosPostTabela$(i) Or vgSit <> ACAO_EDITANDO Or InStr(vgCamposChave$, UCase(";" + vgDb.Tables(vgIdentTb$).Columns(i).Name + ";")) > 0 Then
                   If vgDb.Tables(vgIdentTb$).Columns(i).ColumnType = TP_MEMO Then
                      GoSub PegaPos
@@ -6622,10 +6743,12 @@ Public Sub GeraLog(F As Form, vgSit As Integer, Optional IndGrid As Integer = -1
          x$ = vgSep$
       Next
       If vgGrvLog Then
+         Debug.Print "@@@ GeraLog: Gravando linha - Tamanho=" & Len(vgLin$)
          vgHandleArqLog = FreeFile
          Open vgArqLog For Append As vgHandleArqLog
          Print #vgHandleArqLog, Cript$(vgLin$, vgSenhaLog$(1))
          Close vgHandleArqLog
+         Debug.Print "@@@ GeraLog: Linha gravada"
       End If
    End If
    Exit Sub
@@ -6667,6 +6790,8 @@ DeuErro:
    If vgHandleArqLog >= 0 Then
       Close vgHandleArqLog
    End If
+   Debug.Print "@@@ GeraLog: *** ERRO *** Err=" & Err.Number & " Desc=" & Err.Description & " Source=" & Err.Source
+   Debug.Print "@@@ GeraLog: Contexto => vgIdentTb=" & vgIdentTb$ & ", Columns.Count=" & IIf(vgIdentTb$ <> "", vgDb.Tables(vgIdentTb$).Columns.Count, -1) & ", IndGrid=" & IndGrid & ", vgSit=" & vgSit & ", vgRet=" & vgRet
    CErr.NumErro = Err
    CErr.Show
    Err.Clear
