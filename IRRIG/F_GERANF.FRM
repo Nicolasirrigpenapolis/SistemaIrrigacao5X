@@ -1458,6 +1458,71 @@ Private Sub Gerar()
       Nota.Update
    End With
    
+   'IBS/CBS - Atualização via SQL (Orçamento -> Nota Fiscal)
+   On Error Resume Next
+   Dim vrIBS As Double, vrCBS As Double
+   Dim SeqNF As Long
+   SeqNF = Nota![Seqüência da Nota Fiscal]
+   
+   'Totais da Nota Fiscal - Ler do Orçamento e gravar na NF
+   vrIBS = 0: vrCBS = 0
+   Dim TbOrc As New GRecordSet
+   Set TbOrc = vgDb.OpenRecordSet("SELECT [Valor Total IBS], [Valor Total CBS] FROM Orçamento WHERE [Seqüência do Orçamento] = " & OrcamentoTela)
+   If Not TbOrc.EOF Then
+      vrIBS = IIf(IsNull(TbOrc![Valor Total IBS]), 0, TbOrc![Valor Total IBS])
+      vrCBS = IIf(IsNull(TbOrc![Valor Total CBS]), 0, TbOrc![Valor Total CBS])
+   End If
+   If Err.Number <> 0 Then vrIBS = 0: vrCBS = 0: Err.Clear
+   TbOrc.CloseRecordset
+   Set TbOrc = Nothing
+   
+   vgDb.Execute "UPDATE [Nota Fiscal] SET [Valor Total IBS] = " & Substitui(CStr(vrIBS), ",", ".", SO_UM) & ", [Valor Total CBS] = " & Substitui(CStr(vrCBS), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & SeqNF
+   If Err.Number <> 0 Then Err.Clear
+   
+   'Produtos da Nota Fiscal - Copiar IBS/CBS dos Produtos do Orçamento
+   Dim TbProdOrc As New GRecordSet, TbProdNF As New GRecordSet
+   Dim vrIBS_P As Double, vrCBS_P As Double
+   Set TbProdOrc = vgDb.OpenRecordSet("SELECT [Seqüência do Produto], [Valor IBS], [Valor CBS] FROM [Produtos do Orçamento] WHERE [Seqüência do Orçamento] = " & OrcamentoTela)
+   Do While Not TbProdOrc.EOF
+      vrIBS_P = IIf(IsNull(TbProdOrc![Valor IBS]), 0, TbProdOrc![Valor IBS])
+      vrCBS_P = IIf(IsNull(TbProdOrc![Valor CBS]), 0, TbProdOrc![Valor CBS])
+      vgDb.Execute "UPDATE [Produtos da Nota Fiscal] SET [Valor IBS] = " & Substitui(CStr(vrIBS_P), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(vrCBS_P), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & SeqNF & " AND [Seqüência do Produto] = " & TbProdOrc![Seqüência do Produto]
+      TbProdOrc.MoveNext
+   Loop
+   TbProdOrc.CloseRecordset
+   Set TbProdOrc = Nothing
+   If Err.Number <> 0 Then Err.Clear
+   
+   'Conjuntos da Nota Fiscal - Copiar IBS/CBS dos Conjuntos do Orçamento
+   Dim TbConjOrc As New GRecordSet
+   Dim vrIBS_C As Double, vrCBS_C As Double
+   Set TbConjOrc = vgDb.OpenRecordSet("SELECT [Seqüência do Conjunto], [Valor IBS], [Valor CBS] FROM [Conjuntos do Orçamento] WHERE [Seqüência do Orçamento] = " & OrcamentoTela)
+   Do While Not TbConjOrc.EOF
+      vrIBS_C = IIf(IsNull(TbConjOrc![Valor IBS]), 0, TbConjOrc![Valor IBS])
+      vrCBS_C = IIf(IsNull(TbConjOrc![Valor CBS]), 0, TbConjOrc![Valor CBS])
+      vgDb.Execute "UPDATE [Conjuntos da Nota Fiscal] SET [Valor IBS] = " & Substitui(CStr(vrIBS_C), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(vrCBS_C), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & SeqNF & " AND [Seqüência do Conjunto] = " & TbConjOrc![Seqüência do Conjunto]
+      TbConjOrc.MoveNext
+   Loop
+   TbConjOrc.CloseRecordset
+   Set TbConjOrc = Nothing
+   If Err.Number <> 0 Then Err.Clear
+   
+   'Peças da Nota Fiscal - Copiar IBS/CBS das Peças do Orçamento
+   Dim TbPecOrc As New GRecordSet
+   Dim vrIBS_PE As Double, vrCBS_PE As Double
+   Set TbPecOrc = vgDb.OpenRecordSet("SELECT [Seqüência do Produto], [Valor IBS], [Valor CBS] FROM [Peças do Orçamento] WHERE [Seqüência do Orçamento] = " & OrcamentoTela)
+   Do While Not TbPecOrc.EOF
+      vrIBS_PE = IIf(IsNull(TbPecOrc![Valor IBS]), 0, TbPecOrc![Valor IBS])
+      vrCBS_PE = IIf(IsNull(TbPecOrc![Valor CBS]), 0, TbPecOrc![Valor CBS])
+      vgDb.Execute "UPDATE [Peças da Nota Fiscal] SET [Valor IBS] = " & Substitui(CStr(vrIBS_PE), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(vrCBS_PE), ",", ".", SO_UM) & " WHERE [Seqüência da Nota Fiscal] = " & SeqNF & " AND [Seqüência do Produto] = " & TbPecOrc![Seqüência do Produto]
+      TbPecOrc.MoveNext
+   Loop
+   TbPecOrc.CloseRecordset
+   Set TbPecOrc = Nothing
+   If Err.Number <> 0 Then Err.Clear
+   
+   On Error GoTo DeuErro
+   
    GeraConta 'Contas a Receber
      If Not Nota_de_Entrega Then
         If Not Nao_Baixar Then
@@ -1779,7 +1844,7 @@ Public Function Executar(vgOq As String) As String
    If vgOq = VALIDACOES Then
  InicializaApelidos COM_TEXTBOX
         Dim freteCod As Integer
-        freteCod = Val(txtCampo(2).Value)              'garante codigo numerico (0,1,3,4,9)'
+        freteCod = val(txtCampo(2).Value)              'garante codigo numerico (0,1,3,4,9)'
         vgOk = (Transporte > 0) Or (freteCod = 3) Or (freteCod = 4) Or (freteCod = 9)
         'vgMsg$ = "Transportadora não pode ser Vazio!"
         If Not vgOk Then txtCampo(1).SetFocus
@@ -2202,7 +2267,7 @@ Private Sub botOk_Click()
    If Len(k$) > 0 Then                            'EPA!... tem campo errado
       If InStr(k$, "|") > 0 Then
          Err.Source = Parse$(k$, "|")
-         Err.Number = Val(Parse$(k$, "|"))        'deu erro
+         Err.Number = val(Parse$(k$, "|"))        'deu erro
          Err.Description = Parse$(k$, "|")
          CErr.NumErro = Err.Number
          CErr.Show

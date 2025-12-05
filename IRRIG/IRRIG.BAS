@@ -2319,14 +2319,14 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
    If Tabela = 2 Or Tabela = 3 Then 'Conjuntos e Peças
       Set TB2 = vgDb.OpenRecordSet("SELECT CF.*, " & _
          "CT.CodigoClassTrib, CT.CodigoSituacaoTributaria AS CST_IBSCBS, " & _
-         "CT.PercentualReducaoIBS, CT.PercentualReducaoCBS, CT.ValidoParaNFe " & _
+         "CT.PercentualReducaoIBS, CT.PercentualReducaoCBS, CT.ValidoParaNFe, CT.TipoAliquota " & _
          "FROM [Classificação Fiscal] CF " & _
          "LEFT JOIN ClassTrib CT ON CF.ClassTribId = CT.Id " & _
          "WHERE CF.[Seqüência da Classificação] = " & Ncm & " AND CF.[Seqüência da Classificação] > 0") 'Classificação Fiscal (NCM) + ClassTrib
    Else
       Set TB2 = vgDb.OpenRecordSet("SELECT CF.*, " & _
          "CT.CodigoClassTrib, CT.CodigoSituacaoTributaria AS CST_IBSCBS, " & _
-         "CT.PercentualReducaoIBS, CT.PercentualReducaoCBS, CT.ValidoParaNFe " & _
+         "CT.PercentualReducaoIBS, CT.PercentualReducaoCBS, CT.ValidoParaNFe, CT.TipoAliquota " & _
          "FROM [Classificação Fiscal] CF " & _
          "LEFT JOIN ClassTrib CT ON CF.ClassTribId = CT.Id " & _
          "WHERE CF.[Seqüência da Classificação] = " & Tb1![Seqüência da Classificação] & " AND CF.[Seqüência da Classificação] > 0") 'Classificação Fiscal (NCM) + ClassTrib
@@ -2338,6 +2338,21 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
       CalculaImposto = 0: Exit Function
    End If
    Debug.Print "*** TB2.RecordCount = " & TB2.RecordCount & " - OK"
+   
+   ' === DEBUG CLASSTRIB ===
+   On Error Resume Next
+   Debug.Print "*** DEBUG CLASSTRIB - Verificando campos do TB2:"
+   Debug.Print "    NCM=" & TB2!Ncm
+   Debug.Print "    ClassTribId=" & TB2!ClassTribId
+   Debug.Print "    CodigoClassTrib=" & TB2!CodigoClassTrib
+   Debug.Print "    PercentualReducaoIBS=" & TB2!PercentualReducaoIBS
+   Debug.Print "    PercentualReducaoCBS=" & TB2!PercentualReducaoCBS
+   Debug.Print "    CST_IBSCBS=" & TB2!CST_IBSCBS
+   If Err.Number <> 0 Then
+      Debug.Print "    ERRO ao ler campos ClassTrib: " & Err.Number & " - " & Err.Description
+      Err.Clear
+   End If
+   On Error GoTo 0
    
    'VALIDAÇÃO: NCM Inativo
    If TB2!Inativo Then
@@ -3046,36 +3061,100 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          End If
          CalculaImposto = 0: Exit Function
       Case 16 'Valor IBS (Imposto sobre Bens e Serviços - UF/Municipal)
+         Debug.Print "*** CASE 16 (IBS) - INICIANDO..."
+         Debug.Print "*** VrTotal recebido=" & VrTotal
+         
+         ' Verificar se TipoAliquota = "Sem Alíquota" - se for, retorna 0 (sem cálculo)
+         Dim TipoAliquotaIBS As String
+         On Error Resume Next
+         If Not TB2 Is Nothing Then
+            If Not IsNull(TB2!TipoAliquota) Then
+               TipoAliquotaIBS = TB2!TipoAliquota
+               Debug.Print "*** TipoAliquota (IBS)=" & TipoAliquotaIBS
+            Else
+               TipoAliquotaIBS = "Padrão" ' Default se não tiver
+               Debug.Print "*** TipoAliquota é NULL - usando Padrão"
+            End If
+         Else
+            TipoAliquotaIBS = "Padrão"
+            Debug.Print "*** TB2 Is Nothing - usando TipoAliquota=Padrão"
+         End If
+         On Error GoTo 0
+         
+         ' Se "Sem Alíquota", retorna 0 (isento/não tributado)
+         If Trim(UCase(TipoAliquotaIBS)) = "SEM ALÍQUOTA" Or Trim(UCase(TipoAliquotaIBS)) = "SEM ALIQUOTA" Then
+            Debug.Print "*** TipoAliquota='Sem Alíquota' - IBS = 0 (SEM CÁLCULO)"
+            CalculaImposto = 0
+            Exit Function
+         End If
+         
          ' IBS = VrTotal * 0.1% * (1 - ReducaoIBS) - alíquota de transição 2026
          ' ReducaoIBS pode vir como 60 (percentual) ou 0.60 (fração) - tratamos ambos
          Dim ReducaoIBS As Double
          On Error Resume Next
+         Debug.Print "*** Verificando TB2!PercentualReducaoIBS..."
+         Debug.Print "*** TB2 Is Nothing? " & (TB2 Is Nothing)
+         If Not TB2 Is Nothing Then Debug.Print "*** TB2.RecordCount=" & TB2.RecordCount
          If Not IsNull(TB2!PercentualReducaoIBS) Then
             ReducaoIBS = TB2!PercentualReducaoIBS
+            Debug.Print "*** PercentualReducaoIBS ENCONTRADO=" & ReducaoIBS
             ' Se valor > 1, assumimos que é percentual (ex: 60) e convertemos para fração (0.60)
             If ReducaoIBS > 1 Then
                ReducaoIBS = ReducaoIBS / 100
+               Debug.Print "*** Convertido para fração=" & ReducaoIBS
             End If
          Else
             ReducaoIBS = 0 ' Sem redução se não tiver ClassTrib vinculado
+            Debug.Print "*** PercentualReducaoIBS é NULL - usando 0"
          End If
          On Error GoTo 0
          CalculaImposto = Round(VrTotal * 0.001 * (1 - ReducaoIBS), 2)
          Debug.Print "*** IBS calculado: VrTotal=" & VrTotal & " ReducaoIBS=" & ReducaoIBS & " (fator=" & (1 - ReducaoIBS) & ") Resultado=" & CalculaImposto
          Exit Function
       Case 17 'Valor CBS (Contribuição sobre Bens e Serviços)
+         Debug.Print "*** CASE 17 (CBS) - INICIANDO..."
+         Debug.Print "*** VrTotal recebido=" & VrTotal
+         
+         ' Verificar se TipoAliquota = "Sem Alíquota" - se for, retorna 0 (sem cálculo)
+         Dim TipoAliquotaCBS As String
+         On Error Resume Next
+         If Not TB2 Is Nothing Then
+            If Not IsNull(TB2!TipoAliquota) Then
+               TipoAliquotaCBS = TB2!TipoAliquota
+               Debug.Print "*** TipoAliquota (CBS)=" & TipoAliquotaCBS
+            Else
+               TipoAliquotaCBS = "Padrão" ' Default se não tiver
+               Debug.Print "*** TipoAliquota é NULL - usando Padrão"
+            End If
+         Else
+            TipoAliquotaCBS = "Padrão"
+            Debug.Print "*** TB2 Is Nothing - usando TipoAliquota=Padrão"
+         End If
+         On Error GoTo 0
+         
+         ' Se "Sem Alíquota", retorna 0 (isento/não tributado)
+         If Trim(UCase(TipoAliquotaCBS)) = "SEM ALÍQUOTA" Or Trim(UCase(TipoAliquotaCBS)) = "SEM ALIQUOTA" Then
+            Debug.Print "*** TipoAliquota='Sem Alíquota' - CBS = 0 (SEM CÁLCULO)"
+            CalculaImposto = 0
+            Exit Function
+         End If
+         
          ' CBS = VrTotal * 0.9% * (1 - ReducaoCBS) - alíquota de transição 2026
          ' ReducaoCBS pode vir como 60 (percentual) ou 0.60 (fração) - tratamos ambos
          Dim ReducaoCBS As Double
          On Error Resume Next
+         Debug.Print "*** Verificando TB2!PercentualReducaoCBS..."
          If Not IsNull(TB2!PercentualReducaoCBS) Then
             ReducaoCBS = TB2!PercentualReducaoCBS
+            Debug.Print "*** PercentualReducaoCBS ENCONTRADO=" & ReducaoCBS
             ' Se valor > 1, assumimos que é percentual (ex: 60) e convertemos para fração (0.60)
             If ReducaoCBS > 1 Then
                ReducaoCBS = ReducaoCBS / 100
+               Debug.Print "*** Convertido para fração=" & ReducaoCBS
             End If
          Else
             ReducaoCBS = 0 ' Sem redução se não tiver ClassTrib vinculado
+            Debug.Print "*** PercentualReducaoCBS é NULL - usando 0"
          End If
          On Error GoTo 0
          CalculaImposto = Round(VrTotal * 0.009 * (1 - ReducaoCBS), 2)
@@ -3110,6 +3189,48 @@ Public Function CalculaImposto(SeqItem As Long, SeqGeral As Long, Oq As Integer,
          End If
          On Error GoTo 0
          Debug.Print "*** CST_IBSCBS retornado: " & CalculaImposto
+         Exit Function
+      Case 20 'Percentual de Redução IBS (para XML da NFe - gRedAliq)
+         On Error Resume Next
+         If Not IsNull(TB2!PercentualReducaoIBS) Then
+            CalculaImposto = TB2!PercentualReducaoIBS
+            ' Se valor é fração (ex: 0.60), converter para percentual (60)
+            If CalculaImposto > 0 And CalculaImposto < 1 Then
+               CalculaImposto = CalculaImposto * 100
+            End If
+         Else
+            CalculaImposto = 0 ' Sem redução se não tiver ClassTrib vinculado
+         End If
+         On Error GoTo 0
+         Debug.Print "*** PercentualReducaoIBS retornado: " & CalculaImposto
+         Exit Function
+      Case 21 'Percentual de Redução CBS (para XML da NFe - gRedAliq)
+         On Error Resume Next
+         If Not IsNull(TB2!PercentualReducaoCBS) Then
+            CalculaImposto = TB2!PercentualReducaoCBS
+            ' Se valor é fração (ex: 0.60), converter para percentual (60)
+            If CalculaImposto > 0 And CalculaImposto < 1 Then
+               CalculaImposto = CalculaImposto * 100
+            End If
+         Else
+            CalculaImposto = 0 ' Sem redução se não tiver ClassTrib vinculado
+         End If
+         On Error GoTo 0
+         Debug.Print "*** PercentualReducaoCBS retornado: " & CalculaImposto
+         Exit Function
+      Case 22 'TipoAliquota do ClassTrib (para determinar se gera gIBSCBS ou não)
+         On Error Resume Next
+         If Not TB2 Is Nothing Then
+            If Not IsNull(TB2!TipoAliquota) Then
+               CalculaImposto = TB2!TipoAliquota
+            Else
+               CalculaImposto = "Padrão" ' Default se não tiver
+            End If
+         Else
+            CalculaImposto = "Padrão" ' Default se TB2 não existir
+         End If
+         On Error GoTo 0
+         Debug.Print "*** TipoAliquota retornado: " & CalculaImposto
          Exit Function
          
    End Select

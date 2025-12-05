@@ -636,95 +636,150 @@ Begin VB.Form frmOrcament
          TabPicture(5)   =   "ORCAMENT.frx":001C
          Tab(5).ControlEnabled=   0   'False
          Tab(5).Control(0)=   "Label(173)"
-         Tab(5).Control(1)=   "labFdo57"
-         Tab(5).Control(2)=   "Label(59)"
-         Tab(5).Control(3)=   "Label(58)"
-         Tab(5).Control(4)=   "Label(55)"
-         Tab(5).Control(5)=   "Label(54)"
-         Tab(5).Control(6)=   "Label(38)"
-         Tab(5).Control(7)=   "Label(30)"
-         Tab(5).Control(8)=   "labFdo47"
-         Tab(5).Control(9)=   "Label(29)"
-         Tab(5).Control(10)=   "Label(28)"
-         Tab(5).Control(11)=   "labFdo45"
-         Tab(5).Control(12)=   "Label(27)"
-         Tab(5).Control(13)=   "Label(26)"
-         Tab(5).Control(14)=   "Label(25)"
-         Tab(5).Control(15)=   "Label(24)"
-         Tab(5).Control(16)=   "Label(23)"
-         Tab(5).Control(17)=   "Label(22)"
-         Tab(5).Control(18)=   "Label(21)"
-         Tab(5).Control(19)=   "Label(20)"
-         Tab(5).Control(20)=   "Label(19)"
-         Tab(5).Control(21)=   "Label(18)"
-         Tab(5).Control(22)=   "Label(17)"
-         Tab(5).Control(23)=   "Linha(0)"
-         Tab(5).Control(24)=   "Label(13)"
-         Tab(5).Control(25)=   "Label(12)"
-         Tab(5).Control(26)=   "Label(11)"
-         Tab(5).Control(27)=   "Formato(2)"
-         Tab(5).Control(28)=   "Label(10)"
-         Tab(5).Control(29)=   "Formato(1)"
-         Tab(5).Control(30)=   "Label(9)"
-         Tab(5).Control(31)=   "Formato(0)"
-         Tab(5).Control(32)=   "Label(8)"
-         Tab(5).Control(33)=   "Label(7)"
-         Tab(5).Control(34)=   "labFdo35"
-         Tab(5).Control(35)=   "labFdo32"
-         Tab(5).Control(36)=   "Label(5)"
-         Tab(5).Control(37)=   "txtCp(148)"
-         Tab(5).Control(38)=   "txtCp(57)"
-         Tab(5).Control(39)=   "bottxtCampo57(0)"
+         Tab(5).Control(0).Enabled=   0   'False
+         Tab(5).Control(1)=   "Label(190)"
+         Tab(5).Control(1).Enabled=   0   'False
+         Tab(5).Control(2)=   "Label(189)"
+         Tab(5).Control(2).Enabled=   0   'False
+         Tab(5).Control(3)=   "labFdo57"
+         Tab(5).Control(3).Enabled=   0   'False
+         Tab(5).Control(4)=   "Label(59)"
+         Tab(5).Control(4).Enabled=   0   'False
+         Tab(5).Control(5)=   "Label(58)"
+         Tab(5).Control(5).Enabled=   0   'False
+         Tab(5).Control(6)=   "Label(55)"
+         Tab(5).Control(6).Enabled=   0   'False
+         Tab(5).Control(7)=   "Label(54)"
+         Tab(5).Control(7).Enabled=   0   'False
+         Tab(5).Control(8)=   "Label(38)"
+         Tab(5).Control(8).Enabled=   0   'False
+         Tab(5).Control(9)=   "Label(30)"
+         Tab(5).Control(9).Enabled=   0   'False
+         Tab(5).Control(10)=   "labFdo47"
+         Tab(5).Control(10).Enabled=   0   'False
+         Tab(5).Control(11)=   "Label(29)"
+         Tab(5).Control(11).Enabled=   0   'False
+         Tab(5).Control(12)=   "Label(28)"
+         Tab(5).Control(12).Enabled=   0   'False
+         Tab(5).Control(13)=   "labFdo45"
+         Tab(5).Control(13).Enabled=   0   'False
+         Tab(5).Control(14)=   "Label(27)"
+         Tab(5).Control(14).Enabled=   0   'False
+         Tab(5).Control(15)=   "Label(26)"
+         Tab(5).Control(15).Enabled=   0   'False
+         Tab(5).Control(16)=   "Label(25)"
+         Tab(5).Control(16).Enabled=   0   'False
+         Tab(5).Control(17)=   "Label(24)"
+         Tab(5).Control(17).Enabled=   0   'False
+         Tab(5).Control(18)=   "Label(23)"
+         Tab(5).Control(18).Enabled=   0   'False
+         Tab(5).Control(19)=   "Label(22)"
+         Tab(5).Control(19).Enabled=   0   'False
+         Tab(5).Control(20)=   "Label(21)"
+         Tab(5).Control(20).Enabled=   0   'False
+         Tab(5).Control(21)=   "Label(20)"
+         Tab(5).Control(21).Enabled=   0   'False
+         Tab(5).Control(22)=   "Label(19)"
+         Tab(5).Control(22).Enabled=   0   'False
+         Tab(5).Control(23)=   "Label(18)"
+         Tab(5).Control(23).Enabled=   0   'False
+         Tab(5).Control(24)=   "Label(17)"
+         Tab(5).Control(24).Enabled=   0   'False
+         Tab(5).Control(25)=   "Linha(0)"
+         Tab(5).Control(25).Enabled=   0   'False
+         Tab(5).Control(26)=   "Label(13)"
+         Tab(5).Control(26).Enabled=   0   'False
+         Tab(5).Control(27)=   "Label(12)"
+         Tab(5).Control(27).Enabled=   0   'False
+         Tab(5).Control(28)=   "Label(11)"
+         Tab(5).Control(28).Enabled=   0   'False
+         Tab(5).Control(29)=   "Formato(2)"
+         Tab(5).Control(29).Enabled=   0   'False
+         Tab(5).Control(30)=   "Label(10)"
+         Tab(5).Control(30).Enabled=   0   'False
+         Tab(5).Control(31)=   "Formato(1)"
+         Tab(5).Control(31).Enabled=   0   'False
+         Tab(5).Control(32)=   "Label(9)"
+         Tab(5).Control(32).Enabled=   0   'False
+         Tab(5).Control(33)=   "Formato(0)"
+         Tab(5).Control(33).Enabled=   0   'False
+         Tab(5).Control(34)=   "Label(8)"
+         Tab(5).Control(34).Enabled=   0   'False
+         Tab(5).Control(35)=   "Label(7)"
+         Tab(5).Control(35).Enabled=   0   'False
+         Tab(5).Control(36)=   "labFdo35"
+         Tab(5).Control(36).Enabled=   0   'False
+         Tab(5).Control(37)=   "labFdo32"
+         Tab(5).Control(37).Enabled=   0   'False
+         Tab(5).Control(38)=   "Label(5)"
+         Tab(5).Control(38).Enabled=   0   'False
+         Tab(5).Control(39)=   "txtCp(148)"
          Tab(5).Control(39).Enabled=   0   'False
-         Tab(5).Control(40)=   "txtCp(56)"
+         Tab(5).Control(40)=   "txtCp(163)"
          Tab(5).Control(40).Enabled=   0   'False
-         Tab(5).Control(41)=   "txtCp(53)"
+         Tab(5).Control(41)=   "txtCp(162)"
          Tab(5).Control(41).Enabled=   0   'False
-         Tab(5).Control(42)=   "txtCp(52)"
+         Tab(5).Control(42)=   "txtCp(57)"
          Tab(5).Control(42).Enabled=   0   'False
-         Tab(5).Control(43)=   "Painel(2)"
-         Tab(5).Control(44)=   "txtCp(49)"
+         Tab(5).Control(43)=   "bottxtCampo57(0)"
+         Tab(5).Control(43).Enabled=   0   'False
+         Tab(5).Control(44)=   "txtCp(56)"
          Tab(5).Control(44).Enabled=   0   'False
-         Tab(5).Control(45)=   "txtCp(47)"
-         Tab(5).Control(46)=   "bottxtCampo47(0)"
+         Tab(5).Control(45)=   "txtCp(53)"
+         Tab(5).Control(45).Enabled=   0   'False
+         Tab(5).Control(46)=   "txtCp(52)"
          Tab(5).Control(46).Enabled=   0   'False
-         Tab(5).Control(47)=   "txtCp(46)"
+         Tab(5).Control(47)=   "Painel(2)"
          Tab(5).Control(47).Enabled=   0   'False
-         Tab(5).Control(48)=   "txtCp(45)"
-         Tab(5).Control(49)=   "bottxtCampo45(0)"
+         Tab(5).Control(48)=   "txtCp(49)"
+         Tab(5).Control(48).Enabled=   0   'False
+         Tab(5).Control(49)=   "txtCp(47)"
          Tab(5).Control(49).Enabled=   0   'False
-         Tab(5).Control(50)=   "txtCp(44)"
+         Tab(5).Control(50)=   "bottxtCampo47(0)"
          Tab(5).Control(50).Enabled=   0   'False
-         Tab(5).Control(51)=   "txtCp(43)"
+         Tab(5).Control(51)=   "txtCp(46)"
          Tab(5).Control(51).Enabled=   0   'False
-         Tab(5).Control(52)=   "txtCp(42)"
+         Tab(5).Control(52)=   "txtCp(45)"
          Tab(5).Control(52).Enabled=   0   'False
-         Tab(5).Control(53)=   "txtCp(41)"
+         Tab(5).Control(53)=   "bottxtCampo45(0)"
          Tab(5).Control(53).Enabled=   0   'False
-         Tab(5).Control(54)=   "txtCp(40)"
+         Tab(5).Control(54)=   "txtCp(44)"
          Tab(5).Control(54).Enabled=   0   'False
-         Tab(5).Control(55)=   "txtCp(39)"
+         Tab(5).Control(55)=   "txtCp(43)"
          Tab(5).Control(55).Enabled=   0   'False
-         Tab(5).Control(56)=   "txtCp(38)"
+         Tab(5).Control(56)=   "txtCp(42)"
          Tab(5).Control(56).Enabled=   0   'False
-         Tab(5).Control(57)=   "txtCp(37)"
+         Tab(5).Control(57)=   "txtCp(41)"
          Tab(5).Control(57).Enabled=   0   'False
-         Tab(5).Control(58)=   "txtCp(36)"
+         Tab(5).Control(58)=   "txtCp(40)"
          Tab(5).Control(58).Enabled=   0   'False
-         Tab(5).Control(59)=   "txtCp(35)"
-         Tab(5).Control(60)=   "bottxtCampo35(2)"
+         Tab(5).Control(59)=   "txtCp(39)"
+         Tab(5).Control(59).Enabled=   0   'False
+         Tab(5).Control(60)=   "txtCp(38)"
          Tab(5).Control(60).Enabled=   0   'False
-         Tab(5).Control(61)=   "Grid(2)"
-         Tab(5).Control(62)=   "txtCp(32)"
-         Tab(5).Control(63)=   "bottxtCampo32(0)"
+         Tab(5).Control(61)=   "txtCp(37)"
+         Tab(5).Control(61).Enabled=   0   'False
+         Tab(5).Control(62)=   "txtCp(36)"
+         Tab(5).Control(62).Enabled=   0   'False
+         Tab(5).Control(63)=   "txtCp(35)"
          Tab(5).Control(63).Enabled=   0   'False
-         Tab(5).Control(64)=   "txtCp(31)"
+         Tab(5).Control(64)=   "bottxtCampo35(2)"
          Tab(5).Control(64).Enabled=   0   'False
-         Tab(5).Control(65)=   "txtCp(9)"
+         Tab(5).Control(65)=   "Grid(2)"
          Tab(5).Control(65).Enabled=   0   'False
-         Tab(5).Control(66)=   "Botao(7)"
-         Tab(5).Control(67)=   "Botao(6)"
-         Tab(5).ControlCount=   68
+         Tab(5).Control(66)=   "txtCp(32)"
+         Tab(5).Control(66).Enabled=   0   'False
+         Tab(5).Control(67)=   "bottxtCampo32(0)"
+         Tab(5).Control(67).Enabled=   0   'False
+         Tab(5).Control(68)=   "txtCp(31)"
+         Tab(5).Control(68).Enabled=   0   'False
+         Tab(5).Control(69)=   "txtCp(9)"
+         Tab(5).Control(69).Enabled=   0   'False
+         Tab(5).Control(70)=   "Botao(7)"
+         Tab(5).Control(70).Enabled=   0   'False
+         Tab(5).Control(71)=   "Botao(6)"
+         Tab(5).Control(71).Enabled=   0   'False
+         Tab(5).ControlCount=   72
          TabCaption(6)   =   "Ficha Técnica (Hidroturbo)"
          Tab(6).ControlEnabled=   0   'False
          Tab(6).Control(0)=   "Label(69)"
@@ -2144,7 +2199,7 @@ Begin VB.Form frmOrcament
             MultiLine       =   -1  'True
             TabIndex        =   61
             TabStop         =   0   'False
-            Top             =   5010
+            Top             =   5940
             Width           =   1605
          End
          Begin VB.TextBox txtCp 
@@ -2803,13 +2858,13 @@ Begin VB.Form frmOrcament
             EndProperty
             Height          =   360
             Index           =   56
-            Left            =   -67440
+            Left            =   -71610
             Locked          =   -1  'True
             MaxLength       =   254
             MultiLine       =   -1  'True
             TabIndex        =   102
             TabStop         =   0   'False
-            Top             =   5475
+            Top             =   5940
             Width           =   1605
          End
          Begin VB.CommandButton bottxtCampo57 
@@ -2843,6 +2898,54 @@ Begin VB.Form frmOrcament
             TabIndex        =   52
             Top             =   1320
             Width           =   1320
+         End
+         Begin VB.TextBox txtCp 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H00E0E0E0&
+            DataField       =   "Valor Total IBS"
+            BeginProperty Font 
+               Name            =   "Microsoft Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   360
+            Index           =   162
+            Left            =   -67440
+            Locked          =   -1  'True
+            MultiLine       =   -1  'True
+            TabIndex        =   470
+            TabStop         =   0   'False
+            Top             =   5010
+            Width           =   1605
+         End
+         Begin VB.TextBox txtCp 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H00E0E0E0&
+            DataField       =   "Valor Total CBS"
+            BeginProperty Font 
+               Name            =   "Microsoft Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   360
+            Index           =   163
+            Left            =   -67440
+            Locked          =   -1  'True
+            MultiLine       =   -1  'True
+            TabIndex        =   471
+            TabStop         =   0   'False
+            Top             =   5475
+            Width           =   1605
          End
          Begin VB.TextBox txtCp 
             Appearance      =   0  'Flat
@@ -5963,7 +6066,7 @@ Begin VB.Form frmOrcament
             Index           =   26
             Left            =   -69375
             TabIndex        =   243
-            Top             =   5040
+            Top             =   5990
             Width           =   1845
          End
          Begin VB.Label Label 
@@ -6656,9 +6759,9 @@ Begin VB.Form frmOrcament
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   58
-            Left            =   -68700
+            Left            =   -73000
             TabIndex        =   286
-            Top             =   5505
+            Top             =   5990
             Width           =   1170
          End
          Begin VB.Label Label 
@@ -6691,6 +6794,48 @@ Begin VB.Form frmOrcament
             TabIndex        =   288
             Top             =   1305
             Width           =   1605
+         End
+         Begin VB.Label Label 
+            Alignment       =   1  'Right Justify
+            AutoSize        =   -1  'True
+            Caption         =   "Valor Total IBS:"
+            BeginProperty Font 
+               Name            =   "Microsoft Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   189
+            Left            =   -68925
+            TabIndex        =   472
+            Top             =   5060
+            Width           =   1395
+         End
+         Begin VB.Label Label 
+            Alignment       =   1  'Right Justify
+            AutoSize        =   -1  'True
+            Caption         =   "Valor Total CBS:"
+            BeginProperty Font 
+               Name            =   "Microsoft Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   190
+            Left            =   -69015
+            TabIndex        =   473
+            Top             =   5525
+            Width           =   1485
          End
          Begin VB.Label Label 
             Alignment       =   1  'Right Justify
@@ -9991,7 +10136,7 @@ Begin VB.Form frmOrcament
          EndProperty
          ForeColor       =   &H80000008&
          Height          =   360
-         Index           =   189
+         Index           =   191
          Left            =   4995
          TabIndex        =   460
          Top             =   60
@@ -10101,6 +10246,7 @@ Private Grid1_ForcandoRefresh As Boolean         'flag para evitar refresh/repai
 Private Grid3_ValorUnitario_Pendente As Double    'valor unitário do produto selecionado no Grid 3
 Private Grid3_ValorUnitario_Pendente_Definido As Boolean
 Private Grid3_ValorUnitario_Pendente_OrigemManual As Boolean
+Private Grid3_PrecoBaseCadastro As Double         'preço mínimo do cadastro (usuário pode aumentar, não diminuir)
 Private Grid3_ForcandoRefresh As Boolean
 
 'Variáveis para detectar troca de item (Fix: preço errado ao trocar item)
@@ -10108,7 +10254,7 @@ Dim Seq_Conjunto_Anterior As Long
 Dim Seq_Produto_Pecas_Anterior As Long
 Dim Seq_Produto_Anterior As Long
 
-Dim txtCampo(161) As New FormataCampos            'classe dos campos tipo texto do módulo
+Dim txtCampo(163) As New FormataCampos            'classe dos campos tipo texto do módulo
 Dim chkCampo(12) As New FormataCampos             'classe dos campos tipo lógico do módulo
 Dim vgPodeFazerUnLoad As Boolean                  'flag se o módulo pode ou nao ser removido da memória
 Dim opcPainel1(1) As New FormataCampos
@@ -10132,6 +10278,7 @@ Dim Valor_Total_das_Pecas_Usadas As Double, Sequencia_da_Propriedade As Integer,
 Dim Data_de_Emissao As Variant, Data_do_Fechamento As Variant, Codigo_do_Suframa As String
 Dim Revenda As Boolean, Valor_Total_do_Tributo As Double, Valor_Total_do_PIS As Double
 Dim Valor_Total_do_COFINS As Double, Valor_Total_da_Base_ST As Double, Valor_Total_do_ICMS_ST As Double
+Dim Valor_Total_do_IBS As Double, Valor_Total_do_CBS As Double
 Dim Aliquota_do_ISS As Single, Reter_ISS As Boolean, Fatura_Proforma As Boolean
 Dim Entrega_Futura As Boolean, Sequencia_da_Transportadora As Long, Orcamento_Avulso As Boolean
 Dim Valor_do_Imposto_de_Renda As Double, Local_de_Embarque As String, UF_de_Embarque As String
@@ -10246,6 +10393,8 @@ Private Sub opcPainel2Cp_Click(Index As Integer)
       'End If 'Manual
    End If
 End Sub
+
+' Limpa todos os controles quando entra em inclusão
 
 Public Sub RepositionOrcamento()
    Dim Col() As Variant
@@ -10871,6 +11020,37 @@ Private Function ProcessaProduto(Bc_pis As Double, Valor_do_Tributo As Double, S
       vgDb.Execute "Update [Produtos do Orçamento] Set [Valor ICMS ST] = " & Substitui(CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 14, 1, Quantidade * Valor_Unitario, vrAdicional, Orcamento![Seqüência da Propriedade], , , MunicipioAux!UF), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência do Produto Orçamento] = " & Sequencia_do_Produto_Orcamento 'Valor do ICMS ST
       vgDb.Execute "Update [Produtos do Orçamento] Set [Alíquota do ICMS ST] = " & Substitui(CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 15, 1, Quantidade * Valor_Unitario, vrAdicional, Orcamento![Seqüência da Propriedade]), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência do Produto Orçamento] = " & Sequencia_do_Produto_Orcamento 'Alíquota do ICMS ST
       Tributos = Tributos + CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 14, 1, Quantidade * Valor_Unitario, vrAdicional, Orcamento![Seqüência da Propriedade], , , MunicipioAux!UF)
+      
+      ' === CÁLCULO IBS E CBS (RTC - Reforma Tributária) ===
+      Debug.Print "========== INICIO CALCULO IBS/CBS PRODUTO =========="
+      Debug.Print "Sequencia_do_Produto=" & Sequencia_do_Produto
+      Debug.Print "Sequencia_do_Orcamento=" & Sequencia_do_Orcamento
+      Debug.Print "Quantidade=" & Quantidade & " Valor_Unitario=" & Valor_Unitario
+      Debug.Print "Valor_do_Frete=" & Valor_do_Frete & " Valor_do_Desconto=" & Valor_do_Desconto
+      
+      Dim vrAdicionalIBS_Prod As Double
+      Dim ValorOperacional_Prod As Double
+      Dim Valor_IBS_Prod As Double, Valor_CBS_Prod As Double
+      ValorOperacional_Prod = Round(Quantidade * Valor_Unitario + Valor_do_Frete - Valor_do_Desconto, 2)
+      Debug.Print "ValorOperacional_Prod CALCULADO=" & ValorOperacional_Prod
+      
+      Debug.Print "CHAMANDO CalculaImposto para IBS (código 16)..."
+      Valor_IBS_Prod = CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 16, 1, ValorOperacional_Prod, vrAdicionalIBS_Prod, Orcamento![Seqüência da Propriedade])
+      Debug.Print "Valor_IBS_Prod RETORNADO=" & Valor_IBS_Prod
+      
+      Debug.Print "CHAMANDO CalculaImposto para CBS (código 17)..."
+      Valor_CBS_Prod = CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 17, 1, ValorOperacional_Prod, vrAdicionalIBS_Prod, Orcamento![Seqüência da Propriedade])
+      Debug.Print "Valor_CBS_Prod RETORNADO=" & Valor_CBS_Prod
+      
+      Tributos = Tributos + Valor_IBS_Prod + Valor_CBS_Prod
+      Debug.Print "Tributos TOTAL (com IBS+CBS)=" & Tributos
+      
+      Dim sqlIBSCBS As String
+      sqlIBSCBS = "UPDATE [Produtos do Orçamento] SET [Valor IBS] = " & Substitui(CStr(Valor_IBS_Prod), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(Valor_CBS_Prod), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência do Produto Orçamento] = " & Sequencia_do_Produto_Orcamento
+      Debug.Print "SQL IBS/CBS: " & sqlIBSCBS
+      vgDb.Execute sqlIBSCBS
+      Debug.Print "========== FIM CALCULO IBS/CBS PRODUTO =========="
+      
       vgDb.Execute "Update [Produtos do Orçamento] Set [Valor do Tributo] = " & Substitui(CStr(Tributos), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência do Produto Orçamento] = " & Sequencia_do_Produto_Orcamento 'Tributos
     End If 'Caso Contrario Vamos deixar o Usuario Digitar os Valores
    vgDb.CommitTrans
@@ -10884,14 +11064,14 @@ DeuErro:
    End If
 End Function
 
-Private Function ValorParaSql(ByVal valor As Double) As String
-   ValorParaSql = Substitui(CStr(valor), ",", ".", SO_UM)
+Private Function ValorParaSql(ByVal Valor As Double) As String
+   ValorParaSql = Substitui(CStr(Valor), ",", ".", SO_UM)
 End Function
 
-Private Sub AtualizaTotaisPosEdicaoManual(ByRef rs As GRecordSet, ByVal gridIndex As Integer, Optional ByVal gridControl As Object)
+Private Sub AtualizaTotaisPosEdicaoManual(ByRef Rs As GRecordSet, ByVal gridIndex As Integer, Optional ByVal gridControl As Object)
    On Error Resume Next
-   If Not rs Is Nothing Then
-      rs.Requery
+   If Not Rs Is Nothing Then
+      Rs.Requery
    End If
 
    If gridIndex >= 0 Then
@@ -11085,6 +11265,16 @@ Private Function ProcessaConjunto(Sequencia_do_Orcamento As Long, Sequencia_Conj
       Dim IcmsStFinalConj As Double
       IcmsStFinalConj = CalculaImposto(Sequencia_do_Conjunto, Orcamento![Seqüência Do Geral], 14, 2, Quantidade * Valor_Unitario, vrAdicional, Orcamento![Seqüência da Propriedade], PegaNCMPadrao(), , MunicipioAux!UF)
       Tributos = Tributos + IcmsStFinalConj
+      
+      ' === CÁLCULO IBS E CBS (RTC - Reforma Tributária) ===
+      Dim vrAdicionalIBS_Conj As Double
+      Dim ValorOperacional_Conj As Double
+      Dim Valor_IBS_Conj As Double, Valor_CBS_Conj As Double
+      ValorOperacional_Conj = Round(Quantidade * Valor_Unitario + Valor_do_Frete - Valor_do_Desconto, 2)
+      Valor_IBS_Conj = CalculaImposto(Sequencia_do_Conjunto, Orcamento![Seqüência Do Geral], 16, 2, ValorOperacional_Conj, vrAdicionalIBS_Conj, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+      Valor_CBS_Conj = CalculaImposto(Sequencia_do_Conjunto, Orcamento![Seqüência Do Geral], 17, 2, ValorOperacional_Conj, vrAdicionalIBS_Conj, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+      Tributos = Tributos + Valor_IBS_Conj + Valor_CBS_Conj
+      vgDb.Execute "UPDATE [Conjuntos do Orçamento] SET [Valor IBS] = " & Substitui(CStr(Valor_IBS_Conj), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(Valor_CBS_Conj), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência Conjunto Orçamento] = " & Sequencia_Conjunto_Orcamento
       
       vgDb.Execute "Update [Conjuntos do Orçamento] Set [Valor do Tributo] = " & Substitui(CStr(Tributos), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência Conjunto Orçamento] = " & Sequencia_Conjunto_Orcamento 'Tributos
    End If 'Caso Contrario Vamos deixar o Usuario Digitar os Valores
@@ -11320,6 +11510,16 @@ Private Function ProcessaPeca(Valor_do_Tributo As Double, Sequencia_do_Orcamento
       Dim IcmsStFinal As Double
       IcmsStFinal = CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 14, 3, Quantidade * Valor_Unitario, vrAdicional, Orcamento![Seqüência da Propriedade], PegaNCMPadrao(), , MunicipioAux!UF)
       Tributos = Tributos + IcmsStFinal
+      
+      ' === CÁLCULO IBS E CBS (RTC - Reforma Tributária) ===
+      Dim vrAdicionalIBS_Peca As Double
+      Dim ValorOperacional_Peca As Double
+      Dim Valor_IBS_Peca As Double, Valor_CBS_Peca As Double
+      ValorOperacional_Peca = Round(Quantidade * Valor_Unitario + Valor_do_Frete - Valor_do_Desconto, 2)
+      Valor_IBS_Peca = CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 16, 3, ValorOperacional_Peca, vrAdicionalIBS_Peca, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+      Valor_CBS_Peca = CalculaImposto(Sequencia_do_Produto, Orcamento![Seqüência Do Geral], 17, 3, ValorOperacional_Peca, vrAdicionalIBS_Peca, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+      Tributos = Tributos + Valor_IBS_Peca + Valor_CBS_Peca
+      vgDb.Execute "UPDATE [Peças do Orçamento] SET [Valor IBS] = " & Substitui(CStr(Valor_IBS_Peca), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(Valor_CBS_Peca), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência Peças do Orçamento] = " & Sequencia_Pecas_do_Orcamento
       
       vgDb.Execute "Update [Peças do Orçamento] Set [Valor do Tributo] = " & Substitui(CStr(Tributos), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência Peças do Orçamento] = " & Sequencia_Pecas_do_Orcamento 'Tributos
    
@@ -11592,6 +11792,105 @@ DeuErro:
    End If
 End Sub
 
+'===============================================================================
+' FUNÇÃO: AtualizaValoresIBSCBS
+' Soma os valores de IBS e CBS de todos os itens (Produtos, Conjuntos, Peças)
+' Baseada na função equivalente do NOTAFISC.FRM
+'===============================================================================
+Private Sub AtualizaValoresIBSCBS(ByVal SeqOrc As Long, ByRef TotalIBS As Double, ByRef TotalCBS As Double)
+   Dim Tb As New GRecordSet, SQL As String
+   Dim valorIBS As Double, valorCBS As Double
+   On Error GoTo TrataIBS
+   
+   TotalIBS = 0
+   TotalCBS = 0
+   
+   ' Produtos - soma os valores já gravados no item
+   SQL = "SELECT [Seqüência do Produto Orçamento] SeqItem, [Valor IBS], [Valor CBS] " & _
+         "FROM [Produtos do Orçamento] WHERE [Seqüência do Orçamento] = " & SeqOrc
+   Set Tb = vgDb.OpenRecordSet(SQL)
+   If Not Tb Is Nothing Then
+      Do While Not Tb.EOF
+         If Not IsNull(Tb![Valor IBS]) Then valorIBS = Tb![Valor IBS] Else valorIBS = 0
+         If Not IsNull(Tb![Valor CBS]) Then valorCBS = Tb![Valor CBS] Else valorCBS = 0
+         TotalIBS = TotalIBS + valorIBS
+         TotalCBS = TotalCBS + valorCBS
+         Tb.MoveNext
+      Loop
+   End If
+   Set Tb = Nothing
+   
+   ' Conjuntos - soma os valores já gravados no item
+   SQL = "SELECT [Seqüência Conjunto Orçamento] SeqItem, [Valor IBS], [Valor CBS] " & _
+         "FROM [Conjuntos do Orçamento] WHERE [Seqüência do Orçamento] = " & SeqOrc
+   Set Tb = vgDb.OpenRecordSet(SQL)
+   If Not Tb Is Nothing Then
+      Do While Not Tb.EOF
+         If Not IsNull(Tb![Valor IBS]) Then valorIBS = Tb![Valor IBS] Else valorIBS = 0
+         If Not IsNull(Tb![Valor CBS]) Then valorCBS = Tb![Valor CBS] Else valorCBS = 0
+         TotalIBS = TotalIBS + valorIBS
+         TotalCBS = TotalCBS + valorCBS
+         Tb.MoveNext
+      Loop
+   End If
+   Set Tb = Nothing
+   
+   ' Peças - soma os valores já gravados no item
+   SQL = "SELECT [Seqüência Peças do Orçamento] SeqItem, [Valor IBS], [Valor CBS] " & _
+         "FROM [Peças do Orçamento] WHERE [Seqüência do Orçamento] = " & SeqOrc
+   Set Tb = vgDb.OpenRecordSet(SQL)
+   If Not Tb Is Nothing Then
+      Do While Not Tb.EOF
+         If Not IsNull(Tb![Valor IBS]) Then valorIBS = Tb![Valor IBS] Else valorIBS = 0
+         If Not IsNull(Tb![Valor CBS]) Then valorCBS = Tb![Valor CBS] Else valorCBS = 0
+         TotalIBS = TotalIBS + valorIBS
+         TotalCBS = TotalCBS + valorCBS
+         Tb.MoveNext
+      Loop
+   End If
+   
+TrataIBS:
+   If Err.Number <> 0 Then
+      Debug.Print "DEBUG RTC ORC: Falha ao atualizar IBS/CBS -> " & Err.Description
+      Err.Clear
+   End If
+   Set Tb = Nothing
+End Sub
+
+'Verifica se o campo existe tanto na tabela quanto no recordset ativo
+Private Function CampoDisponivel(Rs As GRecordSet, ByVal Campo As String) As Boolean
+   On Error GoTo Falha
+   CampoDisponivel = False
+   If Rs Is Nothing Then Exit Function
+
+   ' 1) Metadata da Table (quando o INI já tem o campo)
+   If Not Rs.Table Is Nothing Then
+      Dim Col As Object
+      For Each Col In Rs.Table.Columns
+         If StrComp(Col.Name, Campo, vbTextCompare) = 0 Then
+            CampoDisponivel = True
+            Exit Function
+         End If
+      Next
+   End If
+
+   ' 2) Fallback: confere os Fields do Recordset ADO (caso o INI não esteja atualizado)
+   If Not Rs.RecordSet Is Nothing Then
+      Dim fld As Object
+      For Each fld In Rs.RecordSet.Fields
+         If StrComp(fld.Name, Campo, vbTextCompare) = 0 Then
+            CampoDisponivel = True
+            Exit Function
+         End If
+      Next
+   End If
+   Exit Function
+Falha:
+   Debug.Print "[IBS DEBUG] CampoDisponivel erro campo='" & Campo & "' -> " & Err.Description
+   Err.Clear
+End Function
+
+
 Private Sub TotalizaOrcamento()
    
    Dim IPIProdutos As New GRecordSet, IpiConjuntos As New GRecordSet, IpiPecas As New GRecordSet
@@ -11603,6 +11902,7 @@ Private Sub TotalizaOrcamento()
    Dim ValorProdutos As New GRecordSet, ValorConjuntos As New GRecordSet, ValorPecas As New GRecordSet, ValorServicos As New GRecordSet
    Dim ValorPIS As New GRecordSet, valorCofins As New GRecordSet, ValorTributos As New GRecordSet
    Dim ValorOrcamento As Currency, BaseServicos As New GRecordSet, ValorISS As New GRecordSet
+   Dim ValorTotalIBS As Double, ValorTotalCBS As Double
 
    On Error GoTo DeuErro
 
@@ -11611,6 +11911,9 @@ Private Sub TotalizaOrcamento()
 
 
    If vgSituacao = ACAO_EXCLUINDO Then Exit Sub
+   
+   ' === Atualiza totais de IBS/CBS (RTC - Reforma Tributária) ===
+   AtualizaValoresIBSCBS Sequencia_do_Orcamento, ValorTotalIBS, ValorTotalCBS
 
   ' If (GeralAux!Revenda Or Orcamento!Revenda) AND Not Orcamento![Orçamento Avulso] Then AjustaSubstituicao
 
@@ -11739,6 +12042,8 @@ Private Sub TotalizaOrcamento()
    vgDb.Execute "Update Orçamento Set [Valor Total do PIS] = " & Substitui(Round(ValorPIS!pis, 2), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total do PIS
    vgDb.Execute "Update Orçamento Set [Valor Total do COFINS] = " & Substitui(Round(valorCofins!cofins, 2), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total do COFINS
    vgDb.Execute "Update Orçamento Set [Valor Total do Tributo] = " & Substitui(Round(ValorTributos!Tributos, 2), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total do Tributo
+   vgDb.Execute "Update Orçamento Set [Valor Total IBS] = " & Substitui(CStr(Round(ValorTotalIBS, 2)), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total IBS
+   vgDb.Execute "Update Orçamento Set [Valor Total CBS] = " & Substitui(CStr(Round(ValorTotalCBS, 2)), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total CBS
    vgDb.CommitTrans
    
    Produtos_do_Orcamento.Requery
@@ -12373,7 +12678,7 @@ Private Function VerificaDebitos() As Boolean
    
    On Error Resume Next
      
-   Set Tb = vgDb.OpenRecordSet("SELECT 1 FROM [Manutenção Contas] WHERE [Seqüência do Geral] = " & Sequencia_do_Geral & " AND [Valor Restante] > 0 AND Conta = 'R' AND [Data de Vencimento] < " & d(Date))
+   Set Tb = vgDb.OpenRecordSet("SELECT 1 FROM [Manutenção Contas] WHERE [Seqüência do Geral] = " & Sequencia_do_Geral & " AND [Valor Restante] > 0 AND Conta = 'R' AND [Data de Vencimento] < " & D(Date))
         
    If Tb.RecordCount > 0 Then
       VerificaDebitos = True
@@ -13639,6 +13944,7 @@ Public Sub AjustaValoresProforma()
    Dim ValorProdutos As New GRecordSet, ValorConjuntos As New GRecordSet, ValorPecas As New GRecordSet, ValorServicos As New GRecordSet
    Dim ValorPIS As New GRecordSet, valorCofins As New GRecordSet, ValorTributos As New GRecordSet
    Dim ValorOrcamento As Currency, BaseServicos As New GRecordSet, ValorISS As New GRecordSet
+   Dim ValorTotalIBS As Double, ValorTotalCBS As Double
 
    On Error GoTo DeuErro
    
@@ -13734,6 +14040,9 @@ Public Sub AjustaValoresProforma()
    ValorOrcamento = Format(ValorOrcamento + IIf(Fechamento = 0, CCur(ValorOrcamento) * CCur(Valor_do_Fechamento) / 100, CCur(Valor_do_Fechamento)), "##,###,##0.00")
    If Orcamento![Reter ISS] And ValorServicos.RecordCount > 0 Then ValorOrcamento = ValorOrcamento * (Orcamento![Alíquota Do ISS] / 100 + 1) 'Reter ISS
    If ValorServicos.RecordCount > 0 Then ValorOrcamento = ValorOrcamento - Orcamento![Valor Do Imposto de Renda] 'Imposto de Renda Sempre vai Subtrair
+   
+   'Calcula IBS/CBS
+   AtualizaValoresIBSCBS Sequencia_do_Orcamento, ValorTotalIBS, ValorTotalCBS
 
    'Atualizando
    vgDb.BeginTrans
@@ -13755,6 +14064,8 @@ Public Sub AjustaValoresProforma()
    vgDb.Execute "Update Orçamento Set [Valor Total do PIS] = " & Substitui(ValorPIS!pis, ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total do PIS
    vgDb.Execute "Update Orçamento Set [Valor Total do COFINS] = " & Substitui(valorCofins!cofins, ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total do COFINS
    vgDb.Execute "Update Orçamento Set [Valor Total do Tributo] = " & Substitui(ValorTributos!Tributos, ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total do Tributo
+   vgDb.Execute "Update Orçamento Set [Valor Total IBS] = " & Substitui(CStr(Round(ValorTotalIBS, 2)), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total IBS
+   vgDb.Execute "Update Orçamento Set [Valor Total CBS] = " & Substitui(CStr(Round(ValorTotalCBS, 2)), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento 'Valor Total CBS
    vgDb.CommitTrans
    
    Produtos_do_Orcamento.Requery
@@ -14167,6 +14478,22 @@ Public Sub RecalculaConjuntos(Optional ByVal ForcarRecalculo As Boolean = False)
             Tributos = Round(Tributos + ![Valor Do Cofins], 2)
             Tributos = Round(Tributos + ![Valor ICMS ST], 2)
             ![Valor Do Tributo] = Round(Tributos, 2)
+            
+            ' === CÁLCULO IBS E CBS (RTC - Reforma Tributária) ===
+            Dim vrAdicionalIBS_Conj As Double
+            Dim ValorOperacional_Conj As Double
+            Dim Valor_IBS_Conj As Double, Valor_CBS_Conj As Double
+            Dim freteConj As Double, descConj As Double
+            
+            ' Pegar frete e desconto do ITEM
+            If IsNull(![Valor Do Frete]) Then freteConj = 0 Else freteConj = CDbl(![Valor Do Frete])
+            If IsNull(![Valor Do Desconto]) Then descConj = 0 Else descConj = CDbl(![Valor Do Desconto])
+            
+            ValorOperacional_Conj = Round(!Quantidade * Round(![Valor Unitário], 2) + freteConj - descConj, 2)
+            Valor_IBS_Conj = CalculaImposto(![Seqüência do Conjunto], Orcamento![Seqüência Do Geral], 16, 2, ValorOperacional_Conj, vrAdicionalIBS_Conj, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+            Valor_CBS_Conj = CalculaImposto(![Seqüência do Conjunto], Orcamento![Seqüência Do Geral], 17, 2, ValorOperacional_Conj, vrAdicionalIBS_Conj, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+            
+            vgDb.Execute "UPDATE [Conjuntos do Orçamento] SET [Valor IBS] = " & Substitui(CStr(Valor_IBS_Conj), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(Valor_CBS_Conj), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência Conjunto Orçamento] = " & ![Seqüência Conjunto Orçamento]
 
             .Update
             .BookMark = .LastModified
@@ -14496,6 +14823,21 @@ Public Sub RecalculaPecas(Optional ByVal ForcarRecalculo As Boolean = False)
             Tributos = Round(Tributos + ![Valor ICMS ST], 2)
             ![Valor Do Tributo] = Round(Tributos, 2) 'Tributos
             
+            ' === CÁLCULO IBS E CBS (RTC - Reforma Tributária) ===
+            Dim vrAdicionalIBS_Peca As Double
+            Dim ValorOperacional_Peca As Double
+            Dim Valor_IBS_Peca As Double, Valor_CBS_Peca As Double
+            Dim fretePeca As Double, descPeca As Double
+            
+            ' Pegar frete e desconto do ITEM
+            If IsNull(![Valor Do Frete]) Then fretePeca = 0 Else fretePeca = CDbl(![Valor Do Frete])
+            If IsNull(![Valor Do Desconto]) Then descPeca = 0 Else descPeca = CDbl(![Valor Do Desconto])
+            
+            ValorOperacional_Peca = Round(!Quantidade * Round(![Valor Unitário], 2) + fretePeca - descPeca, 2)
+            Valor_IBS_Peca = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 16, 3, ValorOperacional_Peca, vrAdicionalIBS_Peca, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+            Valor_CBS_Peca = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 17, 3, ValorOperacional_Peca, vrAdicionalIBS_Peca, Orcamento![Seqüência da Propriedade], PegaNCMPadrao())
+            
+            vgDb.Execute "UPDATE [Peças do Orçamento] SET [Valor IBS] = " & Substitui(CStr(Valor_IBS_Peca), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(Valor_CBS_Peca), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência Peças do Orçamento] = " & ![Seqüência Peças do Orçamento]
             
             .Update
             .BookMark = .LastModified
@@ -14530,23 +14872,23 @@ Private Sub RecalculaProdutos(Optional ByVal ForcarRecalculo As Boolean = False)
    '   - Frete total no orçamento
    '
    ' IMPOSTOS CALCULADOS POR CalculaImposto (IRRIG.BAS):
-   '   ? CFOP (código 1)
-   '   ? CST (código 5)
-   '   ? Percentual Redução BC (código 2)
-   '   ? Alíquota ICMS (código 3)
-   '   ? Alíquota IPI (código 4)
-   '   ? Base Cálculo ICMS (código 6)
-   '   ? Valor ICMS (código 7)
-   '   ? Valor IPI (código 8)
-   '   ? Diferido (código 9)
-   '   ? IVA (código 12)
-   '   ? Base Cálculo ST (código 13)
-   '   ? Valor ICMS ST (código 14)
-   '   ? Alíquota ICMS ST (código 15)
+   '   • CFOP (código 1)
+   '   • CST (código 5)
+   '   • Percentual Redução BC (código 2)
+   '   • Alíquota ICMS (código 3)
+   '   • Alíquota IPI (código 4)
+   '   • Base Cálculo ICMS (código 6)
+   '   • Valor ICMS (código 7)
+   '   • Valor IPI (código 8)
+   '   • Diferido (código 9)
+   '   • IVA (código 12)
+   '   • Base Cálculo ST (código 13)
+   '   • Valor ICMS ST (código 14)
+   '   • Alíquota ICMS ST (código 15)
    '
    ' IMPOSTOS CALCULADOS MANUALMENTE (lógica específica):
-   '   ? PIS - Com redução de 48.1% para NCMs específicos
-   '   ? COFINS - Com redução de 48.1% para NCMs específicos
+   '   • PIS - Com redução de 48.1% para NCMs específicos
+   '   • COFINS - Com redução de 48.1% para NCMs específicos
    ' ============================================================================
    
    Dim Tributos As Double, ValorFrete As Double, ValorSeguro As Double, ValorAcresDesc As Double
@@ -14905,6 +15247,23 @@ Private Sub RecalculaProdutos(Optional ByVal ForcarRecalculo As Boolean = False)
             ![Valor ICMS ST] = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 14, 1, (!Quantidade * ![Valor Unitário]), ValorAcresDesc, Orcamento![Seqüência da Propriedade], , , MunicipioAux!UF, ValorFrete)
                Tributos = Tributos + ![Valor ICMS ST]
             ![Valor Do Tributo] = Round((Tributos), 2) 'Tributos
+            
+            ' === CÁLCULO IBS E CBS (RTC - Reforma Tributária) - COM DESCONTO/FRETE ===
+            Dim vrAdicionalIBS_Prod1 As Double
+            Dim ValorOperacional_Prod1 As Double
+            Dim Valor_IBS_Prod1 As Double, Valor_CBS_Prod1 As Double
+            Dim freteProd1 As Double, descProd1 As Double
+            
+            ' Pegar frete e desconto do ITEM
+            If IsNull(![Valor Do Frete]) Then freteProd1 = 0 Else freteProd1 = CDbl(![Valor Do Frete])
+            If IsNull(![Valor Do Desconto]) Then descProd1 = 0 Else descProd1 = CDbl(![Valor Do Desconto])
+            
+            ValorOperacional_Prod1 = Round(!Quantidade * ![Valor Unitário] + freteProd1 - descProd1, 2)
+            Valor_IBS_Prod1 = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 16, 1, ValorOperacional_Prod1, vrAdicionalIBS_Prod1, Orcamento![Seqüência da Propriedade])
+            Valor_CBS_Prod1 = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 17, 1, ValorOperacional_Prod1, vrAdicionalIBS_Prod1, Orcamento![Seqüência da Propriedade])
+            
+            vgDb.Execute "UPDATE [Produtos do Orçamento] SET [Valor IBS] = " & Substitui(CStr(Valor_IBS_Prod1), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(Valor_CBS_Prod1), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência do Produto Orçamento] = " & ![Seqüência do Produto Orçamento]
+            
             .Update
             .BookMark = .LastModified
             .MoveNext
@@ -15009,6 +15368,18 @@ Private Sub RecalculaProdutos(Optional ByVal ForcarRecalculo As Boolean = False)
             ![Valor ICMS ST] = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 14, 1, (!Quantidade * ![Valor Unitário]), 0, Orcamento![Seqüência da Propriedade], , , MunicipioAux!UF)
                Tributos = Tributos + ![Valor ICMS ST]
                ![Valor Do Tributo] = Round(Tributos, 2) 'Tributos
+            
+            ' === CÁLCULO IBS E CBS (RTC - Reforma Tributária) - SEM DESCONTO/FRETE ===
+            Dim vrAdicionalIBS_Prod2 As Double
+            Dim ValorOperacional_Prod2 As Double
+            Dim Valor_IBS_Prod2 As Double, Valor_CBS_Prod2 As Double
+            
+            ValorOperacional_Prod2 = Round(!Quantidade * ![Valor Unitário], 2)
+            Valor_IBS_Prod2 = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 16, 1, ValorOperacional_Prod2, vrAdicionalIBS_Prod2, Orcamento![Seqüência da Propriedade])
+            Valor_CBS_Prod2 = CalculaImposto(![Seqüência do Produto], Orcamento![Seqüência Do Geral], 17, 1, ValorOperacional_Prod2, vrAdicionalIBS_Prod2, Orcamento![Seqüência da Propriedade])
+            
+            vgDb.Execute "UPDATE [Produtos do Orçamento] SET [Valor IBS] = " & Substitui(CStr(Valor_IBS_Prod2), ",", ".", SO_UM) & ", [Valor CBS] = " & Substitui(CStr(Valor_CBS_Prod2), ",", ".", SO_UM) & " WHERE [Seqüência do Orçamento] = " & Sequencia_do_Orcamento & " AND [Seqüência do Produto Orçamento] = " & ![Seqüência do Produto Orçamento]
+            
             .Update
             .BookMark = .LastModified
             .MoveNext
@@ -15048,6 +15419,7 @@ Private Sub RecalculaProdutos(Optional ByVal ForcarRecalculo As Boolean = False)
       
       Loop
       GrdProdutos.ReBind 'Atualiza do Grid
+      TotalizaOrcamento  'Atualiza totais do orçamento após recalcular produtos
       Reposition True    'Atualiza o Formulário
    End If
 SaiDaSub:
@@ -15234,7 +15606,7 @@ DeuErro:
 
 End Sub
 
-Private Sub PreValidaNFE()
+Private Sub PreValidaNFe()
     Dim Itens     As New GRecordSet
     Dim Servicos  As New GRecordSet
     Dim Vector()  As String
@@ -15462,10 +15834,20 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
    On Error Resume Next                           'prepara para possíveis erros
    If (vgTb.RecordCount > 0 And vgTb.EOF = False And vgTb.BOF = False) Or vgComOQue = COM_TEXTBOX Then
       If vgComOQue = COM_TEXTBOX Then
-         Cancelado = IIf(vgSituacao = ACAO_INCLUINDO, False, vgTb!Cancelado)
-         Data_da_Alteracao = IIf(vgSituacao = ACAO_INCLUINDO, Null, vgTb![Data da Alteração])
-         Hora_da_Alteracao = IIf(vgSituacao = ACAO_INCLUINDO, Null, vgTb![Hora da Alteração])
-         Usuario_da_Alteracao = IIf(vgSituacao = ACAO_INCLUINDO, "", vgTb![Usuário da Alteração])
+         ' =============================================================
+         ' COM_TEXTBOX: Lê valores dos CONTROLES VISUAIS para apelidos
+         ' Campos sem controle visual MANTÊM o valor atual do apelido
+         ' (que foi definido por COM_REGISTRO quando o registro foi carregado)
+         ' =============================================================
+         
+         ' Campos que SÓ existem no banco (sem controle visual):
+         ' Cancelado, Data_da_Alteracao, Hora_da_Alteracao, Usuario_da_Alteracao
+         ' Sequencia_do_Pedido, Valor_Total_do_Tributo, Valor_Total_do_PIS
+         ' Valor_Total_do_COFINS, Valor_Total_do_IBS, Valor_Total_do_CBS
+         ' Gerou_Encargos, Pressao_bomba, Sequencia_do_Projeto
+         ' --> Não alteramos esses apelidos aqui, pois já foram carregados
+         
+         ' Campos lidos de CONTROLES VISUAIS:
          Venda_Fechada = chkCampo(6).Value
          Valor_Total_IPI_das_Pecas = txtCampo(39).Value
          Valor_Total_das_Pecas = txtCampo(44).Value
@@ -15492,7 +15874,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Fax = txtCampo(12).Value
          Email = txtCampo(16).Value
          Sequencia_do_Vendedor = txtCampo(33).Value
-         Sequencia_do_Pedido = IIf(vgSituacao = ACAO_INCLUINDO, 0, vgTb![Seqüência Do Pedido])
+         ' Sequencia_do_Pedido não tem controle visual - mantém valor atual
          Tipo = val(labopcPainel1.Caption)
          CPF_e_CNPJ = txtCampo(13).Value
          RG_e_IE = txtCampo(14).Value
@@ -15514,9 +15896,14 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Data_do_Fechamento = txtCampo(50).Value
          Codigo_do_Suframa = txtCampo(51).Value
          Revenda = chkCampo(0).Value
-         Valor_Total_do_Tributo = IIf(vgSituacao = ACAO_INCLUINDO, 0, vgTb![Valor Total Do Tributo])
-         Valor_Total_do_PIS = IIf(vgSituacao = ACAO_INCLUINDO, 0, vgTb![Valor Total Do PIS])
-         Valor_Total_do_COFINS = IIf(vgSituacao = ACAO_INCLUINDO, 0, vgTb![Valor Total Do COFINS])
+         ' Valor_Total_do_Tributo, PIS, COFINS não têm controle visual - mantém valor atual
+         ' Valor_Total_do_IBS e CBS lidos dos controles visuais
+         On Error Resume Next
+         Valor_Total_do_IBS = txtCampo(162).Value
+         If IsEmpty(Valor_Total_do_IBS) Or Err.Number <> 0 Then Valor_Total_do_IBS = 0: Err.Clear
+         Valor_Total_do_CBS = txtCampo(163).Value
+         If IsEmpty(Valor_Total_do_CBS) Or Err.Number <> 0 Then Valor_Total_do_CBS = 0: Err.Clear
+         On Error Resume Next
          Valor_Total_da_Base_ST = txtCampo(52).Value
          Valor_Total_do_ICMS_ST = txtCampo(53).Value
          Aliquota_do_ISS = txtCampo(54).Value
@@ -15539,7 +15926,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          
          Edicao_Manual_Impostos = chkCampo(12).Value
          
-         Gerou_Encargos = IIf(vgSituacao = ACAO_INCLUINDO, False, vgTb![Gerou Encargos])
+         ' Gerou_Encargos não tem controle visual - mantém valor atual
          Peso_Bruto = txtCampo(143).Value
          Peso_Liquido = txtCampo(144).Value
          Volumes = txtCampo(145).Value
@@ -15572,7 +15959,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Tamanho_bomba = txtCampo(118).Value
          N_estagios = txtCampo(119).Value
          Diametro_bomba = txtCampo(120).Value
-         Pressao_bomba = IIf(vgSituacao = ACAO_INCLUINDO, 0, vgTb![Pressao bomba])
+         ' Pressao_bomba não tem controle visual - mantém valor atual
          Rendimento_bomba = txtCampo(123).Value
          Rotacao_bomba = txtCampo(124).Value
          Qtde_de_Motor = txtCampo(126).Value
@@ -15589,7 +15976,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Tubos = txtCampo(142).Value
          Projetista = txtCampo(137).Value
          Entrega_Tecnica = txtCampo(147).Value
-         Sequencia_do_Projeto = IIf(vgSituacao = ACAO_INCLUINDO, 0, vgTb![Sequencia do Projeto])
+         ' Sequencia_do_Projeto não tem controle visual - mantém valor atual
          Outras_Despesas = txtCampo(148).Value
          Refaturamento = chkCampo(10).Value
          Data_do_Pedido = txtCampo(149).Value
@@ -15598,6 +15985,9 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Orcamento_Vinculado = txtCampo(161).Value
          frete = txtCampo(151).Value
       Else
+         ' =============================================================
+         ' COM_REGISTRO: Lê valores do RECORDSET (vgTb) para apelidos
+         ' =============================================================
          On Error Resume Next
          Dim i As Integer
          If Not vgTb Is Nothing Then
@@ -15610,6 +16000,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          End If
          On Error GoTo 0
          
+         On Error Resume Next ' Protege leitura de campos
          Cancelado = IIf(IsNull(vgTb!Cancelado), 0, vgTb!Cancelado)
          Data_da_Alteracao = vgTb![Data da Alteração]
          Hora_da_Alteracao = vgTb![Hora da Alteração]
@@ -15665,6 +16056,13 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Valor_Total_do_Tributo = IIf(IsNull(vgTb![Valor Total Do Tributo]), 0, vgTb![Valor Total Do Tributo])
          Valor_Total_do_PIS = IIf(IsNull(vgTb![Valor Total Do PIS]), 0, vgTb![Valor Total Do PIS])
          Valor_Total_do_COFINS = IIf(IsNull(vgTb![Valor Total Do COFINS]), 0, vgTb![Valor Total Do COFINS])
+         Valor_Total_do_IBS = 0
+         On Error Resume Next
+         Valor_Total_do_IBS = IIf(IsNull(vgTb![Valor Total IBS]), 0, vgTb![Valor Total IBS])
+         If Err.Number <> 0 Then Valor_Total_do_IBS = 0: Err.Clear
+         Valor_Total_do_CBS = 0
+         Valor_Total_do_CBS = IIf(IsNull(vgTb![Valor Total CBS]), 0, vgTb![Valor Total CBS])
+         If Err.Number <> 0 Then Valor_Total_do_CBS = 0: Err.Clear
          Valor_Total_da_Base_ST = IIf(IsNull(vgTb![Valor Total da Base ST]), 0, vgTb![Valor Total da Base ST])
          Valor_Total_do_ICMS_ST = IIf(IsNull(vgTb![Valor Total Do ICMS ST]), 0, vgTb![Valor Total Do ICMS ST])
          Aliquota_do_ISS = IIf(IsNull(vgTb![Alíquota Do ISS]), 0, vgTb![Alíquota Do ISS])
@@ -15699,6 +16097,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          End If
          On Error GoTo 0
          
+         On Error Resume Next ' Protege resto da leitura de campos
          Gerou_Encargos = IIf(IsNull(vgTb![Gerou Encargos]), 0, vgTb![Gerou Encargos])
          Peso_Bruto = IIf(IsNull(vgTb![Peso Bruto]), 0, vgTb![Peso Bruto])
          Peso_Liquido = IIf(IsNull(vgTb![Peso Líquido]), 0, vgTb![Peso Líquido])
@@ -15794,13 +16193,14 @@ End Sub
 
 'executa processos/validacoes nos campos do arquivo
 Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As String
-   Dim i As Integer, vgRsError As GRecordSet, vgMsg As String, vgOk As Integer, vgPV As Boolean, vgNVez As Integer, vgInd As Integer
+   Dim i As Integer, vgRsError As GRecordSet, vgMsg As String, vgOk As Integer, vgPV As Boolean, vgNVez As Integer, vgInd As Integer, ehSeqInterno As Boolean, dbgCtx As String
    On Error GoTo DeuErro                          'fica na espera de um erro...
    vgMsg$ = ""                                    'retorna uma msg dizendo o motivo
    vgOk = True                                    'se a validação esta OK
    vgPV = vgPriVez
    vgColumn = -1
    vgNVez = 0                                     'porque não fez o processo/validacoes
+   dbgCtx = ""
    If vgOq = VALIDACOES Then
       InicializaApelidos COM_TEXTBOX
       vgOk = ((IIf(vgPWUsuario <> "YGOR" And vgPWUsuario <> "JUCELI" And vgPWUsuario <> "MAYSA", Data_de_Emissao = Date, Not Vazio(Data_de_Emissao))) And (IsDate(Data_de_Emissao) Or Vazio(Data_de_Emissao)))
@@ -16063,7 +16463,7 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          chkCampo(3).Value = False
          txtCampo(73).Value = "SETORIAL"
          txtCampo(77).Value = 100
-                  txtCampo(149).Value = Date
+         txtCampo(149).Value = Date
          chkCampo(4).Value = True
          chkCampo(5).Value = False
          chkCampo(6).Value = False
@@ -16076,7 +16476,7 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          chkCampo(10).Value = False
          chkCampo(11).Value = IIf(Me.Caption = "Ordem de Produção Interna", 1, 0)
          chkCampo(12).Value = False
-                  On Error GoTo DeuErro
+         On Error GoTo DeuErro
          InicializaApelidos COM_TEXTBOX
          PoeRelEFiltroCbo 17
          PoeRelEFiltroCbo 33
@@ -16093,11 +16493,21 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          PoeRelEFiltroCbo 157
          PoeRelEFiltroCbo 161
       End If
+
+   ElseIf vgOq = INI_APELIDOS Then
+      On Error Resume Next
+      InicializaApelidos COM_REGISTRO
+      On Error GoTo DeuErro
+      ExecutaVisivel
+      ExecutaPreValidacao
+
    ElseIf vgOq = PEGA_DO_ARQUIVO Then
       If vgTb.RecordCount > 0 And vgTb.EOF = False And vgTb.BOF = False Then
          vgPriVez = True
+         On Error Resume Next
          vgTb.Resync 1             'adAffectCurrent
          InicializaApelidos COM_REGISTRO
+         On Error GoTo DeuErro
          PoeRelEFiltroCbo 17
          PoeRelEFiltroCbo 33
          PoeRelEFiltroCbo 34
@@ -16112,16 +16522,20 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          PoeRelEFiltroCbo 156
          PoeRelEFiltroCbo 157
          PoeRelEFiltroCbo 161
+         On Error Resume Next
          For i = 0 To UBound(txtCampo)
             If Len(txtCampo(i).DataField) > 0 Then
                txtCampo(i).SetOriginalValue = True
                txtCampo(i).Value = vgTb.Fields(txtCampo(i).DataField).Value
+               If Err.Number <> 0 Then Err.Clear
             End If
          Next
+         ' Proteger atribuicao de checkboxes/opcoes
+         On Error Resume Next
          chkCampo(0).Value = Revenda
          chkCampo(1).Value = e_Propriedade
-         opcPainel1(Tipo).Value = True
-         opcPainel2(Fechamento).Value = True
+         If Tipo >= 0 And Tipo <= 1 Then opcPainel1(Tipo).Value = True
+         If Fechamento >= 0 And Fechamento <= 1 Then opcPainel2(Fechamento).Value = True
          chkCampo(2).Value = Reter_ISS
          chkCampo(3).Value = Conjunto_Avulso
          chkCampo(4).Value = Ocultar_Valor_Unitario
@@ -16133,10 +16547,9 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          chkCampo(10).Value = Refaturamento
          chkCampo(11).Value = Ordem_Interna
          chkCampo(12).Value = Edicao_Manual_Impostos
-         
-         ' Controlar edição de impostos baseado no checkbox
+         If Err.Number <> 0 Then Err.Clear
+         On Error GoTo DeuErro
          Call ControlaEdicaoImpostos
-         
          If vgSituacao = ACAO_NAVEGANDO Then
             If Me.Name = mdiIRRIG.ActiveForm.Name Then
                If Not ActiveControl Is Nothing Then
@@ -16152,80 +16565,8 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          Executar INICIALIZACOES
       End If
       vgPriVez = False
-   ElseIf vgOq = TESTA_VAL_RS Then
-      vgTb.Resync 1         'adAffectCurrent
-      For i = 0 To UBound(txtCampo)
-         If Len(txtCampo(i).DataField) > 0 Then
-            If vgTb.Fields(txtCampo(i).DataField).Value <> txtCampo(i).OriginalValue Then
-               If Len(vgMsg$) = 0 Then
-                  vgMsg$ = Caption + "|" + CStr(3600 + Abs(vgEmBrowse)) + "|" + LoadGasString(122)
-               End If
-               If vgEmBrowse Then
-                  Exit For
-               Else
-                  vgPriVez = True
-                  txtCampo(i).SetOriginalValue = True
-                  txtCampo(i).Value = vgTb.Fields(txtCampo(i).DataField).Value
-                  vgPriVez = False
-               End If
-            End If
-         End If
-      Next
-   ElseIf vgOq = POE_NO_ARQUIVO Then
-      For i = 0 To UBound(txtCampo)
-         If Len(txtCampo(i).DataField) > 0 Then
-            If Not vgTb.Table.Columns(txtCampo(i).DataField).SeqInterno Then
-               If (txtCampo(i).Value & "" <> vgTb.Fields(txtCampo(i).DataField).Value & "") Or _
-                        (IsNull(txtCampo(i).Value) Xor IsNull(vgTb.Fields(txtCampo(i).DataField).Value)) Then    'se for diferente do conteúdo atual do RS
-                  vgTb.Fields(txtCampo(i).DataField).Value = txtCampo(i).Value
-               End If
-            End If
-         End If
-      Next
-      Cancelado = IIf(IsNull(vgTb!Cancelado), 0, vgTb!Cancelado)
-      Data_da_Alteracao = vgTb![Data da Alteração]
-      Hora_da_Alteracao = vgTb![Hora da Alteração]
-      Usuario_da_Alteracao = IIf(IsNull(vgTb![Usuário da Alteração]), "", vgTb![Usuário da Alteração])
-      InicializaApelidos COM_TEXTBOX
-      vgTb![Venda Fechada] = Venda_Fechada
-      vgTb!Fechamento = Fechamento
-      Sequencia_do_Pedido = IIf(IsNull(vgTb![Seqüência Do Pedido]), 0, vgTb![Seqüência Do Pedido])
-      vgTb!Tipo = Tipo
-      vgTb![Ocultar Valor Unitário] = Ocultar_Valor_Unitario
-      vgTb![É Propriedade] = e_Propriedade
-      vgTb!Revenda = Revenda
-      Valor_Total_do_Tributo = IIf(IsNull(vgTb![Valor Total Do Tributo]), 0, vgTb![Valor Total Do Tributo])
-      Valor_Total_do_PIS = IIf(IsNull(vgTb![Valor Total Do PIS]), 0, vgTb![Valor Total Do PIS])
-      Valor_Total_do_COFINS = IIf(IsNull(vgTb![Valor Total Do COFINS]), 0, vgTb![Valor Total Do COFINS])
-      vgTb![Reter ISS] = Reter_ISS
-      vgTb![Fatura Proforma] = Fatura_Proforma
-      vgTb![Entrega Futura] = Entrega_Futura
-      vgTb![Orçamento Avulso] = Orcamento_Avulso
-      vgTb![Conjunto Avulso] = Conjunto_Avulso
-      vgTb![Nao Movimentar Estoque] = Nao_Movimentar_Estoque
-      
-      
-      On Error Resume Next
-      ' Acesso direto ao RecordSet ADO subjacente para evitar erro 91
-      If Not vgTb.RecordSet Is Nothing Then
-         vgTb.RecordSet.Fields("Edição Manual Impostos").Value = Edicao_Manual_Impostos
-      End If
-      If Err.Number <> 0 Then
-         Err.Clear
-      Else
-      End If
-      On Error GoTo 0
-      
-      Gerou_Encargos = IIf(IsNull(vgTb![Gerou Encargos]), 0, vgTb![Gerou Encargos])
-      Pressao_bomba = IIf(IsNull(vgTb![Pressao bomba]), 0, vgTb![Pressao bomba])
-      Sequencia_do_Projeto = IIf(IsNull(vgTb![Sequencia do Projeto]), 0, vgTb![Sequencia do Projeto])
-      vgTb!Refaturamento = Refaturamento
-      vgTb![Ordem Interna] = Ordem_Interna
-   ElseIf vgOq = INI_APELIDOS Then
-      InicializaApelidos COM_REGISTRO
-      ExecutaVisivel
-      ExecutaPreValidacao
-   ElseIf vgOq = PODE_ALTERAR Then
+
+ElseIf vgOq = PODE_ALTERAR Then
       vgOk = (vgSituacao = ACAO_INCLUINDO Or vgAlterar)
       For i = 0 To UBound(txtCampo)
          If Len(txtCampo(i).DataField) > 0 Then
@@ -16262,9 +16603,117 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
       opcPainel2(vgInd).Value = True
       opcPainel2(vgInd).Locked = Not (vgOk And opcPainel2(vgInd).Editable)
       ExecutaPreValidacao
-   ElseIf vgOq = APOS_EDICAO Then
+   ElseIf vgOq = POE_NO_ARQUIVO Then
+      Debug.Print ">>> POE_NO_ARQUIVO: INICIO"
+      dbgCtx = "POE_NO_ARQUIVO start"
+      Debug.Print ">>> POE_NO_ARQUIVO: Iniciando loop txtCampo, UBound=" & UBound(txtCampo)
+      For i = 0 To UBound(txtCampo)
+         If Len(txtCampo(i).DataField) > 0 Then
+            Debug.Print ">>> POE_NO_ARQUIVO: txtCampo(" & i & ").DataField=" & txtCampo(i).DataField
+            dbgCtx = "POE_NO_ARQUIVO idx=" & i & " field=" & txtCampo(i).DataField
+            
+            ' Verifica se o campo existe na tabela antes de acessar (como no NOTAFISC.FRM)
+            On Error Resume Next
+            Dim coluna As Object
+            Set coluna = vgTb.Table.Columns(txtCampo(i).DataField)
+            If Err.Number <> 0 Then
+               Debug.Print ">>> POE_NO_ARQUIVO: AVISO - Campo nao existe na tabela: " & txtCampo(i).DataField
+               Err.Clear
+               Set coluna = Nothing
+            End If
+            On Error GoTo DeuErro
+            
+            If Not coluna Is Nothing Then
+               If Not coluna.SeqInterno Then
+                  If (txtCampo(i).Value & "" <> vgTb.Fields(txtCampo(i).DataField).Value & "") Or _
+                           (IsNull(txtCampo(i).Value) Xor IsNull(vgTb.Fields(txtCampo(i).DataField).Value)) Then    'se for diferente do conteudo atual do RS
+                     Debug.Print ">>> POE_NO_ARQUIVO: Atualizando campo " & txtCampo(i).DataField
+                     vgTb.Fields(txtCampo(i).DataField).Value = txtCampo(i).Value
+                  End If
+               End If
+            End If
+            Set coluna = Nothing
+         End If
+      Next
+      Debug.Print ">>> POE_NO_ARQUIVO: Loop txtCampo concluido"
+      dbgCtx = "POE_NO_ARQUIVO after loop"
+      
+      ' Proteger leitura/gravacao de campos especificos
+      On Error Resume Next
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Cancelado"
+      Cancelado = IIf(IsNull(vgTb!Cancelado), 0, vgTb!Cancelado)
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Data_da_Alteracao"
+      Data_da_Alteracao = vgTb![Data da Alteração]
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Hora_da_Alteracao"
+      Hora_da_Alteracao = vgTb![Hora da Alteração]
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Usuario_da_Alteracao"
+      Usuario_da_Alteracao = IIf(IsNull(vgTb![Usuário da Alteração]), "", vgTb![Usuário da Alteração])
+      Debug.Print ">>> POE_NO_ARQUIVO: Chamando InicializaApelidos COM_TEXTBOX"
+      InicializaApelidos COM_TEXTBOX
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Venda_Fechada"
+      vgTb![Venda Fechada] = Venda_Fechada
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Fechamento"
+      vgTb!Fechamento = Fechamento
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Sequencia_do_Pedido"
+      Sequencia_do_Pedido = IIf(IsNull(vgTb![Seqüência Do Pedido]), 0, vgTb![Seqüência Do Pedido])
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Tipo"
+      vgTb!Tipo = Tipo
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Ocultar_Valor_Unitario"
+      vgTb![Ocultar Valor Unitário] = Ocultar_Valor_Unitario
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando e_Propriedade"
+      vgTb![É Propriedade] = e_Propriedade
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Revenda"
+      vgTb!Revenda = Revenda
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Valor_Total_do_Tributo"
+      Valor_Total_do_Tributo = IIf(IsNull(vgTb![Valor Total Do Tributo]), 0, vgTb![Valor Total Do Tributo])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Valor_Total_do_PIS"
+      Valor_Total_do_PIS = IIf(IsNull(vgTb![Valor Total Do PIS]), 0, vgTb![Valor Total Do PIS])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Valor_Total_do_COFINS"
+      Valor_Total_do_COFINS = IIf(IsNull(vgTb![Valor Total Do COFINS]), 0, vgTb![Valor Total Do COFINS])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo IBS/CBS"
+      Valor_Total_do_IBS = 0
+      Valor_Total_do_CBS = 0
+      Valor_Total_do_IBS = IIf(IsNull(vgTb![Valor Total IBS]), 0, vgTb![Valor Total IBS])
+      If Err.Number <> 0 Then Valor_Total_do_IBS = 0: Err.Clear
+      Valor_Total_do_CBS = IIf(IsNull(vgTb![Valor Total CBS]), 0, vgTb![Valor Total CBS])
+      If Err.Number <> 0 Then Valor_Total_do_CBS = 0: Err.Clear
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Reter_ISS"
+      vgTb![Reter ISS] = Reter_ISS
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Fatura_Proforma"
+      vgTb![Fatura Proforma] = Fatura_Proforma
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Entrega_Futura"
+      vgTb![Entrega Futura] = Entrega_Futura
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Orcamento_Avulso"
+      vgTb![Orçamento Avulso] = Orcamento_Avulso
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Conjunto_Avulso"
+      vgTb![Conjunto Avulso] = Conjunto_Avulso
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Nao_Movimentar_Estoque"
+      vgTb![Nao Movimentar Estoque] = Nao_Movimentar_Estoque
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Edicao_Manual_Impostos"
+      If Not vgTb.RecordSet Is Nothing Then
+         vgTb.RecordSet.Fields("Edição Manual Impostos").Value = Edicao_Manual_Impostos
+      End If
+      If Err.Number <> 0 Then Err.Clear
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Gerou_Encargos"
+      Gerou_Encargos = IIf(IsNull(vgTb![Gerou Encargos]), 0, vgTb![Gerou Encargos])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Pressao_bomba"
+      Pressao_bomba = IIf(IsNull(vgTb![Pressao bomba]), 0, vgTb![Pressao bomba])
+      Debug.Print ">>> POE_NO_ARQUIVO: Lendo Sequencia_do_Projeto"
+      Sequencia_do_Projeto = IIf(IsNull(vgTb![Sequencia do Projeto]), 0, vgTb![Sequencia do Projeto])
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Refaturamento"
+      vgTb!Refaturamento = Refaturamento
+      Debug.Print ">>> POE_NO_ARQUIVO: Gravando Ordem_Interna"
+      vgTb![Ordem Interna] = Ordem_Interna
+      If Err.Number <> 0 Then
+         Debug.Print ">>> POE_NO_ARQUIVO: ERRO durante gravacao: " & Err.Number & " - " & Err.Description
+         Err.Clear
+      End If
       On Error GoTo DeuErro
+      Debug.Print ">>> POE_NO_ARQUIVO: CONCLUIDO com sucesso!"
+   ElseIf vgOq = APOS_EDICAO Then
+      On Error Resume Next
       InicializaApelidos COM_REGISTRO
+      On Error GoTo DeuErro
       
       ' RATEIO DE DESCONTO/FRETE: Executado ANTES de salvar
       ' Distribui desconto/frete proporcionalmente entre as peças
@@ -16305,7 +16754,9 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
          TotalizaOrcamento
       End If
    ElseIf vgOq = PROCESSOS_DIRETOS Then
+      On Error Resume Next
       InicializaApelidos COM_REGISTRO
+      On Error GoTo DeuErro
       vgTb.Edit
       Set vgRsError = vgTb
       If GeralAux![Seqüência Do Vendedor] > 0 Then
@@ -16315,14 +16766,16 @@ Public Function Executar(vgOq As String, Optional ByRef vgColumn As Integer) As 
       vgTb.Update
       Set vgRsError = Nothing
    ElseIf vgOq = PROCESSOS_INVERSOS Or vgOq = EXCLUSOES Then
-      On Error GoTo DeuErro
+      On Error Resume Next
       InicializaApelidos COM_REGISTRO
+      On Error GoTo DeuErro
    End If
    Executar = vgMsg$                              'prepara saida da função
    vgPriVez = vgPV
    Exit Function                                  'e cai fora...
 
 DeuErro:
+   Debug.Print "[IBS TRACE] Executar erro ctx=" & dbgCtx & " num=" & Err.Number & " desc=" & Err.Description
    Select Case Err                                'vamos verificar se deu algum erro
 
       Case -2147467259
@@ -16589,6 +17042,7 @@ Public Sub Reposition(Optional ForceRebind As Boolean, Optional LockGrids As Boo
    Exit Sub
    
 DeuErro:
+   ' Erro tratado silenciosamente
    
 End Sub
 
@@ -16907,7 +17361,7 @@ Private Sub ExecutaVisivel()
    Botao(16).Visible = (Ordem_Interna = True)
    Label(188).Visible = (Ordem_Interna = True)
    txtCampo(161).Visible = (Ordem_Interna = True)
-   Label(189).Visible = (Ordem_Interna = True)
+   Label(191).Visible = (Ordem_Interna = True)
    If Err Then Err.Clear                          'se houve erro, limpa...
 End Sub
 
@@ -17535,7 +17989,6 @@ End Sub
 Private Sub Form_Load()
    On Error GoTo DeuErro
    
-   
    Screen.MousePointer = vbHourglass
    Caption = LoadGasString(73350)
    vgFormID = 714
@@ -17653,7 +18106,7 @@ Private Sub Form_Load()
    Set lblOrcamento = Label(181)
    Set txtPropriedade = txtCampo(157)
    Set txtProjeto = txtCampo(160)
-   Set lblVinculo = Label(189)
+   Set lblVinculo = Label(191)
    Set vgTb = New GRecordSet
    If Len(vgFiltroInicial$) > 0 Then
       vgFiltroInicial$ = vgFiltroInicial$ + " And "
@@ -18030,6 +18483,8 @@ Private Sub Form_Load()
       .AddColumn Nothing, , "BC. Cofins", "Bc cofins", TP_NUMERICO, "999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1065
       .AddColumn Nothing, , "% Cofins", "Aliq do cofins", TP_NUMERICO, "99,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1020
       .AddColumn Nothing, , "Vr. COFINS", "Valor do Cofins", TP_NUMERICO, "999.999,9999", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1245
+      .AddColumn Nothing, , "Vr. IBS", "", TP_NUMERICO, "999.999,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1020
+      .AddColumn Nothing, , "Vr. CBS", "", TP_NUMERICO, "999.999,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1020
       .AddColumn Nothing, , "Vr. Tributo", "Valor do Tributo", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1305
    End With
    With Grid(1)
@@ -18073,6 +18528,8 @@ Private Sub Form_Load()
       .AddColumn Nothing, , "BC. Cofins", "Bc cofins", TP_NUMERICO, "999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1110
       .AddColumn Nothing, , "% Cofins", "Aliq do cofins", TP_NUMERICO, "99,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 900
       .AddColumn Nothing, , "Vr. COFINS", "Valor do Cofins", TP_NUMERICO, "999.999,9999", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1185
+      .AddColumn Nothing, , "Vr. IBS", "", TP_NUMERICO, "999.999,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1020
+      .AddColumn Nothing, , "Vr. CBS", "", TP_NUMERICO, "999.999,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1020
       .AddColumn Nothing, , "Vr. Tributo", "Valor do Tributo", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1305
    End With
    With Grid(2)
@@ -18135,6 +18592,8 @@ Private Sub Form_Load()
       .AddColumn Nothing, , "BC. Cofins", "Bc cofins", TP_NUMERICO, "999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1290
       .AddColumn Nothing, , "% Cofins", "Aliq do cofins", TP_NUMERICO, "99,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 855
       .AddColumn Nothing, , "Vr. COFINS", "Valor do Cofins", TP_NUMERICO, "999.999,9999", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1305
+      .AddColumn Nothing, , "Vr. IBS", "", TP_NUMERICO, "999.999,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1020
+      .AddColumn Nothing, , "Vr. CBS", "", TP_NUMERICO, "999.999,99", , True, , , , , , , , , , "0", , , , "0", 1, "0", 1020
       .AddColumn Nothing, , "Vr. Tributo", "Valor do Tributo", TP_NUMERICO, "99.999.999,99", , False, , , , , , , , , , "0", , , , "0", 1, "0", 1305
    End With
    With Grid(4)
@@ -18285,12 +18744,13 @@ End Sub
 
 Public Sub DefineControles()
  On Error GoTo DeuErro
+ 
  grdBrowse.AddControlIgnoreFocus mdiIRRIG.botCancela.hWnd           'não deixa o grid tentar gravar automaticamente
  grdBrowse.AddControlIgnoreFocus mdiIRRIG.botSalva.hWnd             'se estiver perdendo o foco para esses botões
    grdBrowse.AllowDelete = True
    grdBrowse.AllowEdit = vgAlterar
    grdBrowse.SpecialPopupDisabled POP_GRID_BARS
-
+   
    Set txtCampo(0).CtPri = txtCp(0)
    txtCampo(0).DataType = 1
    txtCampo(0).Mask = "999999"
@@ -18742,7 +19202,7 @@ DeuErro:
 End Sub
 Public Sub DefineControles1()
  On Error GoTo DeuErro
-
+   
    Set txtCampo(148).CtPri = txtCp(148)
    txtCampo(148).DataType = 1
    txtCampo(148).Mask = "9.999.999,99"
@@ -18765,6 +19225,27 @@ Public Sub DefineControles1()
    txtCampo(57).Relation = ""
    txtCampo(57).Source = ""
    grdBrowse.AddColumn vgDb.Tables(vgIdentTab).Columns(txtCampo(57).DataField), txtCampo(57)
+
+   ' Campos IBS/CBS
+   Set txtCampo(162).CtPri = txtCp(162)
+   txtCampo(162).DataType = 1
+   txtCampo(162).Mask = "99.999.999,99"
+   txtCampo(162).Editable = False
+   txtCampo(162).BoundColumn = ""
+   txtCampo(162).ListFields = ""
+   txtCampo(162).OrderFields = ""
+   txtCampo(162).Relation = ""
+   txtCampo(162).Source = ""
+
+   Set txtCampo(163).CtPri = txtCp(163)
+   txtCampo(163).DataType = 1
+   txtCampo(163).Mask = "99.999.999,99"
+   txtCampo(163).Editable = False
+   txtCampo(163).BoundColumn = ""
+   txtCampo(163).ListFields = ""
+   txtCampo(163).OrderFields = ""
+   txtCampo(163).Relation = ""
+   txtCampo(163).Source = ""
 
    Set txtCampo(155).CtPri = txtCp(155)
    txtCampo(155).DataType = 0
@@ -20844,6 +21325,8 @@ Private Sub Grid_ValidateData(Index As Integer, ByVal vgItem As Long, vgColumns(
    Dim ValorDigitado As Variant
    Dim ValorConvertido As Double
    Dim ControlaMensagemValorUnitario As Boolean
+   
+   Debug.Print "[ValidateData] CHAMADO - Index=" & Index & " vgColumn=" & vgColumn & " vgItem=" & vgItem
 
    ControlaMensagemValorUnitario = (Index = 0 Or Index = 1 Or Index = 3)
 
@@ -21047,6 +21530,7 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
    Dim Valor_do_Desconto As Double, Valor_do_Frete As Double, Valor_Anterior As Double
    Dim Bc_pis As Double, Aliq_do_pis As Single, Bc_cofins As Double
    Dim Aliq_do_cofins As Single
+   Dim Valor_IBS As Double, Valor_CBS As Double  ' RTC - Reforma Tributária
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
       vgRetVal = False
@@ -21083,6 +21567,50 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
          Case 10
             vgRetVal = (Quantidade * Valor_Unitario)
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
+         Case 28 'Vr. IBS - Coluna 28 do Grid de Conjuntos
+            ' Ler IBS diretamente do banco porque o recordset do grid pode não ter esse campo
+            On Error Resume Next
+            If Sequencia_Conjunto_Orcamento > 0 Then
+               Dim TbIBS_Conj As GRecordSet
+               Set TbIBS_Conj = vgDb.OpenRecordSet("SELECT [Valor IBS] FROM [Conjuntos do Orçamento] WHERE [Seqüência Conjunto Orçamento] = " & Sequencia_Conjunto_Orcamento)
+               If Not TbIBS_Conj Is Nothing Then
+                  If Not TbIBS_Conj.EOF Then
+                     vgRetVal = TbIBS_Conj![Valor IBS]
+                  Else
+                     vgRetVal = 0
+                  End If
+                  TbIBS_Conj.CloseRecordset
+                  Set TbIBS_Conj = Nothing
+               Else
+                  vgRetVal = 0
+               End If
+            Else
+               vgRetVal = 0
+            End If
+            On Error GoTo DeuErro
+            vgColumn = -1
+         Case 29 'Vr. CBS - Coluna 29 do Grid de Conjuntos
+            ' Ler CBS diretamente do banco porque o recordset do grid pode não ter esse campo
+            On Error Resume Next
+            If Sequencia_Conjunto_Orcamento > 0 Then
+               Dim TbCBS_Conj As GRecordSet
+               Set TbCBS_Conj = vgDb.OpenRecordSet("SELECT [Valor CBS] FROM [Conjuntos do Orçamento] WHERE [Seqüência Conjunto Orçamento] = " & Sequencia_Conjunto_Orcamento)
+               If Not TbCBS_Conj Is Nothing Then
+                  If Not TbCBS_Conj.EOF Then
+                     vgRetVal = TbCBS_Conj![Valor CBS]
+                  Else
+                     vgRetVal = 0
+                  End If
+                  TbCBS_Conj.CloseRecordset
+                  Set TbCBS_Conj = Nothing
+               Else
+                  vgRetVal = 0
+               End If
+            Else
+               vgRetVal = 0
+            End If
+            On Error GoTo DeuErro
+            vgColumn = -1
       End Select
       If Err Then Err.Clear
    ElseIf vgOq = PREVALIDACOES Then
@@ -21261,6 +21789,8 @@ IniApDaCol:
    Sequencia_Nova = val(Parse$(CStr(ColumnValue(1)), Chr$(1), 1))
    EstaEditandoGrid0 = (Grid(0).Status = ACAO_INCLUINDO Or Grid(0).Status = ACAO_EDITANDO)
    TrocaDetectada = EstaEditandoGrid0 And (Sequencia_Nova <> Seq_Conjunto_Anterior)
+   
+   Debug.Print "[IniApDaCol][Grid0] SeqNova=" & Sequencia_Nova & " SeqAnt=" & Seq_Conjunto_Anterior & " EstaEdit=" & EstaEditandoGrid0 & " TrocaDet=" & TrocaDetectada & " OrigemManual=" & Grid0_ValorUnitario_Pendente_OrigemManual
 
    If Seq_Conjunto_Anterior = 0 And Sequencia_Nova = 0 Then
       Grid0_ValorUnitario_Pendente = 0
@@ -21279,7 +21809,10 @@ IniApDaCol:
    Valor_Unitario = ColumnValue(7)
    TemValorEmEdicao = False
 
-   If TrocaDetectada And Sequencia_Nova > 0 Then
+   ' Quando TROCA de conjunto é detectada (selecionou conjunto diferente),
+   ' SEMPRE busca o preço do cadastro para definir o preço BASE/MÍNIMO
+   ' EXCETO se o usuário já editou manualmente o valor (OrigemManual = True)
+   If TrocaDetectada And Sequencia_Nova > 0 And Not Grid0_ValorUnitario_Pendente_OrigemManual Then
       If Edicao_Manual_Impostos Then
          NovoPrecoConj = InfoConjuntos(val(Parse$(CStr(ColumnValue(0)), Chr$(1), 1)), 0, Sequencia_Nova, _
                                       0, 0, 0, 0, 0, 0, 0, 0, False, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "Valor Unitário")
@@ -21291,7 +21824,7 @@ IniApDaCol:
       Valor_Unitario = NovoPrecoConj
       Grid0_ValorUnitario_Pendente = NovoPrecoConj
       Grid0_ValorUnitario_Pendente_Definido = True
-   Grid0_ValorUnitario_Pendente_OrigemManual = False
+      Grid0_ValorUnitario_Pendente_OrigemManual = False
 
       Debug.Print "[IniApDaCol][Grid0] TROCA DETECTADA - Valor Unitário calculado = " & Format$(NovoPrecoConj, "0.00")
 
@@ -21315,11 +21848,18 @@ TrataAtualizacaoSaida_Grid0:
          End If
       End If
       On Error GoTo DeuErro
+   ' IMPORTANTE: Atualizar Seq_Conjunto_Anterior ANTES do GoTo para evitar loop infinito
+   ' onde TrocaDetectada fica True eternamente e sobrescreve o valor editado pelo usuário
+   Seq_Conjunto_Anterior = Sequencia_Nova
    GoTo ContinuaIniApDaCol
 TrataAtualizacaoErro_Grid0:
    Debug.Print "[IniApDaCol][Grid0] ERRO ao forçar atualização visual: " & Err.Number & " - " & Err.Description
    Resume TrataAtualizacaoSaida_Grid0
    Else
+      ' Lê valor da coluna se disponível
+      ' IMPORTANTE: Se já temos um valor pendente definido pelo usuário, não deixar o Grid sobrescrever
+      ' com o valor do cadastro após refresh/repaint
+
       ValorEmEdicao = Null
       Err.Clear
       If UBound(ColumnValue) >= 7 Then
@@ -21334,10 +21874,25 @@ TrataAtualizacaoErro_Grid0:
          Err.Clear
          ValorConvertido = Round(CDbl(ValorEmEdicao), 2)
          If Err.Number = 0 Then
-            Valor_Unitario = ValorConvertido
-            Grid0_ValorUnitario_Pendente = ValorConvertido
-            Grid0_ValorUnitario_Pendente_Definido = True
-            TemValorEmEdicao = True
+            ' Se já temos um valor pendente definido E é diferente do que veio do Grid,
+            ' verificar se devemos manter o valor pendente (edição manual do usuário)
+            If Grid0_ValorUnitario_Pendente_Definido And ValorConvertido <> Grid0_ValorUnitario_Pendente Then
+               ' O Grid está tentando sobrescrever com um valor diferente
+               ' Se o valor pendente é o que o usuário digitou, mantê-lo
+               Debug.Print "[IniApDaCol][Grid0] Grid tentou sobrescrever: " & Format$(Grid0_ValorUnitario_Pendente, "#,##0.00") & " -> " & Format$(ValorConvertido, "#,##0.00") & " - IGNORANDO, mantendo valor pendente"
+               Valor_Unitario = Grid0_ValorUnitario_Pendente
+               ColumnValue(7) = Grid0_ValorUnitario_Pendente
+               TemValorEmEdicao = True
+            Else
+               ' Aceita o valor do Grid normalmente
+               If ValorConvertido <> Grid0_ValorUnitario_Pendente Then
+                  Debug.Print "[IniApDaCol][Grid0] Edição: " & Format$(Grid0_ValorUnitario_Pendente, "#,##0.00") & " -> " & Format$(ValorConvertido, "#,##0.00")
+               End If
+               Valor_Unitario = ValorConvertido
+               Grid0_ValorUnitario_Pendente = ValorConvertido
+               Grid0_ValorUnitario_Pendente_Definido = True
+               TemValorEmEdicao = True
+            End If
          Else
             Debug.Print "[IniApDaCol][Grid0] Falha ao converter ColumnValue(7)='" & ValorEmEdicao & "' -> Err=" & Err.Number & " - " & Err.Description
             Err.Clear
@@ -21403,6 +21958,7 @@ ContinuaIniApDaCol:
    Aliq_do_cofins = ColumnValue(26)
    Valor_do_Cofins = ColumnValue(27)
    Valor_do_Tributo = ColumnValue(28)
+   ' IBS e CBS são colunas somente leitura (índices 29 e 30), valores gravados via SQL
    If Grid(0).Status <> ACAO_INCLUINDO Then
       If Conjuntos_do_Orcamento.EOF = False And Conjuntos_do_Orcamento.BOF = False And Conjuntos_do_Orcamento.RecordCount > 0 Then
          Sequencia_Conjunto_Orcamento = Conjuntos_do_Orcamento![Seqüência Conjunto Orçamento]
@@ -21492,6 +22048,7 @@ Private Function ExecutaGrid1(ColumnValue() As Variant, ByVal vgOq As Integer, O
    Dim Bc_pis As Double, Aliq_do_pis As Single, Bc_cofins As Double
    Dim Aliq_do_cofins As Single
    Dim Peso As Double
+   Dim Valor_IBS As Double, Valor_CBS As Double  ' RTC - Reforma Tributária
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
       vgRetVal = False
@@ -21542,6 +22099,50 @@ Private Function ExecutaGrid1(ColumnValue() As Variant, ByVal vgOq As Integer, O
          Case 12
             vgRetVal = (Quantidade * Valor_Unitario)
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
+         Case 30 'Vr. IBS - Coluna 30 do Grid de Peças
+            ' Ler IBS diretamente do banco porque o recordset do grid pode não ter esse campo
+            On Error Resume Next
+            If Sequencia_Pecas_do_Orcamento > 0 Then
+               Dim TbIBS_Peca As GRecordSet
+               Set TbIBS_Peca = vgDb.OpenRecordSet("SELECT [Valor IBS] FROM [Peças do Orçamento] WHERE [Seqüência Peças do Orçamento] = " & Sequencia_Pecas_do_Orcamento)
+               If Not TbIBS_Peca Is Nothing Then
+                  If Not TbIBS_Peca.EOF Then
+                     vgRetVal = TbIBS_Peca![Valor IBS]
+                  Else
+                     vgRetVal = 0
+                  End If
+                  TbIBS_Peca.CloseRecordset
+                  Set TbIBS_Peca = Nothing
+               Else
+                  vgRetVal = 0
+               End If
+            Else
+               vgRetVal = 0
+            End If
+            On Error GoTo DeuErro
+            vgColumn = -1
+         Case 31 'Vr. CBS - Coluna 31 do Grid de Peças
+            ' Ler CBS diretamente do banco porque o recordset do grid pode não ter esse campo
+            On Error Resume Next
+            If Sequencia_Pecas_do_Orcamento > 0 Then
+               Dim TbCBS_Peca As GRecordSet
+               Set TbCBS_Peca = vgDb.OpenRecordSet("SELECT [Valor CBS] FROM [Peças do Orçamento] WHERE [Seqüência Peças do Orçamento] = " & Sequencia_Pecas_do_Orcamento)
+               If Not TbCBS_Peca Is Nothing Then
+                  If Not TbCBS_Peca.EOF Then
+                     vgRetVal = TbCBS_Peca![Valor CBS]
+                  Else
+                     vgRetVal = 0
+                  End If
+                  TbCBS_Peca.CloseRecordset
+                  Set TbCBS_Peca = Nothing
+               Else
+                  vgRetVal = 0
+               End If
+            Else
+               vgRetVal = 0
+            End If
+            On Error GoTo DeuErro
+            vgColumn = -1
       End Select
       If Err Then Err.Clear
    ElseIf vgOq = PREVALIDACOES Then
@@ -21738,6 +22339,8 @@ IniApDaCol:
    ' Detecta troca de item comparando com o tracker somente em modo de edição/inclusão
    TrocaDetectada = EstaEditandoGrid1 And (Sequencia_Nova <> Seq_Produto_Pecas_Anterior)
    
+   Debug.Print "[IniApDaCol][Grid1] SeqNova=" & Sequencia_Nova & " SeqAnt=" & Seq_Produto_Pecas_Anterior & " EstaEdit=" & EstaEditandoGrid1 & " TrocaDet=" & TrocaDetectada & " OrigemManual=" & Grid1_ValorUnitario_Pendente_OrigemManual
+   
    ' Se começou uma nova linha (Seq_Anterior = 0), limpa o valor unitário pendente
    If Seq_Produto_Pecas_Anterior = 0 And Sequencia_Nova = 0 Then
       Grid1_ValorUnitario_Pendente = 0
@@ -21757,7 +22360,8 @@ IniApDaCol:
    Quantidade = ColumnValue(6)
    
    ' Se detectou troca de item, busca o novo valor unitário
-   If TrocaDetectada And Sequencia_Nova > 0 Then
+   ' EXCETO se o usuário já editou manualmente o valor (OrigemManual = True)
+   If TrocaDetectada And Sequencia_Nova > 0 And Not Grid1_ValorUnitario_Pendente_OrigemManual Then
       If Edicao_Manual_Impostos Then
          NovoPreco = InfoPecas(0, Orcamento![Seqüência do Orçamento], Sequencia_Nova, _
                   0, 0, 0, 0, 0, 0, 0, 0, 0, False, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "Valor Unitário")
@@ -21769,9 +22373,9 @@ IniApDaCol:
       Valor_Unitario = NovoPreco
       Grid1_ValorUnitario_Pendente = NovoPreco
       Grid1_ValorUnitario_Pendente_Definido = True
-   Grid1_ValorUnitario_Pendente_OrigemManual = False
+      Grid1_ValorUnitario_Pendente_OrigemManual = False
       
-      Debug.Print "[IniApDaCol] TROCA DETECTADA - Valor Unitário calculado (peças)=" & NovoPreco
+      Debug.Print "[IniApDaCol][Grid1] TROCA DETECTADA - Valor Unitário calculado (peças)=" & NovoPreco
 
       ' Como coluna 9 está bound, só persistimos no recordset quando realmente estamos editando um registro existente
       If Grid(1).Status = ACAO_EDITANDO Then
@@ -21796,11 +22400,17 @@ TrataAtualizacaoSaida:
          End If
       End If
       On Error GoTo DeuErro
+   ' IMPORTANTE: Atualizar Seq_Produto_Pecas_Anterior ANTES do GoTo para evitar loop infinito
+   ' onde TrocaDetectada fica True eternamente e sobrescreve o valor editado pelo usuário
+   Seq_Produto_Pecas_Anterior = Sequencia_Nova
    GoTo ContinuaIniApDaCol
 TrataAtualizacaoErro:
-   Debug.Print "[IniApDaCol] ERRO ao forçar atualização visual: " & Err.Number & " - " & Err.Description
+   Debug.Print "[IniApDaCol][Grid1] ERRO ao forçar atualização visual: " & Err.Number & " - " & Err.Description
    Resume TrataAtualizacaoSaida
    Else
+      ' Lê valor da coluna se disponível
+      ' IMPORTANTE: Se já temos um valor pendente definido pelo usuário, não deixar o Grid sobrescrever
+      ' com o valor do cadastro após refresh/repaint
       Dim ValorEmEdicao As Variant
       Dim ValorConvertido As Double
       Dim TemValorEmEdicao As Boolean
@@ -21818,12 +22428,27 @@ TrataAtualizacaoErro:
          Err.Clear
          ValorConvertido = Round(CDbl(ValorEmEdicao), 2)
          If Err.Number = 0 Then
-            Valor_Unitario = ValorConvertido
-            Grid1_ValorUnitario_Pendente = ValorConvertido
-            Grid1_ValorUnitario_Pendente_Definido = True
-            TemValorEmEdicao = True
+            ' Se já temos um valor pendente definido E é diferente do que veio do Grid,
+            ' verificar se devemos manter o valor pendente (edição manual do usuário)
+            If Grid1_ValorUnitario_Pendente_Definido And ValorConvertido <> Grid1_ValorUnitario_Pendente Then
+               ' O Grid está tentando sobrescrever com um valor diferente
+               ' Se o valor pendente é o que o usuário digitou, mantê-lo
+               Debug.Print "[IniApDaCol][Grid1] Grid tentou sobrescrever: " & Format$(Grid1_ValorUnitario_Pendente, "#,##0.00") & " -> " & Format$(ValorConvertido, "#,##0.00") & " - IGNORANDO, mantendo valor pendente"
+               Valor_Unitario = Grid1_ValorUnitario_Pendente
+               ColumnValue(9) = Grid1_ValorUnitario_Pendente
+               TemValorEmEdicao = True
+            Else
+               ' Aceita o valor do Grid normalmente
+               If ValorConvertido <> Grid1_ValorUnitario_Pendente Then
+                  Debug.Print "[IniApDaCol][Grid1] Edição: " & Format$(Grid1_ValorUnitario_Pendente, "#,##0.00") & " -> " & Format$(ValorConvertido, "#,##0.00")
+               End If
+               Valor_Unitario = ValorConvertido
+               Grid1_ValorUnitario_Pendente = ValorConvertido
+               Grid1_ValorUnitario_Pendente_Definido = True
+               TemValorEmEdicao = True
+            End If
          Else
-            Debug.Print "[IniApDaCol] Falha ao converter ColumnValue(9)='" & ValorEmEdicao & "' -> Err=" & Err.Number & " - " & Err.Description
+            Debug.Print "[IniApDaCol][Grid1] Falha ao converter ColumnValue(9)='" & ValorEmEdicao & "' -> Err=" & Err.Number & " - " & Err.Description
             Err.Clear
          End If
       End If
@@ -21881,6 +22506,7 @@ ContinuaIniApDaCol:
    Aliq_do_cofins = ColumnValue(28)
    Valor_do_Cofins = ColumnValue(29)
    Valor_do_Tributo = ColumnValue(30)
+   ' IBS e CBS são colunas somente leitura (índices 31 e 32), valores gravados via SQL
    If Grid(1).Status <> ACAO_INCLUINDO Then
       If Pecas_do_Orcamento.EOF = False And Pecas_do_Orcamento.BOF = False And Pecas_do_Orcamento.RecordCount > 0 Then
          Valor_Total = Pecas_do_Orcamento![Valor Total]
@@ -21888,6 +22514,8 @@ ContinuaIniApDaCol:
          Valor_Anterior = Pecas_do_Orcamento![Valor Anterior]
       End If
    End If
+   
+   Debug.Print "[IniApDaCol][Grid1] Valor Unitário corrente = " & Format$(Valor_Unitario, "0.00")
    
    If Err Then Err.Clear
    On Error GoTo DeuErro
@@ -21969,7 +22597,7 @@ End Function
 'inicializações, validações e processos do grid filho
 Private Function ExecutaGrid2(ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Dim vgRetVal As Variant, vgRsError As GRecordSet, x As String, vgNVez As Integer
-   Dim descricao As String, Numero_da_Parcela As Integer, Dias As Integer
+   Dim Descricao As String, Numero_da_Parcela As Integer, Dias As Integer
    Dim Data_de_Vencimento As Variant, Valor_da_Parcela As Double, Descricao_da_Cobranca As String
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
@@ -22071,7 +22699,7 @@ IniApDaCol:
    Data_de_Vencimento = ColumnValue(3)
    Valor_da_Parcela = ColumnValue(4)
    Descricao_da_Cobranca = Parse$(CStr(ColumnValue(5)), Chr$(1), 1)
-   descricao = ColumnValue(6) & ""
+   Descricao = ColumnValue(6) & ""
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
@@ -22079,7 +22707,7 @@ IniApDaCol:
 IniApDaTb:
    On Error Resume Next
    If Parcelas_Orcamento.EOF = False And Parcelas_Orcamento.BOF = False And Parcelas_Orcamento.RecordCount > 0 Then
-      descricao = Parcelas_Orcamento!Descrição
+      Descricao = Parcelas_Orcamento!Descrição
       Numero_da_Parcela = Parcelas_Orcamento![Número da Parcela]
       Dias = Parcelas_Orcamento!Dias
       Data_de_Vencimento = Parcelas_Orcamento![Data de Vencimento]
@@ -22127,6 +22755,7 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
    Dim Valor_Anterior As Double, Bc_cofins As Double, Aliq_do_pis As Single
    Dim Aliq_do_cofins As Single
    Dim Peso As Double, PesoTotal As Double
+   Dim Valor_IBS As Double, Valor_CBS As Double  ' RTC - Reforma Tributária
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
       vgRetVal = False
@@ -22176,6 +22805,50 @@ Private Function ExecutaGrid3(ColumnValue() As Variant, ByVal vgOq As Integer, O
          Case 13
             vgRetVal = (Round((Quantidade * Valor_Unitario), 2))
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
+         Case 31 'Vr. IBS - Coluna 31 do Grid de Produtos
+            ' Ler IBS diretamente do banco porque o recordset do grid pode não ter esse campo
+            On Error Resume Next
+            If Sequencia_do_Produto_Orcamento > 0 Then
+               Dim TbIBS_Prod As GRecordSet
+               Set TbIBS_Prod = vgDb.OpenRecordSet("SELECT [Valor IBS] FROM [Produtos do Orçamento] WHERE [Seqüência do Produto Orçamento] = " & Sequencia_do_Produto_Orcamento)
+               If Not TbIBS_Prod Is Nothing Then
+                  If Not TbIBS_Prod.EOF Then
+                     vgRetVal = TbIBS_Prod![Valor IBS]
+                  Else
+                     vgRetVal = 0
+                  End If
+                  TbIBS_Prod.CloseRecordset
+                  Set TbIBS_Prod = Nothing
+               Else
+                  vgRetVal = 0
+               End If
+            Else
+               vgRetVal = 0
+            End If
+            On Error GoTo DeuErro
+            vgColumn = -1
+         Case 32 'Vr. CBS - Coluna 32 do Grid de Produtos
+            ' Ler CBS diretamente do banco porque o recordset do grid pode não ter esse campo
+            On Error Resume Next
+            If Sequencia_do_Produto_Orcamento > 0 Then
+               Dim TbCBS_Prod As GRecordSet
+               Set TbCBS_Prod = vgDb.OpenRecordSet("SELECT [Valor CBS] FROM [Produtos do Orçamento] WHERE [Seqüência do Produto Orçamento] = " & Sequencia_do_Produto_Orcamento)
+               If Not TbCBS_Prod Is Nothing Then
+                  If Not TbCBS_Prod.EOF Then
+                     vgRetVal = TbCBS_Prod![Valor CBS]
+                  Else
+                     vgRetVal = 0
+                  End If
+                  TbCBS_Prod.CloseRecordset
+                  Set TbCBS_Prod = Nothing
+               Else
+                  vgRetVal = 0
+               End If
+            Else
+               vgRetVal = 0
+            End If
+            On Error GoTo DeuErro
+            vgColumn = -1
       End Select
       If Err Then Err.Clear
    ElseIf vgOq = PREVALIDACOES Then
@@ -22344,12 +23017,23 @@ IniApDaCol:
 
    Sequencia_Nova = val(Parse$(CStr(ColumnValue(1)), Chr$(1), 1))
    EstaEditandoGrid3 = (Grid(3).Status = ACAO_INCLUINDO Or Grid(3).Status = ACAO_EDITANDO)
-   TrocaDetectada = EstaEditandoGrid3 And (Sequencia_Nova <> Seq_Produto_Anterior)
+   TrocaDetectada = EstaEditandoGrid3 And (Sequencia_Nova <> Seq_Produto_Anterior) And (Sequencia_Nova > 0)
+   
+   Debug.Print "[IniApDaCol][Grid3] SeqNova=" & Sequencia_Nova & " SeqAnt=" & Seq_Produto_Anterior & " EstaEdit=" & EstaEditandoGrid3 & " TrocaDet=" & TrocaDetectada & " OrigemManual=" & Grid3_ValorUnitario_Pendente_OrigemManual
 
+   ' Reset quando iniciando nova inclusão ou quando ambos são 0
    If Seq_Produto_Anterior = 0 And Sequencia_Nova = 0 Then
       Grid3_ValorUnitario_Pendente = 0
       Grid3_ValorUnitario_Pendente_Definido = False
       Grid3_ValorUnitario_Pendente_OrigemManual = False
+      Grid3_PrecoBaseCadastro = 0
+   End If
+   
+   ' Se está iniciando uma NOVA linha (status INCLUINDO e sequência anterior era 0)
+   ' reseta para permitir buscar do cadastro
+   If Grid(3).Status = ACAO_INCLUINDO And Seq_Produto_Anterior = 0 And Sequencia_Nova > 0 Then
+      Grid3_ValorUnitario_Pendente_OrigemManual = False
+      Grid3_PrecoBaseCadastro = 0
    End If
 
    If Not EstaEditandoGrid3 Then
@@ -22365,7 +23049,10 @@ IniApDaCol:
    Valor_Unitario = ColumnValue(10)
    TemValorEmEdicao = False
 
-   If TrocaDetectada And Sequencia_Nova > 0 Then
+   ' Quando TROCA de produto é detectada (selecionou produto diferente),
+   ' SEMPRE busca o preço do cadastro para definir o preço BASE/MÍNIMO
+   ' EXCETO se o usuário já editou manualmente o valor (OrigemManual = True)
+   If TrocaDetectada And Sequencia_Nova > 0 And Not Grid3_ValorUnitario_Pendente_OrigemManual Then
       If Edicao_Manual_Impostos Then
          NovoPrecoProd = InfoProdutos(Bc_pis, Valor_do_Tributo, Sequencia_do_Orcamento, Sequencia_do_Produto_Orcamento, Sequencia_do_Produto, Quantidade, _
    Valor_Unitario, Valor_Total, Valor_do_IPI, Valor_do_ICMS, Aliquota_do_IPI, Aliquota_do_ICMS, _
@@ -22379,11 +23066,25 @@ IniApDaCol:
    Base_de_Calculo_ST, Valor_ICMS_ST, CFOP, CST, Aliquota_do_ICMS_ST, Valor_do_Frete, _
    Valor_do_Desconto, Valor_Anterior, Bc_cofins, Aliq_do_pis, Aliq_do_cofins, Peso, PesoTotal, "Valor Unitário"), 2)
       End If
+      ' Fallback para buscar direto do cadastro quando InfoProdutos retornar 0
+      If NovoPrecoProd <= 0 Then
+         Dim rsPreco As GRecordSet
+         Set rsPreco = vgDb.OpenRecordSet("SELECT [Valor Total] FROM [Produtos] WHERE [Seqüência do Produto] = " & Sequencia_Nova)
+         If Not rsPreco Is Nothing Then
+            If Not rsPreco.EOF Then
+               If Not IsNull(rsPreco![Valor Total]) Then
+                  NovoPrecoProd = Round(CDbl(rsPreco![Valor Total]), 2)
+                  Debug.Print "[IniApDaCol][Grid3] Fallback direto: Valor Total cadastro=" & Format$(NovoPrecoProd, "0.00")
+               End If
+            End If
+            Set rsPreco = Nothing
+         End If
+      End If
       ColumnValue(10) = NovoPrecoProd
       Valor_Unitario = NovoPrecoProd
       Grid3_ValorUnitario_Pendente = NovoPrecoProd
       Grid3_ValorUnitario_Pendente_Definido = True
-   Grid3_ValorUnitario_Pendente_OrigemManual = False
+      Grid3_ValorUnitario_Pendente_OrigemManual = False
 
       Debug.Print "[IniApDaCol][Grid3] TROCA DETECTADA - Valor Unitário calculado = " & Format$(NovoPrecoProd, "0.00")
 
@@ -22407,71 +23108,89 @@ TrataAtualizacaoSaida_Grid3:
          End If
       End If
       On Error GoTo DeuErro
+   ' IMPORTANTE: Atualizar Seq_Produto_Anterior ANTES do GoTo para evitar loop infinito
+   ' onde TrocaDetectada fica True eternamente e sobrescreve o valor editado pelo usuário
+   Seq_Produto_Anterior = Sequencia_Nova
    GoTo ContinuaIniApDaCol_Grid3
 TrataAtualizacaoErro_Grid3:
    Debug.Print "[IniApDaCol][Grid3] ERRO ao forçar atualização visual: " & Err.Number & " - " & Err.Description
    Resume TrataAtualizacaoSaida_Grid3
    Else
+      ' Lê valor da coluna se disponível
+      ' IMPORTANTE: Se já temos um valor pendente definido pelo usuário, não deixar o Grid sobrescrever
+      ' com o valor do cadastro após refresh/repaint
+
+   ValorEmEdicao = Null
+   Err.Clear
+   If UBound(ColumnValue) >= 10 Then
+      ValorEmEdicao = ColumnValue(10)
+   End If
+   If Err.Number <> 0 Then
       ValorEmEdicao = Null
       Err.Clear
-      If UBound(ColumnValue) >= 10 Then
-         ValorEmEdicao = ColumnValue(10)
-      End If
-      If Err.Number <> 0 Then
-         ValorEmEdicao = Null
-         Err.Clear
-      End If
+   End If
 
-      If Not IsNull(ValorEmEdicao) And Not IsEmpty(ValorEmEdicao) Then
-         Err.Clear
-         ValorConvertido = Round(CDbl(ValorEmEdicao), 2)
-         If Err.Number = 0 Then
+   If Not IsNull(ValorEmEdicao) And Not IsEmpty(ValorEmEdicao) Then
+      Err.Clear
+      ValorConvertido = Round(CDbl(ValorEmEdicao), 2)
+      If Err.Number = 0 Then
+         ' Se já temos um valor pendente definido E é diferente do que veio do Grid,
+         ' verificar se devemos manter o valor pendente (edição manual do usuário)
+         If Grid3_ValorUnitario_Pendente_Definido And ValorConvertido <> Grid3_ValorUnitario_Pendente Then
+            ' O Grid está tentando sobrescrever com um valor diferente
+            ' Se o valor pendente é o que o usuário digitou, mantê-lo
+            Debug.Print "[IniApDaCol][Grid3] Grid tentou sobrescrever: " & Format$(Grid3_ValorUnitario_Pendente, "#,##0.00") & " -> " & Format$(ValorConvertido, "#,##0.00") & " - IGNORANDO, mantendo valor pendente"
+            Valor_Unitario = Grid3_ValorUnitario_Pendente
+            ColumnValue(10) = Grid3_ValorUnitario_Pendente
+            TemValorEmEdicao = True
+         Else
+            ' Aceita o valor do Grid normalmente
+            If ValorConvertido <> Grid3_ValorUnitario_Pendente Then
+               Debug.Print "[IniApDaCol][Grid3] Edição: " & Format$(Grid3_ValorUnitario_Pendente, "#,##0.00") & " -> " & Format$(ValorConvertido, "#,##0.00")
+            End If
             Valor_Unitario = ValorConvertido
             Grid3_ValorUnitario_Pendente = ValorConvertido
             Grid3_ValorUnitario_Pendente_Definido = True
             TemValorEmEdicao = True
-         Else
-            Debug.Print "[IniApDaCol][Grid3] Falha ao converter ColumnValue(10)='" & ValorEmEdicao & "' -> Err=" & Err.Number & " - " & Err.Description
-            Err.Clear
          End If
+      Else
+         Debug.Print "[IniApDaCol][Grid3] Falha ao converter ColumnValue(10)='" & ValorEmEdicao & "' -> Err=" & Err.Number & " - " & Err.Description
+         Err.Clear
       End If
+   End If
 
-      If Not TemValorEmEdicao Then
-         If Grid3_ValorUnitario_Pendente_Definido Then
-            Valor_Unitario = Grid3_ValorUnitario_Pendente
-         ElseIf Not Produtos_do_Orcamento Is Nothing Then
-            If Not Produtos_do_Orcamento.EOF And Not Produtos_do_Orcamento.BOF Then
-               If Not IsNull(Produtos_do_Orcamento![Valor Unitário]) Then
-                  Valor_Unitario = Round(CDbl(Produtos_do_Orcamento![Valor Unitário]), 2)
-                  Grid3_ValorUnitario_Pendente = Valor_Unitario
-                  Grid3_ValorUnitario_Pendente_Definido = True
-                  Grid3_ValorUnitario_Pendente_OrigemManual = False
-               Else
-                  Valor_Unitario = 0
-                  Grid3_ValorUnitario_Pendente = 0
-                  Grid3_ValorUnitario_Pendente_Definido = False
-                  Grid3_ValorUnitario_Pendente_OrigemManual = False
-               End If
+   If Not TemValorEmEdicao Then
+      If Grid3_ValorUnitario_Pendente_Definido Then
+         Valor_Unitario = Grid3_ValorUnitario_Pendente
+      ElseIf Not Produtos_do_Orcamento Is Nothing Then
+         If Not Produtos_do_Orcamento.EOF And Not Produtos_do_Orcamento.BOF Then
+            If Not IsNull(Produtos_do_Orcamento![Valor Unitário]) Then
+               Valor_Unitario = Round(CDbl(Produtos_do_Orcamento![Valor Unitário]), 2)
+               Grid3_ValorUnitario_Pendente = Valor_Unitario
+               Grid3_ValorUnitario_Pendente_Definido = True
             Else
                Valor_Unitario = 0
                Grid3_ValorUnitario_Pendente = 0
                Grid3_ValorUnitario_Pendente_Definido = False
-               Grid3_ValorUnitario_Pendente_OrigemManual = False
             End If
          Else
             Valor_Unitario = 0
             Grid3_ValorUnitario_Pendente = 0
             Grid3_ValorUnitario_Pendente_Definido = False
-            Grid3_ValorUnitario_Pendente_OrigemManual = False
          End If
+      Else
+         Valor_Unitario = 0
+         Grid3_ValorUnitario_Pendente = 0
+         Grid3_ValorUnitario_Pendente_Definido = False
       End If
-
       Valor_Unitario = Round(Valor_Unitario, 2)
       ColumnValue(10) = Valor_Unitario
    End If
 
    If EstaEditandoGrid3 Then
       Seq_Produto_Anterior = Sequencia_Nova
+   End If
+
    End If
 
 ContinuaIniApDaCol_Grid3:
@@ -22495,6 +23214,7 @@ ContinuaIniApDaCol_Grid3:
    Aliq_do_cofins = ColumnValue(29)
    Valor_do_Cofins = ColumnValue(30)
    Valor_do_Tributo = ColumnValue(31)
+   ' IBS e CBS são colunas somente leitura (índices 32 e 33), valores gravados via SQL
    If Grid(3).Status <> ACAO_INCLUINDO Then
       If Produtos_do_Orcamento.EOF = False And Produtos_do_Orcamento.BOF = False And Produtos_do_Orcamento.RecordCount > 0 Then
          Sequencia_do_Produto_Orcamento = Produtos_do_Orcamento![Seqüência do Produto Orçamento]
@@ -23037,7 +23757,7 @@ Private Sub Botao_Click(Index As Integer)
    If vgPriVez Then Exit Sub
    Select Case Index
       Case 0
-         PreValidaNFE
+         PreValidaNFe
       Case 1
          seqRegistro = Sequencia_do_Vendedor
          mdiIRRIG.MGeral
@@ -23285,6 +24005,9 @@ End Sub
 
 
 'testando form
+
+
+
 
 
 

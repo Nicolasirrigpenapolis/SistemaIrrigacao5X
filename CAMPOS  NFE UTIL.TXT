@@ -1,0 +1,1278 @@
+Function adi(_nAdicao As Long, _nSeqAdic As Long, _cFabricante As String, _vDescDI As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function adi310(nAdicao As Long, nSeqAdic As Long, cFabricante As String, vDescDI_Opc As Double, nDraw_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function arma(_tpArma As Long, _nSerie As String, _nCano As String, _descr As String) As String
+    Member of NFe_Util_2G.Util
+
+Function Assinar(XMLString As String, RefUri As String, NomeTitular As String, resultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+Function AssinarNFCe(NFe As String, nomeCertificado As String, idToken As String, Token As String, versaoQRCode As String, URLConsulta As String, indSinc As String, cStat As Long, msgResultado As String, lote As String, urlNFCe As String) As String
+    Member of NFe_Util_2G.Util
+
+Function AssinarNFCe400(NFe As String, nomeCertificado As String, idToken As String, Token As String, versaoQRCode As String, URLConsulta As String, urlChave As String, indSinc As String, cStat As Long, msgResultado As String, lote As String, urlNFCe As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function autXML(CNPJ As String, CPF As String) As String
+    Member of NFe_Util_2G.Util
+
+Function avulsa(_CNPJ As String, _xOrgao As String, _matr As String, _xAgente As String, _fone As String, _UF As String, _nDAR As String, _dEmi As Date, _vDAR As Double, _repEmi As String, _dPag As Date) As String
+    Member of NFe_Util_2G.Util
+
+
+Function BuscaGNRE(tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, nroRecibo As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+Function BuscaLote2G(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, cStat As Long, msgResultado As String, nroRecibo As String, cMsg As String, xMsg As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function BuscaLoteV3(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, cStat As Long, msgResultado As String, nroRecibo As String, cMsg As String, xMsg As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function BuscaNFe2G(siglaWS As String, tipoAmbiente As Long, NFeAssinada As String, nroRecibo As String, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, nroProtocolo As String, dhProtocolo As String, cMsg As String, xMsg As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function calcICMSUFDest(formaCalculo As Long, valorBase As Double, aliqDestino As Double, aliqInterestadual As Double, aliqFCP As Double, anoOperacao As Long, vBCUFDest As Double, pFCPUFDest As Double, pICMSUFDest As Double, pICMSInter As Double, pICMSInterPart As Double, vFCPUFDest As Double, vICMSUFDest As Double, vICMSUFRemet As Double, vBCOpeInter As Double, vICMSOpeInter As Double, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function calcICMSUFDest400(formaCalculo As Long, valorBase As Double, aliqDestino As Double, aliqInterestadual As Double, valorBaseFCP As Double, aliqFCP As Double, anoOperacao As Long, vBCUFDest As Double, pFCPUFDest As Double, pICMSUFDest As Double, pICMSInter As Double, pICMSInterPart As Double, vFCPUFDest As Double, vICMSUFDest As Double, vICMSUFRemet As Double, vBCOpeInter As Double, vICMSOpeInter As Double, cResultado As Long, msgResultado As String, vBCFCPUFDest As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function calcSha1(texto As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function cana(_safra As String, _ref As String, _forDias As String, _qTotMes As String, _qTotAnt As String, _qTotGer As String, _deducs As String, _vFor As Double, _vTotDed As Double, _vLiqFor As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function CancelaNF2G(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, nProtocolo As String, justificativa As String, nProtocoloCanc As String, dProtocoloCanc As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function CancelaNFEvento(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, nProtocolo As String, justificativa As String, dhEvento As String, nProtocoloCanc As String, dProtocoloCanc As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function CancelaNFSubst(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, nProtocolo As String, justificativa As String, dhEvento As String, verAplic As String, chaveNFeSubst As String, nProtocoloCanc As String, dProtocoloCanc As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function cancRegSaida(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, chaveNFe As String, nProt As String, xJust As String, dhRecbto As String, nProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As Long
+    Member of NFe_Util_2G.Util
+
+Function cobr(_nfat As String, _vOrig As Double, _vDesc As Double, _vLiq As Double, _dup As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function COFINS(_CST As String, _vBC As Double, _pCOFINS As Double, _vCOFINS As Double, _qBCProd As Double, _vAliqProd As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function COFINSST(_vBC As Double, _pCOFINS As Double, _vCOFINS As Double, _qBCProd As Double, _vAliqProd As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function COFINSSTNT2020005(vBC As Double, pCOFINS As Double, vCOFINS As Double, qBCProd As Double, vAliqProd As Double, indSomaCOFINSST As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+Function comb(_cProdANP As String, _CODIF As String, _qTemp As Double, _qBCProd As Double, _vAliqProd As Double, _vCIDE As Double, _vBCICMS As Double, _vICMS As Double, _vBCICMSST As Double, _vICMSST As Double, _vBCICMSSTDest As Double, _vICMSSTDest As Double, _vBCICMSSTCons As Double, _vICMSSTCons As Double, _UFCons As String) As String
+    Member of NFe_Util_2G.Util
+
+Function comb2G(_cProdANP As String, _CODIF As String, _qTemp As Double, _UFCons As String, _qBCProd As Double, _vAliqProd As Double, _vCIDE As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function comb310(cProdANP As String, pMixGN_Opc As Double, CODIF_Opc As String, qTemp_Opc As Double, UFCons As String, qBCProd_Opc As Double, vAliqProd_Opc As Double, vCIDE_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function comb400(cProdANP As String, descANP As String, pGLP_Opc As Double, pGNn_Opc As Double, pGNi_Opc As Double, vPart_Opc As Double, CODIF_Opc As String, qTemp_Opc As Double, UFCons As String, qBCProd_Opc As Double, vAliqProd_Opc As Double, vCIDE_Opc As Double, encerrante_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function combNT2015002(cProdANP As String, pMixGN_Opc As Double, CODIF_Opc As String, qTemp_Opc As Double, UFCons As String, qBCProd_Opc As Double, vAliqProd_Opc As Double, vCIDE_Opc As Double, encerrante_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function combNT2023001(cProdANP As String, descANP As String, pGLP_Opc As Double, pGNn_Opc As Double, pGNi_Opc As Double, vPart_Opc As Double, CODIF_Opc As String, qTemp_Opc As Double, UFCons As String, qBCProd_Opc As Double, vAliqProd_Opc As Double, vCIDE_Opc As Double, encerrante_Opc As String, pBio_Opc As Double, origComb_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function compra(_xNEmp As String, _xPed As String, _xCont As String) As String
+    Member of NFe_Util_2G.Util
+
+Function consChNFe(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, CNPJ As String, chaveNFe As String, verAplic As String, NSUXML As String, schemaXML As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function ConsGTIN(nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, GTIN As String, dhResp As String, tpGTIN As String, xProd As String, NCM As String, CEST1 As String, CEST2 As String, CEST3 As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function consNSU(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, CNPJ As String, cUF As String, NSU As String, verAplic As String, dhResp As String, ultNSU As String, maxNSU As String, NSUXML As String, schemaXML As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ConsultaCad2G(siglaUF As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, tpArgumento As String, argumento As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function ConsultaConfigGNRE(tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, UF As String, receita As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+Function ConsultaCT(siglaWS As String, siglaUF As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, chaveCTe As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+Function ConsultaDPEC(tipoAmbiente As Long, nomeCertificado As String, msgDados As String, msgRetWS As String, msgResultado As String, tpArgumento As String, argumento As String, DPEC As String, proxy As String, usuario As String, senha As String, licenca As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function ConsultaNF2G(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, chaveNFe As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function ConsultaNFDest(siglaWS As String, siglaUF As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, CNPJ As String, indNFe As Long, indEmi As Long, ultNSU As String, dhResp As String, indCont As Long, ultNSUConsultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ConsultaNFEvento(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, protNFe As String, eventoCanc As String, eventoCCe As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ConsultaStatus2G(siglaWS As String, siglaUF As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function ConverteArquivoBase64(nomeArquivo As String, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function CredPresumido(cCredPresumido As String, pCredPresumido As Double, vCredPresumido As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function CriaChaveNFe(cUF As String, ano As String, Mes As String, CNPJ As String, modelo As String, serie As String, numero As String, codigoSeguranca As String, msgResultado As String, cNF As String, cDV As String, chaveNFe As String) As Long
+    Member of NFe_Util_2G.Util
+
+Function CriaChaveNFe2G(cUF As String, ano As String, Mes As String, CNPJ As String, modelo As String, serie As String, numero As String, tpEmis As String, codigoSeguranca As String, msgResultado As String, cNF As String, cDV As String, chaveNFe As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+
+Function CriaCodigoBarrasContingencia(cUF As String, tipoEmissao As Long, CNPJ As String, valorTotalNFe As Double, destaqueICMSproprio As Long, destaqueICMSST As Long, dataEmissaoNFe As Date, codigoBarras As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function criaDPEC(_NFeLote As String, _resultado As Long, _msgResultado As String, _erroXML As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function CriaProcCancNFe2G(siglaWS As String, cancNFe As String, protocolo As String, retCancNFe As String, resultado As Long, nomeCertificado As String, msgResultado As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function CriaProcNFe(NFeAssinada As String, protocolo As String, resultado As Long, nomeCertificado As String, msgResultado As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function CriaProcNFe2G(siglaWS As String, NFeAssinada As String, protocolo As String, retCancNFe As String, resultado As Long, nomeCertificado As String, msgResultado As String, proxy As String, usuario As String, senha As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function CTeRef(_CTe As String) As String
+    Member of NFe_Util_2G.Util
+
+Function decodeBase64(txtBase64 As String, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function deduc(_xDed As String, _vDed As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function defensivo(nReceituario As String, CPFRespTec As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function destinatario(_CNPJ As String, _CPF As String, _xNome As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String, _CEP As String, _cPais As String, _xPais As String, _fone As String, _IE As String, _IESUF As String) As String
+    Member of NFe_Util_2G.Util
+
+Function destinatario2G(_CNPJ As String, _CPF As String, _xNome As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String, _CEP As String, _cPais As String, _xPais As String, _fone As String, _IE As String, _IESUF As String, _email As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function destinatario300(CNPJ As String, CPF As String, idEstrangeiro As String, xNome As String, xLgr As String, nro As String, xCpl As String, xBairro As String, cMun As String, xMun As String, UF As String, CEP As String, cPais As String, xPais As String, fone As String, IE As String, IESUF As String, eMail As String) As String
+    Member of NFe_Util_2G.Util
+
+Function destinatario310(CNPJ As String, CPF As String, idEstrangeiro As String, xNome As String, xLgr As String, nro As String, xCpl_Opc As String, xBairro As String, cMun As String, xMun As String, UF As String, CEP_Opc As String, cPais_Opc As String, xPais_Opc As String, fone_Opc As String, indIEDest As String, IE_Opc As String, IESUF_Opc As String, IM_Opc As String, eMail_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function detalhe(_nItem As Long, _produto As String, _imposto As String, _infAdProd As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function detalhe310(nItem As Long, produto As String, imposto As String, infAdProd_Opc As String, pDevol_Opc As Double, vIPIDevol_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function detalheNT2021004(nItem As Long, produto As String, imposto As String, infAdProd_Opc As String, pDevol_Opc As Double, vIPIDevol_Opc As Double, obsContItem_Opc As String, obsFiscoItem_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function detalheRTC(nItem As Long, produto As String, imposto As String, infAdProd_Opc As String, pDevol_Opc As Double, vIPIDevol_Opc As Double, obsContItem_Opc As String, obsFiscoItem_Opc As String, vItem_Opc As Double, DFeReferenciado_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function detExport(nDraw_Opc As String, nRE As String, chNFe As String, qExport As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function detPag(indPag_Opc As String, tPag As String, vPag As Double, tpIntegra_Opc As String, CNPJ_Opc As String, tBand_Opc As String, cAut_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function detPag202006(indPag_Opc As String, tPag As String, xPag_Opc As String, vPag As Double, tpIntegra_Opc As String, CNPJ_Opc As String, tBand_Opc As String, cAut_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function detPag2023004(indPag_Opc As String, tPag As String, xPag_Opc As String, vPag As Double, tpIntegra_Opc As String, CNPJ_Opc As String, tBand_Opc As String, cAut_Opc As String, dPag_Opc As String, CNPJPag_Opc As String, UFPag_Opc As String, CNPJReceb_Opc As String, idTermPag_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function detPagECONF(indPag_Opc As String, tPag As String, xPag_Opc As String, vPag As Double, dPag As String, CNPJPag_Opc As String, UFPag_Opc As String, CNPJIF_Opc As String, tBand_Opc As String, cAut_Opc As String, CNPJReceb_Opc As String, UFReceb_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function DFeReferenciado(chaveAcesso As String, nItem As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+Function DI(_nDI As String, _dDi As Date, _xLocDesemb As String, _UFDesemb As String, _dDesemb As Date, _cExportador As String, _adi As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function DI310(nDI As String, dDi As String, xLocDesemb As String, UFDesemb As String, dDesemb As String, tpViaTransp As Long, vAFRMM_Opc As Double, tpIntermedio As Long, CNPJ_Opc As String, UFTerceiro_Opc As String, cExportador As String, adi As String) As String
+    Member of NFe_Util_2G.Util
+
+Function distNSU(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, CNPJ As String, cUF As String, ultNSURecebido As String, verAplic As String, dhResp As String, ultNSU As String, maxNSU As String, qtdeDocto As Long, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function DownloadNFWeb(nomeCertificado As String, chaveNFe As String, CNPJ As String, resultado As Long, msgResultado As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function DownloadNFWS(siglaWS As String, siglaUF As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, CNPJDest As String, chaveNFe As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function dup(_nDup As String, _dVenc As Date, _vDup As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function ECFRef(_mod As String, _nECF As Long, _nCOO As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EliminaIdentacaoXML(txtXML As String, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function emitente(_CNPJ As String, _CPF As String, _xNome As String, _xFant As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String, _CEP As String, _cPais As String, _xPais As String, _fone As String, _IE As String, _IEST As String, _IM As String, _CNAE As String) As String
+    Member of NFe_Util_2G.Util
+
+Function emitente2G(_CNPJ As String, _CPF As String, _xNome As String, _xFant As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String, _CEP As String, _cPais As String, _xPais As String, _fone As String, _IE As String, _IEST As String, _IM As String, _CNAE As String, _CRT As String) As String
+    Member of NFe_Util_2G.Util
+
+Function encerrante(nBico As String, nBomba_Opc As String, nTanque As String, vEncIni As String, vEncFin As String) As String
+    Member of NFe_Util_2G.Util
+
+Function encodeBase64(nomeArquivo As String, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnvEmail(emailRemetente As String, nomeRemetente As String, emailDestinatario As String, emailBcc As String, assunto As String, mensagem As String, arquivos As String, smtpCliente As String, smtpPorta As String, smtpSSL As String, smtpUsuario As String, smtpSenha As String, HTML As String, confirmacao As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+Function EnvEmail2(emailRemetente As String, nomeRemetente As String, emailDestinatario As String, emailBcc As String, assunto As String, mensagem As String, arquivos As String, smtpCliente As String, smtpPorta As String, smtpSSL As String, smtpUsuario As String, smtpSenha As String, HTML As String, confirmacao As String, msgResultado As String, timeout As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaAtorInter(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, CNPJAutor As String, dhEvento As String, cOrgaoAutor As String, tpAutor As Long, verAplic As String, CNPJCPFAutorizado As String, tpAutorizacao As Long, nroSeqEvento As Long, nroProtocolo As String, dhProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function EnviaCancCENFe(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, dhEvento As String, nroCancCE As Long, verAplic As String, nProtEvento As String, nProtocolo As String, dProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function EnviaCancECONF(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, nProtEvento As String, dhEvento As String, nSeqEvento As Long, verAplic As String, nProtocolo As String, dProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaCancIENFe(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, CNPJAutor As String, chaveNFe As String, dhEvento As String, nSeqCancIENFe As Long, verAplic As String, nProtEvento As String, nProtocolo As String, dProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaCancPedProrrog(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, tpEvento As String, idPedidoCancelado As String, nProt As String, textoAcentuado As Long, nroSeq As Long, dataEvento As String, nroProtocolo As String, dhProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaCCe2G(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, textoCorrecao As String, textoAcentuado As Long, nroCCe As Long, dataCorrecao As String, nroProtocolo As String, dhProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaCENFE(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, dhEvento As String, nroCENFe As Long, verAplic As String, dhEntrega As String, nDoc As String, xNome As String, latGPS As Double, longGPS As Double, hashComprovante As String, dhHashComprovante As String, nProtocolo As String, dProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaCLe(tipoAmbiente As Long, nomeCertificado As String, msgCabec As String, msgDados As String, msgRetWS As String, msgResultado As String, chvCLe As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+
+Function EnviaDPEC(DPEC As String, nomeCertificado As String, DPECAssinado As String, msgRetWS As String, msgResultado As String, dhRegDPEC As String, nRegDPEC As String, proxy As String, usuario As String, senha As String, licenca As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+
+Function EnviaECONF(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, detPag As String, dhEvento As String, nSeqEvento As Long, verAplic As String, nProtocolo As String, dProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaEPEC(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, resultado As Long, msgResultado As String, XMLNFe As String, dhEvento As String, nProtocoloEPEC As String, dProtocoloEPEC As String, listaChNFe As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaGNRE(tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, nroRecibo As String, dhRecibo As String, tEstProc As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaIENFe(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, CNPJAutor As String, chaveNFe As String, dhEvento As String, nSeqIENFe As Long, verAplic As String, dhTentativaEntrega As String, nTentativa As Long, tpMotivo As Long, xJustMotivo As String, latGPS As Double, longGPS As Double, hashTentativaEntrega As String, dhHashTentativaEntrega As String, nProtocolo As String, dProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaLote2G(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, nRec As String, dhRecbto As String, tMed As String, proxy As String, usuario As String, senha As String, licenca As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaLoteV3(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, GZip As Long, msgRetWS As String, msgResultado As String, nRec As String, dhRecbto As String, tMed As String, proxy As String, usuario As String, senha As String, licenca As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+
+Function EnviaManDest(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, CNPJAutor As String, dhEvento As String, tpEvento As Long, xJust As String, nroProtocolo As String, dhProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function EnviaManDest2(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, CNPJAutor As String, dhEvento As String, tpEvento As Long, nSeqEvento As Long, xJust As String, nroProtocolo As String, dhProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaNFe2G(siglaWS As String, NFe As String, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, nroRecibo As String, dhRecbto As String, tMed As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function EnviaNFSincrono(siglaWS As String, NFe As String, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, nroProtocolo As String, dhProtocolo As String, NFAssinada As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaPedProrrog(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveNFe As String, nProt As String, itensPedido As String, tpEvento As String, textoAcentuado As Long, nroSeq As Long, dataEvento As String, nroProtocolo As String, dhProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function EnviaPrestDesacordo(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, chaveCTe As String, CNPJTomador As String, xObs As String, dhEvento As String, nProtocolo As String, dProtocolo As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function envRegSaida(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, msgResultado As String, chaveNFe As String, nSeqRegSaida As String, dtHrRegSaida As String, placaVeiculo_Opc As String, UFVeiculo_Opc As String, placaCarreta_Opc As String, UFCarreta_Opc As String, placaCarreta2_Opc As String, UFCarreta2_Opc As String, qtdVias_Opc As String, formSeg_Opc As String, dhRecbto As String, nProt As String, proxy As String, usuario As String, senha As String, licenca As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function ev110001_cancEvento(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, tpEventoAut As String, nProtEvento As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev112110_informaPagto(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function ev112120_ImpALCZFM(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gPerecimento As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev112130_perdaCIF(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gPerecimento As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev112140_naoOcFornPagAnt(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gPerecimento As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function ev112150_atualizaDataPrevEntrega(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, dPrevEntrega As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function ev211110_credPresumido(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gCredPres As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev211120_destConsumo(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gConsumo As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev211124_perdaFOB(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gPerecimento As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev211128_aceiteDebito(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, indAceitacao As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev211130_imobilizaItem(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gImobilizacao As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev211140_credCombustivel(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gConsumoComb As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev211150_credBensServicos(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, gCredito As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev212110_transCredIBS(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, indAceitacao As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ev212120_transCredCBS(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, tpAutor As Long, CNPJAutor As String, cOrgaoAutor As String, chaveNFe As String, dhEvento As String, nSeqEvento As Long, verAplic As String, indAceitacao As String, nProtocolo As String, dProtocolo As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function exporta(_UFEmbarq As String, _xLocEmbarq As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function exporta310(UFSaidaPais As String, xLocEmbarq As String, xLocDespacho_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function forDia(_dia As Long, _qtde As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function ftpDownload(servidorFTP As String, nomeArquivoRemoto As String, nomeArquivoLocal As String, usuario As String, senha As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+
+Function ftpUpload(servidorFTP As String, nomeArquivoRemoto As String, nomeArquivoLocal As String, usuario As String, senha As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+
+Function gAjusteCompet(competApur As String, vIBS As Double, vCBS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gCBS(pCBS As Double, pDif_Opc As Double, vDif_Opc As Double, vDevTrib_Opc As Double, pRedAliq_Opc As Double, pAliqEfet_Opc As Double, vCBS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gCBSCredPres(cCredPres As String, pCredPres As Double, vCredPres_Alt As Double, vCredPresCondSus_Alt As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gCBSTot(vDif As Double, vDevTrib As Double, vCBS As Double, vCredPres As Double, vCredPresCondSus As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gCompraGov(tpEnteGov As Long, pRedutor As Double, tpOperGov As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gConsumo(nItem As Long, vIBS As Double, vCBS As Double, qConsumo As Double, uConsumo As String, DFeRef As String, nItemDFeRef As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gConsumoComb(nItem As Long, vIBS As Double, vCBS As Double, qComb As Double, uComb As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gConsumoZFM(nItem As Long, vIBS As Double, vCBS As Double, qtde As Double, unidade As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gCredito(nItem As Long, vCredIBS As Double, vCredCBS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gCredPres(nItem As Long, vBC As Double, cCredPresIBS_Opc As String, pCredPresIBS_Opc As Double, vCredPresIBS_Opc As Double, cCredPresCBS_Opc As String, pCredPresCBS_Opc As Double, vCredPresCBS_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gCredPresIBSZFM(tpCredPresIBSZFM As Long, vCredPresIBSZFM As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gCredPresIBSZFMv130(competApur As String, tpCredPresIBSZFM As Long, vCredPresIBSZFM As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gCredPresOper(vBCCredPres As Double, cCredPres As String, pIBSCredPres_Opc As Double, vIBSCredPres_Opc As Double, vIBSCredPresCondSus_Opc As Double, pCBSCredPres_Opc As Double, vCBSCredPres_Opc As Double, vCBSCredPresCondSus_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function geraPdfDACTE(XML As String, logo As String, quadroRecibo As String, visualizar As String, parametros As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function geraPdfDANFE(_NFe As String, _origemDadosEmissor As String, _quadroRecibo As String, _quadroFatura As String, _quadroISSQN As String, _nroDPEC As String, _separadorItem As String, _nomePDF As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function geraQRCode(url As String, escala As Long, nomeArquivo As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function GeraStringCode128C(codigo As String, code128c As String, msgErro As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function geraUrlNFCe(idToken As String, Token As String, versaoQRCode As String, NFCe As String, url As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function gEstornoCred(vIBSEstCred As Double, vCBSEstCred As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gIBSCBS(vBC As Double, gIBSUF As String, gIBSMun As String, vIBS As Double, gCBS As String, gTribRegular_Opc As String, gIBSCredPres_Opc As String, gCBSCredPres_Opc As String, gTribCompraGov_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function gIBSCBSMono(qBCMono As Double, adRemIBS As Double, adRemCBS As Double, vIBSMono As Double, vCBSMono As Double, qBCMonoReten_Opc As Double, adRemIBSReten_Opc As Double, vIBSMonoReten_Opc As Double, adRemCBSReten_Opc As Double, vCBSMonoReten_Opc As Double, qBCMonoRet_Opc As Double, adRemIBSRet_Opc As Double, vIBSMonoRet_Opc As Double, adRemCBSRet_Opc As Double, vCBSMonoRet_Opc As Double, pDifIBS_Opc As Double, vIBSMonoDif_Opc As Double, pDifCBS_Opc As Double, vCBSMonoDif_Opc As Double, vTotIBSMonoItem As Double, vTotCBSMonoItem As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gIBSCBSv130(vBC As Double, gIBSUF As String, gIBSMun As String, vIBS As Double, gCBS As String, gTribRegular_Opc As String, gTribCompraGov_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gIBSCredPres(cCredPres As String, pCredPres As Double, vCredPres_Alt As Double, vCredPresCondSus_Alt As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function gIBSMun(pIBSMun As Double, pDif_Opc As Double, vDif_Opc As Double, vDevTrib_Opc As Double, pRedAliq_Opc As Double, pAliqEfet_Opc As Double, vIBSMun As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function gIBSTot(vDif_UF As Double, vDevTrib_UF As Double, vIBSUF As Double, vDif_Mun As Double, vDevTrib_Mun As Double, vIBSMun As Double, vIBS As Double, vCredPres As Double, vCredPresCondSus As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gIBSUF(pIBSUF As Double, pDif_Opc As Double, vDif_Opc As Double, vDevTrib_Opc As Double, pRedAliq_Opc As Double, pAliqEfet_Opc As Double, vIBSUF As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gImobilizacao(nItem As Long, vIBS As Double, vCBS As Double, qImobilizado As Double, uImobilizado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gItemNaoFornecido(nItem As Long, vIBS As Double, vCBS As Double, qNaoFornecida As Double, uNaoFornecida As String) As String
+    Member of NFe_Util_2G.Util
+
+Function gMonoTot(vIBSMono As Double, vCBSMono As Double, vIBSMonoReten As Double, vCBSMonoReten As Double, vIBSMonoRet As Double, vCBSMonoRet As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gPerecimento(nItem As Long, vIBS As Double, vCBS As Double, qPerecimento As Double, uPerecimento As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gPerecimentoCIF(nItem As Long, vIBS As Double, vCBS As Double, qPerecimento As Double, uPerecimento As String, vEstornoIBS As Double, vEstornoCBS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gTransfCred(vIBS As Double, vCBS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gTribCompraGov(pAliqIBSUF As Double, vTribIBSUF As Double, pAliqIBSMun As Double, vTribIBSMun As Double, pAliqCBS As Double, vTribCBS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function gTribRegular(CSTReg As String, cClassTribReg As String, pAliqEfetRegIBSUF As Double, vTribRegIBSUF As Double, pAliqEfetRegIBSMun As Double, vTribRegIBSMun As Double, pAliqEfetRegCBS As Double, vTribRegCBS As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function guiaTransito(tpGuia As Long, UFGuia_Opc As String, serieGuia_Opc As String, nGuia As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function IBSCBS(CST As String, cClassTrib As String, gTributo As String, gCredPresIBSZFM_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function IBSCBSTot(vBCIBSCBS As Double, gIBS_Opc As String, gCBS_Opc As String, gMono_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function IBSCBSTotv130(vBCIBSCBS As Double, gIBS_Opc As String, gCBS_Opc As String, gMono_Opc As String, gEstornoCred_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function IBSCBSv130(CST As String, cClassTrib As String, indDoacao_Opc As String, gTributo As String, gEstornoCred_Opc As String, gCredPresumido_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function icms(_orig As String, _CST As String, _modBC As Long, _pRedBC As Double, _vBC As Double, _pICMS As Double, _vICMS As Double, _modBCST As Long, _pMVAST As Double, _pRedBCST As Double, _vBCST As Double, _pICMSST As Double, _vICMSST As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function icms02(orig As String, qBCMono_Opc As Double, adRemICMS As Double, vICMSMono As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function icms15(orig As String, qBCMono_Opc As Double, adRemICMS As Double, vICMSMono As Double, qBCMonoReten_Opc As Double, adRemICMSReten As Double, vICMSMonoReten As Double, pRedAdRem_Opc As Double, motRedAdRem_Opc As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+Function icms2G(_orig As String, _CST As String, _modBC As Long, _pRedBC As Double, _vBC As Double, _pICMS As Double, _vICMS As Double, _modBCST As Long, _pMVAST As Double, _pRedBCST As Double, _vBCST As Double, _pICMSST As Double, _vICMSST As Double, _vBCSTRet As Double, _vICMSSRet As Double, _vBCSTDest As Double, _vICMSSTDest As Double, _motDesICMS As Long, _pBCOp As Double, _UFST As String, _pCredSN As Double, _vCredICMSSN As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function icms310(orig As String, CST As String, modBC As Long, pRedBC As Double, vBC As Double, pICMS As Double, vICMS As Double, modBCST As Long, pMVAST As Double, pRedBCST As Double, vBCST As Double, pICMSST As Double, vICMSST As Double, vBCSTRet As Double, vICMSSTRet As Double, vBCICMSSTDest As Double, vICMSSTDest As Double, motDesICMS As Long, pBCOp As Double, UFST As String, pCredSN As Double, vCredICMSSN As Double, vICMSDeson As Double, vICMSOp As Double, pDif As Double, vICMSDif As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function icms400(orig As String, CST As String, modBC As Long, pRedBC As Double, vBC As Double, pICMS As Double, vICMS As Double, modBCST As Long, pMVAST As Double, pRedBCST As Double, vBCST As Double, pICMSST As Double, vICMSST As Double, vBCSTRet As Double, vICMSSRet As Double, vBCSTDest As Double, vICMSSTDest As Double, motDesICMS As Long, pBCOp As Double, UFST As String, pCredSN As Double, vCredICMSSN As Double, vICMSDeson As Double, vICMSOp As Double, pDif As Double, vICMSDif As Double, vBCFCP As Double, pFCP As Double, vFCP As Double, vBCFCPST As Double, pFCPST As Double, vFCPST As Double, vBCFCPSTRet As Double, pFCPSTRet As Double, vFCPSTRet As Double, pST As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function icms400VFP(orig As String, CST As String, modBC As Long, pRedBC As Double, vBC As Double, pICMS As Double, vICMS As Double, modBCST As Long, pMVAST As Double, pRedBCST As Double, vBCST As Double, pICMSST As Double, vICMSST As Double, vBCSTRet As Double, vICMSSTRet As Double, vBCICMSSTDest As Double, vICMSSTDest As Double, motDesICMS As Long, pBCOp As Double, UFST As String, pCredSN As Double, vCredICMSSN As Double, vICMSDeson As Double, vICMSOp As Double, pDif As Double, vICMSDif As Double, camposV400 As String) As String
+    Member of NFe_Util_2G.Util
+
+Function icms53(orig As String, qBCMono_Opc As Double, adRemICMS_Opc As Double, vICMSMonoOp_Opc As Double, pDif_Opc As Double, vICMSMonoDif_Opc As Double, vICMSMono_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function icms61(orig As String, qBCMonoRet_Opc As Double, adRemICMSRet As Double, vICMSMonoRet As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function icmsEfet(orig As String, CST As String, vBCSTRet_Opc As Double, pST_Opc As Double, vICMSSTRet_Opc As Double, vBCFCPSTRet_Opc As Double, pFCPSTRet_Opc As Double, vFCPSTRet_Opc As Double, pRedBCEfet_Opc As Double, vBCEfet_Opc As Double, pICMSEfet_Opc As Double, vICMSEfet_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function icmsEfetNT201805(orig As String, CST As String, vBCSTRet As Double, pST As Double, vICMSSubstituto As Double, vICMSSTRet As Double, vBCFCPSTRet As Double, pFCPSTRet As Double, vFCPSTRet As Double, pRedBCEfet As Double, vBCEfet As Double, pICMSEfet As Double, vICMSEfet As Double, vBCSTDest As Double, vICMSSTDest As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function icmsNT2020005(orig As String, CST As String, modBC As Long, pRedBC As Double, vBC As Double, pICMS As Double, vICMS As Double, modBCST As Long, pMVAST As Double, pRedBCST As Double, vBCST As Double, pICMSST As Double, vICMSST As Double, vBCSTRet As Double, vICMSSRet As Double, vBCSTDest As Double, vICMSSTDest As Double, motDesICMS As Long, pBCOp As Double, UFST As String, pCredSN As Double, vCredICMSSN As Double, vICMSDeson As Double, vICMSOp As Double, pDif As Double, vICMSDif As Double, vBCFCP As Double, pFCP As Double, vFCP As Double, vBCFCPST As Double, pFCPST As Double, vFCPST As Double, vBCFCPSTRet As Double, pFCPSTRet As Double, vFCPSTRet As Double, pST As Double, pFCPDif As Double, vFCPDif As Double, vFCPEfet As Double, vICMSSTDeson As Double, motDesICMSST As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+Function icmsNT2023004(orig As String, CST As String, modBC As Long, pRedBC As Double, vBC As Double, pICMS As Double, vICMS As Double, modBCST As Long, pMVAST As Double, pRedBCST As Double, vBCST As Double, pICMSST As Double, vICMSST As Double, vBCSTRet As Double, vICMSSRet As Double, vBCSTDest As Double, vICMSSTDest As Double, motDesICMS As Long, pBCOp As Double, UFST As String, pCredSN As Double, vCredICMSSN As Double, vICMSDeson As Double, vICMSOp As Double, pDif As Double, vICMSDif As Double, vBCFCP As Double, pFCP As Double, vFCP As Double, vBCFCPST As Double, pFCPST As Double, vFCPST As Double, vBCFCPSTRet As Double, pFCPSTRet As Double, vFCPSTRet As Double, pST As Double, pFCPDif As Double, vFCPDif As Double, vFCPEfet As Double, vICMSSTDeson As Double, motDesICMSST As Long, indDeduzDeson As Long, cBenefRBC As String) As String
+    Member of NFe_Util_2G.Util
+
+Function ICMSUFDest(vBCUFDest As Double, pFCPUFDest As Double, pICMSUFDest As Double, pICMSInter As Double, pICMSInterPart As Double, vFCPUFDest As Double, vICMSUFDest As Double, vICMSUFRemet As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ICMSUFDest400(vBCUFDest As Double, vBCFCPUFDest_Opc As Double, pFCPUFDest_Opc As Double, pICMSUFDest As Double, pICMSInter As Double, pICMSInterPart As Double, vFCPUFDest_Opc As Double, vICMSUFDest As Double, vICMSUFRemet As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function IdentaXML(txtXML As String, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function identificador(_cUF As Long, _cNF As Long, _natOp As String, _indPag As Long, _mod As Long, _serie As Long, _nNF As Long, _dEmi As Date, _dSaiEnt As Date, _tpNF As Long, _cMunFG As String, _NFref As String, _tpImp As Long, _tpEmis As Long, _cDV As Long, _tpAmb As Long, _finNFe As Long, _procEmi As Long, _verProc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function identificador202006(cUF As Long, cNF As Long, natOp As String, mod As Long, serie As Long, nNF As Long, dhEmi As String, dhSaiEnt As String, tpNF As Long, idDest As Long, cMunFG As String, NFref_Opc As String, tpImp As Long, tpEmis As Long, cDV As Long, tpAmb As Long, finNFe As Long, indFinal As Long, indPres As Long, procEmi As Long, verProc As String, dhCont_Opc As String, xJust_Opc As String, indIntermed_Opc As Long) As String
+    Member of NFe_Util_2G.Util
+
+Function identificador2G(_cUF As Long, _cNF As Long, _natOp As String, _indPag As Long, _mod As Long, _serie As Long, _nNF As Long, _dEmi As Date, _dSaiEnt As Date, _hSaiEnt As String, _tpNF As Long, _cMunFG As String, _NFref As String, _tpImp As Long, _tpEmis As Long, _cDV As Long, _tpAmb As Long, _finNFe As Long, _procEmi As Long, _verProc As String, _dhCont As Date, _xJust As String) As String
+    Member of NFe_Util_2G.Util
+
+Function identificador300(cUF As Long, cNF As Long, natOp As String, indPag As Long, mod As Long, serie As Long, nNF As Long, dhEmi As String, dhSaiEnt As String, tpNF As Long, idDest As Long, cMunFG As String, NFref_Opc As String, tpImp As Long, tpEmis As Long, cDV As Long, tpAmb As Long, finNFe As Long, indFinal As Long, indPres As Long, procEmi As Long, verProc As String, dhCont_Opc As String, xJust_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function identificador400(cUF As Long, cNF As Long, natOp As String, mod As Long, serie As Long, nNF As Long, dhEmi As String, dhSaiEnt As String, tpNF As Long, idDest As Long, cMunFG As String, NFref_Opc As String, tpImp As Long, tpEmis As Long, cDV As Long, tpAmb As Long, finNFe As Long, indFinal As Long, indPres As Long, procEmi As Long, verProc As String, dhCont_Opc As String, xJust_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function identificadorRTC(cUF As Long, cNF As Long, natOp As String, mod As Long, serie As Long, nNF As Long, dhEmi As String, dhSaiEnt As String, tpNF As Long, idDest As Long, cMunFG As String, NFref_Opc As String, tpImp As Long, tpEmis As Long, cDV As Long, tpAmb As Long, finNFe As Long, indFinal As Long, indPres As Long, procEmi As Long, verProc As String, dhCont As String, xJust As String, indIntermed_Opc As Long, cMunFGIBS_Opc As String, tpNFDebito_Opc As String, tpNFCredito_Opc As String, gCompraGov_Opc As String, NFePagAntecipado_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function identificadorRTCv130(cUF As Long, cNF As Long, natOp As String, mod As Long, serie As Long, nNF As Long, dhEmi As String, dhSaiEnt As String, tpNF As Long, idDest As Long, cMunFG As String, NFref_Opc As String, tpImp As Long, tpEmis As Long, cDV As Long, tpAmb As Long, finNFe As Long, indFinal As Long, indPres As Long, procEmi As Long, verProc As String, dhCont As String, xJust As String, indIntermed_Opc As Long, cMunFGIBS_Opc As String, tpNFDebito_Opc As String, tpNFCredito_Opc As String, gCompraGov_Opc As String, NFePagAntecipado_Opc As String, dPrevEntrega_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function identificadorRTCVFP(cUF As Long, cNF As Long, natOp As String, mod As Long, serie As Long, nNF As Long, dhEmi As String, dhSaiEnt As String, tpNF As Long, idDest As Long, cMunFG As String, NFref_Opc As String, tpImp As Long, tpEmis As Long, cDV As Long, tpAmb As Long, finNFe As Long, indFinal As Long, indPres As Long, procEmi As Long, verProc As String, dhCont_Opc As String, xJust_Opc As String, indIntermed_Opc As Long, camposRTC_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function II(_vBC As Double, _vDespAdu As Double, _vII As Double, _vIOF As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function imposto(_icms As String, _ipi As String, _ii As String, _pis As String, _pisst As String, _cofins As String, _cofinsst As String, _issqn As String) As String
+    Member of NFe_Util_2G.Util
+
+Function imposto2G(_icms As String, _ipi As String, _ii As String, _pis As String, _pisst As String, _cofins As String, _cofinsst As String, _issqn As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function imposto2GNovo(_vTotTrib As Double, _icms As String, _ipi As String, _ii As String, _pis As String, _pisst As String, _cofins As String, _cofinsst As String, _issqn As String) As String
+    Member of NFe_Util_2G.Util
+
+Function imposto310(vTotTrib As Double, Grupo_Icms As String, Grupo_Ipi As String, Grupo_Ii As String, Grupo_Pis As String, Grupo_Pisst As String, Grupo_Cofins As String, Grupo_Cofinsst As String, Grupo_Issqn As String) As String
+    Member of NFe_Util_2G.Util
+
+Function impostoNT2015003(vTotTrib As Double, Grupo_Icms As String, Grupo_Ipi As String, Grupo_Ii As String, Grupo_Pis As String, Grupo_Pisst As String, Grupo_Cofins As String, Grupo_Cofinsst As String, Grupo_Issqn As String, Grupo_ICMSUFDest As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function impostoRTC(vTotTrib As Double, Grupo_Icms As String, Grupo_Ipi As String, Grupo_Ii As String, Grupo_Pis As String, Grupo_Pisst As String, Grupo_Cofins As String, Grupo_Cofinsst As String, Grupo_Issqn As String, Grupo_ICMSUFDest As String, Grupo_IS As String, Grupo_IBSCBS As String) As String
+    Member of NFe_Util_2G.Util
+
+Function infAdic(_infAdFisco As String, _infCpl As String, _obsCont As String, _obsFisco As String, _procRef As String) As String
+    Member of NFe_Util_2G.Util
+
+Function infAdic2G(_infAdFisco As String, _infCpl As String, _obsCont As String, _obsFisco As String, _procRef As String) As String
+    Member of NFe_Util_2G.Util
+
+Function infAdProd(_infAdProd As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function infIntermed(CNPJ As String, idCadIntTran As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function infRespTec(CNPJ As String, xContato As String, eMail As String, fone As String, idCSRT As String, CSRT_Opc As String, chaveNFe_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function InutilizaNroNF2G(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, cUF As String, ano As String, CNPJ As String, modelo As String, serie As String, nroNFeInicial As String, nroNFeFinal As String, justificativa As String, nProtocoloInut As String, dProtocoloInut As String, proxy As String, usuario As String, senha As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function InutilizaNroNF2G_xBase(siglaWS As String, tipoAmbiente As Long, nomeCertificado As String, Versao As String, msgDados As String, msgRetWS As String, cStat As Long, msgResultado As String, cUF As String, ano As String, CNPJ As String, modelo As String, serie As String, nroNFeInicial As String, nroNFeFinal As String, justificativa As String, nProtocoloInut As String, dProtocoloInut As String, proxy As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function IPI(_clEnq As String, _CNPJProd As String, _cSelo As String, _qSelo As Double, _cEnq As String, _CST As String, _vBC As Double, _pIPI As Double, _vIPI As Double, _qUnid As Double, _vUnid As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function IPI400(CNPJProd As String, cSelo As String, qSelo As Double, cEnq As String, CST As String, vBC As Double, pIPI As Double, vIPI As Double, qUnid As Double, vUnid As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function IS(CSTIS As String, cClassTribIS As String, vBCIS As Double, PIS As Double, pISEspec_Opc As Double, uTrib_Opc As String, qTrib_Opc As Double, vIS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function ISSQN(_vBC As Double, _vAliq As Double, _vISSQN As Double, _cMunFG As String, _cListServ As Long) As String
+    Member of NFe_Util_2G.Util
+
+Function ISSQN2G(_vBC As Double, _vAliq As Double, _vISSQN As Double, _cMunFG As String, _cListServ As Long, _cSitTrib As String) As String
+    Member of NFe_Util_2G.Util
+
+Function ISSQN310(vBC As Double, vAliq As Double, vISSQN As Double, cMunFG As String, cListServ As String, vDeducao_Opc As Double, vOutro_Opc As Double, vDescIncond_Opc As Double, vDescCond_Opc As Double, vISSRet_Opc As Double, indISS As String, cServico_Opc As String, cMun_Opc As String, cPais_Opc As String, nProcesso_Opc As String, indIncentivo As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function itemPedido(numItem As String, qtdeItem As String) As String
+    Member of NFe_Util_2G.Util
+
+Function lacres(_lacre As String) As String
+    Member of NFe_Util_2G.Util
+
+Function LeArquivoANSI(nomeArquivo As String, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+Function localEntrega(_CNPJ As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function localEntrega2G(_CNPJ As String, _CPF As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function localEntregaNT201805(CNPJ As String, CPF As String, xNome_Opc As String, xLgr As String, nro As String, xCpl_Opc As String, xBairro As String, cMun As String, xMun As String, UF As String, CEP_Opc As String, cPais_Opc As String, xPais_Opc As String, fone_Opc As String, eMail_Opc As String, IE_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function localRetirada(_CNPJ As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String) As String
+    Member of NFe_Util_2G.Util
+
+Function localRetirada2G(_CNPJ As String, _CPF As String, _xLgr As String, _nro As String, _xCpl As String, _xBairro As String, _cMun As String, _xMun As String, _UF As String) As String
+    Member of NFe_Util_2G.Util
+
+Function localRetiradaNT201805(CNPJ As String, CPF As String, xNome_Opc As String, xLgr As String, nro As String, xCpl_Opc As String, xBairro As String, cMun As String, xMun As String, UF As String, CEP_Opc As String, cPais_Opc As String, xPais_Opc As String, fone_Opc As String, eMail_Opc As String, IE_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function med(_nLote As String, _qLote As Double, _dFab As Date, _dVal As Date, _vPMC As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function med400(cProdANVISA As String, vPMC As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function medNT201805(cProdANVISA As String, xMotivoIsencao_Opc As String, vPMC As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function MontaLoteNFe(Versao As String, idLote As String, NFe As String, quantidadeNFe As Long, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+Function MontaProcNFe(Versao As String, enviNFe As String, retConsReciNFe As String, qtdeNFe As Long, qtdeProcNFe As Long, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function NFe(_versao As String, _Id As String, _ide As String, _emit As String, _avulsa As String, _dest As String, _retirada As String, _entrega As String, _detalhes As String, _total As String, _transp As String, _cobr As String, _infAdic As String, _exporta As String, _compra As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NFe201805(Versao As String, Id As String, ide As String, emit As String, avulsa_Opc As String, dest_Opc As String, retirada_Opc As String, entrega_Opc As String, detalhes As String, total As String, transp As String, cobr_Opc As String, pag_Opc As String, infAdic_Opc As String, exporta_Opc As String, compra_Opc As String, cana_Opc As String, autXML_Opc As String, infRespTec_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NFe202006(Versao As String, Id As String, ide As String, emit As String, avulsa_Opc As String, dest_Opc As String, retirada_Opc As String, entrega_Opc As String, detalhes As String, total As String, transp As String, cobr_Opc As String, pag_Opc As String, infAdic_Opc As String, exporta_Opc As String, compra_Opc As String, cana_Opc As String, autXML_Opc As String, infRespTec_Opc As String, infIntermed_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NFe2024003(Versao As String, Id As String, ide As String, emit As String, avulsa_Opc As String, dest_Opc As String, retirada_Opc As String, entrega_Opc As String, detalhes As String, total As String, transp As String, cobr_Opc As String, pag_Opc As String, infAdic_Opc As String, exporta_Opc As String, compra_Opc As String, cana_Opc As String, autXML_Opc As String, infRespTec_Opc As String, infIntermed_Opc As String, agropecuario_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NFe2G(_versao As String, _Id As String, _ide As String, _emit As String, _avulsa As String, _dest As String, _retirada As String, _entrega As String, _detalhes As String, _total As String, _transp As String, _cobr As String, _infAdic As String, _exporta As String, _compra As String, _cana As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NFe300(Versao As String, Id As String, ide As String, emit As String, avulsa_Opc As String, dest As String, retirada_Opc As String, entrega_Opc As String, detalhes As String, total As String, transp As String, cobr_Opc As String, pag_Opc As String, infAdic_Opc As String, exporta_Opc As String, compra_Opc As String, cana_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NFe310(Versao As String, Id As String, ide As String, emit As String, avulsa_Opc As String, dest_Opc As String, retirada_Opc As String, entrega_Opc As String, detalhes As String, total As String, transp As String, cobr_Opc As String, pag_Opc As String, infAdic_Opc As String, exporta_Opc As String, compra_Opc As String, cana_Opc As String, autXML_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function NFeRef(_NFe As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NFeSigRef(NFe As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function NFRef(_cUF As Long, _AAMM As String, _CNPJ As String, _mod As Long, _serie As Long, _nNF As Long) As String
+    Member of NFe_Util_2G.Util
+
+Function NFRefP(_cUF As Long, _AAMM As String, _CNPJ As String, _CPF As String, _IE As String, _mod As Long, _serie As Long, _nNF As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+Function nRECOPI(nRECOPI As String) As String
+    Member of NFe_Util_2G.Util
+
+Function NVE(NVE As String) As String
+    Member of NFe_Util_2G.Util
+
+Function obsCont(_xCampo As String, _xTexto As String) As String
+    Member of NFe_Util_2G.Util
+
+Function obsFisco(_xCampo As String, _xTexto As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function origComb(indImport As Long, cUFOrig As Long, pOrig As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function pagamento(tPag As String, vPag As Double, CNPJ_Opc As String, tBand_Opc As String, cAut_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function pagamento400(detPag As String, vTroco_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function pagamentoNT2015002(tPag As String, vPag As Double, CNPJ_Opc As String, tBand_Opc As String, cAut_Opc As String, tpIntegra_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function PegaDadosCertificado(Nome As String, msgResultado As String, Titular As String, CNPJ As String, NroSerie As String, Emissor As String, InicioValidade As String, FimValidade As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function PegaNomeCertificado(nomeCertificado As String, msgResultado As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function PegaProtNFe(retConsReciNFe As String, Versao As String, tpAmb As Long, verAplic As String, nRec As String, cStat As Long, xMotivo As String, cUF As Long, cMsg As Long, xMsg As String, qtdeProtNFe As Long, cResultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function PIS(_CST As String, _vBC As Double, _pPIS As Double, _vPIS As Double, _qBCProd As Double, _vAliqProd As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function PISST(_vBC As Double, _pPIS As Double, _vPIS As Double, _qBCProd As Double, _vAliqProd As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function PISSTNT2020005(vBC As Double, pPIS As Double, vPIS As Double, qBCProd As Double, vAliqProd As Double, indSomaPISST As Long) As String
+    Member of NFe_Util_2G.Util
+
+Function procRef(_nProc As String, _indProc As Long) As String
+    Member of NFe_Util_2G.Util
+
+Function procRefNT2021004(nProc As String, indProc As Long, tpAto_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function produto(_cProd As String, _cEAN As String, _xProd As String, _NCM As String, _EXTIPI As String, _genero As Long, _CFOP As Long, _uCom As String, _qCom As Double, _vUnCom As Double, _vProd As Double, _cEANTrib As String, _uTrib As String, _qTrib As Double, _vUnTrib As Double, _vFrete As Double, _vSeg As Double, _vDesc As Double, _DI As String, _DetEspecifico As String) As String
+    Member of NFe_Util_2G.Util
+
+Function produto2G(_cProd As String, _cEAN As String, _xProd As String, _NCM As String, _EXTIPI As String, _CFOP As Long, _uCom As String, _qCom As String, _vUnCom As String, _vProd As Double, _cEANTrib As String, _uTrib As String, _qTrib As String, _vUnTrib As String, _vFrete As Double, _vSeg As Double, _vDesc As Double, _vOutro As Double, _indTot As Long, _DI As String, _DetEspecifico As String, _xPed As String, _nItemPed As Long) As String
+    Member of NFe_Util_2G.Util
+
+
+Function produto2GFCI(_cProd As String, _cEAN As String, _xProd As String, _NCM As String, _EXTIPI As String, _CFOP As Long, _uCom As String, _qCom As String, _vUnCom As String, _vProd As Double, _cEANTrib As String, _uTrib As String, _qTrib As String, _vUnTrib As String, _vFrete As Double, _vSeg As Double, _vDesc As Double, _vOutro As Double, _indTot As Long, _DI As String, _DetEspecifico As String, _xPed As String, _nItemPed As String, _nFCI As String) As String
+    Member of NFe_Util_2G.Util
+
+Function produto2GItem(_cProd As String, _cEAN As String, _xProd As String, _NCM As String, _EXTIPI As String, _CFOP As Long, _uCom As String, _qCom As String, _vUnCom As String, _vProd As Double, _cEANTrib As String, _uTrib As String, _qTrib As String, _vUnTrib As String, _vFrete As Double, _vSeg As Double, _vDesc As Double, _vOutro As Double, _indTot As Long, _DI As String, _DetEspecifico As String, _xPed As String, _nItemPed As String) As String
+    Member of NFe_Util_2G.Util
+
+Function produto310(cProd As String, cEAN As String, xProd As String, NCM As String, NVE_Opc As String, EXTIPI_Opc As String, CFOP As Long, uCom As String, qCom As String, vUnCom As String, vProd As Double, cEANTrib As String, uTrib As String, qTrib As String, vUnTrib As String, vFrete As Double, vSeg As Double, vDesc As Double, vOutro As Double, indTot As Long, DI_Opc As String, detExport_Opc As String, DetEspecifico_Opc As String, xPed_Opc As String, nItemPed_Opc As String, nFCI_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function produto400(cProd As String, cEAN As String, xProd As String, NCM As String, NVE_Opc As String, CEST_Opc As String, indEscala_Opc As String, CNPJFab_Opc As String, cBenef_Opc As String, EXTIPI_Opc As String, CFOP As Long, uCom As String, qCom As String, vUnCom As String, vProd As Double, cEANTrib As String, uTrib As String, qTrib As String, vUnTrib As String, vFrete As Double, vSeg As Double, vDesc As Double, vOutro As Double, indTot As Long, DI_Opc As String, detExport_Opc As String, DetEspecifico_Opc As String, xPed_Opc As String, nItemPed_Opc As String, nFCI_Opc As String, rastro_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+Function produto400VFP(cProd As String, cEAN As String, xProd As String, NCM As String, NVE_Opc As String, CEST_Opc As String, EXTIPI_Opc As String, CFOP As Long, uCom As String, qCom As String, vUnCom As String, vProd As Double, cEANTrib As String, uTrib As String, qTrib As String, vUnTrib As String, vFrete As Double, vSeg As Double, vDesc As Double, vOutro As Double, indTot As Long, DI_Opc As String, detExport_Opc As String, DetEspecifico_Opc As String, xPed_Opc As String, nItemPed_Opc As String, camposV400 As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function produtoNT2015003(cProd As String, cEAN As String, xProd As String, NCM As String, NVE_Opc As String, CEST_Opc As String, EXTIPI_Opc As String, CFOP As Long, uCom As String, qCom As String, vUnCom As String, vProd As Double, cEANTrib As String, uTrib As String, qTrib As String, vUnTrib As String, vFrete As Double, vSeg As Double, vDesc As Double, vOutro As Double, indTot As Long, DI_Opc As String, detExport_Opc As String, DetEspecifico_Opc As String, xPed_Opc As String, nItemPed_Opc As String, nFCI_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function produtoNT2019001(cProd As String, cEAN As String, xProd As String, NCM As String, NVE_Opc As String, CEST_Opc As String, indEscala_Opc As String, CNPJFab_Opc As String, cBenef_Opc As String, EXTIPI_Opc As String, CFOP As Long, uCom As String, qCom As String, vUnCom As String, vProd As Double, cEANTrib As String, uTrib As String, qTrib As String, vUnTrib As String, vFrete As Double, vSeg As Double, vDesc As Double, vOutro As Double, indTot As Long, DI_Opc As String, detExport_Opc As String, DetEspecifico_Opc As String, xPed_Opc As String, nItemPed_Opc As String, nFCI_Opc As String, rastro_Opc As String, credPresumido_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function produtoRTC(cProd As String, cEAN As String, xProd As String, NCM As String, NVE_Opc As String, CEST_Opc As String, indEscala_Opc As String, CNPJFab_Opc As String, cBenef_Opc As String, EXTIPI_Opc As String, CFOP As Long, uCom As String, qCom As String, vUnCom As String, vProd As Double, cEANTrib As String, uTrib As String, qTrib As String, vUnTrib As String, vFrete As Double, vSeg As Double, vDesc As Double, vOutro As Double, indTot As Long, DI_Opc As String, detExport_Opc As String, DetEspecifico_Opc As String, xPed_Opc As String, nItemPed_Opc As String, nFCI_Opc As String, rastro_Opc As String, credPresumido_Opc As String, indBemMovelUsado_Opc As Long) As String
+    Member of NFe_Util_2G.Util
+
+Function produtoRTCv130(cProd As String, cEAN As String, xProd As String, NCM As String, NVE_Opc As String, CEST_Opc As String, indEscala_Opc As String, CNPJFab_Opc As String, cBenef_Opc As String, EXTIPI_Opc As String, CFOP As Long, uCom As String, qCom As String, vUnCom As String, vProd As Double, cEANTrib As String, uTrib As String, qTrib As String, vUnTrib As String, vFrete As Double, vSeg As Double, vDesc As Double, vOutro As Double, indTot As Long, DI_Opc As String, detExport_Opc As String, DetEspecifico_Opc As String, xPed_Opc As String, nItemPed_Opc As String, nFCI_Opc As String, rastro_Opc As String, credPresumido_Opc As String, indBemMovelUsado_Opc As Long, tpCredPresIBSZFM_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function rastro(nLote As String, qLote As Double, dFab As Date, dVal As Date, cAgreg_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function reboque(_placa As String, _UF As String, _RNTC As String) As String
+    Member of NFe_Util_2G.Util
+
+Function refNFe(chaveNFe As String) As String
+    Member of NFe_Util_2G.Util
+
+Function retTransp(_vServ As Double, _vBCRet As Double, _pICMSRet As Double, _vICMSRet As Double, _CFOP As Long, _cMunFG As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function total(_ICMSTot As String, _ISSQNtot As String, _retTrib As String) As String
+    Member of NFe_Util_2G.Util
+
+Function totalICMS(_vBC As Double, _vICMS As Double, _vBCST As Double, _vST As Double, _vProd As Double, _vFrete As Double, _vSeg As Double, _vDesc As Double, _vII As Double, _vIPI As Double, _vPIS As Double, _vCOFINS As Double, _vOutro As Double, _vNF As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function totalICMS310(vBC As Double, vICMS As Double, vBCST As Double, vST As Double, vProd As Double, vFrete As Double, vSeg As Double, vDesc As Double, vII As Double, vIPI As Double, vPIS As Double, vCOFINS As Double, vOutro As Double, vNF As Double, vTotTrib As Double, vICMSDeson As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function totalICMS400(vBC As Double, vICMS As Double, vBCST As Double, vST As Double, vProd As Double, vFrete As Double, vSeg As Double, vDesc As Double, vII As Double, vIPI As Double, vPIS As Double, vCOFINS As Double, vOutro As Double, vNF As Double, vTotTrib As Double, vICMSDeson As Double, vICMSUFDest_Opc As Double, vICMSUFRemet_Opc As Double, vFCPUFDest_Opc As Double, vFCP As Double, vFCPST As Double, vFCPSTRet As Double, vIPIDevol As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function totalICMSNovo(vBC As Double, vICMS As Double, vBCST As Double, vST As Double, vProd As Double, vFrete As Double, vSeg As Double, vDesc As Double, vII As Double, vIPI As Double, vPIS As Double, vCOFINS As Double, vOutro As Double, vNF As Double, vTotTrib As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function totalICMSNT2015003(vBC As Double, vICMS As Double, vBCST As Double, vST As Double, vProd As Double, vFrete As Double, vSeg As Double, vDesc As Double, vII As Double, vIPI As Double, vPIS As Double, vCOFINS As Double, vOutro As Double, vNF As Double, vTotTrib As Double, vICMSDeson As Double, vICMSUFDest_Opc As Double, vICMSUFRemet_Opc As Double, vFCPUFDest_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function totalICMSNT2023001(vBC As Double, vICMS As Double, vBCST As Double, vST As Double, vProd As Double, vFrete As Double, vSeg As Double, vDesc As Double, vII As Double, vIPI As Double, vPIS As Double, vCOFINS As Double, vOutro As Double, vNF As Double, vTotTrib As Double, vICMSDeson As Double, vICMSUFDest_Opc As Double, vICMSUFRemet_Opc As Double, vFCPUFDest_Opc As Double, vFCP As Double, vFCPST As Double, vFCPSTRet As Double, vIPIDevol As Double, qBCMono_Opc As Double, vICMSMono_Opc As Double, qBCMonoReten_Opc As Double, vICMSMonoReten_Opc As Double, qBCMonoRet_Opc As Double, vICMSMonoRet_Opc As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function totalICMSNT2023001VFP(vBC As Double, vICMS As Double, vBCST As Double, vST As Double, vProd As Double, vFrete As Double, vSeg As Double, vDesc As Double, vII As Double, vIPI As Double, vPIS As Double, vCOFINS As Double, vOutro As Double, vNF As Double, vTotTrib As Double, vICMSDeson As Double, vICMSUFDest_Opc As Double, vICMSUFRemet_Opc As Double, vFCPUFDest_Opc As Double, vFCP As Double, vFCPST As Double, vFCPSTRet As Double, vIPIDevol As Double, camposNT2023001 As String) As String
+    Member of NFe_Util_2G.Util
+
+Function totalISS(_vServ As Double, _vBC As Double, _vISS As Double, _vPIS As Double, _vCOFINS As Double) As String
+    Member of NFe_Util_2G.Util
+
+
+Function totalISS310(vServ_Opc As Double, vBC_Opc As Double, vISS_Opc As Double, vPIS_Opc As Double, vCOFINS_Opc As Double, dCompet As String, vDeducao_Opc As Double, vOutro_Opc As Double, vDescIncond_Opc As Double, vDescCond_Opc As Double, vISSRet_Opc As Double, cRegTrib_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function totalRTC(ICMSTot As String, ISSQNtot As String, retTrib As String, vIS As Double, IBSCBSTot As String, vNFTot As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function transporta(_CNPJ As String, _CPF As String, _xNome As String, _IE As String, _xEnder As String, _xMun As String, _UF As String) As String
+    Member of NFe_Util_2G.Util
+
+Function transportador(_modFrete As String, _transporta As String, _retTransp As String, _veicTransp As String, _reboque As String, _vol As String) As String
+    Member of NFe_Util_2G.Util
+
+Function transportador2G(_modFrete As String, _transporta As String, _retTransp As String, _veicTransp As String, _reboque As String, _vagao As String, _balsa As String, _vol As String) As String
+    Member of NFe_Util_2G.Util
+
+Function tributoRetido(_vRetPIS As Double, _vRetCOFINS As Double, _vRetCSLL As Double, _vBCIRRF As Double, _vIRRF As Double, _vBCRetPrev As Double, _vRetPrev As Double) As String
+    Member of NFe_Util_2G.Util
+
+Function Txt2XML(txt As String, geraChaveNFe As Long, codigoSeguranca As String, txtNumerado As String, resultado As Long, erros As String, qtErros As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+Function Txt2XML2015003(txt As String, geraChaveNFe As Long, codigoSeguranca As String, txtNumerado As String, resultado As Long, erros As String, qtErros As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+Function Txt2XML2G(txt As String, geraChaveNFe As Long, codigoSeguranca As String, txtNumerado As String, resultado As Long, erros As String, qtErros As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+Function Txt2XML310(txt As String, geraChaveNFe As Long, codigoSeguranca As String, txtNumerado As String, resultado As Long, erros As String, qtErros As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function UpLoadNFe(padrao As String, login As String, NFe As String, msgDados As String, msgRetWS As String, msgResultado As String, listaMsg As String, proxy As String, usuario As String, senha As String) As Long
+    Member of NFe_Util_2G.Util
+
+
+Function ValidaAssinatura(XML As String, msgResultado As String, Titular As String, CNPJ As String, NroSerie As String, Emissor As String, InicioValidade As String, FimValidade As String) As Long
+    Member of NFe_Util_2G.Util
+
+Function ValidaProcNFe(nomeArquivo As String, resultado As Long, nomeCertificado As String, msgResultado As String, proxy_Opc As String, usuario_Opc As String, senha_Opc As String) As String
+    Member of NFe_Util_2G.Util
+
+Function ValidaSchemaXML(XML As String, NomeArquivoSchemaXML As String, msgResultado As String, qtdeErros As Long, erroXML As String) As Long
+    Member of NFe_Util_2G.Util
+
+Function ValidaXML(XML As String, tipoXML As Long, msgResultado As String, qtdeErros As Long, erroXML As String) As Long
+    Member of NFe_Util_2G.Util
+
+Function veicProd(_tpOp As Long, _chassi As String, _cCor As String, _xCor As String, _pot As String, _CM3 As String, _peloL As String, _pesoB As String, _nSerie As String, _tpComb As String, _nMotor As String, _CMKG As String, _dist As String, _RENAVAM As String, _anoMod As String, _anoFab As String, _tpPint As String, _tpVeic As String, _espVeic As String, _VIN As String, _condVeic As String, _cMod As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function veicProd2G(_tpOp As Long, _chassi As String, _cCor As String, _xCor As String, _pot As String, _cilin As String, _peloL As String, _pesoB As String, _nSerie As String, _tpComb As String, _nMotor As String, _CMT As String, _dist As String, _anoMod As String, _anoFab As String, _tpPint As String, _tpVeic As String, _espVeic As String, _VIN As String, _condVeic As String, _cMod As String, _cCorDENATRAN As String, _lota As String, _tpRest As String) As String
+    Member of NFe_Util_2G.Util
+
+Function veicTransp(_placa As String, _UF As String, _RNTC As String) As String
+    Member of NFe_Util_2G.Util
+
+Function Versao() As String
+    Member of NFe_Util_2G.Util
+
+
+Function Versao2G(DLL_nome As String, DLL_versao As String, DLL_data As String, DLL_dataValidade As String, URL_versao As String, URL_data As String) As String
+    Member of NFe_Util_2G.Util
+
+Function versaoLicenca(CNPJ As String, licenca As String) As String
+    Member of NFe_Util_2G.Util
+
+Function vol(_qVol As Double, _esp As String, _marca As String, _nVol As String, _pesoL As Double, _pesoB As Double, _lacres As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+
+Function XML2Txt(XML As String, erros As String, qtErros As Long, resultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+Function XML2Txt310(XML As String, erros As String, qtErros As Long, resultado As Long, msgResultado As String) As String
+    Member of NFe_Util_2G.Util
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
